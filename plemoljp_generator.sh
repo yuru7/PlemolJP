@@ -2793,22 +2793,22 @@ $fontforge_command -script ${tmpdir}/${plemoljp35_box_drawing_light_generator} 2
 # Add hinting PlemolJP Regular
 for f in ${plemoljp_familyname}-Regular.ttf ${plemoljp_familyname}${plemoljp_console_suffix}-Regular.ttf
 do
-  ttfautohint -l 6 -r 45 -a qsq -D latn -W -I "$f" "hinted_${f}"
+  ttfautohint -l 6 -r 45 -a qsq -D latn -W -X "13-15" -I "$f" "hinted_${f}"
 done
 # Add hinting PlemolJP Bold
 for f in ${plemoljp_familyname}-Bold.ttf ${plemoljp_familyname}${plemoljp_console_suffix}-Bold.ttf
 do
-  ttfautohint -l 6 -r 45 -a qsq -D latn -W -I "$f" "hinted_${f}"
+  ttfautohint -l 6 -r 45 -a qsq -D latn -W -X "13-15" -I "$f" "hinted_${f}"
 done
 # Add hinting PlemolJP35 Regular
 for f in ${plemoljp35_familyname}-Regular.ttf ${plemoljp35_familyname}${plemoljp_console_suffix}-Regular.ttf
 do
-  ttfautohint -l 6 -r 45 -a qsq -D latn -W -I "$f" "hinted_${f}"
+  ttfautohint -l 6 -r 45 -a qsq -D latn -W -X "13-15" -I "$f" "hinted_${f}"
 done
 # Add hinting PlemolJP35 Bold
 for f in ${plemoljp35_familyname}-Bold.ttf ${plemoljp35_familyname}${plemoljp_console_suffix}-Bold.ttf
 do
-  ttfautohint -l 6 -r 45 -a qsq -D latn -W -I "$f" "hinted_${f}"
+  ttfautohint -l 6 -r 45 -a qsq -D latn -W -X "13-15" -I "$f" "hinted_${f}"
 done
 
 for style in Regular Bold
