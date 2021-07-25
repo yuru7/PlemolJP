@@ -1227,8 +1227,10 @@ while (i < SizeOf(input_list))
   if ("${zenkaku_space_glyph}" != "0u3000")
         Print("Edit zenkaku space")
         if ("${zenkaku_space_glyph}" == "")
-            Select(0u2610); Copy(); Select(0u3000); Paste()
-            Select(0u271a); Copy(); Select(0u3000); PasteInto()
+            Select(0u25A1); Copy(); Select(0u3000); Paste(); ExpandStroke(20, 0, 0, 0, 1)
+            Select(0u254B); Copy(); Select(0uFFFE); Paste(); Scale(180); Copy()
+            Select(0u3000); PasteInto()
+            Select(0uFFFE); Clear(); Select(0u3000);
             OverlapIntersect()
         else
             Select(${zenkaku_space_glyph}); Copy(); Select(0u3000); Paste()
