@@ -2,7 +2,7 @@
 
 base_dir=$(cd $(dirname $0); pwd)
 # PlemolJP Generator
-plemoljp_version="0.0.2"
+plemoljp_version="0.0.3"
 
 # Set familyname
 familyname_preffix="$1"
