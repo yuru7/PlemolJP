@@ -65,7 +65,13 @@ scaling_down_flag="true"
 non_discorded_characters=""
 
 # Set filenames
+hack_thin_src="IBMPlexMono-Thin.ttf"
+hack_extralight_src="IBMPlexMono-ExtraLight.ttf"
+hack_light_src="IBMPlexMono-Light.ttf"
 hack_regular_src="IBMPlexMono-Regular.ttf"
+hack_text_src="IBMPlexMono-Text.ttf"
+hack_medium_src="IBMPlexMono-Medium.ttf"
+hack_semibold_src="IBMPlexMono-SemiBold.ttf"
 hack_bold_src="IBMPlexMono-Bold.ttf"
 
 nerd_patched_hack_regular_src="Fira Mono Regular Nerd Font Complete.otf"
@@ -73,11 +79,23 @@ nerd_patched_hack_bold_src="Fira Mono Bold Nerd Font Complete.otf"
 nerd_patched_hack_regular_mono_src="Fira Mono Regular Nerd Font Complete Mono.otf"
 nerd_patched_hack_bold_mono_src="Fira Mono Bold Nerd Font Complete Mono.otf"
 
+genjyuu_thin_src="IBMPlexSansJP-Thin.ttf"
+genjyuu_extralight_src="IBMPlexSansJP-ExtraLight.ttf"
+genjyuu_light_src="IBMPlexSansJP-Light.ttf"
 genjyuu_regular_src="IBMPlexSansJP-Regular.ttf"
+genjyuu_text_src="IBMPlexSansJP-Text.ttf"
+genjyuu_medium_src="IBMPlexSansJP-Medium.ttf"
+genjyuu_semibold_src="IBMPlexSansJP-SemiBold.ttf"
 genjyuu_bold_src="IBMPlexSansJP-Bold.ttf"
 
 modified_hack_material_generator="modified_hack_material_generator.pe"
+modified_hack_material_thin="Modified-Hack-Material-thin.sfd"
+modified_hack_material_extralight="Modified-Hack-Material-extralight.sfd"
+modified_hack_material_light="Modified-Hack-Material-light.sfd"
 modified_hack_material_regular="Modified-Hack-Material-Regular.sfd"
+modified_hack_material_text="Modified-Hack-Material-text.sfd"
+modified_hack_material_medium="Modified-Hack-Material-medium.sfd"
+modified_hack_material_semibold="Modified-Hack-Material-semiBold.sfd"
 modified_hack_material_bold="Modified-Hack-Material-Bold.sfd"
 
 modified_hack_powerline_generator="modified_hack_powerline_generator.pe"
@@ -105,35 +123,83 @@ modified_hack35_evacuate_from_hinting_regular="Modified-Hack35-Evacuate_From_Hin
 modified_hack35_evacuate_from_hinting_bold="Modified-Hack35-Evacuate_From_Hinting-Bold.sfd"
 
 modified_hack_console_generator="modified_hack_console_generator.pe"
+modified_hack_console_thin="Modified-Hack-Console-thin.sfd"
+modified_hack_console_extralight="Modified-Hack-Console-extralight.sfd"
+modified_hack_console_light="Modified-Hack-Console-light.sfd"
 modified_hack_console_regular="Modified-Hack-Console-Regular.sfd"
+modified_hack_console_text="Modified-Hack-Console-text.sfd"
+modified_hack_console_medium="Modified-Hack-Console-medium.sfd"
+modified_hack_console_semibold="Modified-Hack-Console-semiBold.sfd"
 modified_hack_console_bold="Modified-Hack-Console-Bold.sfd"
 
 modified_hack35_console_generator="modified_hack35_console_generator.pe"
+modified_hack35_console_thin="Modified-Hack35-Console-thin.sfd"
+modified_hack35_console_extralight="Modified-Hack35-Console-extralight.sfd"
+modified_hack35_console_light="Modified-Hack35-Console-light.sfd"
 modified_hack35_console_regular="Modified-Hack35-Console-Regular.sfd"
+modified_hack35_console_text="Modified-Hack35-Console-text.sfd"
+modified_hack35_console_medium="Modified-Hack35-Console-medium.sfd"
+modified_hack35_console_semibold="Modified-Hack35-Console-semiBold.sfd"
 modified_hack35_console_bold="Modified-Hack35-Console-Bold.sfd"
 
 modified_hack_generator="modified_hack_generator.pe"
+modified_hack_thin="Modified-Hack-thin.sfd"
+modified_hack_extralight="Modified-Hack-extralight.sfd"
+modified_hack_light="Modified-Hack-light.sfd"
 modified_hack_regular="Modified-Hack-Regular.sfd"
+modified_hack_text="Modified-Hack-text.sfd"
+modified_hack_medium="Modified-Hack-medium.sfd"
+modified_hack_semibold="Modified-Hack-semiBold.sfd"
 modified_hack_bold="Modified-Hack-Bold.sfd"
 
 modified_hack35_generator="modified_hack35_generator.pe"
+modified_hack35_thin="Modified-Hack35-thin.sfd"
+modified_hack35_extralight="Modified-Hack35-extralight.sfd"
+modified_hack35_light="Modified-Hack35-light.sfd"
 modified_hack35_regular="Modified-Hack35-Regular.sfd"
+modified_hack35_text="Modified-Hack35-text.sfd"
+modified_hack35_medium="Modified-Hack35-medium.sfd"
+modified_hack35_semibold="Modified-Hack35-semiBold.sfd"
 modified_hack35_bold="Modified-Hack35-Bold.sfd"
 
 modified_genjyuu_generator="modified_genjyuu_generator.pe"
+modified_genjyuu_thin="Modified-IBMPlexSansJP-thin.sfd"
+modified_genjyuu_extralight="Modified-IBMPlexSansJP-extralight.sfd"
+modified_genjyuu_light="Modified-IBMPlexSansJP-light.sfd"
 modified_genjyuu_regular="Modified-IBMPlexSansJP-regular.sfd"
+modified_genjyuu_text="Modified-IBMPlexSansJP-text.sfd"
+modified_genjyuu_medium="Modified-IBMPlexSansJP-medium.sfd"
+modified_genjyuu_semibold="Modified-IBMPlexSansJP-semibold.sfd"
 modified_genjyuu_bold="Modified-IBMPlexSansJP-bold.sfd"
 
 modified_genjyuu35_generator="modified_genjyuu35_generator.pe"
+modified_genjyuu35_thin="Modified-IBMPlexSansJP35-thin.sfd"
+modified_genjyuu35_extralight="Modified-IBMPlexSansJP35-extralight.sfd"
+modified_genjyuu35_light="Modified-IBMPlexSansJP35-light.sfd"
 modified_genjyuu35_regular="Modified-IBMPlexSansJP35-Monospace-regular.sfd"
+modified_genjyuu35_text="Modified-IBMPlexSansJP35-Monospace-text.sfd"
+modified_genjyuu35_medium="Modified-IBMPlexSansJP35-medium.sfd"
+modified_genjyuu35_semibold="Modified-IBMPlexSansJP35-semibold.sfd"
 modified_genjyuu35_bold="Modified-IBMPlexSansJP35-Monospace-bold.sfd"
 
 modified_genjyuu_console_generator="modified_genjyuu_console_generator.pe"
+modified_genjyuu_console_thin="Modified-IBMPlexSansJP-thin_console.sfd"
+modified_genjyuu_console_extralight="Modified-IBMPlexSansJP-extralight_console.sfd"
+modified_genjyuu_console_light="Modified-IBMPlexSansJP-light_console.sfd"
 modified_genjyuu_console_regular="Modified-IBMPlexSansJP-regular_console.sfd"
+modified_genjyuu_console_text="Modified-IBMPlexSansJP-text_console.sfd"
+modified_genjyuu_console_medium="Modified-IBMPlexSansJP-medium_console.sfd"
+modified_genjyuu_console_semibold="Modified-IBMPlexSansJP-semibold_console.sfd"
 modified_genjyuu_console_bold="Modified-IBMPlexSansJP-bold_console.sfd"
 
 modified_genjyuu35_console_generator="modified_genjyuu35_console_generator.pe"
+modified_genjyuu35_console_thin="Modified-IBMPlexSansJP-thin_console.sfd"
+modified_genjyuu35_console_extralight="Modified-IBMPlexSansJP-extralight_console.sfd"
+modified_genjyuu35_console_light="Modified-IBMPlexSansJP-light_console.sfd"
 modified_genjyuu35_console_regular="Modified-IBMPlexSansJP35-Monospace-regular_console.sfd"
+modified_genjyuu35_console_text="Modified-IBMPlexSansJP35-Monospace-text_console.sfd"
+modified_genjyuu35_console_medium="Modified-IBMPlexSansJP35-medium_console.sfd"
+modified_genjyuu35_console_semibold="Modified-IBMPlexSansJP35-semibold_console.sfd"
 modified_genjyuu35_console_bold="Modified-IBMPlexSansJP35-Monospace-bold_console.sfd"
 
 modified_plemoljp_nerd_symbol_generator="modified_plemoljp_nerd_symbol_generator.pe"
@@ -174,7 +240,13 @@ do
 done
 fonts_directories="${tmp}"
 # Search Hack
+input_hack_thin=`find $fonts_directories -follow -name "$hack_thin_src" | head -n 1`
+input_hack_extralight=`find $fonts_directories -follow -name "$hack_extralight_src" | head -n 1`
+input_hack_light=`find $fonts_directories -follow -name "$hack_light_src" | head -n 1`
 input_hack_regular=`find $fonts_directories -follow -name "$hack_regular_src" | head -n 1`
+input_hack_text=`find $fonts_directories -follow -name "$hack_text_src" | head -n 1`
+input_hack_medium=`find $fonts_directories -follow -name "$hack_medium_src" | head -n 1`
+input_hack_semibold=`find $fonts_directories -follow -name "$hack_semibold_src" | head -n 1`
 input_hack_bold=`find $fonts_directories -follow -name "$hack_bold_src" | head -n 1`
 
 if [ -z "${input_hack_regular}" -o -z "${input_hack_bold}" ]
@@ -184,7 +256,13 @@ then
 fi
 
 # Search IBMPlexSansJP
+input_genjyuu_thin=`find $fonts_directories -follow -iname "$genjyuu_thin_src" | head -n 1`
+input_genjyuu_extralight=`find $fonts_directories -follow -iname "$genjyuu_extralight_src" | head -n 1`
+input_genjyuu_light=`find $fonts_directories -follow -iname "$genjyuu_light_src" | head -n 1`
 input_genjyuu_regular=`find $fonts_directories -follow -iname "$genjyuu_regular_src" | head -n 1`
+input_genjyuu_text=`find $fonts_directories -follow -iname "$genjyuu_text_src"    | head -n 1`
+input_genjyuu_medium=`find $fonts_directories -follow -iname "$genjyuu_medium_src"    | head -n 1`
+input_genjyuu_semibold=`find $fonts_directories -follow -iname "$genjyuu_semibold_src"    | head -n 1`
 input_genjyuu_bold=`find $fonts_directories -follow -iname "$genjyuu_bold_src"    | head -n 1`
 if [ -z "${input_genjyuu_regular}" -o -z "${input_genjyuu_bold}" ]
 then
@@ -392,8 +470,22 @@ cat > ${tmpdir}/${modified_hack_material_generator} << _EOT_
 Print("Generate modified IBMPlexMono Material")
 
 # Set parameters
-input_list  = ["${input_hack_regular}",    "${input_hack_bold}"]
-output_list = ["${modified_hack_material_regular}", "${modified_hack_material_bold}"]
+input_list  = ["${input_hack_thin}", \\
+                  "${input_hack_extralight}", \\
+                  "${input_hack_light}", \\
+                  "${input_hack_regular}", \\
+                  "${input_hack_text}", \\
+                  "${input_hack_medium}", \\
+                  "${input_hack_semibold}", \\
+                  "${input_hack_bold}"]
+output_list = ["${modified_hack_material_thin}", \\
+                  "${modified_hack_material_extralight}", \\
+                  "${modified_hack_material_light}", \\
+                  "${modified_hack_material_regular}", \\
+                  "${modified_hack_material_text}", \\
+                  "${modified_hack_material_medium}", \\
+                  "${modified_hack_material_semibold}", \\
+                  "${modified_hack_material_bold}"]
 
 # Begin loop of regular and bold
 i = 0
@@ -768,8 +860,22 @@ cat > ${tmpdir}/${modified_hack_box_drawing_light_generator} << _EOT_
 Print("Generate box drawing light for PlemolJP")
 
 # Set parameters
-input_list  = ["${tmpdir}/${modified_hack_material_regular}", "${tmpdir}/${modified_hack_material_bold}"]
-output_list = ["${modified_hack_box_drawing_light_regular}", "${modified_hack_box_drawing_light_bold}"]
+input_list  = ["${tmpdir}/${modified_hack_material_thin}", \\
+                  "${tmpdir}/${modified_hack_material_extralight}", \\
+                  "${tmpdir}/${modified_hack_material_light}", \\
+                  "${tmpdir}/${modified_hack_material_regular}", \\
+                  "${tmpdir}/${modified_hack_material_text}", \\
+                  "${tmpdir}/${modified_hack_material_medium}", \\
+                  "${tmpdir}/${modified_hack_material_semibold}", \\
+                  "${tmpdir}/${modified_hack_material_bold}"]
+output_list = ["${modified_hack_box_drawing_light_thin}", \\
+                  "${modified_hack_box_drawing_light_extralight}", \\
+                  "${modified_hack_box_drawing_light_light}", \\
+                  "${modified_hack_box_drawing_light_regular}", \\
+                  "${modified_hack_box_drawing_light_text}", \\
+                  "${modified_hack_box_drawing_light_medium}", \\
+                  "${modified_hack_box_drawing_light_semibold}", \\
+                  "${modified_hack_box_drawing_light_bold}"]
 
 # Begin loop of regular and bold
 i = 0
@@ -818,8 +924,22 @@ cat > ${tmpdir}/${modified_hack35_box_drawing_light_generator} << _EOT_
 Print("Generate box drawing light for PlemolJP")
 
 # Set parameters
-input_list  = ["${tmpdir}/${modified_hack_material_regular}", "${tmpdir}/${modified_hack_material_bold}"]
-output_list = ["${modified_hack35_box_drawing_light_regular}", "${modified_hack35_box_drawing_light_bold}"]
+input_list  = ["${tmpdir}/${modified_hack_material_thin}", \\
+                  "${tmpdir}/${modified_hack_material_extralight}", \\
+                  "${tmpdir}/${modified_hack_material_light}", \\
+                  "${tmpdir}/${modified_hack_material_regular}", \\
+                  "${tmpdir}/${modified_hack_material_text}", \\
+                  "${tmpdir}/${modified_hack_material_medium}", \\
+                  "${tmpdir}/${modified_hack_material_semibold}", \\
+                  "${tmpdir}/${modified_hack_material_bold}"]
+output_list = ["${modified_hack35_box_drawing_light_thin}", \\
+                  "${modified_hack35_box_drawing_light_extralight}", \\
+                  "${modified_hack35_box_drawing_light_light}", \\
+                  "${modified_hack35_box_drawing_light_regular}", \\
+                  "${modified_hack35_box_drawing_light_text}", \\
+                  "${modified_hack35_box_drawing_light_medium}", \\
+                  "${modified_hack35_box_drawing_light_semibold}", \\
+                  "${modified_hack35_box_drawing_light_bold}"]
 
 # Begin loop of regular and bold
 i = 0
@@ -970,8 +1090,22 @@ cat > ${tmpdir}/${modified_hack_console_generator} << _EOT_
 Print("Generate modified IBMPlexMono Console")
 
 # Set parameters
-input_list  = ["${tmpdir}/${modified_hack_material_regular}", "${tmpdir}/${modified_hack_material_bold}"]
-output_list = ["${modified_hack_console_regular}", "${modified_hack_console_bold}"]
+input_list  = ["${tmpdir}/${modified_hack_material_thin}", \\
+                  "${tmpdir}/${modified_hack_material_extralight}", \\
+                  "${tmpdir}/${modified_hack_material_light}", \\
+                  "${tmpdir}/${modified_hack_material_regular}", \\
+                  "${tmpdir}/${modified_hack_material_text}", \\
+                  "${tmpdir}/${modified_hack_material_medium}", \\
+                  "${tmpdir}/${modified_hack_material_semibold}", \\
+                  "${tmpdir}/${modified_hack_material_bold}"]
+output_list = ["${modified_hack_console_thin}", \\
+                  "${modified_hack_console_extralight}", \\
+                  "${modified_hack_console_light}", \\
+                  "${modified_hack_console_regular}", \\
+                  "${modified_hack_console_text}", \\
+                  "${modified_hack_console_medium}", \\
+                  "${modified_hack_console_semibold}", \\
+                  "${modified_hack_console_bold}"]
 
 # Begin loop of regular and bold
 i = 0
@@ -1019,8 +1153,22 @@ cat > ${tmpdir}/${modified_hack35_console_generator} << _EOT_
 Print("Generate modified Hack35 Console")
 
 # Set parameters
-input_list  = ["${tmpdir}/${modified_hack_material_regular}", "${tmpdir}/${modified_hack_material_bold}"]
-output_list = ["${modified_hack35_console_regular}", "${modified_hack35_console_bold}"]
+input_list  = ["${tmpdir}/${modified_hack_material_thin}", \\
+                  "${tmpdir}/${modified_hack_material_extralight}", \\
+                  "${tmpdir}/${modified_hack_material_light}", \\
+                  "${tmpdir}/${modified_hack_material_regular}", \\
+                  "${tmpdir}/${modified_hack_material_text}", \\
+                  "${tmpdir}/${modified_hack_material_medium}", \\
+                  "${tmpdir}/${modified_hack_material_semibold}", \\
+                  "${tmpdir}/${modified_hack_material_bold}"]
+output_list = ["${modified_hack35_console_thin}", \\
+                  "${modified_hack35_console_extralight}", \\
+                  "${modified_hack35_console_light}", \\
+                  "${modified_hack35_console_regular}", \\
+                  "${modified_hack35_console_text}", \\
+                  "${modified_hack35_console_medium}", \\
+                  "${modified_hack35_console_semibold}", \\
+                  "${modified_hack35_console_bold}"]
 
 # Begin loop of regular and bold
 i = 0
@@ -1066,8 +1214,22 @@ cat > ${tmpdir}/${modified_hack_generator} << _EOT_
 Print("Generate modified Hack")
 
 # Set parameters
-input_list  = ["${tmpdir}/${modified_hack_console_regular}", "${tmpdir}/${modified_hack_console_bold}"]
-output_list = ["${modified_hack_regular}", "${modified_hack_bold}"]
+input_list  = ["${tmpdir}/${modified_hack_console_thin}", \\
+                  "${tmpdir}/${modified_hack_console_extralight}", \\
+                  "${tmpdir}/${modified_hack_console_light}", \\
+                  "${tmpdir}/${modified_hack_console_regular}", \\
+                  "${tmpdir}/${modified_hack_console_text}", \\
+                  "${tmpdir}/${modified_hack_console_medium}", \\
+                  "${tmpdir}/${modified_hack_console_semibold}", \\
+                  "${tmpdir}/${modified_hack_console_bold}"]
+output_list = ["${modified_hack_thin}", \\
+                  "${modified_hack_extralight}", \\
+                  "${modified_hack_light}", \\
+                  "${modified_hack_regular}", \\
+                  "${modified_hack_text}", \\
+                  "${modified_hack_medium}", \\
+                  "${modified_hack_semibold}", \\
+                  "${modified_hack_bold}"]
 
 # Begin loop of regular and bold
 i = 0
@@ -1101,8 +1263,22 @@ cat > ${tmpdir}/${modified_hack35_generator} << _EOT_
 Print("Generate modified Hack")
 
 # Set parameters
-input_list  = ["${tmpdir}/${modified_hack35_console_regular}", "${tmpdir}/${modified_hack35_console_bold}"]
-output_list = ["${modified_hack35_regular}", "${modified_hack35_bold}"]
+input_list  = ["${tmpdir}/${modified_hack35_console_thin}", \\
+                  "${tmpdir}/${modified_hack35_console_extralight}", \\
+                  "${tmpdir}/${modified_hack35_console_light}", \\
+                  "${tmpdir}/${modified_hack35_console_regular}", \\
+                  "${tmpdir}/${modified_hack35_console_text}", \\
+                  "${tmpdir}/${modified_hack35_console_medium}", \\
+                  "${tmpdir}/${modified_hack35_console_semibold}", \\
+                  "${tmpdir}/${modified_hack35_console_bold}"]
+output_list = ["${modified_hack35_thin}", \\
+                  "${modified_hack35_extralight}", \\
+                  "${modified_hack35_light}", \\
+                  "${modified_hack35_regular}", \\
+                  "${modified_hack35_text}", \\
+                  "${modified_hack35_medium}", \\
+                  "${modified_hack35_semibold}", \\
+                  "${modified_hack35_bold}"]
 
 # Begin loop of regular and bold
 i = 0
@@ -1137,12 +1313,26 @@ Print("Generate modified IBMPlexSansJP")
 
 # Set parameters
 hack = "${tmpdir}/${modified_hack_regular}"
-input_list  = ["${input_genjyuu_regular}",    "${input_genjyuu_bold}"]
-output_list = ["${modified_genjyuu_regular}", "${modified_genjyuu_bold}"]
+input_list  = ["${input_genjyuu_thin}", \\
+                  "${input_genjyuu_extralight}", \\
+                  "${input_genjyuu_light}", \\
+                  "${input_genjyuu_regular}", \\
+                  "${input_genjyuu_text}", \\
+                  "${input_genjyuu_medium}", \\
+                  "${input_genjyuu_semibold}", \\
+                  "${input_genjyuu_bold}"]
+output_list = ["${modified_genjyuu_thin}", \\
+                  "${modified_genjyuu_extralight}", \\
+                  "${modified_genjyuu_light}", \\
+                  "${modified_genjyuu_regular}", \\
+                  "${modified_genjyuu_text}", \\
+                  "${modified_genjyuu_medium}", \\
+                  "${modified_genjyuu_semibold}", \\
+                  "${modified_genjyuu_bold}"]
 
-fontstyle_list    = ["Regular", "Bold"]
-fontweight_list   = [400,       700]
-panoseweight_list = [5,         8]
+fontstyle_list    = ["Thin", "ExtraLight", "Light", "Regular", "Text", "Medium", "SemiBold", "Bold"]
+fontweight_list   = [100, 200, 300, 400, 450, 500, 600, 700]
+panoseweight_list = [3, 3, 4, 5, 5, 6, 7, 8]
 
 Print("Get trim target glyph from Hack")
 Open(hack)
@@ -1317,12 +1507,26 @@ Print("Generate modified IBMPlexSansJP - 35")
 
 # Set parameters
 hack = "${tmpdir}/${modified_hack35_regular}"
-input_list  = ["${input_genjyuu_regular}",    "${input_genjyuu_bold}"]
-output_list = ["${modified_genjyuu35_regular}", "${modified_genjyuu35_bold}"]
+input_list  = ["${input_genjyuu_thin}", \\
+                  "${input_genjyuu_extralight}", \\
+                  "${input_genjyuu_light}", \\
+                  "${input_genjyuu_regular}", \\
+                  "${input_genjyuu_text}", \\
+                  "${input_genjyuu_medium}", \\
+                  "${input_genjyuu_semibold}", \\
+                  "${input_genjyuu_bold}"]
+output_list = ["${modified_genjyuu35_thin}", \\
+                  "${modified_genjyuu35_extralight}", \\
+                  "${modified_genjyuu35_light}", \\
+                  "${modified_genjyuu35_regular}", \\
+                  "${modified_genjyuu35_text}", \\
+                  "${modified_genjyuu35_medium}", \\
+                  "${modified_genjyuu35_semibold}", \\
+                  "${modified_genjyuu35_bold}"]
 
-fontstyle_list    = ["Regular", "Bold"]
-fontweight_list   = [400,       700]
-panoseweight_list = [5,         8]
+fontstyle_list    = ["Thin", "ExtraLight", "Light", "Regular", "Text", "Medium", "SemiBold", "Bold"]
+fontweight_list   = [100, 200, 300, 400, 450, 500, 600, 700]
+panoseweight_list = [3, 3, 4, 5, 5, 6, 7, 8]
 
 Print("Get trim target glyph from Hack")
 Open(hack)
@@ -1490,8 +1694,22 @@ Print("Generate modified IBMPlexSansJP Console")
 
 # Set parameters
 hack = "${tmpdir}/${modified_hack_material_regular}"
-input_list  = ["${tmpdir}/${modified_genjyuu_regular}.ttf", "${tmpdir}/${modified_genjyuu_bold}.ttf"]
-output_list = ["${modified_genjyuu_console_regular}", "${modified_genjyuu_console_bold}"]
+input_list  = ["${tmpdir}/${modified_genjyuu_thin}.ttf", \\
+                  "${tmpdir}/${modified_genjyuu_extralight}.ttf", \\
+                  "${tmpdir}/${modified_genjyuu_light}.ttf", \\
+                  "${tmpdir}/${modified_genjyuu_regular}.ttf", \\
+                  "${tmpdir}/${modified_genjyuu_text}.ttf", \\
+                  "${tmpdir}/${modified_genjyuu_medium}.ttf", \\
+                  "${tmpdir}/${modified_genjyuu_semibold}.ttf", \\
+                  "${tmpdir}/${modified_genjyuu_bold}.ttf"]
+output_list = ["${modified_genjyuu_console_thin}", \\
+                  "${modified_genjyuu_console_extralight}", \\
+                  "${modified_genjyuu_console_light}", \\
+                  "${modified_genjyuu_console_regular}", \\
+                  "${modified_genjyuu_console_text}", \\
+                  "${modified_genjyuu_console_medium}", \\
+                  "${modified_genjyuu_console_semibold}", \\
+                  "${modified_genjyuu_console_bold}"]
 
 Print("Get trim target glyph from Hack")
 Open(hack)
@@ -1563,8 +1781,22 @@ Print("Generate modified IBMPlexSansJP Console - 35")
 
 # Set parameters
 hack = "${tmpdir}/${modified_hack_material_regular}"
-input_list  = ["${tmpdir}/${modified_genjyuu35_regular}.ttf", "${tmpdir}/${modified_genjyuu35_bold}.ttf"]
-output_list = ["${modified_genjyuu35_console_regular}", "${modified_genjyuu35_console_bold}"]
+input_list  = ["${tmpdir}/${modified_genjyuu35_thin}.ttf", \\
+                  "${tmpdir}/${modified_genjyuu35_extralight}.ttf", \\
+                  "${tmpdir}/${modified_genjyuu35_light}.ttf", \\
+                  "${tmpdir}/${modified_genjyuu35_regular}.ttf", \\
+                  "${tmpdir}/${modified_genjyuu35_text}.ttf", \\
+                  "${tmpdir}/${modified_genjyuu35_medium}.ttf", \\
+                  "${tmpdir}/${modified_genjyuu35_semibold}.ttf", \\
+                  "${tmpdir}/${modified_genjyuu35_bold}.ttf"]
+output_list = ["${modified_genjyuu35_console_thin}", \\
+                  "${modified_genjyuu35_console_extralight}", \\
+                  "${modified_genjyuu35_console_light}", \\
+                  "${modified_genjyuu35_console_regular}", \\
+                  "${modified_genjyuu35_console_text}", \\
+                  "${modified_genjyuu35_console_medium}", \\
+                  "${modified_genjyuu35_console_semibold}", \\
+                  "${modified_genjyuu35_console_bold}"]
 
 Print("Get trim target glyph from Hack")
 Open(hack)
@@ -1636,13 +1868,19 @@ cat > ${tmpdir}/${plemoljp_generator} << _EOT_
 Print("Generate PlemolJP")
 
 # Set parameters
-hack_list  = ["${tmpdir}/${modified_hack_regular}", \\
+hack_list  = ["${tmpdir}/${modified_hack_thin}", \\
+                    "${tmpdir}/${modified_hack_extralight}", \\
+                    "${tmpdir}/${modified_hack_light}", \\
+                    "${tmpdir}/${modified_hack_regular}", \\
+                    "${tmpdir}/${modified_hack_text}", \\
+                    "${tmpdir}/${modified_hack_medium}", \\
+                    "${tmpdir}/${modified_hack_semibold}", \\
                      "${tmpdir}/${modified_hack_bold}"]
 fontfamily        = "${plemoljp_familyname}"
 fontfamilysuffix  = "${plemoljp_familyname_suffix}"
-fontstyle_list    = ["Regular", "Bold"]
-fontweight_list   = [400,       700]
-panoseweight_list = [5,         8]
+fontstyle_list    = ["Thin", "ExtraLight", "Light", "Regular", "Text", "Medium", "SemiBold", "Bold"]
+fontweight_list   = [100, 200, 300, 400, 450, 500, 600, 700]
+panoseweight_list = [3, 3, 4, 5, 5, 6, 7, 8]
 copyright         = "Copyright (c) 2019, Yuko Otawara"
 version           = "${plemoljp_version}"
 
@@ -1656,21 +1894,49 @@ while (i < SizeOf(fontstyle_list))
   Reencode("unicode")
 
   # Set configuration
-  if (fontfamilysuffix != "")
-        SetFontNames(fontfamily + fontfamilysuffix + "-" + fontstyle_list[i], \\
-                     fontfamily + " " + fontfamilysuffix, \\
-                     fontfamily + " " + fontfamilysuffix + " " + fontstyle_list[i], \\
-                     fontstyle_list[i], \\
-                     copyright, version)
+  if (fontstyle_list[i] != "Regular" && fontstyle_list[i] != "Bold")
+    if (fontfamilysuffix != "")
+      SetFontNames(fontfamily + fontfamilysuffix + "-" + fontstyle_list[i], \\
+                    fontfamily + " " + fontfamilysuffix + " " + fontstyle_list[i], \\
+                    fontfamily + " " + fontfamilysuffix + " " + fontstyle_list[i], \\
+                    fontstyle_list[i], \\
+                    copyright, version)
+    else
+      SetFontNames(fontfamily + "-" + fontstyle_list[i], \\
+                    fontfamily + " " + fontstyle_list[i], \\
+                    fontfamily + " " + fontstyle_list[i], \\
+                    fontstyle_list[i], \\
+                    copyright, version)
+    endif
+    
+    SetTTFName(0x409, 2, "Regular")
   else
-        SetFontNames(fontfamily + "-" + fontstyle_list[i], \\
-                     fontfamily, \\
-                     fontfamily + " " + fontstyle_list[i], \\
-                     fontstyle_list[i], \\
-                     copyright, version)
+    if (fontfamilysuffix != "")
+      SetFontNames(fontfamily + fontfamilysuffix + "-" + fontstyle_list[i], \\
+                    fontfamily + " " + fontfamilysuffix, \\
+                    fontfamily + " " + fontfamilysuffix + " " + fontstyle_list[i], \\
+                    fontstyle_list[i], \\
+                    copyright, version)
+    else
+      SetFontNames(fontfamily + "-" + fontstyle_list[i], \\
+                    fontfamily, \\
+                    fontfamily + " " + fontstyle_list[i], \\
+                    fontstyle_list[i], \\
+                    copyright, version)
+    endif
+
+    SetTTFName(0x409, 2, fontstyle_list[i])
   endif
-  SetTTFName(0x409, 2, fontstyle_list[i])
+
+  if (fontfamilysuffix != "")
+    SetTTFName(0x409, 16, fontfamily + " " + fontfamilysuffix)
+  else
+    SetTTFName(0x409, 16, fontfamily)
+  endif
+  SetTTFName(0x409, 17, fontstyle_list[i])
+
   SetTTFName(0x409, 3, "FontForge 2.0 : " + \$fullname + " : " + Strftime("%d-%m-%Y", 0))
+
   ScaleToEm(${em_ascent}, ${em_descent})
   SetOS2Value("Weight", fontweight_list[i]) # Book or Bold
   SetOS2Value("Width",                   5) # Medium
@@ -2440,13 +2706,19 @@ cat > ${tmpdir}/${plemoljp_console_generator} << _EOT_
 Print("Generate PlemolJP Console")
 
 # Set parameters
-hack_list  = ["${tmpdir}/${modified_hack_console_regular}", \\
+hack_list  = ["${tmpdir}/${modified_hack_console_thin}", \\
+                     "${tmpdir}/${modified_hack_console_extralight}", \\
+                     "${tmpdir}/${modified_hack_console_light}", \\
+                     "${tmpdir}/${modified_hack_console_regular}", \\
+                     "${tmpdir}/${modified_hack_console_text}", \\
+                     "${tmpdir}/${modified_hack_console_medium}", \\
+                     "${tmpdir}/${modified_hack_console_semibold}", \\
                      "${tmpdir}/${modified_hack_console_bold}"]
 fontfamily        = "${plemoljp_familyname}"
 fontfamilysuffix  = "${plemoljp_console_suffix}"
-fontstyle_list    = ["Regular", "Bold"]
-fontweight_list   = [400,       700]
-panoseweight_list = [5,         8]
+fontstyle_list    = ["Thin", "ExtraLight", "Light", "Regular", "Text", "Medium", "SemiBold", "Bold"]
+fontweight_list   = [100, 200, 300, 400, 450, 500, 600, 700]
+panoseweight_list = [3, 3, 4, 5, 5, 6, 7, 8]
 copyright         = "Copyright (c) 2019, Yuko Otawara"
 version           = "${plemoljp_version}"
 
@@ -2460,21 +2732,49 @@ while (i < SizeOf(fontstyle_list))
   Reencode("unicode")
 
   # Set configuration
-  if (fontfamilysuffix != "")
-        SetFontNames(fontfamily + fontfamilysuffix + "-" + fontstyle_list[i], \\
-                     fontfamily + " " + fontfamilysuffix, \\
-                     fontfamily + " " + fontfamilysuffix + " " + fontstyle_list[i], \\
-                     fontstyle_list[i], \\
-                     copyright, version)
+  if (fontstyle_list[i] != "Regular" && fontstyle_list[i] != "Bold")
+    if (fontfamilysuffix != "")
+      SetFontNames(fontfamily + fontfamilysuffix + "-" + fontstyle_list[i], \\
+                    fontfamily + " " + fontfamilysuffix + " " + fontstyle_list[i], \\
+                    fontfamily + " " + fontfamilysuffix + " " + fontstyle_list[i], \\
+                    fontstyle_list[i], \\
+                    copyright, version)
+    else
+      SetFontNames(fontfamily + "-" + fontstyle_list[i], \\
+                    fontfamily + " " + fontstyle_list[i], \\
+                    fontfamily + " " + fontstyle_list[i], \\
+                    fontstyle_list[i], \\
+                    copyright, version)
+    endif
+    
+    SetTTFName(0x409, 2, "Regular")
   else
-        SetFontNames(fontfamily + "-" + fontstyle_list[i], \\
-                     fontfamily, \\
-                     fontfamily + " " + fontstyle_list[i], \\
-                     fontstyle_list[i], \\
-                     copyright, version)
+    if (fontfamilysuffix != "")
+      SetFontNames(fontfamily + fontfamilysuffix + "-" + fontstyle_list[i], \\
+                    fontfamily + " " + fontfamilysuffix, \\
+                    fontfamily + " " + fontfamilysuffix + " " + fontstyle_list[i], \\
+                    fontstyle_list[i], \\
+                    copyright, version)
+    else
+      SetFontNames(fontfamily + "-" + fontstyle_list[i], \\
+                    fontfamily, \\
+                    fontfamily + " " + fontstyle_list[i], \\
+                    fontstyle_list[i], \\
+                    copyright, version)
+    endif
+
+    SetTTFName(0x409, 2, fontstyle_list[i])
   endif
-  SetTTFName(0x409, 2, fontstyle_list[i])
+
+  if (fontfamilysuffix != "")
+    SetTTFName(0x409, 16, fontfamily + " " + fontfamilysuffix)
+  else
+    SetTTFName(0x409, 16, fontfamily)
+  endif
+  SetTTFName(0x409, 17, fontstyle_list[i])
+
   SetTTFName(0x409, 3, "FontForge 2.0 : " + \$fullname + " : " + Strftime("%d-%m-%Y", 0))
+
   ScaleToEm(${em_ascent}, ${em_descent})
   SetOS2Value("Weight", fontweight_list[i]) # Book or Bold
   SetOS2Value("Width",                   5) # Medium
@@ -2528,13 +2828,19 @@ cat > ${tmpdir}/${plemoljp35_generator} << _EOT_
 Print("Generate PlemolJP")
 
 # Set parameters
-hack_list  = ["${tmpdir}/${modified_hack35_regular}", \\
+hack_list  = ["${tmpdir}/${modified_hack35_thin}", \\
+                     "${tmpdir}/${modified_hack35_extralight}", \\
+                     "${tmpdir}/${modified_hack35_light}", \\
+                     "${tmpdir}/${modified_hack35_regular}", \\
+                     "${tmpdir}/${modified_hack35_text}", \\
+                     "${tmpdir}/${modified_hack35_medium}", \\
+                     "${tmpdir}/${modified_hack35_semibold}", \\
                      "${tmpdir}/${modified_hack35_bold}"]
 fontfamily        = "${plemoljp35_familyname}"
 fontfamilysuffix  = "${plemoljp35_familyname_suffix}"
-fontstyle_list    = ["Regular", "Bold"]
-fontweight_list   = [400,       700]
-panoseweight_list = [5,         8]
+fontstyle_list    = ["Thin", "ExtraLight", "Light", "Regular", "Text", "Medium", "SemiBold", "Bold"]
+fontweight_list   = [100, 200, 300, 400, 450, 500, 600, 700]
+panoseweight_list = [3, 3, 4, 5, 5, 6, 7, 8]
 copyright         = "Copyright (c) 2019, Yuko Otawara"
 version           = "${plemoljp_version}"
 
@@ -2548,21 +2854,49 @@ while (i < SizeOf(fontstyle_list))
   Reencode("unicode")
 
   # Set configuration
-  if (fontfamilysuffix != "")
-        SetFontNames(fontfamily + fontfamilysuffix + "-" + fontstyle_list[i], \\
-                     fontfamily + " " + fontfamilysuffix, \\
-                     fontfamily + " " + fontfamilysuffix + " " + fontstyle_list[i], \\
-                     fontstyle_list[i], \\
-                     copyright, version)
+  if (fontstyle_list[i] != "Regular" && fontstyle_list[i] != "Bold")
+    if (fontfamilysuffix != "")
+      SetFontNames(fontfamily + fontfamilysuffix + "-" + fontstyle_list[i], \\
+                    fontfamily + " " + fontfamilysuffix + " " + fontstyle_list[i], \\
+                    fontfamily + " " + fontfamilysuffix + " " + fontstyle_list[i], \\
+                    fontstyle_list[i], \\
+                    copyright, version)
+    else
+      SetFontNames(fontfamily + "-" + fontstyle_list[i], \\
+                    fontfamily + " " + fontstyle_list[i], \\
+                    fontfamily + " " + fontstyle_list[i], \\
+                    fontstyle_list[i], \\
+                    copyright, version)
+    endif
+    
+    SetTTFName(0x409, 2, "Regular")
   else
-        SetFontNames(fontfamily + "-" + fontstyle_list[i], \\
-                     fontfamily, \\
-                     fontfamily + " " + fontstyle_list[i], \\
-                     fontstyle_list[i], \\
-                     copyright, version)
+    if (fontfamilysuffix != "")
+      SetFontNames(fontfamily + fontfamilysuffix + "-" + fontstyle_list[i], \\
+                    fontfamily + " " + fontfamilysuffix, \\
+                    fontfamily + " " + fontfamilysuffix + " " + fontstyle_list[i], \\
+                    fontstyle_list[i], \\
+                    copyright, version)
+    else
+      SetFontNames(fontfamily + "-" + fontstyle_list[i], \\
+                    fontfamily, \\
+                    fontfamily + " " + fontstyle_list[i], \\
+                    fontstyle_list[i], \\
+                    copyright, version)
+    endif
+
+    SetTTFName(0x409, 2, fontstyle_list[i])
   endif
-  SetTTFName(0x409, 2, fontstyle_list[i])
+
+  if (fontfamilysuffix != "")
+    SetTTFName(0x409, 16, fontfamily + " " + fontfamilysuffix)
+  else
+    SetTTFName(0x409, 16, fontfamily)
+  endif
+  SetTTFName(0x409, 17, fontstyle_list[i])
+
   SetTTFName(0x409, 3, "FontForge 2.0 : " + \$fullname + " : " + Strftime("%d-%m-%Y", 0))
+
   ScaleToEm(${em_ascent}, ${em_descent})
   SetOS2Value("Weight", fontweight_list[i]) # Book or Bold
   SetOS2Value("Width",                   5) # Medium
@@ -2616,13 +2950,19 @@ cat > ${tmpdir}/${plemoljp35_console_generator} << _EOT_
 Print("Generate PlemolJP Console")
 
 # Set parameters
-hack_list  = ["${tmpdir}/${modified_hack35_console_regular}", \\
+hack_list  = ["${tmpdir}/${modified_hack35_console_thin}", \\
+                     "${tmpdir}/${modified_hack35_console_extralight}", \\
+                     "${tmpdir}/${modified_hack35_console_light}", \\
+                     "${tmpdir}/${modified_hack35_console_regular}", \\
+                     "${tmpdir}/${modified_hack35_console_text}", \\
+                     "${tmpdir}/${modified_hack35_console_medium}", \\
+                     "${tmpdir}/${modified_hack35_console_semibold}", \\
                      "${tmpdir}/${modified_hack35_console_bold}"]
 fontfamily        = "${plemoljp35_familyname}"
 fontfamilysuffix  = "${plemoljp_console_suffix}"
-fontstyle_list    = ["Regular", "Bold"]
-fontweight_list   = [400,       700]
-panoseweight_list = [5,         8]
+fontstyle_list    = ["Thin", "ExtraLight", "Light", "Regular", "Text", "Medium", "SemiBold", "Bold"]
+fontweight_list   = [100, 200, 300, 400, 450, 500, 600, 700]
+panoseweight_list = [3, 3, 4, 5, 5, 6, 7, 8]
 copyright         = "Copyright (c) 2019, Yuko Otawara"
 version           = "${plemoljp_version}"
 
@@ -2636,21 +2976,49 @@ while (i < SizeOf(fontstyle_list))
   Reencode("unicode")
 
   # Set configuration
-  if (fontfamilysuffix != "")
-        SetFontNames(fontfamily + fontfamilysuffix + "-" + fontstyle_list[i], \\
-                     fontfamily + " " + fontfamilysuffix, \\
-                     fontfamily + " " + fontfamilysuffix + " " + fontstyle_list[i], \\
-                     fontstyle_list[i], \\
-                     copyright, version)
+  if (fontstyle_list[i] != "Regular" && fontstyle_list[i] != "Bold")
+    if (fontfamilysuffix != "")
+      SetFontNames(fontfamily + fontfamilysuffix + "-" + fontstyle_list[i], \\
+                    fontfamily + " " + fontfamilysuffix + " " + fontstyle_list[i], \\
+                    fontfamily + " " + fontfamilysuffix + " " + fontstyle_list[i], \\
+                    fontstyle_list[i], \\
+                    copyright, version)
+    else
+      SetFontNames(fontfamily + "-" + fontstyle_list[i], \\
+                    fontfamily + " " + fontstyle_list[i], \\
+                    fontfamily + " " + fontstyle_list[i], \\
+                    fontstyle_list[i], \\
+                    copyright, version)
+    endif
+    
+    SetTTFName(0x409, 2, "Regular")
   else
-        SetFontNames(fontfamily + "-" + fontstyle_list[i], \\
-                     fontfamily, \\
-                     fontfamily + " " + fontstyle_list[i], \\
-                     fontstyle_list[i], \\
-                     copyright, version)
+    if (fontfamilysuffix != "")
+      SetFontNames(fontfamily + fontfamilysuffix + "-" + fontstyle_list[i], \\
+                    fontfamily + " " + fontfamilysuffix, \\
+                    fontfamily + " " + fontfamilysuffix + " " + fontstyle_list[i], \\
+                    fontstyle_list[i], \\
+                    copyright, version)
+    else
+      SetFontNames(fontfamily + "-" + fontstyle_list[i], \\
+                    fontfamily, \\
+                    fontfamily + " " + fontstyle_list[i], \\
+                    fontstyle_list[i], \\
+                    copyright, version)
+    endif
+
+    SetTTFName(0x409, 2, fontstyle_list[i])
   endif
-  SetTTFName(0x409, 2, fontstyle_list[i])
+
+  if (fontfamilysuffix != "")
+    SetTTFName(0x409, 16, fontfamily + " " + fontfamilysuffix)
+  else
+    SetTTFName(0x409, 16, fontfamily)
+  endif
+  SetTTFName(0x409, 17, fontstyle_list[i])
+
   SetTTFName(0x409, 3, "FontForge 2.0 : " + \$fullname + " : " + Strftime("%d-%m-%Y", 0))
+
   ScaleToEm(${em_ascent}, ${em_descent})
   SetOS2Value("Weight", fontweight_list[i]) # Book or Bold
   SetOS2Value("Width",                   5) # Medium
@@ -2734,10 +3102,10 @@ $fontforge_command -script ${tmpdir}/${modified_genjyuu_generator} 2> $redirecti
 # $fontforge_command -script ${tmpdir}/${modified_hack35_evacuate_from_hinting_generator} 2> $redirection_stderr || exit 4
 
 # Generate IBMPlexMono box drawing light symbols
-$fontforge_command -script ${tmpdir}/${modified_hack_box_drawing_light_generator} 2> $redirection_stderr || exit 4
+# $fontforge_command -script ${tmpdir}/${modified_hack_box_drawing_light_generator} 2> $redirection_stderr || exit 4
 
 # Generate IBMPlexMono 35 box drawing light evacuation symbols
-$fontforge_command -script ${tmpdir}/${modified_hack35_box_drawing_light_generator} 2> $redirection_stderr || exit 4
+# $fontforge_command -script ${tmpdir}/${modified_hack35_box_drawing_light_generator} 2> $redirection_stderr || exit 4
 
 # Generate Modified GenJyuu Console
 $fontforge_command -script ${tmpdir}/${modified_genjyuu_console_generator} 2> $redirection_stderr || exit 4
@@ -2785,39 +3153,69 @@ $fontforge_command -script ${tmpdir}/${plemoljp35_console_generator} 2> $redirec
 # $fontforge_command -script ${tmpdir}/${plemoljp35_evacuate_from_hinting_generator} 2> $redirection_stderr || exit 4
 
 # Generate PlemolJP box drawing light symbols from hinting
-$fontforge_command -script ${tmpdir}/${plemoljp_box_drawing_light_generator} 2> $redirection_stderr || exit 4
+# $fontforge_command -script ${tmpdir}/${plemoljp_box_drawing_light_generator} 2> $redirection_stderr || exit 4
 
 # Generate PlemolJP35 box drawing light symbols from hinting
-$fontforge_command -script ${tmpdir}/${plemoljp35_box_drawing_light_generator} 2> $redirection_stderr || exit 4
+# $fontforge_command -script ${tmpdir}/${plemoljp35_box_drawing_light_generator} 2> $redirection_stderr || exit 4
 
-# Add hinting PlemolJP Regular
-for f in ${plemoljp_familyname}-Regular.ttf ${plemoljp_familyname}${plemoljp_console_suffix}-Regular.ttf
+# Add hinting
+for w in Thin ExtraLight Light Regular Text Medium SemiBold Bold
 do
-  ttfautohint -l 6 -r 45 -a qsq -D latn -W -X "13-15" -I "$f" "hinted_${f}"
-done
-# Add hinting PlemolJP Bold
-for f in ${plemoljp_familyname}-Bold.ttf ${plemoljp_familyname}${plemoljp_console_suffix}-Bold.ttf
-do
-  ttfautohint -l 6 -r 45 -a qsq -D latn -W -X "13-15" -I "$f" "hinted_${f}"
-done
-# Add hinting PlemolJP35 Regular
-for f in ${plemoljp35_familyname}-Regular.ttf ${plemoljp35_familyname}${plemoljp_console_suffix}-Regular.ttf
-do
-  ttfautohint -l 6 -r 45 -a qsq -D latn -W -X "13-15" -I "$f" "hinted_${f}"
-done
-# Add hinting PlemolJP35 Bold
-for f in ${plemoljp35_familyname}-Bold.ttf ${plemoljp35_familyname}${plemoljp_console_suffix}-Bold.ttf
-do
-  ttfautohint -l 6 -r 45 -a qsq -D latn -W -X "13-15" -I "$f" "hinted_${f}"
+  # PlemolJP
+  for f in ${plemoljp_familyname}-${w}.ttf ${plemoljp_familyname}${plemoljp_console_suffix}-${w}.ttf
+  do
+    ttfautohint -l 6 -r 45 -a qsq -D latn -W -X "13-15" -I "$f" "hinted_${f}"
+  done
+  # PlemolJP35
+  for f in ${plemoljp35_familyname}-${w}.ttf ${plemoljp35_familyname}${plemoljp_console_suffix}-${w}.ttf
+  do
+    ttfautohint -l 6 -r 45 -a qsq -D latn -W -X "13-15" -I "$f" "hinted_${f}"
+  done
 done
 
-for style in Regular Bold
+for style in Thin ExtraLight Light Regular Text Medium SemiBold Bold
 do
+  if [ "${style}" = 'Thin' ]; then
+    marge_genjyuu_regular="${tmpdir}/${modified_genjyuu_thin}.ttf"
+    marge_genjyuu_console_regular="${tmpdir}/${modified_genjyuu_console_thin}.ttf"
+    marge_genjyuu35_regular="${tmpdir}/${modified_genjyuu35_thin}.ttf"
+    marge_genjyuu35_console_regular="${tmpdir}/${modified_genjyuu35_console_thin}.ttf"
+  fi
+  if [ "${style}" = 'ExtraLight' ]; then
+    marge_genjyuu_regular="${tmpdir}/${modified_genjyuu_extralight}.ttf"
+    marge_genjyuu_console_regular="${tmpdir}/${modified_genjyuu_console_extralight}.ttf"
+    marge_genjyuu35_regular="${tmpdir}/${modified_genjyuu35_extralight}.ttf"
+    marge_genjyuu35_console_regular="${tmpdir}/${modified_genjyuu35_console_extralight}.ttf"
+  fi
+  if [ "${style}" = 'Light' ]; then
+    marge_genjyuu_regular="${tmpdir}/${modified_genjyuu_light}.ttf"
+    marge_genjyuu_console_regular="${tmpdir}/${modified_genjyuu_console_light}.ttf"
+    marge_genjyuu35_regular="${tmpdir}/${modified_genjyuu35_light}.ttf"
+    marge_genjyuu35_console_regular="${tmpdir}/${modified_genjyuu35_console_light}.ttf"
+  fi
   if [ "${style}" = 'Regular' ]; then
     marge_genjyuu_regular="${tmpdir}/${modified_genjyuu_regular}.ttf"
     marge_genjyuu_console_regular="${tmpdir}/${modified_genjyuu_console_regular}.ttf"
     marge_genjyuu35_regular="${tmpdir}/${modified_genjyuu35_regular}.ttf"
     marge_genjyuu35_console_regular="${tmpdir}/${modified_genjyuu35_console_regular}.ttf"
+  fi
+  if [ "${style}" = 'Text' ]; then
+    marge_genjyuu_regular="${tmpdir}/${modified_genjyuu_text}.ttf"
+    marge_genjyuu_console_regular="${tmpdir}/${modified_genjyuu_console_text}.ttf"
+    marge_genjyuu35_regular="${tmpdir}/${modified_genjyuu35_text}.ttf"
+    marge_genjyuu35_console_regular="${tmpdir}/${modified_genjyuu35_console_text}.ttf"
+  fi
+  if [ "${style}" = 'Medium' ]; then
+    marge_genjyuu_regular="${tmpdir}/${modified_genjyuu_medium}.ttf"
+    marge_genjyuu_console_regular="${tmpdir}/${modified_genjyuu_console_medium}.ttf"
+    marge_genjyuu35_regular="${tmpdir}/${modified_genjyuu35_medium}.ttf"
+    marge_genjyuu35_console_regular="${tmpdir}/${modified_genjyuu35_console_medium}.ttf"
+  fi
+  if [ "${style}" = 'SemiBold' ]; then
+    marge_genjyuu_regular="${tmpdir}/${modified_genjyuu_semibold}.ttf"
+    marge_genjyuu_console_regular="${tmpdir}/${modified_genjyuu_console_semibold}.ttf"
+    marge_genjyuu35_regular="${tmpdir}/${modified_genjyuu35_semibold}.ttf"
+    marge_genjyuu35_console_regular="${tmpdir}/${modified_genjyuu35_console_semibold}.ttf"
   fi
   if [ "${style}" = 'Bold' ]; then
     marge_genjyuu_regular="${tmpdir}/${modified_genjyuu_bold}.ttf"
