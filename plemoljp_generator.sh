@@ -54,7 +54,7 @@ redirection_stderr="/dev/null"
 fonts_directories="${base_dir}/source/ ${base_dir}/source/IBM-Plex-Mono/ ${base_dir}/source/IBM-Plex-Sans-JP/unhinted/"
 
 # Set zenkaku space glyph
-zenkaku_space_glyph=""
+zenkaku_space_glyph="true"
 
 # Set flags
 leaving_tmp_flag="false"
@@ -1414,17 +1414,13 @@ while (i < SizeOf(input_list))
   Print("Half SetWidth end")
 
   # Edit zenkaku space (from ballot box and heavy greek cross)
-  if ("${zenkaku_space_glyph}" != "0u3000")
+  if ("${zenkaku_space_glyph}" == "true")
         Print("Edit zenkaku space")
-        if ("${zenkaku_space_glyph}" == "")
-            Select(0u25A1); Copy(); Select(0u3000); Paste(); ExpandStroke(20, 0, 0, 0, 1)
-            Select(0u254B); Copy(); Select(0uFFFE); Paste(); Scale(180); Copy()
-            Select(0u3000); PasteInto()
-            Select(0uFFFE); Clear(); Select(0u3000);
-            OverlapIntersect()
-        else
-            Select(${zenkaku_space_glyph}); Copy(); Select(0u3000); Paste()
-        endif
+        Select(0u25A1); Copy(); Select(0u3000); Paste(); ExpandStroke(20, 0, 0, 0, 1)
+        Select(0u254B); Copy(); Select(0uFFFE); Paste(); Scale(180); Copy()
+        Select(0u3000); PasteInto()
+        Select(0uFFFE); Clear(); Select(0u3000);
+        OverlapIntersect()
   endif
 
   # broken bar は IBMPlexMono ベースにする
@@ -1607,17 +1603,13 @@ while (i < SizeOf(input_list))
   Print("Half SetWidth end")
 
   # Edit zenkaku space (from ballot box and heavy greek cross)
-  if ("${zenkaku_space_glyph}" != "0u3000")
+  if ("${zenkaku_space_glyph}" == "true")
         Print("Edit zenkaku space")
-        if ("${zenkaku_space_glyph}" == "")
-            Select(0u25A1); Copy(); Select(0u3000); Paste(); ExpandStroke(20, 0, 0, 0, 1)
-            Select(0u254B); Copy(); Select(0uFFFE); Paste(); Scale(180); Copy()
-            Select(0u3000); PasteInto()
-            Select(0uFFFE); Clear(); Select(0u3000);
-            OverlapIntersect()
-        else
-            Select(${zenkaku_space_glyph}); Copy(); Select(0u3000); Paste()
-        endif
+        Select(0u25A1); Copy(); Select(0u3000); Paste(); ExpandStroke(20, 0, 0, 0, 1)
+        Select(0u254B); Copy(); Select(0uFFFE); Paste(); Scale(180); Copy()
+        Select(0u3000); PasteInto()
+        Select(0uFFFE); Clear(); Select(0u3000);
+        OverlapIntersect()
   endif
 
   # broken bar は IBMPlexMono ベースにする
