@@ -1,15 +1,32 @@
 #!/bin/sh
 
 base_dir=$(cd $(dirname $0); pwd)
+
+# オプション解析
+HIDDEN_SPACE_FLG='false'
+while getopts h OPT
+do
+  case $OPT in
+    'h' ) HIDDEN_SPACE_FLG='true';;
+  esac
+done
+
+if [ "$HIDDEN_SPACE_FLG" = 'true' ]; then
+  echo '### Generate Hidden Space Version ###'
+fi
+
 # PlemolJP Generator
 plemoljp_version="0.0.3"
 
 # Set familyname
-familyname_preffix="$1"
-plemoljp_familyname=${familyname_preffix}"PlemolJP"
-plemoljp_familyname_suffix=""
+hs_suffix=''
+if [ "$HIDDEN_SPACE_FLG" = 'true' ]; then
+  hs_suffix='HS'
+fi
+plemoljp_familyname="PlemolJP"
+plemoljp_familyname_suffix="${hs_suffix}"
 plemoljp35_familyname=${plemoljp_familyname}"35"
-plemoljp35_familyname_suffix=""
+plemoljp35_familyname_suffix="${hs_suffix}"
 plemoljp_console_suffix="Console"
 plemoljp_evacuation_nerd_familyname="Evacuation${plemoljp_familyname}Nerd"
 plemoljp35_evacuation_nerd_familyname="Evacuation${plemoljp35_familyname}Nerd"
@@ -53,16 +70,8 @@ redirection_stderr="/dev/null"
 # Set fonts directories used in auto flag
 fonts_directories="${base_dir}/source/ ${base_dir}/source/IBM-Plex-Mono/ ${base_dir}/source/IBM-Plex-Sans-JP/unhinted/"
 
-# Set zenkaku space glyph
-zenkaku_space_glyph="true"
-
 # Set flags
 leaving_tmp_flag="false"
-fullwidth_ambiguous_flag="true"
-scaling_down_flag="true"
-
-# Set non-Discorded characters
-non_discorded_characters=""
 
 # Set filenames
 hack_thin_src="IBMPlexMono-Thin.ttf"
@@ -1414,7 +1423,7 @@ while (i < SizeOf(input_list))
   Print("Half SetWidth end")
 
   # Edit zenkaku space (from ballot box and heavy greek cross)
-  if ("${zenkaku_space_glyph}" == "true")
+  if ("${HIDDEN_SPACE_FLG}" != "true")
         Print("Edit zenkaku space")
         Select(0u25A1); Copy(); Select(0u3000); Paste(); ExpandStroke(20, 0, 0, 0, 1)
         Select(0u254B); Copy(); Select(0uFFFE); Paste(); Scale(180); Copy()
@@ -1603,7 +1612,7 @@ while (i < SizeOf(input_list))
   Print("Half SetWidth end")
 
   # Edit zenkaku space (from ballot box and heavy greek cross)
-  if ("${zenkaku_space_glyph}" == "true")
+  if ("${HIDDEN_SPACE_FLG}" != "true")
         Print("Edit zenkaku space")
         Select(0u25A1); Copy(); Select(0u3000); Paste(); ExpandStroke(20, 0, 0, 0, 1)
         Select(0u254B); Copy(); Select(0uFFFE); Paste(); Scale(180); Copy()
@@ -2709,7 +2718,8 @@ hack_list  = ["${tmpdir}/${modified_hack_console_thin}", \\
                      "${tmpdir}/${modified_hack_console_semibold}", \\
                      "${tmpdir}/${modified_hack_console_bold}"]
 fontfamily        = "${plemoljp_familyname}"
-fontfamilysuffix  = "${plemoljp_console_suffix}"
+fontfamilysuffix_nonspace = "${plemoljp_console_suffix}${hs_suffix}"
+fontfamilysuffix_inspace  = "${plemoljp_console_suffix} ${hs_suffix}"
 fontstyle_list    = ["Thin", "ExtraLight", "Light", "Regular", "Text", "Medium", "SemiBold", "Bold"]
 fontweight_list   = [100, 200, 300, 400, 450, 500, 600, 700]
 panoseweight_list = [3, 3, 4, 5, 5, 6, 7, 8]
@@ -2727,10 +2737,10 @@ while (i < SizeOf(fontstyle_list))
 
   # Set configuration
   if (fontstyle_list[i] != "Regular" && fontstyle_list[i] != "Bold")
-    if (fontfamilysuffix != "")
-      SetFontNames(fontfamily + fontfamilysuffix + "-" + fontstyle_list[i], \\
-                    fontfamily + " " + fontfamilysuffix + " " + fontstyle_list[i], \\
-                    fontfamily + " " + fontfamilysuffix + " " + fontstyle_list[i], \\
+    if (fontfamilysuffix_nonspace != "")
+      SetFontNames(fontfamily + fontfamilysuffix_nonspace + "-" + fontstyle_list[i], \\
+                    fontfamily + " " + fontfamilysuffix_inspace + " " + fontstyle_list[i], \\
+                    fontfamily + " " + fontfamilysuffix_inspace + " " + fontstyle_list[i], \\
                     fontstyle_list[i], \\
                     copyright, version)
     else
@@ -2743,10 +2753,10 @@ while (i < SizeOf(fontstyle_list))
     
     SetTTFName(0x409, 2, "Regular")
   else
-    if (fontfamilysuffix != "")
-      SetFontNames(fontfamily + fontfamilysuffix + "-" + fontstyle_list[i], \\
-                    fontfamily + " " + fontfamilysuffix, \\
-                    fontfamily + " " + fontfamilysuffix + " " + fontstyle_list[i], \\
+    if (fontfamilysuffix_nonspace != "")
+      SetFontNames(fontfamily + fontfamilysuffix_nonspace + "-" + fontstyle_list[i], \\
+                    fontfamily + " " + fontfamilysuffix_inspace, \\
+                    fontfamily + " " + fontfamilysuffix_inspace + " " + fontstyle_list[i], \\
                     fontstyle_list[i], \\
                     copyright, version)
     else
@@ -2760,8 +2770,8 @@ while (i < SizeOf(fontstyle_list))
     SetTTFName(0x409, 2, fontstyle_list[i])
   endif
 
-  if (fontfamilysuffix != "")
-    SetTTFName(0x409, 16, fontfamily + " " + fontfamilysuffix)
+  if (fontfamilysuffix_nonspace != "")
+    SetTTFName(0x409, 16, fontfamily + " " + fontfamilysuffix_inspace)
   else
     SetTTFName(0x409, 16, fontfamily)
   endif
@@ -2796,9 +2806,9 @@ while (i < SizeOf(fontstyle_list))
   MergeFonts(hack_list[i])
 
   # Save PlemolJP
-  if (fontfamilysuffix != "")
-        Print("Save " + fontfamily + fontfamilysuffix + "-" + fontstyle_list[i] + ".ttf")
-        Generate("${base_dir}/" + fontfamily + fontfamilysuffix + "-" + fontstyle_list[i] + ".ttf", "")
+  if (fontfamilysuffix_nonspace != "")
+        Print("Save " + fontfamily + fontfamilysuffix_nonspace + "-" + fontstyle_list[i] + ".ttf")
+        Generate("${base_dir}/" + fontfamily + fontfamilysuffix_nonspace + "-" + fontstyle_list[i] + ".ttf", "")
   else
         Print("Save " + fontfamily + "-" + fontstyle_list[i] + ".ttf")
         Generate("${base_dir}/" + fontfamily + "-" + fontstyle_list[i] + ".ttf", "")
@@ -2953,7 +2963,8 @@ hack_list  = ["${tmpdir}/${modified_hack35_console_thin}", \\
                      "${tmpdir}/${modified_hack35_console_semibold}", \\
                      "${tmpdir}/${modified_hack35_console_bold}"]
 fontfamily        = "${plemoljp35_familyname}"
-fontfamilysuffix  = "${plemoljp_console_suffix}"
+fontfamilysuffix_nonspace = "${plemoljp_console_suffix}${hs_suffix}"
+fontfamilysuffix_inspace  = "${plemoljp_console_suffix} ${hs_suffix}"
 fontstyle_list    = ["Thin", "ExtraLight", "Light", "Regular", "Text", "Medium", "SemiBold", "Bold"]
 fontweight_list   = [100, 200, 300, 400, 450, 500, 600, 700]
 panoseweight_list = [3, 3, 4, 5, 5, 6, 7, 8]
@@ -2971,10 +2982,10 @@ while (i < SizeOf(fontstyle_list))
 
   # Set configuration
   if (fontstyle_list[i] != "Regular" && fontstyle_list[i] != "Bold")
-    if (fontfamilysuffix != "")
-      SetFontNames(fontfamily + fontfamilysuffix + "-" + fontstyle_list[i], \\
-                    fontfamily + " " + fontfamilysuffix + " " + fontstyle_list[i], \\
-                    fontfamily + " " + fontfamilysuffix + " " + fontstyle_list[i], \\
+    if (fontfamilysuffix_nonspace != "")
+      SetFontNames(fontfamily + fontfamilysuffix_nonspace + "-" + fontstyle_list[i], \\
+                    fontfamily + " " + fontfamilysuffix_inspace + " " + fontstyle_list[i], \\
+                    fontfamily + " " + fontfamilysuffix_inspace + " " + fontstyle_list[i], \\
                     fontstyle_list[i], \\
                     copyright, version)
     else
@@ -2987,10 +2998,10 @@ while (i < SizeOf(fontstyle_list))
     
     SetTTFName(0x409, 2, "Regular")
   else
-    if (fontfamilysuffix != "")
-      SetFontNames(fontfamily + fontfamilysuffix + "-" + fontstyle_list[i], \\
-                    fontfamily + " " + fontfamilysuffix, \\
-                    fontfamily + " " + fontfamilysuffix + " " + fontstyle_list[i], \\
+    if (fontfamilysuffix_nonspace != "")
+      SetFontNames(fontfamily + fontfamilysuffix_nonspace + "-" + fontstyle_list[i], \\
+                    fontfamily + " " + fontfamilysuffix_inspace, \\
+                    fontfamily + " " + fontfamilysuffix_inspace + " " + fontstyle_list[i], \\
                     fontstyle_list[i], \\
                     copyright, version)
     else
@@ -3004,8 +3015,8 @@ while (i < SizeOf(fontstyle_list))
     SetTTFName(0x409, 2, fontstyle_list[i])
   endif
 
-  if (fontfamilysuffix != "")
-    SetTTFName(0x409, 16, fontfamily + " " + fontfamilysuffix)
+  if (fontfamilysuffix_nonspace != "")
+    SetTTFName(0x409, 16, fontfamily + " " + fontfamilysuffix_inspace)
   else
     SetTTFName(0x409, 16, fontfamily)
   endif
@@ -3040,9 +3051,9 @@ while (i < SizeOf(fontstyle_list))
   MergeFonts(hack_list[i])
 
   # Save PlemolJP
-  if (fontfamilysuffix != "")
-        Print("Save " + fontfamily + fontfamilysuffix + "-" + fontstyle_list[i] + ".ttf")
-        Generate("${base_dir}/" + fontfamily + fontfamilysuffix + "-" + fontstyle_list[i] + ".ttf", "")
+  if (fontfamilysuffix_nonspace != "")
+        Print("Save " + fontfamily + fontfamilysuffix_nonspace + "-" + fontstyle_list[i] + ".ttf")
+        Generate("${base_dir}/" + fontfamily + fontfamilysuffix_nonspace + "-" + fontstyle_list[i] + ".ttf", "")
   else
         Print("Save " + fontfamily + "-" + fontstyle_list[i] + ".ttf")
         Generate("${base_dir}/" + fontfamily + "-" + fontstyle_list[i] + ".ttf", "")
@@ -3152,23 +3163,31 @@ $fontforge_command -script ${tmpdir}/${plemoljp35_console_generator} 2> $redirec
 # Generate PlemolJP35 box drawing light symbols from hinting
 # $fontforge_command -script ${tmpdir}/${plemoljp35_box_drawing_light_generator} 2> $redirection_stderr || exit 4
 
-# Add hinting
-for w in Thin ExtraLight Light Regular Text Medium SemiBold Bold
+
+for style in Thin ExtraLight Light Regular Text Medium SemiBold Bold
 do
+  plemoljp_filename="${plemoljp_familyname}${plemoljp_familyname_suffix}-${style}.ttf"
+  plemoljp_console_filename="${plemoljp_familyname}${plemoljp_console_suffix}${hs_suffix}-${style}.ttf"
+  plemoljp35_filename="${plemoljp35_familyname}${plemoljp_familyname_suffix}-${style}.ttf"
+  plemoljp35_console_filename="${plemoljp35_familyname}${plemoljp_console_suffix}${hs_suffix}-${style}.ttf"
+
+  plemoljp_nerd_filename="${plemoljp_nerd_familyname}-${style}.ttf"
+  plemoljp_nerd_console_filename="${plemoljp_nerd_familyname}${plemoljp_console_suffix}-${style}.ttf"
+  plemoljp35_nerd_filename="${plemoljp35_nerd_familyname}-${style}.ttf"
+  plemoljp35_nerd_console_filename="${plemoljp35_nerd_familyname}${plemoljp_console_suffix}-${style}.ttf"
+
+  # Add hinting
   # PlemolJP
-  for f in ${plemoljp_familyname}-${w}.ttf ${plemoljp_familyname}${plemoljp_console_suffix}-${w}.ttf
+  for f in "$plemoljp_filename" "$plemoljp_console_filename"
   do
     ttfautohint -l 6 -r 45 -a qsq -D latn -W -X "13-15" -I "$f" "hinted_${f}"
   done
   # PlemolJP35
-  for f in ${plemoljp35_familyname}-${w}.ttf ${plemoljp35_familyname}${plemoljp_console_suffix}-${w}.ttf
+  for f in "$plemoljp35_filename" "$plemoljp35_console_filename"
   do
     ttfautohint -l 6 -r 45 -a qsq -D latn -W -X "13-15" -I "$f" "hinted_${f}"
   done
-done
 
-for style in Thin ExtraLight Light Regular Text Medium SemiBold Bold
-do
   if [ "${style}" = 'Thin' ]; then
     marge_genjyuu_regular="${tmpdir}/${modified_genjyuu_thin}.ttf"
     marge_genjyuu_console_regular="${tmpdir}/${modified_genjyuu_console_thin}.ttf"
@@ -3217,16 +3236,6 @@ do
     marge_genjyuu35_regular="${tmpdir}/${modified_genjyuu35_bold}.ttf"
     marge_genjyuu35_console_regular="${tmpdir}/${modified_genjyuu35_console_bold}.ttf"
   fi
-
-  plemoljp_filename="${plemoljp_familyname}-${style}.ttf"
-  plemoljp_console_filename="${plemoljp_familyname}${plemoljp_console_suffix}-${style}.ttf"
-  plemoljp35_filename="${plemoljp35_familyname}-${style}.ttf"
-  plemoljp35_console_filename="${plemoljp35_familyname}${plemoljp_console_suffix}-${style}.ttf"
-
-  plemoljp_nerd_filename="${plemoljp_nerd_familyname}-${style}.ttf"
-  plemoljp_nerd_console_filename="${plemoljp_nerd_familyname}${plemoljp_console_suffix}-${style}.ttf"
-  plemoljp35_nerd_filename="${plemoljp35_nerd_familyname}-${style}.ttf"
-  plemoljp35_nerd_console_filename="${plemoljp35_nerd_familyname}${plemoljp_console_suffix}-${style}.ttf"
 
   # PlemolJP
   echo "pyftmerge: ${plemoljp_filename}"
