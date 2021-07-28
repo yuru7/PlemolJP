@@ -61,7 +61,7 @@ fontforge_command="fontforge"
 ttfautohint_command="ttfautohint"
 
 # Set redirection of stderr
-redirection_stderr="/dev/null"
+redirection_stderr="${base_dir}/error.log"
 
 # Set fonts directories used in auto flag
 fonts_directories="${base_dir}/source/ ${base_dir}/source/IBM-Plex-Mono/ ${base_dir}/source/IBM-Plex-Sans-JP/unhinted/"
@@ -682,38 +682,54 @@ while (i < end_hack)
 endloop
 Close()
 
-# Begin loop of regular and bold
+# Begin loop
+i = 0
+end_genjyuu = 1115564
+i_halfwidth = 0
+halfwidth_array = Array(10000)
+Print("Half width check loop start")
+Open(input_list[0])
+while (i < end_genjyuu)
+      if ( i % 10000 == 0 )
+        Print("Processing progress: " + i)
+      endif
+      if (WorthOutputting(i) && (i > end_hack || hack_exist_glyph_array[i] == 0))
+        Select(i)
+        glyphWidth = GlyphInfo("Width")
+        if (glyphWidth <= ${plemoljp_half_width})
+          halfwidth_array[i_halfwidth] = i
+          i_halfwidth = i_halfwidth + 1
+        endif
+      endif
+      i = i + 1
+endloop
+Close()
+Print("Half width check loop end")
+
 i = 0
 while (i < SizeOf(input_list))
   # Open IBMPlexSansJP
   Print("Open " + input_list[i])
   Open(input_list[i])
-
   SelectWorthOutputting()
   UnlinkReference()
   ScaleToEm(${em_ascent}, ${em_descent})
 
+  SelectNone()
+
+  Print("Remove IBMPlexMono Glyphs start")
   ii = 0
-  end_genjyuu = end_hack
-  halfwidth_array = Array(end_genjyuu)
-  i_halfwidth = 0
-  Print("Half width check loop start")
-  while ( ii < end_genjyuu )
+  while ( ii < end_hack )
       if ( ii % 5000 == 0 )
         Print("Processing progress: " + ii)
       endif
-      if (WorthOutputting(ii))
-        Select(ii)
-        if (hack_exist_glyph_array[ii] == 1)
-          Clear()
-        elseif (GlyphInfo("Width")<${plemoljp_half_width})
-          halfwidth_array[i_halfwidth] = ii
-          i_halfwidth = i_halfwidth + 1
-        endif
+      if (WorthOutputting(ii) && hack_exist_glyph_array[ii] == 1)
+        SelectMore(ii)
       endif
       ii = ii + 1
   endloop
-  Print("Half width check loop end")
+  Clear()
+  Print("Remove IBMPlexMono Glyphs end")
 
   Print("Full SetWidth start")
   move_pt = $(((${plemoljp_full_width} - ${genjyuu_width}) / 2)) # 26
@@ -872,7 +888,30 @@ while (i < end_hack)
 endloop
 Close()
 
-# Begin loop of regular and bold
+# Begin loop
+i = 0
+end_genjyuu = 1115564
+i_halfwidth = 0
+halfwidth_array = Array(10000)
+Print("Half width check loop start")
+Open(input_list[0])
+while (i < end_genjyuu)
+      if ( i % 10000 == 0 )
+        Print("Processing progress: " + i)
+      endif
+      if (WorthOutputting(i) && (i > end_hack || hack_exist_glyph_array[i] == 0))
+        Select(i)
+        glyphWidth = GlyphInfo("Width")
+        if (glyphWidth <= ${plemoljp_half_width})
+          halfwidth_array[i_halfwidth] = i
+          i_halfwidth = i_halfwidth + 1
+        endif
+      endif
+      i = i + 1
+endloop
+Close()
+Print("Half width check loop end")
+
 i = 0
 while (i < SizeOf(input_list))
   # Open IBMPlexSansJP
@@ -882,27 +921,21 @@ while (i < SizeOf(input_list))
   UnlinkReference()
   ScaleToEm(${em_ascent}, ${em_descent})
 
+  SelectNone()
+
+  Print("Remove IBMPlexMono Glyphs start")
   ii = 0
-  end_genjyuu = end_hack
-  halfwidth_array = Array(end_genjyuu)
-  i_halfwidth = 0
-  Print("Half width check loop start")
-  while ( ii < end_genjyuu )
+  while ( ii < end_hack )
       if ( ii % 5000 == 0 )
         Print("Processing progress: " + ii)
       endif
-      if (WorthOutputting(ii))
-        Select(ii)
-        if (hack_exist_glyph_array[ii] == 1)
-          Clear()
-        elseif (GlyphInfo("Width")<${plemoljp_half_width})
-          halfwidth_array[i_halfwidth] = ii
-          i_halfwidth = i_halfwidth + 1
-        endif
+      if (WorthOutputting(ii) && hack_exist_glyph_array[ii] == 1)
+        SelectMore(ii)
       endif
       ii = ii + 1
   endloop
-  Print("Half width check loop end")
+  Clear()
+  Print("Remove IBMPlexMono Glyphs end")
 
   Print("Full SetWidth start")
   move_pt = $(((${plemoljp35_full_width} - ${genjyuu_width}) / 2)) # 3
