@@ -341,7 +341,72 @@ select_glyph_is_not_console="
   SelectFewer(0u2219)
   SelectFewer(0u25d8)
   SelectFewer(0u25e6)
-  "
+  ## IBM Plex Sans JP 等幅化対策 (IBM Plex Mono を適用して半角化)
+  SelectFewer(171)
+  SelectFewer(187)
+"
+
+# IBM Plex Sans JP 等幅化対策 (全角左寄せの除外)
+set_full_left_fewer="
+  SelectFewer(8217)
+  SelectFewer(8218)
+  SelectFewer(8221)
+  SelectFewer(8222)
+"
+
+# IBM Plex Sans JP 等幅化対策 (Widthを全角にしてからセンタリング)
+set_width_full_and_center="
+  SelectNone()
+  SelectMore(204)
+  SelectMore(205)
+  SelectMore(206)
+  SelectMore(207)
+  SelectMore(231)
+  SelectMore(236)
+  SelectMore(237)
+  SelectMore(238)
+  SelectMore(239)
+  SelectMore(253)
+  SelectMore(255)
+  SelectMore(305)
+  SelectMore(322)
+  SelectMore(353)
+  SelectMore(382)
+  SelectMore(402)
+  SelectMore(773)
+  SelectMore(8209)
+  SelectMore(8254)
+"
+
+# IBM Plex Sans JP 等幅化対策 (半角左寄せ対象をセンタリングから除外する)
+set_half_left_fewer="
+  SelectFewer(65377)
+  SelectFewer(65379)
+  SelectFewer(65380)
+  SelectFewer(65438)
+  SelectFewer(65439)
+  SelectFewer(1114333)
+  SelectFewer(1114335)
+  SelectFewer(1114337)
+  SelectFewer(1114339)
+  SelectFewer(1114341)
+"
+
+# IBM Plex Sans JP 等幅化対策 (半角右寄せ対象をセンタリングから除外する)
+set_half_right_fewer="
+  SelectFewer(65378)
+  SelectFewer(1114332)
+  SelectFewer(1114334)
+  SelectFewer(1114336)
+  SelectFewer(1114338)
+  SelectFewer(1114340)
+"
+
+# IBM Plex Sans JP 等幅化対策 (全角化しつつ右寄せをセンタリングから除外する)
+set_half_to_full_right_fewer="
+  SelectFewer(8216)
+  SelectFewer(8220)
+"
 
 ########################################
 # Generate script for modified IBMPlexMono Material
@@ -698,7 +763,7 @@ while (i < end_genjyuu)
       if (WorthOutputting(i) && (i > end_hack || hack_exist_glyph_array[i] == 0))
         Select(i)
         glyphWidth = GlyphInfo("Width")
-        if (glyphWidth <= ${plemoljp_half_width})
+        if (glyphWidth < ${plemoljp_half_width})
           halfwidth_array[i_halfwidth] = i
           i_halfwidth = i_halfwidth + 1
         elseif (glyphWidth == 1000)
@@ -760,6 +825,7 @@ while (i < SizeOf(input_list))
       SelectFewer(width1000_array[ii])
       ii = ii + 1
   endloop
+  $set_full_left_fewer
   SetWidth(width_pt)
   CenterInWidth()
   Print("Full SetWidth end")
@@ -774,10 +840,65 @@ while (i < SizeOf(input_list))
       SelectMore(halfwidth_array[ii])
       ii = ii + 1
   endloop
+  $set_half_left_fewer
+  $set_half_right_fewer
+  $set_half_to_full_right_fewer
   #Move(move_pt, 0)
   SetWidth(width_pt)
   CenterInWidth()
   Print("Half SetWidth end")
+
+  $set_width_full_and_center
+  SetWidth($plemoljp_full_width)
+  CenterInWidth()
+  # IBM Plex Sans JP 等幅化対策 (半角左寄せ)
+  half_left_list = [65377, 65379, 65380, 65438, 65439, 1114333, 1114335, 1114337, 1114339, 1114341]
+  ii = 0
+  while (ii < SizeOf(half_left_list))
+    Select(half_left_list[ii])
+    SetWidth(${genjyuu_width} / 2)
+    move_pt = (${plemoljp_half_width} - GlyphInfo('Width')) / 2
+    Move(move_pt, 0)
+    SetWidth(${plemoljp_half_width})
+    ii = ii + 1
+  endloop
+  # IBM Plex Sans JP 等幅化対策 (全角左寄せ)
+  full_left_list = [8217 ,8218 ,8221 ,8222]
+  ii = 0
+  while (ii < SizeOf(full_left_list))
+    Select(full_left_list[ii])
+    SetWidth(${genjyuu_width})
+    move_pt = (${plemoljp_full_width} - GlyphInfo('Width')) / 2
+    Move(move_pt, 0)
+    SetWidth(${plemoljp_full_width})
+    ii = ii + 1
+  endloop
+  # IBM Plex Sans JP 等幅化対策 (半角右寄せ)
+  full_right_list = [65378, 1114332, 1114334, 1114336, 1114338, 1114340]
+  ii = 0
+  while (ii < SizeOf(full_right_list))
+    Select(full_right_list[ii])
+    move_pt = (${genjyuu_width} / 2) - GlyphInfo('Width')
+    Move(move_pt, 0)
+    SetWidth(${genjyuu_width} / 2)
+    move_pt = (${plemoljp_half_width} - GlyphInfo('Width')) / 2
+    Move(move_pt, 0)
+    SetWidth(${plemoljp_half_width})
+    ii = ii + 1
+  endloop
+  # IBM Plex Sans JP 等幅化対策 (全角化して右寄せ)
+  half_to_full_right_list = [8216, 8220]
+  ii = 0
+  while (ii < SizeOf(half_to_full_right_list))
+    Select(half_to_full_right_list[ii])
+    move_pt = ${genjyuu_width} - GlyphInfo('Width')
+    Move(move_pt, 0)
+    SetWidth(${genjyuu_width})
+    move_pt = (${plemoljp_full_width} - GlyphInfo('Width')) / 2
+    Move(move_pt, 0)
+    SetWidth(${plemoljp_full_width})
+    ii = ii + 1
+  endloop
 
   # Edit zenkaku space (from ballot box and heavy greek cross)
   if ("${HIDDEN_SPACE_FLG}" != "true")
@@ -924,7 +1045,7 @@ while (i < end_genjyuu)
       if (WorthOutputting(i) && (i > end_hack || hack_exist_glyph_array[i] == 0))
         Select(i)
         glyphWidth = GlyphInfo("Width")
-        if (glyphWidth <= ${plemoljp_half_width})
+        if (glyphWidth < ${plemoljp_half_width})
           halfwidth_array[i_halfwidth] = i
           i_halfwidth = i_halfwidth + 1
         elseif (glyphWidth == 1000)
@@ -986,6 +1107,7 @@ while (i < SizeOf(input_list))
       SelectFewer(width1000_array[ii])
       ii = ii + 1
   endloop
+  $set_full_left_fewer
   SetWidth(width_pt)
   CenterInWidth()
   Print("Full SetWidth end")
@@ -1000,10 +1122,65 @@ while (i < SizeOf(input_list))
       SelectMore(halfwidth_array[ii])
       ii = ii + 1
   endloop
+  $set_half_left_fewer
+  $set_half_right_fewer
+  $set_half_to_full_right_fewer
   #Move(move_pt, 0)
   SetWidth(width_pt)
   CenterInWidth()
   Print("Half SetWidth end")
+
+  $set_width_full_and_center
+  SetWidth($plemoljp35_full_width)
+  CenterInWidth()
+  # IBM Plex Sans JP 等幅化対策 (半角左寄せ)
+  half_left_list = [65377, 65379, 65380, 65438, 65439, 1114333, 1114335, 1114337, 1114339, 1114341]
+  ii = 0
+  while (ii < SizeOf(half_left_list))
+    Select(half_left_list[ii])
+    SetWidth(${genjyuu_width} / 2)
+    move_pt = (${plemoljp35_half_width} - GlyphInfo('Width')) / 2
+    Move(move_pt, 0)
+    SetWidth(${plemoljp35_half_width})
+    ii = ii + 1
+  endloop
+  # IBM Plex Sans JP 等幅化対策 (全角左寄せ)
+  full_left_list = [8217 ,8218 ,8221 ,8222]
+  ii = 0
+  while (ii < SizeOf(full_left_list))
+    Select(full_left_list[ii])
+    SetWidth(${genjyuu_width})
+    move_pt = (${plemoljp35_full_width} - GlyphInfo('Width')) / 2
+    Move(move_pt, 0)
+    SetWidth(${plemoljp35_full_width})
+    ii = ii + 1
+  endloop
+  # IBM Plex Sans JP 等幅化対策 (半角右寄せ)
+  full_right_list = [65378, 1114332, 1114334, 1114336, 1114338, 1114340]
+  ii = 0
+  while (ii < SizeOf(full_right_list))
+    Select(full_right_list[ii])
+    move_pt = (${genjyuu_width} / 2) - GlyphInfo('Width')
+    Move(move_pt, 0)
+    SetWidth(${genjyuu_width} / 2)
+    move_pt = (${plemoljp35_half_width} - GlyphInfo('Width')) / 2
+    Move(move_pt, 0)
+    SetWidth(${plemoljp35_half_width})
+    ii = ii + 1
+  endloop
+  # IBM Plex Sans JP 等幅化対策 (全角化して右寄せ)
+  half_to_full_right_list = [8216, 8220]
+  ii = 0
+  while (ii < SizeOf(half_to_full_right_list))
+    Select(half_to_full_right_list[ii])
+    move_pt = ${genjyuu_width} - GlyphInfo('Width')
+    Move(move_pt, 0)
+    SetWidth(${genjyuu_width})
+    move_pt = (${plemoljp35_full_width} - GlyphInfo('Width')) / 2
+    Move(move_pt, 0)
+    SetWidth(${plemoljp35_full_width})
+    ii = ii + 1
+  endloop
 
   # Edit zenkaku space (from ballot box and heavy greek cross)
   if ("${HIDDEN_SPACE_FLG}" != "true")
