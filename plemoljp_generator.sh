@@ -686,7 +686,9 @@ Close()
 i = 0
 end_genjyuu = 1115564
 i_halfwidth = 0
+i_width1000 = 0
 halfwidth_array = Array(10000)
+width1000_array = Array(10000)
 Print("Half width check loop start")
 Open(input_list[0])
 while (i < end_genjyuu)
@@ -699,6 +701,9 @@ while (i < end_genjyuu)
         if (glyphWidth <= ${plemoljp_half_width})
           halfwidth_array[i_halfwidth] = i
           i_halfwidth = i_halfwidth + 1
+        elseif (glyphWidth == 1000)
+          width1000_array[i_width1000] = i
+          i_width1000 = i_width1000 + 1
         endif
       endif
       i = i + 1
@@ -734,13 +739,27 @@ while (i < SizeOf(input_list))
   Print("Full SetWidth start")
   move_pt = $(((${plemoljp_full_width} - ${genjyuu_width}) / 2)) # 26
   width_pt = ${plemoljp_full_width} # 1076
+
+  SelectNone()
+  ii=0
+  while (ii < i_width1000)
+      SelectMore(width1000_array[ii])
+      ii = ii + 1
+  endloop
+  Move(move_pt, 0)
+  SetWidth(width_pt)
+  
   SelectWorthOutputting()
   ii=0
   while (ii < i_halfwidth)
       SelectFewer(halfwidth_array[ii])
       ii = ii + 1
   endloop
-  #Move(move_pt, 0)
+  ii=0
+  while (ii < i_width1000)
+      SelectFewer(width1000_array[ii])
+      ii = ii + 1
+  endloop
   SetWidth(width_pt)
   CenterInWidth()
   Print("Full SetWidth end")
@@ -755,8 +774,9 @@ while (i < SizeOf(input_list))
       SelectMore(halfwidth_array[ii])
       ii = ii + 1
   endloop
-  Move(move_pt, 0)
+  #Move(move_pt, 0)
   SetWidth(width_pt)
+  CenterInWidth()
   Print("Half SetWidth end")
 
   # Edit zenkaku space (from ballot box and heavy greek cross)
@@ -892,7 +912,9 @@ Close()
 i = 0
 end_genjyuu = 1115564
 i_halfwidth = 0
+i_width1000 = 0
 halfwidth_array = Array(10000)
+width1000_array = Array(10000)
 Print("Half width check loop start")
 Open(input_list[0])
 while (i < end_genjyuu)
@@ -905,6 +927,9 @@ while (i < end_genjyuu)
         if (glyphWidth <= ${plemoljp_half_width})
           halfwidth_array[i_halfwidth] = i
           i_halfwidth = i_halfwidth + 1
+        elseif (glyphWidth == 1000)
+          width1000_array[i_width1000] = i
+          i_width1000 = i_width1000 + 1
         endif
       endif
       i = i + 1
@@ -940,13 +965,27 @@ while (i < SizeOf(input_list))
   Print("Full SetWidth start")
   move_pt = $(((${plemoljp35_full_width} - ${genjyuu_width}) / 2)) # 3
   width_pt = ${plemoljp35_full_width} # 1030
+
+  SelectNone()
+  ii=0
+  while (ii < i_width1000)
+      SelectMore(width1000_array[ii])
+      ii = ii + 1
+  endloop
+  Move(move_pt, 0)
+  SetWidth(width_pt)
+  
   SelectWorthOutputting()
   ii=0
   while (ii < i_halfwidth)
       SelectFewer(halfwidth_array[ii])
       ii = ii + 1
   endloop
-  #Move(move_pt, 0)
+  ii=0
+  while (ii < i_width1000)
+      SelectFewer(width1000_array[ii])
+      ii = ii + 1
+  endloop
   SetWidth(width_pt)
   CenterInWidth()
   Print("Full SetWidth end")
@@ -961,8 +1000,9 @@ while (i < SizeOf(input_list))
       SelectMore(halfwidth_array[ii])
       ii = ii + 1
   endloop
-  Move(move_pt, 0)
+  #Move(move_pt, 0)
   SetWidth(width_pt)
+  CenterInWidth()
   Print("Half SetWidth end")
 
   # Edit zenkaku space (from ballot box and heavy greek cross)
