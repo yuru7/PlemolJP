@@ -1,5 +1,8 @@
 #!/bin/sh
 
+# PlemolJP Generator
+plemoljp_version="0.0.4"
+
 base_dir=$(cd $(dirname $0); pwd)
 
 # オプション解析
@@ -14,9 +17,6 @@ done
 if [ "$HIDDEN_SPACE_FLG" = 'true' ]; then
   echo '### Generate Hidden Space Version ###'
 fi
-
-# PlemolJP Generator
-plemoljp_version="0.0.3"
 
 # Set familyname
 hs_suffix=''
