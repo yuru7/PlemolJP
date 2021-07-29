@@ -28,10 +28,6 @@ plemoljp_familyname_suffix="${hs_suffix}"
 plemoljp35_familyname=${plemoljp_familyname}"35"
 plemoljp35_familyname_suffix="${hs_suffix}"
 plemoljp_console_suffix="Console"
-plemoljp_evacuation_symbol_familyname=${plemoljp_familyname}"EvacuationSymbol"
-plemoljp35_evacuation_symbol_familyname=${plemoljp35_familyname}"EvacuationSymbol"
-plemoljp_box_drawing_light_familyname=${plemoljp_familyname}"BoxDrawingLight"
-plemoljp35_box_drawing_light_familyname=${plemoljp35_familyname}"BoxDrawingLight"
 
 # Set ascent and descent (line width parameters)
 plemoljp_ascent=950
@@ -56,6 +52,8 @@ plexmono_shrink_y=93
 plemoljp35_half_width=600
 plemoljp35_full_width=$((${plemoljp35_half_width} * 5 / 3))
 
+italic_angle=-9
+
 # Set path to fontforge command
 fontforge_command="fontforge"
 ttfautohint_command="ttfautohint"
@@ -78,6 +76,14 @@ plexmono_text_src="IBMPlexMono-Text.ttf"
 plexmono_medium_src="IBMPlexMono-Medium.ttf"
 plexmono_semibold_src="IBMPlexMono-SemiBold.ttf"
 plexmono_bold_src="IBMPlexMono-Bold.ttf"
+plexmono_thin_italic_src="IBMPlexMono-ThinItalic.ttf"
+plexmono_extralight_italic_src="IBMPlexMono-ExtraLightItalic.ttf"
+plexmono_light_italic_src="IBMPlexMono-LightItalic.ttf"
+plexmono_regular_italic_src="IBMPlexMono-Italic.ttf"
+plexmono_text_italic_src="IBMPlexMono-TextItalic.ttf"
+plexmono_medium_italic_src="IBMPlexMono-MediumItalic.ttf"
+plexmono_semibold_italic_src="IBMPlexMono-SemiBoldItalic.ttf"
+plexmono_bold_italic_src="IBMPlexMono-BoldItalic.ttf"
 
 plexjp_thin_src="IBMPlexSansJP-Thin.ttf"
 plexjp_extralight_src="IBMPlexSansJP-ExtraLight.ttf"
@@ -87,6 +93,14 @@ plexjp_text_src="IBMPlexSansJP-Text.ttf"
 plexjp_medium_src="IBMPlexSansJP-Medium.ttf"
 plexjp_semibold_src="IBMPlexSansJP-SemiBold.ttf"
 plexjp_bold_src="IBMPlexSansJP-Bold.ttf"
+plexjp_thin_italic_src="IBMPlexSansJP-ThinItalic.ttf"
+plexjp_extralight_italic_src="IBMPlexSansJP-ExtraLightItalic.ttf"
+plexjp_light_italic_src="IBMPlexSansJP-LightItalic.ttf"
+plexjp_regular_italic_src="IBMPlexSansJP-Italic.ttf"
+plexjp_text_italic_src="IBMPlexSansJP-TextItalic.ttf"
+plexjp_medium_italic_src="IBMPlexSansJP-MediumItalic.ttf"
+plexjp_semibold_italic_src="IBMPlexSansJP-SemiBoldItalic.ttf"
+plexjp_bold_italic_src="IBMPlexSansJP-BoldItalic.ttf"
 
 modified_plexmono_material_generator="modified_plexmono_material_generator.pe"
 modified_plexmono_material_thin="Modified-IBMPlexMono-Material-thin.sfd"
@@ -97,6 +111,14 @@ modified_plexmono_material_text="Modified-IBMPlexMono-Material-text.sfd"
 modified_plexmono_material_medium="Modified-IBMPlexMono-Material-medium.sfd"
 modified_plexmono_material_semibold="Modified-IBMPlexMono-Material-semiBold.sfd"
 modified_plexmono_material_bold="Modified-IBMPlexMono-Material-Bold.sfd"
+modified_plexmono_material_thin_italic="Modified-IBMPlexMono-Material-thin_italic.sfd"
+modified_plexmono_material_extralight_italic="Modified-IBMPlexMono-Material-extralight_italic.sfd"
+modified_plexmono_material_light_italic="Modified-IBMPlexMono-Material-light_italic.sfd"
+modified_plexmono_material_regular_italic="Modified-IBMPlexMono-Material-Regular_italic.sfd"
+modified_plexmono_material_text_italic="Modified-IBMPlexMono-Material-text_italic.sfd"
+modified_plexmono_material_medium_italic="Modified-IBMPlexMono-Material-medium_italic.sfd"
+modified_plexmono_material_semibold_italic="Modified-IBMPlexMono-Material-semiBold_italic.sfd"
+modified_plexmono_material_bold_italic="Modified-IBMPlexMono-Material-Bold_italic.sfd"
 
 modified_plexmono_console_generator="modified_plexmono_console_generator.pe"
 modified_plexmono_console_thin="Modified-IBMPlexMono-Console-thin.sfd"
@@ -107,6 +129,14 @@ modified_plexmono_console_text="Modified-IBMPlexMono-Console-text.sfd"
 modified_plexmono_console_medium="Modified-IBMPlexMono-Console-medium.sfd"
 modified_plexmono_console_semibold="Modified-IBMPlexMono-Console-semiBold.sfd"
 modified_plexmono_console_bold="Modified-IBMPlexMono-Console-Bold.sfd"
+modified_plexmono_console_thin_italic="Modified-IBMPlexMono-Console-thin_italic.sfd"
+modified_plexmono_console_extralight_italic="Modified-IBMPlexMono-Console-extralight_italic.sfd"
+modified_plexmono_console_light_italic="Modified-IBMPlexMono-Console-light_italic.sfd"
+modified_plexmono_console_regular_italic="Modified-IBMPlexMono-Console-Regular_italic.sfd"
+modified_plexmono_console_text_italic="Modified-IBMPlexMono-Console-text_italic.sfd"
+modified_plexmono_console_medium_italic="Modified-IBMPlexMono-Console-medium_italic.sfd"
+modified_plexmono_console_semibold_italic="Modified-IBMPlexMono-Console-semiBold_italic.sfd"
+modified_plexmono_console_bold_italic="Modified-IBMPlexMono-Console-Bold_italic.sfd"
 
 modified_plexmono35_console_generator="modified_plexmono35_console_generator.pe"
 modified_plexmono35_console_thin="Modified-IBMPlexMono35-Console-thin.sfd"
@@ -117,6 +147,14 @@ modified_plexmono35_console_text="Modified-IBMPlexMono35-Console-text.sfd"
 modified_plexmono35_console_medium="Modified-IBMPlexMono35-Console-medium.sfd"
 modified_plexmono35_console_semibold="Modified-IBMPlexMono35-Console-semiBold.sfd"
 modified_plexmono35_console_bold="Modified-IBMPlexMono35-Console-Bold.sfd"
+modified_plexmono35_console_thin_italic="Modified-IBMPlexMono35-Console-thin_italic.sfd"
+modified_plexmono35_console_extralight_italic="Modified-IBMPlexMono35-Console-extralight_italic.sfd"
+modified_plexmono35_console_light_italic="Modified-IBMPlexMono35-Console-light_italic.sfd"
+modified_plexmono35_console_regular_italic="Modified-IBMPlexMono35-Console-Regular_italic.sfd"
+modified_plexmono35_console_text_italic="Modified-IBMPlexMono35-Console-text_italic.sfd"
+modified_plexmono35_console_medium_italic="Modified-IBMPlexMono35-Console-medium_italic.sfd"
+modified_plexmono35_console_semibold_italic="Modified-IBMPlexMono35-Console-semiBold_italic.sfd"
+modified_plexmono35_console_bold_italic="Modified-IBMPlexMono35-Console-Bold_italic.sfd"
 
 modified_plexmono_generator="modified_plexmono_generator.pe"
 modified_plexmono_thin="Modified-IBMPlexMono-thin.sfd"
@@ -127,6 +165,14 @@ modified_plexmono_text="Modified-IBMPlexMono-text.sfd"
 modified_plexmono_medium="Modified-IBMPlexMono-medium.sfd"
 modified_plexmono_semibold="Modified-IBMPlexMono-semiBold.sfd"
 modified_plexmono_bold="Modified-IBMPlexMono-Bold.sfd"
+modified_plexmono_thin_italic="Modified-IBMPlexMono-thin_italic.sfd"
+modified_plexmono_extralight_italic="Modified-IBMPlexMono-extralight_italic.sfd"
+modified_plexmono_light_italic="Modified-IBMPlexMono-light_italic.sfd"
+modified_plexmono_regular_italic="Modified-IBMPlexMono-Regular_italic.sfd"
+modified_plexmono_text_italic="Modified-IBMPlexMono-text_italic.sfd"
+modified_plexmono_medium_italic="Modified-IBMPlexMono-medium_italic.sfd"
+modified_plexmono_semibold_italic="Modified-IBMPlexMono-semiBold_italic.sfd"
+modified_plexmono_bold_italic="Modified-IBMPlexMono-Bold_italic.sfd"
 
 modified_plexmono35_generator="modified_plexmono35_generator.pe"
 modified_plexmono35_thin="Modified-IBMPlexMono35-thin.sfd"
@@ -137,6 +183,14 @@ modified_plexmono35_text="Modified-IBMPlexMono35-text.sfd"
 modified_plexmono35_medium="Modified-IBMPlexMono35-medium.sfd"
 modified_plexmono35_semibold="Modified-IBMPlexMono35-semiBold.sfd"
 modified_plexmono35_bold="Modified-IBMPlexMono35-Bold.sfd"
+modified_plexmono35_thin_italic="Modified-IBMPlexMono35-thin_italic.sfd"
+modified_plexmono35_extralight_italic="Modified-IBMPlexMono35-extralight_italic.sfd"
+modified_plexmono35_light_italic="Modified-IBMPlexMono35-light_italic.sfd"
+modified_plexmono35_regular_italic="Modified-IBMPlexMono35-Regular_italic.sfd"
+modified_plexmono35_text_italic="Modified-IBMPlexMono35-text_italic.sfd"
+modified_plexmono35_medium_italic="Modified-IBMPlexMono35-medium_italic.sfd"
+modified_plexmono35_semibold_italic="Modified-IBMPlexMono35-semiBold_italic.sfd"
+modified_plexmono35_bold_italic="Modified-IBMPlexMono35-Bold_italic.sfd"
 
 modified_plexjp_generator="modified_plexjp_generator.pe"
 modified_plexjp_thin="Modified-IBMPlexSansJP-thin.sfd"
@@ -147,6 +201,14 @@ modified_plexjp_text="Modified-IBMPlexSansJP-text.sfd"
 modified_plexjp_medium="Modified-IBMPlexSansJP-medium.sfd"
 modified_plexjp_semibold="Modified-IBMPlexSansJP-semibold.sfd"
 modified_plexjp_bold="Modified-IBMPlexSansJP-bold.sfd"
+modified_plexjp_thin_italic="Modified-IBMPlexSansJP-thin_italic.sfd"
+modified_plexjp_extralight_italic="Modified-IBMPlexSansJP-extralight_italic.sfd"
+modified_plexjp_light_italic="Modified-IBMPlexSansJP-light_italic.sfd"
+modified_plexjp_regular_italic="Modified-IBMPlexSansJP-regular_italic.sfd"
+modified_plexjp_text_italic="Modified-IBMPlexSansJP-text_italic.sfd"
+modified_plexjp_medium_italic="Modified-IBMPlexSansJP-medium_italic.sfd"
+modified_plexjp_semibold_italic="Modified-IBMPlexSansJP-semibold_italic.sfd"
+modified_plexjp_bold_italic="Modified-IBMPlexSansJP-bold_italic.sfd"
 
 modified_plexjp35_generator="modified_plexjp35_generator.pe"
 modified_plexjp35_thin="Modified-IBMPlexSansJP35-thin.sfd"
@@ -157,6 +219,14 @@ modified_plexjp35_text="Modified-IBMPlexSansJP35-Monospace-text.sfd"
 modified_plexjp35_medium="Modified-IBMPlexSansJP35-medium.sfd"
 modified_plexjp35_semibold="Modified-IBMPlexSansJP35-semibold.sfd"
 modified_plexjp35_bold="Modified-IBMPlexSansJP35-Monospace-bold.sfd"
+modified_plexjp35_thin_italic="Modified-IBMPlexSansJP35-thin_italic.sfd"
+modified_plexjp35_extralight_italic="Modified-IBMPlexSansJP35-extralight_italic.sfd"
+modified_plexjp35_light_italic="Modified-IBMPlexSansJP35-light_italic.sfd"
+modified_plexjp35_regular_italic="Modified-IBMPlexSansJP35-Monospace-regular_italic.sfd"
+modified_plexjp35_text_italic="Modified-IBMPlexSansJP35-Monospace-text_italic.sfd"
+modified_plexjp35_medium_italic="Modified-IBMPlexSansJP35-medium_italic.sfd"
+modified_plexjp35_semibold_italic="Modified-IBMPlexSansJP35-semibold_italic.sfd"
+modified_plexjp35_bold_italic="Modified-IBMPlexSansJP35-Monospace-bold_italic.sfd"
 
 modified_plexjp_console_generator="modified_plexjp_console_generator.pe"
 modified_plexjp_console_thin="Modified-IBMPlexSansJP-thin_console.sfd"
@@ -167,6 +237,14 @@ modified_plexjp_console_text="Modified-IBMPlexSansJP-text_console.sfd"
 modified_plexjp_console_medium="Modified-IBMPlexSansJP-medium_console.sfd"
 modified_plexjp_console_semibold="Modified-IBMPlexSansJP-semibold_console.sfd"
 modified_plexjp_console_bold="Modified-IBMPlexSansJP-bold_console.sfd"
+modified_plexjp_console_thin_italic="Modified-IBMPlexSansJP-thin_console_italic.sfd"
+modified_plexjp_console_extralight_italic="Modified-IBMPlexSansJP-extralight_console_italic.sfd"
+modified_plexjp_console_light_italic="Modified-IBMPlexSansJP-light_console_italic.sfd"
+modified_plexjp_console_regular_italic="Modified-IBMPlexSansJP-regular_console_italic.sfd"
+modified_plexjp_console_text_italic="Modified-IBMPlexSansJP-text_console_italic.sfd"
+modified_plexjp_console_medium_italic="Modified-IBMPlexSansJP-medium_console_italic.sfd"
+modified_plexjp_console_semibold_italic="Modified-IBMPlexSansJP-semibold_console_italic.sfd"
+modified_plexjp_console_bold_italic="Modified-IBMPlexSansJP-bold_console_italic.sfd"
 
 modified_plexjp35_console_generator="modified_plexjp35_console_generator.pe"
 modified_plexjp35_console_thin="Modified-IBMPlexSansJP-thin_console.sfd"
@@ -177,6 +255,14 @@ modified_plexjp35_console_text="Modified-IBMPlexSansJP35-Monospace-text_console.
 modified_plexjp35_console_medium="Modified-IBMPlexSansJP35-medium_console.sfd"
 modified_plexjp35_console_semibold="Modified-IBMPlexSansJP35-semibold_console.sfd"
 modified_plexjp35_console_bold="Modified-IBMPlexSansJP35-Monospace-bold_console.sfd"
+modified_plexjp35_console_thin_italic="Modified-IBMPlexSansJP-thin_console_italic.sfd"
+modified_plexjp35_console_extralight_italic="Modified-IBMPlexSansJP-extralight_console_italic.sfd"
+modified_plexjp35_console_light_italic="Modified-IBMPlexSansJP-light_console_italic.sfd"
+modified_plexjp35_console_regular_italic="Modified-IBMPlexSansJP35-Monospace-regular_console_italic.sfd"
+modified_plexjp35_console_text_italic="Modified-IBMPlexSansJP35-Monospace-text_console_italic.sfd"
+modified_plexjp35_console_medium_italic="Modified-IBMPlexSansJP35-medium_console_italic.sfd"
+modified_plexjp35_console_semibold_italic="Modified-IBMPlexSansJP35-semibold_console_italic.sfd"
+modified_plexjp35_console_bold_italic="Modified-IBMPlexSansJP35-Monospace-bold_console_italic.sfd"
 
 plemoljp_generator="plemoljp_generator.pe"
 plemoljp_console_generator="plemoljp_console_generator.pe"
@@ -200,6 +286,14 @@ input_plexmono_text=`find $fonts_directories -follow -name "$plexmono_text_src" 
 input_plexmono_medium=`find $fonts_directories -follow -name "$plexmono_medium_src" | head -n 1`
 input_plexmono_semibold=`find $fonts_directories -follow -name "$plexmono_semibold_src" | head -n 1`
 input_plexmono_bold=`find $fonts_directories -follow -name "$plexmono_bold_src" | head -n 1`
+input_plexmono_thin_italic=`find $fonts_directories -follow -name "$plexmono_thin_italic_src" | head -n 1`
+input_plexmono_extralight_italic=`find $fonts_directories -follow -name "$plexmono_extralight_italic_src" | head -n 1`
+input_plexmono_light_italic=`find $fonts_directories -follow -name "$plexmono_light_italic_src" | head -n 1`
+input_plexmono_regular_italic=`find $fonts_directories -follow -name "$plexmono_regular_italic_src" | head -n 1`
+input_plexmono_text_italic=`find $fonts_directories -follow -name "$plexmono_text_italic_src" | head -n 1`
+input_plexmono_medium_italic=`find $fonts_directories -follow -name "$plexmono_medium_italic_src" | head -n 1`
+input_plexmono_semibold_italic=`find $fonts_directories -follow -name "$plexmono_semibold_italic_src" | head -n 1`
+input_plexmono_bold_italic=`find $fonts_directories -follow -name "$plexmono_bold_italic_src" | head -n 1`
 
 if [ -z "${input_plexmono_regular}" -o -z "${input_plexmono_bold}" ]
 then
@@ -221,10 +315,6 @@ then
   echo "Error: $plexjp_regular_src and/or $plexjp_bold_src not found" >&2
   exit 1
 fi
-
-# Search improved legibility file
-input_improved_legibility_regular=`find $fonts_directories -follow -iname improved_legibility-Regular.sfd | head -n 1`
-input_improved_legibility_bold=`find $fonts_directories -follow -iname improved_legibility-Bold.sfd    | head -n 1`
 
 # Check filename
 [ "$(basename $input_plexmono_regular)" != "$plexmono_regular_src" ] &&
@@ -418,22 +508,42 @@ cat > ${tmpdir}/${modified_plexmono_material_generator} << _EOT_
 Print("Generate modified IBMPlexMono Material")
 
 # Set parameters
-input_list  = ["${input_plexmono_thin}", \\
-                  "${input_plexmono_extralight}", \\
-                  "${input_plexmono_light}", \\
-                  "${input_plexmono_regular}", \\
-                  "${input_plexmono_text}", \\
-                  "${input_plexmono_medium}", \\
-                  "${input_plexmono_semibold}", \\
-                  "${input_plexmono_bold}"]
-output_list = ["${modified_plexmono_material_thin}", \\
-                  "${modified_plexmono_material_extralight}", \\
-                  "${modified_plexmono_material_light}", \\
-                  "${modified_plexmono_material_regular}", \\
-                  "${modified_plexmono_material_text}", \\
-                  "${modified_plexmono_material_medium}", \\
-                  "${modified_plexmono_material_semibold}", \\
-                  "${modified_plexmono_material_bold}"]
+input_list  = [ \\
+                "${input_plexmono_thin}", \\
+                "${input_plexmono_extralight}", \\
+                "${input_plexmono_light}", \\
+                "${input_plexmono_regular}", \\
+                "${input_plexmono_text}", \\
+                "${input_plexmono_medium}", \\
+                "${input_plexmono_semibold}", \\
+                "${input_plexmono_bold}", \\
+                "${input_plexmono_thin_italic}", \\
+                "${input_plexmono_extralight_italic}", \\
+                "${input_plexmono_light_italic}", \\
+                "${input_plexmono_regular_italic}", \\
+                "${input_plexmono_text_italic}", \\
+                "${input_plexmono_medium_italic}", \\
+                "${input_plexmono_semibold_italic}", \\
+                "${input_plexmono_bold_italic}" \\
+              ]
+output_list = [ \\
+                "${modified_plexmono_material_thin}", \\
+                "${modified_plexmono_material_extralight}", \\
+                "${modified_plexmono_material_light}", \\
+                "${modified_plexmono_material_regular}", \\
+                "${modified_plexmono_material_text}", \\
+                "${modified_plexmono_material_medium}", \\
+                "${modified_plexmono_material_semibold}", \\
+                "${modified_plexmono_material_bold}", \\
+                "${modified_plexmono_material_thin_italic}", \\
+                "${modified_plexmono_material_extralight_italic}", \\
+                "${modified_plexmono_material_light_italic}", \\
+                "${modified_plexmono_material_regular_italic}", \\
+                "${modified_plexmono_material_text_italic}", \\
+                "${modified_plexmono_material_medium_italic}", \\
+                "${modified_plexmono_material_semibold_italic}", \\
+                "${modified_plexmono_material_bold_italic}" \\
+              ]
 
 # Begin loop of regular and bold
 i = 0
@@ -495,22 +605,42 @@ cat > ${tmpdir}/${modified_plexmono_console_generator} << _EOT_
 Print("Generate modified IBMPlexMono Console")
 
 # Set parameters
-input_list  = ["${tmpdir}/${modified_plexmono_material_thin}", \\
-                  "${tmpdir}/${modified_plexmono_material_extralight}", \\
-                  "${tmpdir}/${modified_plexmono_material_light}", \\
-                  "${tmpdir}/${modified_plexmono_material_regular}", \\
-                  "${tmpdir}/${modified_plexmono_material_text}", \\
-                  "${tmpdir}/${modified_plexmono_material_medium}", \\
-                  "${tmpdir}/${modified_plexmono_material_semibold}", \\
-                  "${tmpdir}/${modified_plexmono_material_bold}"]
-output_list = ["${modified_plexmono_console_thin}", \\
-                  "${modified_plexmono_console_extralight}", \\
-                  "${modified_plexmono_console_light}", \\
-                  "${modified_plexmono_console_regular}", \\
-                  "${modified_plexmono_console_text}", \\
-                  "${modified_plexmono_console_medium}", \\
-                  "${modified_plexmono_console_semibold}", \\
-                  "${modified_plexmono_console_bold}"]
+input_list  = [ \\
+                "${tmpdir}/${modified_plexmono_material_thin}", \\
+                "${tmpdir}/${modified_plexmono_material_extralight}", \\
+                "${tmpdir}/${modified_plexmono_material_light}", \\
+                "${tmpdir}/${modified_plexmono_material_regular}", \\
+                "${tmpdir}/${modified_plexmono_material_text}", \\
+                "${tmpdir}/${modified_plexmono_material_medium}", \\
+                "${tmpdir}/${modified_plexmono_material_semibold}", \\
+                "${tmpdir}/${modified_plexmono_material_bold}", \\
+                "${tmpdir}/${modified_plexmono_material_thin_italic}", \\
+                "${tmpdir}/${modified_plexmono_material_extralight_italic}", \\
+                "${tmpdir}/${modified_plexmono_material_light_italic}", \\
+                "${tmpdir}/${modified_plexmono_material_regular_italic}", \\
+                "${tmpdir}/${modified_plexmono_material_text_italic}", \\
+                "${tmpdir}/${modified_plexmono_material_medium_italic}", \\
+                "${tmpdir}/${modified_plexmono_material_semibold_italic}", \\
+                "${tmpdir}/${modified_plexmono_material_bold_italic}" \\
+              ]
+output_list = [ \\
+                "${modified_plexmono_console_thin}", \\
+                "${modified_plexmono_console_extralight}", \\
+                "${modified_plexmono_console_light}", \\
+                "${modified_plexmono_console_regular}", \\
+                "${modified_plexmono_console_text}", \\
+                "${modified_plexmono_console_medium}", \\
+                "${modified_plexmono_console_semibold}", \\
+                "${modified_plexmono_console_bold}", \\
+                "${modified_plexmono_console_thin_italic}", \\
+                "${modified_plexmono_console_extralight_italic}", \\
+                "${modified_plexmono_console_light_italic}", \\
+                "${modified_plexmono_console_regular_italic}", \\
+                "${modified_plexmono_console_text_italic}", \\
+                "${modified_plexmono_console_medium_italic}", \\
+                "${modified_plexmono_console_semibold_italic}", \\
+                "${modified_plexmono_console_bold_italic}" \\
+              ]
 
 # Begin loop of regular and bold
 i = 0
@@ -553,22 +683,42 @@ cat > ${tmpdir}/${modified_plexmono35_console_generator} << _EOT_
 Print("Generate modified IBMPlexMono35 Console")
 
 # Set parameters
-input_list  = ["${tmpdir}/${modified_plexmono_material_thin}", \\
-                  "${tmpdir}/${modified_plexmono_material_extralight}", \\
-                  "${tmpdir}/${modified_plexmono_material_light}", \\
-                  "${tmpdir}/${modified_plexmono_material_regular}", \\
-                  "${tmpdir}/${modified_plexmono_material_text}", \\
-                  "${tmpdir}/${modified_plexmono_material_medium}", \\
-                  "${tmpdir}/${modified_plexmono_material_semibold}", \\
-                  "${tmpdir}/${modified_plexmono_material_bold}"]
-output_list = ["${modified_plexmono35_console_thin}", \\
-                  "${modified_plexmono35_console_extralight}", \\
-                  "${modified_plexmono35_console_light}", \\
-                  "${modified_plexmono35_console_regular}", \\
-                  "${modified_plexmono35_console_text}", \\
-                  "${modified_plexmono35_console_medium}", \\
-                  "${modified_plexmono35_console_semibold}", \\
-                  "${modified_plexmono35_console_bold}"]
+input_list  = [ \\
+                "${tmpdir}/${modified_plexmono_material_thin}", \\
+                "${tmpdir}/${modified_plexmono_material_extralight}", \\
+                "${tmpdir}/${modified_plexmono_material_light}", \\
+                "${tmpdir}/${modified_plexmono_material_regular}", \\
+                "${tmpdir}/${modified_plexmono_material_text}", \\
+                "${tmpdir}/${modified_plexmono_material_medium}", \\
+                "${tmpdir}/${modified_plexmono_material_semibold}", \\
+                "${tmpdir}/${modified_plexmono_material_bold}", \\
+                "${tmpdir}/${modified_plexmono_material_thin_italic}", \\
+                "${tmpdir}/${modified_plexmono_material_extralight_italic}", \\
+                "${tmpdir}/${modified_plexmono_material_light_italic}", \\
+                "${tmpdir}/${modified_plexmono_material_regular_italic}", \\
+                "${tmpdir}/${modified_plexmono_material_text_italic}", \\
+                "${tmpdir}/${modified_plexmono_material_medium_italic}", \\
+                "${tmpdir}/${modified_plexmono_material_semibold_italic}", \\
+                "${tmpdir}/${modified_plexmono_material_bold_italic}" \\
+              ]
+output_list = [ \\
+                "${modified_plexmono35_console_thin}", \\
+                "${modified_plexmono35_console_extralight}", \\
+                "${modified_plexmono35_console_light}", \\
+                "${modified_plexmono35_console_regular}", \\
+                "${modified_plexmono35_console_text}", \\
+                "${modified_plexmono35_console_medium}", \\
+                "${modified_plexmono35_console_semibold}", \\
+                "${modified_plexmono35_console_bold}", \\
+                "${modified_plexmono35_console_thin_italic}", \\
+                "${modified_plexmono35_console_extralight_italic}", \\
+                "${modified_plexmono35_console_light_italic}", \\
+                "${modified_plexmono35_console_regular_italic}", \\
+                "${modified_plexmono35_console_text_italic}", \\
+                "${modified_plexmono35_console_medium_italic}", \\
+                "${modified_plexmono35_console_semibold_italic}", \\
+                "${modified_plexmono35_console_bold_italic}" \\
+              ]
 
 # Begin loop of regular and bold
 i = 0
@@ -609,22 +759,42 @@ cat > ${tmpdir}/${modified_plexmono_generator} << _EOT_
 Print("Generate modified IBMPlexMono")
 
 # Set parameters
-input_list  = ["${tmpdir}/${modified_plexmono_console_thin}", \\
-                  "${tmpdir}/${modified_plexmono_console_extralight}", \\
-                  "${tmpdir}/${modified_plexmono_console_light}", \\
-                  "${tmpdir}/${modified_plexmono_console_regular}", \\
-                  "${tmpdir}/${modified_plexmono_console_text}", \\
-                  "${tmpdir}/${modified_plexmono_console_medium}", \\
-                  "${tmpdir}/${modified_plexmono_console_semibold}", \\
-                  "${tmpdir}/${modified_plexmono_console_bold}"]
-output_list = ["${modified_plexmono_thin}", \\
-                  "${modified_plexmono_extralight}", \\
-                  "${modified_plexmono_light}", \\
-                  "${modified_plexmono_regular}", \\
-                  "${modified_plexmono_text}", \\
-                  "${modified_plexmono_medium}", \\
-                  "${modified_plexmono_semibold}", \\
-                  "${modified_plexmono_bold}"]
+input_list  = [ \\
+                "${tmpdir}/${modified_plexmono_console_thin}", \\
+                "${tmpdir}/${modified_plexmono_console_extralight}", \\
+                "${tmpdir}/${modified_plexmono_console_light}", \\
+                "${tmpdir}/${modified_plexmono_console_regular}", \\
+                "${tmpdir}/${modified_plexmono_console_text}", \\
+                "${tmpdir}/${modified_plexmono_console_medium}", \\
+                "${tmpdir}/${modified_plexmono_console_semibold}", \\
+                "${tmpdir}/${modified_plexmono_console_bold}", \\
+                "${tmpdir}/${modified_plexmono_console_thin_italic}", \\
+                "${tmpdir}/${modified_plexmono_console_extralight_italic}", \\
+                "${tmpdir}/${modified_plexmono_console_light_italic}", \\
+                "${tmpdir}/${modified_plexmono_console_regular_italic}", \\
+                "${tmpdir}/${modified_plexmono_console_text_italic}", \\
+                "${tmpdir}/${modified_plexmono_console_medium_italic}", \\
+                "${tmpdir}/${modified_plexmono_console_semibold_italic}", \\
+                "${tmpdir}/${modified_plexmono_console_bold_italic}" \\
+              ]
+output_list = [ \\
+                "${modified_plexmono_thin}", \\
+                "${modified_plexmono_extralight}", \\
+                "${modified_plexmono_light}", \\
+                "${modified_plexmono_regular}", \\
+                "${modified_plexmono_text}", \\
+                "${modified_plexmono_medium}", \\
+                "${modified_plexmono_semibold}", \\
+                "${modified_plexmono_bold}", \\
+                "${modified_plexmono_thin_italic}", \\
+                "${modified_plexmono_extralight_italic}", \\
+                "${modified_plexmono_light_italic}", \\
+                "${modified_plexmono_regular_italic}", \\
+                "${modified_plexmono_text_italic}", \\
+                "${modified_plexmono_medium_italic}", \\
+                "${modified_plexmono_semibold_italic}", \\
+                "${modified_plexmono_bold_italic}" \\
+              ]
 
 # Begin loop of regular and bold
 i = 0
@@ -658,22 +828,42 @@ cat > ${tmpdir}/${modified_plexmono35_generator} << _EOT_
 Print("Generate modified IBMPlexMono")
 
 # Set parameters
-input_list  = ["${tmpdir}/${modified_plexmono35_console_thin}", \\
-                  "${tmpdir}/${modified_plexmono35_console_extralight}", \\
-                  "${tmpdir}/${modified_plexmono35_console_light}", \\
-                  "${tmpdir}/${modified_plexmono35_console_regular}", \\
-                  "${tmpdir}/${modified_plexmono35_console_text}", \\
-                  "${tmpdir}/${modified_plexmono35_console_medium}", \\
-                  "${tmpdir}/${modified_plexmono35_console_semibold}", \\
-                  "${tmpdir}/${modified_plexmono35_console_bold}"]
-output_list = ["${modified_plexmono35_thin}", \\
-                  "${modified_plexmono35_extralight}", \\
-                  "${modified_plexmono35_light}", \\
-                  "${modified_plexmono35_regular}", \\
-                  "${modified_plexmono35_text}", \\
-                  "${modified_plexmono35_medium}", \\
-                  "${modified_plexmono35_semibold}", \\
-                  "${modified_plexmono35_bold}"]
+input_list  = [ \\
+                "${tmpdir}/${modified_plexmono35_console_thin}", \\
+                "${tmpdir}/${modified_plexmono35_console_extralight}", \\
+                "${tmpdir}/${modified_plexmono35_console_light}", \\
+                "${tmpdir}/${modified_plexmono35_console_regular}", \\
+                "${tmpdir}/${modified_plexmono35_console_text}", \\
+                "${tmpdir}/${modified_plexmono35_console_medium}", \\
+                "${tmpdir}/${modified_plexmono35_console_semibold}", \\
+                "${tmpdir}/${modified_plexmono35_console_bold}", \\
+                "${tmpdir}/${modified_plexmono35_console_thin_italic}", \\
+                "${tmpdir}/${modified_plexmono35_console_extralight_italic}", \\
+                "${tmpdir}/${modified_plexmono35_console_light_italic}", \\
+                "${tmpdir}/${modified_plexmono35_console_regular_italic}", \\
+                "${tmpdir}/${modified_plexmono35_console_text_italic}", \\
+                "${tmpdir}/${modified_plexmono35_console_medium_italic}", \\
+                "${tmpdir}/${modified_plexmono35_console_semibold_italic}", \\
+                "${tmpdir}/${modified_plexmono35_console_bold_italic}" \\
+              ]
+output_list = [ \\
+                "${modified_plexmono35_thin}", \\
+                "${modified_plexmono35_extralight}", \\
+                "${modified_plexmono35_light}", \\
+                "${modified_plexmono35_regular}", \\
+                "${modified_plexmono35_text}", \\
+                "${modified_plexmono35_medium}", \\
+                "${modified_plexmono35_semibold}", \\
+                "${modified_plexmono35_bold}", \\
+                "${modified_plexmono35_thin_italic}", \\
+                "${modified_plexmono35_extralight_italic}", \\
+                "${modified_plexmono35_light_italic}", \\
+                "${modified_plexmono35_regular_italic}", \\
+                "${modified_plexmono35_text_italic}", \\
+                "${modified_plexmono35_medium_italic}", \\
+                "${modified_plexmono35_semibold_italic}", \\
+                "${modified_plexmono35_bold_italic}" \\
+              ]
 
 # Begin loop of regular and bold
 i = 0
@@ -708,26 +898,97 @@ Print("Generate modified IBMPlexSansJP")
 
 # Set parameters
 plexmono = "${tmpdir}/${modified_plexmono_regular}"
-input_list  = ["${input_plexjp_thin}", \\
-                  "${input_plexjp_extralight}", \\
-                  "${input_plexjp_light}", \\
-                  "${input_plexjp_regular}", \\
-                  "${input_plexjp_text}", \\
-                  "${input_plexjp_medium}", \\
-                  "${input_plexjp_semibold}", \\
-                  "${input_plexjp_bold}"]
-output_list = ["${modified_plexjp_thin}", \\
-                  "${modified_plexjp_extralight}", \\
-                  "${modified_plexjp_light}", \\
-                  "${modified_plexjp_regular}", \\
-                  "${modified_plexjp_text}", \\
-                  "${modified_plexjp_medium}", \\
-                  "${modified_plexjp_semibold}", \\
-                  "${modified_plexjp_bold}"]
+input_list  = [ \\
+                "${input_plexjp_thin}", \\
+                "${input_plexjp_extralight}", \\
+                "${input_plexjp_light}", \\
+                "${input_plexjp_regular}", \\
+                "${input_plexjp_text}", \\
+                "${input_plexjp_medium}", \\
+                "${input_plexjp_semibold}", \\
+                "${input_plexjp_bold}", \\
+                "${input_plexjp_thin}", \\
+                "${input_plexjp_extralight}", \\
+                "${input_plexjp_light}", \\
+                "${input_plexjp_regular}", \\
+                "${input_plexjp_text}", \\
+                "${input_plexjp_medium}", \\
+                "${input_plexjp_semibold}", \\
+                "${input_plexjp_bold}" \\
+              ]
+output_list = [ \\
+                "${modified_plexjp_thin}", \\
+                "${modified_plexjp_extralight}", \\
+                "${modified_plexjp_light}", \\
+                "${modified_plexjp_regular}", \\
+                "${modified_plexjp_text}", \\
+                "${modified_plexjp_medium}", \\
+                "${modified_plexjp_semibold}", \\
+                "${modified_plexjp_bold}", \\
+                "${modified_plexjp_thin_italic}", \\
+                "${modified_plexjp_extralight_italic}", \\
+                "${modified_plexjp_light_italic}", \\
+                "${modified_plexjp_regular_italic}", \\
+                "${modified_plexjp_text_italic}", \\
+                "${modified_plexjp_medium_italic}", \\
+                "${modified_plexjp_semibold_italic}", \\
+                "${modified_plexjp_bold_italic}" \\
+              ]
 
-fontstyle_list    = ["Thin", "ExtraLight", "Light", "Regular", "Text", "Medium", "SemiBold", "Bold"]
-fontweight_list   = [100, 200, 300, 400, 450, 500, 600, 700]
-panoseweight_list = [3, 3, 4, 5, 5, 6, 7, 8]
+fontstyle_list    = [ \\
+                      "Thin", \\
+                      "ExtraLight", \\
+                      "Light", \\
+                      "Regular", \\
+                      "Text", \\
+                      "Medium", \\
+                      "SemiBold", \\
+                      "Bold", \\
+                      "Thin Italic", \\
+                      "ExtraLight Italic", \\
+                      "Light Italic", \\
+                      "Regular Italic", \\
+                      "Text Italic", \\
+                      "Medium Italic", \\
+                      "SemiBold Italic", \\
+                      "Bold Italic" \\
+                    ]
+fontweight_list   = [ \\
+                      100, \\
+                      200, \\
+                      300, \\
+                      400, \\
+                      450, \\
+                      500, \\
+                      600, \\
+                      700, \\
+                      100, \\
+                      200, \\
+                      300, \\
+                      400, \\
+                      450, \\
+                      500, \\
+                      600, \\
+                      700 \\
+                    ]
+panoseweight_list = [ \\
+                      3, \\
+                      3, \\
+                      4, \\
+                      5, \\
+                      5, \\
+                      6, \\
+                      7, \\
+                      8, \\
+                      3, \\
+                      3, \\
+                      4, \\
+                      5, \\
+                      5, \\
+                      6, \\
+                      7, \\
+                      8 \\
+                    ]
 
 Print("Get trim target glyph from IBMPlexMono")
 Open(plexmono)
@@ -784,6 +1045,11 @@ while (i < SizeOf(input_list))
   SelectWorthOutputting()
   UnlinkReference()
   ScaleToEm(${em_ascent}, ${em_descent})
+
+  # 斜体の生成
+  if (Strstr(fontstyle_list[i], 'Italic') >= 0)
+    Italic(${italic_angle})
+  endif
 
   SelectNone()
 
@@ -946,7 +1212,12 @@ while (i < SizeOf(input_list))
   # Set encoding to Unicode-bmp
   Reencode("unicode")
   # Set configuration
-  SetFontNames("modified-plexjp" + fontstyle_list[i])
+  if (Strstr(fontstyle_list[i], 'Italic') >= 0)
+    style_split = StrSplit(fontstyle_list[i], ' ')
+    SetFontNames("modified-plexjp" + style_split[0] + style_split[1])
+  else
+    SetFontNames("modified-plexjp" + fontstyle_list[i])
+  endif
   ScaleToEm(${em_ascent}, ${em_descent})
   SetOS2Value("Weight", fontweight_list[i]) # Book or Bold
   SetOS2Value("Width",                   5) # Medium
@@ -990,26 +1261,98 @@ Print("Generate modified IBMPlexSansJP - 35")
 
 # Set parameters
 plexmono = "${tmpdir}/${modified_plexmono35_regular}"
-input_list  = ["${input_plexjp_thin}", \\
-                  "${input_plexjp_extralight}", \\
-                  "${input_plexjp_light}", \\
-                  "${input_plexjp_regular}", \\
-                  "${input_plexjp_text}", \\
-                  "${input_plexjp_medium}", \\
-                  "${input_plexjp_semibold}", \\
-                  "${input_plexjp_bold}"]
-output_list = ["${modified_plexjp35_thin}", \\
-                  "${modified_plexjp35_extralight}", \\
-                  "${modified_plexjp35_light}", \\
-                  "${modified_plexjp35_regular}", \\
-                  "${modified_plexjp35_text}", \\
-                  "${modified_plexjp35_medium}", \\
-                  "${modified_plexjp35_semibold}", \\
-                  "${modified_plexjp35_bold}"]
+input_list  = [ \\
+                "${input_plexjp_thin}", \\
+                "${input_plexjp_extralight}", \\
+                "${input_plexjp_light}", \\
+                "${input_plexjp_regular}", \\
+                "${input_plexjp_text}", \\
+                "${input_plexjp_medium}", \\
+                "${input_plexjp_semibold}", \\
+                "${input_plexjp_bold}", \\
+                "${input_plexjp_thin}", \\
+                "${input_plexjp_extralight}", \\
+                "${input_plexjp_light}", \\
+                "${input_plexjp_regular}", \\
+                "${input_plexjp_text}", \\
+                "${input_plexjp_medium}", \\
+                "${input_plexjp_semibold}", \\
+                "${input_plexjp_bold}" \\
+              ]
+output_list = [ \\
+                "${modified_plexjp35_thin}", \\
+                "${modified_plexjp35_extralight}", \\
+                "${modified_plexjp35_light}", \\
+                "${modified_plexjp35_regular}", \\
+                "${modified_plexjp35_text}", \\
+                "${modified_plexjp35_medium}", \\
+                "${modified_plexjp35_semibold}", \\
+                "${modified_plexjp35_bold}", \\
+                "${modified_plexjp35_thin_italic}", \\
+                "${modified_plexjp35_extralight_italic}", \\
+                "${modified_plexjp35_light_italic}", \\
+                "${modified_plexjp35_regular_italic}", \\
+                "${modified_plexjp35_text_italic}", \\
+                "${modified_plexjp35_medium_italic}", \\
+                "${modified_plexjp35_semibold_italic}", \\
+                "${modified_plexjp35_bold_italic}" \\
+              ]
 
-fontstyle_list    = ["Thin", "ExtraLight", "Light", "Regular", "Text", "Medium", "SemiBold", "Bold"]
-fontweight_list   = [100, 200, 300, 400, 450, 500, 600, 700]
-panoseweight_list = [3, 3, 4, 5, 5, 6, 7, 8]
+fontstyle_list    = [ \\
+                      "Thin", \\
+                      "ExtraLight", \\
+                      "Light", \\
+                      "Regular", \\
+                      "Text", \\
+                      "Medium", \\
+                      "SemiBold", \\
+                      "Bold", \\
+                      "Thin Italic", \\
+                      "ExtraLight Italic", \\
+                      "Light Italic", \\
+                      "Regular Italic", \\
+                      "Text Italic", \\
+                      "Medium Italic", \\
+                      "SemiBold Italic", \\
+                      "Bold Italic" \\
+                    ]
+
+fontweight_list   = [ \\
+                      100, \\
+                      200, \\
+                      300, \\
+                      400, \\
+                      450, \\
+                      500, \\
+                      600, \\
+                      700, \\
+                      100, \\
+                      200, \\
+                      300, \\
+                      400, \\
+                      450, \\
+                      500, \\
+                      600, \\
+                      700 \\
+                    ]
+panoseweight_list = [ \\
+                      3, \\
+                      3, \\
+                      4, \\
+                      5, \\
+                      5, \\
+                      6, \\
+                      7, \\
+                      8, \\
+                      3, \\
+                      3, \\
+                      4, \\
+                      5, \\
+                      5, \\
+                      6, \\
+                      7, \\
+                      8 \\
+                    ]
 
 Print("Get trim target glyph from IBMPlexMono")
 Open(plexmono)
@@ -1066,6 +1409,11 @@ while (i < SizeOf(input_list))
   SelectWorthOutputting()
   UnlinkReference()
   ScaleToEm(${em_ascent}, ${em_descent})
+
+  # 斜体の生成
+  if (Strstr(fontstyle_list[i], 'Italic') >= 0)
+    Italic(${italic_angle})
+  endif
 
   SelectNone()
 
@@ -1224,7 +1572,12 @@ while (i < SizeOf(input_list))
   # Set encoding to Unicode-bmp
   Reencode("unicode")
   # Set configuration
-  SetFontNames("modified-plexjp" + fontstyle_list[i])
+  if (Strstr(fontstyle_list[i], 'Italic') >= 0)
+    style_split = StrSplit(fontstyle_list[i], ' ')
+    SetFontNames("modified-plexjp" + style_split[0] + style_split[1])
+  else
+    SetFontNames("modified-plexjp" + fontstyle_list[i])
+  endif
   ScaleToEm(${em_ascent}, ${em_descent})
   SetOS2Value("Weight", fontweight_list[i]) # Book or Bold
   SetOS2Value("Width",                   5) # Medium
@@ -1268,22 +1621,42 @@ Print("Generate modified IBMPlexSansJP Console")
 
 # Set parameters
 plexmono = "${tmpdir}/${modified_plexmono_material_regular}"
-input_list  = ["${tmpdir}/${modified_plexjp_thin}.ttf", \\
-                  "${tmpdir}/${modified_plexjp_extralight}.ttf", \\
-                  "${tmpdir}/${modified_plexjp_light}.ttf", \\
-                  "${tmpdir}/${modified_plexjp_regular}.ttf", \\
-                  "${tmpdir}/${modified_plexjp_text}.ttf", \\
-                  "${tmpdir}/${modified_plexjp_medium}.ttf", \\
-                  "${tmpdir}/${modified_plexjp_semibold}.ttf", \\
-                  "${tmpdir}/${modified_plexjp_bold}.ttf"]
-output_list = ["${modified_plexjp_console_thin}", \\
-                  "${modified_plexjp_console_extralight}", \\
-                  "${modified_plexjp_console_light}", \\
-                  "${modified_plexjp_console_regular}", \\
-                  "${modified_plexjp_console_text}", \\
-                  "${modified_plexjp_console_medium}", \\
-                  "${modified_plexjp_console_semibold}", \\
-                  "${modified_plexjp_console_bold}"]
+input_list  = [ \\
+                "${tmpdir}/${modified_plexjp_thin}.ttf", \\
+                "${tmpdir}/${modified_plexjp_extralight}.ttf", \\
+                "${tmpdir}/${modified_plexjp_light}.ttf", \\
+                "${tmpdir}/${modified_plexjp_regular}.ttf", \\
+                "${tmpdir}/${modified_plexjp_text}.ttf", \\
+                "${tmpdir}/${modified_plexjp_medium}.ttf", \\
+                "${tmpdir}/${modified_plexjp_semibold}.ttf", \\
+                "${tmpdir}/${modified_plexjp_bold}.ttf", \\
+                "${tmpdir}/${modified_plexjp_thin_italic}.ttf", \\
+                "${tmpdir}/${modified_plexjp_extralight_italic}.ttf", \\
+                "${tmpdir}/${modified_plexjp_light_italic}.ttf", \\
+                "${tmpdir}/${modified_plexjp_regular_italic}.ttf", \\
+                "${tmpdir}/${modified_plexjp_text_italic}.ttf", \\
+                "${tmpdir}/${modified_plexjp_medium_italic}.ttf", \\
+                "${tmpdir}/${modified_plexjp_semibold_italic}.ttf", \\
+                "${tmpdir}/${modified_plexjp_bold_italic}.ttf" \\
+              ]
+output_list = [ \\
+                "${modified_plexjp_console_thin}", \\
+                "${modified_plexjp_console_extralight}", \\
+                "${modified_plexjp_console_light}", \\
+                "${modified_plexjp_console_regular}", \\
+                "${modified_plexjp_console_text}", \\
+                "${modified_plexjp_console_medium}", \\
+                "${modified_plexjp_console_semibold}", \\
+                "${modified_plexjp_console_bold}", \\
+                "${modified_plexjp_console_thin_italic}", \\
+                "${modified_plexjp_console_extralight_italic}", \\
+                "${modified_plexjp_console_light_italic}", \\
+                "${modified_plexjp_console_regular_italic}", \\
+                "${modified_plexjp_console_text_italic}", \\
+                "${modified_plexjp_console_medium_italic}", \\
+                "${modified_plexjp_console_semibold_italic}", \\
+                "${modified_plexjp_console_bold_italic}" \\
+              ]
 
 Print("Get trim target glyph from IBMPlexMono")
 Open(plexmono)
@@ -1327,10 +1700,10 @@ while (i < SizeOf(input_list))
   Print("End delete the glyphs contained in IBMPlexMono")
 
   # 結合分音記号は全て源柔ゴシック収録のものを使用する
-  Select(0u0300, 0u036f)
-  move_pt = $(((${plemoljp_half_width} - ${plemoljp_full_width}) / 2))
-  Move(move_pt, 0)
-  SetWidth(${plemoljp_half_width}, 0)
+  #Select(0u0300, 0u036f)
+  #move_pt = $(((${plemoljp_half_width} - ${plemoljp_full_width}) / 2))
+  #Move(move_pt, 0)
+  #SetWidth(${plemoljp_half_width}, 0)
 
   # Save modified IBMPlexSansJP
   Print("Generate " + output_list[i])
@@ -1354,22 +1727,42 @@ Print("Generate modified IBMPlexSansJP Console - 35")
 
 # Set parameters
 plexmono = "${tmpdir}/${modified_plexmono_material_regular}"
-input_list  = ["${tmpdir}/${modified_plexjp35_thin}.ttf", \\
-                  "${tmpdir}/${modified_plexjp35_extralight}.ttf", \\
-                  "${tmpdir}/${modified_plexjp35_light}.ttf", \\
-                  "${tmpdir}/${modified_plexjp35_regular}.ttf", \\
-                  "${tmpdir}/${modified_plexjp35_text}.ttf", \\
-                  "${tmpdir}/${modified_plexjp35_medium}.ttf", \\
-                  "${tmpdir}/${modified_plexjp35_semibold}.ttf", \\
-                  "${tmpdir}/${modified_plexjp35_bold}.ttf"]
-output_list = ["${modified_plexjp35_console_thin}", \\
-                  "${modified_plexjp35_console_extralight}", \\
-                  "${modified_plexjp35_console_light}", \\
-                  "${modified_plexjp35_console_regular}", \\
-                  "${modified_plexjp35_console_text}", \\
-                  "${modified_plexjp35_console_medium}", \\
-                  "${modified_plexjp35_console_semibold}", \\
-                  "${modified_plexjp35_console_bold}"]
+input_list  = [ \\
+                "${tmpdir}/${modified_plexjp35_thin}.ttf", \\
+                "${tmpdir}/${modified_plexjp35_extralight}.ttf", \\
+                "${tmpdir}/${modified_plexjp35_light}.ttf", \\
+                "${tmpdir}/${modified_plexjp35_regular}.ttf", \\
+                "${tmpdir}/${modified_plexjp35_text}.ttf", \\
+                "${tmpdir}/${modified_plexjp35_medium}.ttf", \\
+                "${tmpdir}/${modified_plexjp35_semibold}.ttf", \\
+                "${tmpdir}/${modified_plexjp35_bold}.ttf", \\
+                "${tmpdir}/${modified_plexjp35_thin_italic}.ttf", \\
+                "${tmpdir}/${modified_plexjp35_extralight_italic}.ttf", \\
+                "${tmpdir}/${modified_plexjp35_light_italic}.ttf", \\
+                "${tmpdir}/${modified_plexjp35_regular_italic}.ttf", \\
+                "${tmpdir}/${modified_plexjp35_text_italic}.ttf", \\
+                "${tmpdir}/${modified_plexjp35_medium_italic}.ttf", \\
+                "${tmpdir}/${modified_plexjp35_semibold_italic}.ttf", \\
+                "${tmpdir}/${modified_plexjp35_bold_italic}.ttf" \\
+              ]
+output_list = [ \\
+                "${modified_plexjp35_console_thin}", \\
+                "${modified_plexjp35_console_extralight}", \\
+                "${modified_plexjp35_console_light}", \\
+                "${modified_plexjp35_console_regular}", \\
+                "${modified_plexjp35_console_text}", \\
+                "${modified_plexjp35_console_medium}", \\
+                "${modified_plexjp35_console_semibold}", \\
+                "${modified_plexjp35_console_bold}", \\
+                "${modified_plexjp35_console_thin_italic}", \\
+                "${modified_plexjp35_console_extralight_italic}", \\
+                "${modified_plexjp35_console_light_italic}", \\
+                "${modified_plexjp35_console_regular_italic}", \\
+                "${modified_plexjp35_console_text_italic}", \\
+                "${modified_plexjp35_console_medium_italic}", \\
+                "${modified_plexjp35_console_semibold_italic}", \\
+                "${modified_plexjp35_console_bold_italic}" \\
+              ]
 
 Print("Get trim target glyph from IBMPlexMono")
 Open(plexmono)
@@ -1413,10 +1806,10 @@ while (i < SizeOf(input_list))
   Print("End delete the glyphs contained in IBMPlexMono")
 
   # 結合分音記号は全て源柔ゴシック収録のものを使用する
-  Select(0u0300, 0u036f)
-  move_pt = $(((${plemoljp35_half_width} - ${plemoljp35_full_width}) / 2))
-  Move(move_pt, 0)
-  SetWidth(${plemoljp35_half_width}, 0)
+  #Select(0u0300, 0u036f)
+  #move_pt = $(((${plemoljp35_half_width} - ${plemoljp35_full_width}) / 2))
+  #Move(move_pt, 0)
+  #SetWidth(${plemoljp35_half_width}, 0)
 
   # Save modified IBMPlexSansJP
   Print("Generate " + output_list[i])
@@ -1440,19 +1833,83 @@ cat > ${tmpdir}/${plemoljp_generator} << _EOT_
 Print("Generate PlemolJP")
 
 # Set parameters
-plexmono_list  = ["${tmpdir}/${modified_plexmono_thin}", \\
+plexmono_list  = [ \\
+                    "${tmpdir}/${modified_plexmono_thin}", \\
                     "${tmpdir}/${modified_plexmono_extralight}", \\
                     "${tmpdir}/${modified_plexmono_light}", \\
                     "${tmpdir}/${modified_plexmono_regular}", \\
                     "${tmpdir}/${modified_plexmono_text}", \\
                     "${tmpdir}/${modified_plexmono_medium}", \\
                     "${tmpdir}/${modified_plexmono_semibold}", \\
-                     "${tmpdir}/${modified_plexmono_bold}"]
+                    "${tmpdir}/${modified_plexmono_bold}", \\
+                    "${tmpdir}/${modified_plexmono_thin_italic}", \\
+                    "${tmpdir}/${modified_plexmono_extralight_italic}", \\
+                    "${tmpdir}/${modified_plexmono_light_italic}", \\
+                    "${tmpdir}/${modified_plexmono_regular_italic}", \\
+                    "${tmpdir}/${modified_plexmono_text_italic}", \\
+                    "${tmpdir}/${modified_plexmono_medium_italic}", \\
+                    "${tmpdir}/${modified_plexmono_semibold_italic}", \\
+                    "${tmpdir}/${modified_plexmono_bold_italic}" \\
+                  ]
 fontfamily        = "${plemoljp_familyname}"
 fontfamilysuffix  = "${plemoljp_familyname_suffix}"
-fontstyle_list    = ["Thin", "ExtraLight", "Light", "Regular", "Text", "Medium", "SemiBold", "Bold"]
-fontweight_list   = [100, 200, 300, 400, 450, 500, 600, 700]
-panoseweight_list = [3, 3, 4, 5, 5, 6, 7, 8]
+
+fontstyle_list    = [ \\
+                      "Thin", \\
+                      "ExtraLight", \\
+                      "Light", \\
+                      "Regular", \\
+                      "Text", \\
+                      "Medium", \\
+                      "SemiBold", \\
+                      "Bold", \\
+                      "Thin Italic", \\
+                      "ExtraLight Italic", \\
+                      "Light Italic", \\
+                      "Regular Italic", \\
+                      "Text Italic", \\
+                      "Medium Italic", \\
+                      "SemiBold Italic", \\
+                      "Bold Italic" \\
+                    ]
+
+fontweight_list   = [ \\
+                      100, \\
+                      200, \\
+                      300, \\
+                      400, \\
+                      450, \\
+                      500, \\
+                      600, \\
+                      700, \\
+                      100, \\
+                      200, \\
+                      300, \\
+                      400, \\
+                      450, \\
+                      500, \\
+                      600, \\
+                      700 \\
+                    ]
+panoseweight_list = [ \\
+                      3, \\
+                      3, \\
+                      4, \\
+                      5, \\
+                      5, \\
+                      6, \\
+                      7, \\
+                      8, \\
+                      3, \\
+                      3, \\
+                      4, \\
+                      5, \\
+                      5, \\
+                      6, \\
+                      7, \\
+                      8 \\
+                    ]
+
 copyright         = "Copyright (c) 2019, Yuko Otawara"
 version           = "${plemoljp_version}"
 
@@ -1465,39 +1922,64 @@ while (i < SizeOf(fontstyle_list))
   # Set encoding to Unicode-bmp
   Reencode("unicode")
 
+  fontname_style = fontstyle_list[i]
+  base_style = fontstyle_list[i]
+
+  # 斜体の生成
+  if (Strstr(fontstyle_list[i], 'Italic') >= 0)
+    SetItalicAngle(${italic_angle})
+    style_split = StrSplit(fontstyle_list[i], ' ')
+    if (style_split[0] == 'Regular')
+      fontname_style = 'Italic'
+    else
+      fontname_style = style_split[0] + style_split[1]
+    endif
+    base_style = style_split[0]
+  endif
+
   # Set configuration
-  if (fontstyle_list[i] != "Regular" && fontstyle_list[i] != "Bold")
+  if (Strstr(fontstyle_list[i], 'Regular') == -1 && Strstr(fontstyle_list[i], 'Bold') == -1)
     if (fontfamilysuffix != "")
-      SetFontNames(fontfamily + fontfamilysuffix + "-" + fontstyle_list[i], \\
+      SetFontNames(fontfamily + fontfamilysuffix + "-" + fontname_style, \\
+                    fontfamily + " " + fontfamilysuffix + " " + base_style, \\
                     fontfamily + " " + fontfamilysuffix + " " + fontstyle_list[i], \\
-                    fontfamily + " " + fontfamilysuffix + " " + fontstyle_list[i], \\
-                    fontstyle_list[i], \\
+                    base_style, \\
                     copyright, version)
     else
-      SetFontNames(fontfamily + "-" + fontstyle_list[i], \\
+      SetFontNames(fontfamily + "-" + fontname_style, \\
+                    fontfamily + " " + base_style, \\
                     fontfamily + " " + fontstyle_list[i], \\
-                    fontfamily + " " + fontstyle_list[i], \\
-                    fontstyle_list[i], \\
+                    base_style, \\
                     copyright, version)
     endif
     
-    SetTTFName(0x409, 2, "Regular")
-  else
-    if (fontfamilysuffix != "")
-      SetFontNames(fontfamily + fontfamilysuffix + "-" + fontstyle_list[i], \\
-                    fontfamily + " " + fontfamilysuffix, \\
-                    fontfamily + " " + fontfamilysuffix + " " + fontstyle_list[i], \\
-                    fontstyle_list[i], \\
-                    copyright, version)
+    if (Strstr(fontstyle_list[i], 'Italic') >= 0)
+      SetTTFName(0x409, 2, "Italic")
     else
-      SetFontNames(fontfamily + "-" + fontstyle_list[i], \\
-                    fontfamily, \\
-                    fontfamily + " " + fontstyle_list[i], \\
-                    fontstyle_list[i], \\
-                    copyright, version)
+      SetTTFName(0x409, 2, "Regular")
+    endif
+  else
+    display_style = fontstyle_list[i]
+    if (fontstyle_list[i] == 'Regular Italic')
+      SetTTFName(0x409, 2, 'Italic')
+      display_style = 'Italic'
+    else
+      SetTTFName(0x409, 2, fontstyle_list[i])
     endif
 
-    SetTTFName(0x409, 2, fontstyle_list[i])
+    if (fontfamilysuffix != "")
+      SetFontNames(fontfamily + fontfamilysuffix + "-" + fontname_style, \\
+                    fontfamily + " " + fontfamilysuffix, \\
+                    fontfamily + " " + fontfamilysuffix + " " + display_style, \\
+                    base_style, \\
+                    copyright, version)
+    else
+      SetFontNames(fontfamily + "-" + fontname_style, \\
+                    fontfamily, \\
+                    fontfamily + " " + display_style, \\
+                    base_style, \\
+                    copyright, version)
+    endif
   endif
 
   if (fontfamilysuffix != "")
@@ -1505,7 +1987,12 @@ while (i < SizeOf(fontstyle_list))
   else
     SetTTFName(0x409, 16, fontfamily)
   endif
-  SetTTFName(0x409, 17, fontstyle_list[i])
+  if (fontstyle_list[i] == 'Regular Italic')
+    SetTTFName(0x409, 17, 'Italic')
+  else
+    SetTTFName(0x409, 17, fontstyle_list[i])
+  endif
+
 
   SetTTFName(0x409, 3, "FontForge 2.0 : " + \$fullname + " : " + Strftime("%d-%m-%Y", 0))
 
@@ -1537,11 +2024,11 @@ while (i < SizeOf(fontstyle_list))
 
   # Save PlemolJP
   if (fontfamilysuffix != "")
-        Print("Save " + fontfamily + fontfamilysuffix + "-" + fontstyle_list[i] + ".ttf")
-        Generate("${base_dir}/" + fontfamily + fontfamilysuffix + "-" + fontstyle_list[i] + ".ttf", "")
+        Print("Save " + fontfamily + fontfamilysuffix + "-" + fontname_style + ".ttf")
+        Generate("${base_dir}/" + fontfamily + fontfamilysuffix + "-" + fontname_style + ".ttf", "")
   else
-        Print("Save " + fontfamily + "-" + fontstyle_list[i] + ".ttf")
-        Generate("${base_dir}/" + fontfamily + "-" + fontstyle_list[i] + ".ttf", "")
+        Print("Save " + fontfamily + "-" + fontname_style + ".ttf")
+        Generate("${base_dir}/" + fontfamily + "-" + fontname_style + ".ttf", "")
   endif
   Close()
 
@@ -1562,20 +2049,84 @@ cat > ${tmpdir}/${plemoljp_console_generator} << _EOT_
 Print("Generate PlemolJP Console")
 
 # Set parameters
-plexmono_list  = ["${tmpdir}/${modified_plexmono_console_thin}", \\
-                     "${tmpdir}/${modified_plexmono_console_extralight}", \\
-                     "${tmpdir}/${modified_plexmono_console_light}", \\
-                     "${tmpdir}/${modified_plexmono_console_regular}", \\
-                     "${tmpdir}/${modified_plexmono_console_text}", \\
-                     "${tmpdir}/${modified_plexmono_console_medium}", \\
-                     "${tmpdir}/${modified_plexmono_console_semibold}", \\
-                     "${tmpdir}/${modified_plexmono_console_bold}"]
+plexmono_list  = [ \\
+                    "${tmpdir}/${modified_plexmono_console_thin}", \\
+                    "${tmpdir}/${modified_plexmono_console_extralight}", \\
+                    "${tmpdir}/${modified_plexmono_console_light}", \\
+                    "${tmpdir}/${modified_plexmono_console_regular}", \\
+                    "${tmpdir}/${modified_plexmono_console_text}", \\
+                    "${tmpdir}/${modified_plexmono_console_medium}", \\
+                    "${tmpdir}/${modified_plexmono_console_semibold}", \\
+                    "${tmpdir}/${modified_plexmono_console_bold}", \\
+                    "${tmpdir}/${modified_plexmono_console_thin_italic}", \\
+                    "${tmpdir}/${modified_plexmono_console_extralight_italic}", \\
+                    "${tmpdir}/${modified_plexmono_console_light_italic}", \\
+                    "${tmpdir}/${modified_plexmono_console_regular_italic}", \\
+                    "${tmpdir}/${modified_plexmono_console_text_italic}", \\
+                    "${tmpdir}/${modified_plexmono_console_medium_italic}", \\
+                    "${tmpdir}/${modified_plexmono_console_semibold_italic}", \\
+                    "${tmpdir}/${modified_plexmono_console_bold_italic}" \\
+                  ]
 fontfamily        = "${plemoljp_familyname}"
 fontfamilysuffix_nonspace = "${plemoljp_console_suffix}${hs_suffix}"
 fontfamilysuffix_inspace  = "${plemoljp_console_suffix} ${hs_suffix}"
-fontstyle_list    = ["Thin", "ExtraLight", "Light", "Regular", "Text", "Medium", "SemiBold", "Bold"]
-fontweight_list   = [100, 200, 300, 400, 450, 500, 600, 700]
-panoseweight_list = [3, 3, 4, 5, 5, 6, 7, 8]
+
+fontstyle_list    = [ \\
+                      "Thin", \\
+                      "ExtraLight", \\
+                      "Light", \\
+                      "Regular", \\
+                      "Text", \\
+                      "Medium", \\
+                      "SemiBold", \\
+                      "Bold", \\
+                      "Thin Italic", \\
+                      "ExtraLight Italic", \\
+                      "Light Italic", \\
+                      "Regular Italic", \\
+                      "Text Italic", \\
+                      "Medium Italic", \\
+                      "SemiBold Italic", \\
+                      "Bold Italic" \\
+                    ]
+
+fontweight_list   = [ \\
+                      100, \\
+                      200, \\
+                      300, \\
+                      400, \\
+                      450, \\
+                      500, \\
+                      600, \\
+                      700, \\
+                      100, \\
+                      200, \\
+                      300, \\
+                      400, \\
+                      450, \\
+                      500, \\
+                      600, \\
+                      700 \\
+                    ]
+panoseweight_list = [ \\
+                      3, \\
+                      3, \\
+                      4, \\
+                      5, \\
+                      5, \\
+                      6, \\
+                      7, \\
+                      8, \\
+                      3, \\
+                      3, \\
+                      4, \\
+                      5, \\
+                      5, \\
+                      6, \\
+                      7, \\
+                      8 \\
+                    ]
+
 copyright         = "Copyright (c) 2019, Yuko Otawara"
 version           = "${plemoljp_version}"
 
@@ -1588,39 +2139,64 @@ while (i < SizeOf(fontstyle_list))
   # Set encoding to Unicode-bmp
   Reencode("unicode")
 
+  fontname_style = fontstyle_list[i]
+  base_style = fontstyle_list[i]
+
+  # 斜体の生成
+  if (Strstr(fontstyle_list[i], 'Italic') >= 0)
+    SetItalicAngle(${italic_angle})
+    style_split = StrSplit(fontstyle_list[i], ' ')
+    if (style_split[0] == 'Regular')
+      fontname_style = 'Italic'
+    else
+      fontname_style = style_split[0] + style_split[1]
+    endif
+    base_style = style_split[0]
+  endif
+
   # Set configuration
-  if (fontstyle_list[i] != "Regular" && fontstyle_list[i] != "Bold")
+  if (Strstr(fontstyle_list[i], 'Regular') == -1 && Strstr(fontstyle_list[i], 'Bold') == -1)
     if (fontfamilysuffix_nonspace != "")
-      SetFontNames(fontfamily + fontfamilysuffix_nonspace + "-" + fontstyle_list[i], \\
+      SetFontNames(fontfamily + fontfamilysuffix_nonspace + "-" + fontname_style, \\
+                    fontfamily + " " + fontfamilysuffix_inspace + " " + base_style, \\
                     fontfamily + " " + fontfamilysuffix_inspace + " " + fontstyle_list[i], \\
-                    fontfamily + " " + fontfamilysuffix_inspace + " " + fontstyle_list[i], \\
-                    fontstyle_list[i], \\
+                    base_style, \\
                     copyright, version)
     else
-      SetFontNames(fontfamily + "-" + fontstyle_list[i], \\
+      SetFontNames(fontfamily + "-" + fontname_style, \\
+                    fontfamily + " " + base_style, \\
                     fontfamily + " " + fontstyle_list[i], \\
-                    fontfamily + " " + fontstyle_list[i], \\
-                    fontstyle_list[i], \\
+                    base_style, \\
                     copyright, version)
     endif
     
-    SetTTFName(0x409, 2, "Regular")
-  else
-    if (fontfamilysuffix_nonspace != "")
-      SetFontNames(fontfamily + fontfamilysuffix_nonspace + "-" + fontstyle_list[i], \\
-                    fontfamily + " " + fontfamilysuffix_inspace, \\
-                    fontfamily + " " + fontfamilysuffix_inspace + " " + fontstyle_list[i], \\
-                    fontstyle_list[i], \\
-                    copyright, version)
+    if (Strstr(fontstyle_list[i], 'Italic') >= 0)
+      SetTTFName(0x409, 2, "Italic")
     else
-      SetFontNames(fontfamily + "-" + fontstyle_list[i], \\
-                    fontfamily, \\
-                    fontfamily + " " + fontstyle_list[i], \\
-                    fontstyle_list[i], \\
-                    copyright, version)
+      SetTTFName(0x409, 2, "Regular")
+    endif
+  else
+    display_style = fontstyle_list[i]
+    if (fontstyle_list[i] == 'Regular Italic')
+      SetTTFName(0x409, 2, 'Italic')
+      display_style = 'Italic'
+    else
+      SetTTFName(0x409, 2, fontstyle_list[i])
     endif
 
-    SetTTFName(0x409, 2, fontstyle_list[i])
+    if (fontfamilysuffix_nonspace != "")
+      SetFontNames(fontfamily + fontfamilysuffix_nonspace + "-" + fontname_style, \\
+                    fontfamily + " " + fontfamilysuffix_inspace, \\
+                    fontfamily + " " + fontfamilysuffix_inspace + " " + display_style, \\
+                    base_style, \\
+                    copyright, version)
+    else
+      SetFontNames(fontfamily + "-" + fontname_style, \\
+                    fontfamily, \\
+                    fontfamily + " " + display_style, \\
+                    base_style, \\
+                    copyright, version)
+    endif
   endif
 
   if (fontfamilysuffix_nonspace != "")
@@ -1628,7 +2204,12 @@ while (i < SizeOf(fontstyle_list))
   else
     SetTTFName(0x409, 16, fontfamily)
   endif
-  SetTTFName(0x409, 17, fontstyle_list[i])
+  if (fontstyle_list[i] == 'Regular Italic')
+    SetTTFName(0x409, 17, 'Italic')
+  else
+    SetTTFName(0x409, 17, fontstyle_list[i])
+  endif
+
 
   SetTTFName(0x409, 3, "FontForge 2.0 : " + \$fullname + " : " + Strftime("%d-%m-%Y", 0))
 
@@ -1660,11 +2241,11 @@ while (i < SizeOf(fontstyle_list))
 
   # Save PlemolJP
   if (fontfamilysuffix_nonspace != "")
-        Print("Save " + fontfamily + fontfamilysuffix_nonspace + "-" + fontstyle_list[i] + ".ttf")
-        Generate("${base_dir}/" + fontfamily + fontfamilysuffix_nonspace + "-" + fontstyle_list[i] + ".ttf", "")
+        Print("Save " + fontfamily + fontfamilysuffix_nonspace + "-" + fontname_style + ".ttf")
+        Generate("${base_dir}/" + fontfamily + fontfamilysuffix_nonspace + "-" + fontname_style + ".ttf", "")
   else
-        Print("Save " + fontfamily + "-" + fontstyle_list[i] + ".ttf")
-        Generate("${base_dir}/" + fontfamily + "-" + fontstyle_list[i] + ".ttf", "")
+        Print("Save " + fontfamily + "-" + fontname_style + ".ttf")
+        Generate("${base_dir}/" + fontfamily + "-" + fontname_style + ".ttf", "")
   endif
   Close()
 
@@ -1685,19 +2266,83 @@ cat > ${tmpdir}/${plemoljp35_generator} << _EOT_
 Print("Generate PlemolJP")
 
 # Set parameters
-plexmono_list  = ["${tmpdir}/${modified_plexmono35_thin}", \\
-                     "${tmpdir}/${modified_plexmono35_extralight}", \\
-                     "${tmpdir}/${modified_plexmono35_light}", \\
-                     "${tmpdir}/${modified_plexmono35_regular}", \\
-                     "${tmpdir}/${modified_plexmono35_text}", \\
-                     "${tmpdir}/${modified_plexmono35_medium}", \\
-                     "${tmpdir}/${modified_plexmono35_semibold}", \\
-                     "${tmpdir}/${modified_plexmono35_bold}"]
+plexmono_list  = [ \\
+                    "${tmpdir}/${modified_plexmono35_thin}", \\
+                    "${tmpdir}/${modified_plexmono35_extralight}", \\
+                    "${tmpdir}/${modified_plexmono35_light}", \\
+                    "${tmpdir}/${modified_plexmono35_regular}", \\
+                    "${tmpdir}/${modified_plexmono35_text}", \\
+                    "${tmpdir}/${modified_plexmono35_medium}", \\
+                    "${tmpdir}/${modified_plexmono35_semibold}", \\
+                    "${tmpdir}/${modified_plexmono35_bold}", \\
+                    "${tmpdir}/${modified_plexmono35_thin_italic}", \\
+                    "${tmpdir}/${modified_plexmono35_extralight_italic}", \\
+                    "${tmpdir}/${modified_plexmono35_light_italic}", \\
+                    "${tmpdir}/${modified_plexmono35_regular_italic}", \\
+                    "${tmpdir}/${modified_plexmono35_text_italic}", \\
+                    "${tmpdir}/${modified_plexmono35_medium_italic}", \\
+                    "${tmpdir}/${modified_plexmono35_semibold_italic}", \\
+                    "${tmpdir}/${modified_plexmono35_bold_italic}" \\
+                  ]
 fontfamily        = "${plemoljp35_familyname}"
 fontfamilysuffix  = "${plemoljp35_familyname_suffix}"
-fontstyle_list    = ["Thin", "ExtraLight", "Light", "Regular", "Text", "Medium", "SemiBold", "Bold"]
-fontweight_list   = [100, 200, 300, 400, 450, 500, 600, 700]
-panoseweight_list = [3, 3, 4, 5, 5, 6, 7, 8]
+
+fontstyle_list    = [ \\
+                      "Thin", \\
+                      "ExtraLight", \\
+                      "Light", \\
+                      "Regular", \\
+                      "Text", \\
+                      "Medium", \\
+                      "SemiBold", \\
+                      "Bold", \\
+                      "Thin Italic", \\
+                      "ExtraLight Italic", \\
+                      "Light Italic", \\
+                      "Regular Italic", \\
+                      "Text Italic", \\
+                      "Medium Italic", \\
+                      "SemiBold Italic", \\
+                      "Bold Italic" \\
+                    ]
+
+fontweight_list   = [ \\
+                      100, \\
+                      200, \\
+                      300, \\
+                      400, \\
+                      450, \\
+                      500, \\
+                      600, \\
+                      700, \\
+                      100, \\
+                      200, \\
+                      300, \\
+                      400, \\
+                      450, \\
+                      500, \\
+                      600, \\
+                      700 \\
+                    ]
+panoseweight_list = [ \\
+                      3, \\
+                      3, \\
+                      4, \\
+                      5, \\
+                      5, \\
+                      6, \\
+                      7, \\
+                      8, \\
+                      3, \\
+                      3, \\
+                      4, \\
+                      5, \\
+                      5, \\
+                      6, \\
+                      7, \\
+                      8 \\
+                    ]
+
 copyright         = "Copyright (c) 2019, Yuko Otawara"
 version           = "${plemoljp_version}"
 
@@ -1710,39 +2355,64 @@ while (i < SizeOf(fontstyle_list))
   # Set encoding to Unicode-bmp
   Reencode("unicode")
 
+  fontname_style = fontstyle_list[i]
+  base_style = fontstyle_list[i]
+
+  # 斜体の生成
+  if (Strstr(fontstyle_list[i], 'Italic') >= 0)
+    SetItalicAngle(${italic_angle})
+    style_split = StrSplit(fontstyle_list[i], ' ')
+    if (style_split[0] == 'Regular')
+      fontname_style = 'Italic'
+    else
+      fontname_style = style_split[0] + style_split[1]
+    endif
+    base_style = style_split[0]
+  endif
+
   # Set configuration
-  if (fontstyle_list[i] != "Regular" && fontstyle_list[i] != "Bold")
+  if (Strstr(fontstyle_list[i], 'Regular') == -1 && Strstr(fontstyle_list[i], 'Bold') == -1)
     if (fontfamilysuffix != "")
-      SetFontNames(fontfamily + fontfamilysuffix + "-" + fontstyle_list[i], \\
+      SetFontNames(fontfamily + fontfamilysuffix + "-" + fontname_style, \\
+                    fontfamily + " " + fontfamilysuffix + " " + base_style, \\
                     fontfamily + " " + fontfamilysuffix + " " + fontstyle_list[i], \\
-                    fontfamily + " " + fontfamilysuffix + " " + fontstyle_list[i], \\
-                    fontstyle_list[i], \\
+                    base_style, \\
                     copyright, version)
     else
-      SetFontNames(fontfamily + "-" + fontstyle_list[i], \\
+      SetFontNames(fontfamily + "-" + fontname_style, \\
+                    fontfamily + " " + base_style, \\
                     fontfamily + " " + fontstyle_list[i], \\
-                    fontfamily + " " + fontstyle_list[i], \\
-                    fontstyle_list[i], \\
+                    base_style, \\
                     copyright, version)
     endif
     
-    SetTTFName(0x409, 2, "Regular")
-  else
-    if (fontfamilysuffix != "")
-      SetFontNames(fontfamily + fontfamilysuffix + "-" + fontstyle_list[i], \\
-                    fontfamily + " " + fontfamilysuffix, \\
-                    fontfamily + " " + fontfamilysuffix + " " + fontstyle_list[i], \\
-                    fontstyle_list[i], \\
-                    copyright, version)
+    if (Strstr(fontstyle_list[i], 'Italic') >= 0)
+      SetTTFName(0x409, 2, "Italic")
     else
-      SetFontNames(fontfamily + "-" + fontstyle_list[i], \\
-                    fontfamily, \\
-                    fontfamily + " " + fontstyle_list[i], \\
-                    fontstyle_list[i], \\
-                    copyright, version)
+      SetTTFName(0x409, 2, "Regular")
+    endif
+  else
+    display_style = fontstyle_list[i]
+    if (fontstyle_list[i] == 'Regular Italic')
+      SetTTFName(0x409, 2, 'Italic')
+      display_style = 'Italic'
+    else
+      SetTTFName(0x409, 2, fontstyle_list[i])
     endif
 
-    SetTTFName(0x409, 2, fontstyle_list[i])
+    if (fontfamilysuffix != "")
+      SetFontNames(fontfamily + fontfamilysuffix + "-" + fontname_style, \\
+                    fontfamily + " " + fontfamilysuffix, \\
+                    fontfamily + " " + fontfamilysuffix + " " + display_style, \\
+                    base_style, \\
+                    copyright, version)
+    else
+      SetFontNames(fontfamily + "-" + fontname_style, \\
+                    fontfamily, \\
+                    fontfamily + " " + display_style, \\
+                    base_style, \\
+                    copyright, version)
+    endif
   endif
 
   if (fontfamilysuffix != "")
@@ -1750,7 +2420,12 @@ while (i < SizeOf(fontstyle_list))
   else
     SetTTFName(0x409, 16, fontfamily)
   endif
-  SetTTFName(0x409, 17, fontstyle_list[i])
+  if (fontstyle_list[i] == 'Regular Italic')
+    SetTTFName(0x409, 17, 'Italic')
+  else
+    SetTTFName(0x409, 17, fontstyle_list[i])
+  endif
+
 
   SetTTFName(0x409, 3, "FontForge 2.0 : " + \$fullname + " : " + Strftime("%d-%m-%Y", 0))
 
@@ -1782,11 +2457,11 @@ while (i < SizeOf(fontstyle_list))
 
   # Save PlemolJP
   if (fontfamilysuffix != "")
-        Print("Save " + fontfamily + fontfamilysuffix + "-" + fontstyle_list[i] + ".ttf")
-        Generate("${base_dir}/" + fontfamily + fontfamilysuffix + "-" + fontstyle_list[i] + ".ttf", "")
+        Print("Save " + fontfamily + fontfamilysuffix + "-" + fontname_style + ".ttf")
+        Generate("${base_dir}/" + fontfamily + fontfamilysuffix + "-" + fontname_style + ".ttf", "")
   else
-        Print("Save " + fontfamily + "-" + fontstyle_list[i] + ".ttf")
-        Generate("${base_dir}/" + fontfamily + "-" + fontstyle_list[i] + ".ttf", "")
+        Print("Save " + fontfamily + "-" + fontname_style + ".ttf")
+        Generate("${base_dir}/" + fontfamily + "-" + fontname_style + ".ttf", "")
   endif
   Close()
 
@@ -1807,20 +2482,84 @@ cat > ${tmpdir}/${plemoljp35_console_generator} << _EOT_
 Print("Generate PlemolJP Console")
 
 # Set parameters
-plexmono_list  = ["${tmpdir}/${modified_plexmono35_console_thin}", \\
-                     "${tmpdir}/${modified_plexmono35_console_extralight}", \\
-                     "${tmpdir}/${modified_plexmono35_console_light}", \\
-                     "${tmpdir}/${modified_plexmono35_console_regular}", \\
-                     "${tmpdir}/${modified_plexmono35_console_text}", \\
-                     "${tmpdir}/${modified_plexmono35_console_medium}", \\
-                     "${tmpdir}/${modified_plexmono35_console_semibold}", \\
-                     "${tmpdir}/${modified_plexmono35_console_bold}"]
+plexmono_list  = [ \\
+                    "${tmpdir}/${modified_plexmono35_console_thin}", \\
+                    "${tmpdir}/${modified_plexmono35_console_extralight}", \\
+                    "${tmpdir}/${modified_plexmono35_console_light}", \\
+                    "${tmpdir}/${modified_plexmono35_console_regular}", \\
+                    "${tmpdir}/${modified_plexmono35_console_text}", \\
+                    "${tmpdir}/${modified_plexmono35_console_medium}", \\
+                    "${tmpdir}/${modified_plexmono35_console_semibold}", \\
+                    "${tmpdir}/${modified_plexmono35_console_bold}", \\
+                    "${tmpdir}/${modified_plexmono35_console_thin_italic}", \\
+                    "${tmpdir}/${modified_plexmono35_console_extralight_italic}", \\
+                    "${tmpdir}/${modified_plexmono35_console_light_italic}", \\
+                    "${tmpdir}/${modified_plexmono35_console_regular_italic}", \\
+                    "${tmpdir}/${modified_plexmono35_console_text_italic}", \\
+                    "${tmpdir}/${modified_plexmono35_console_medium_italic}", \\
+                    "${tmpdir}/${modified_plexmono35_console_semibold_italic}", \\
+                    "${tmpdir}/${modified_plexmono35_console_bold_italic}" \\
+                  ]
 fontfamily        = "${plemoljp35_familyname}"
 fontfamilysuffix_nonspace = "${plemoljp_console_suffix}${hs_suffix}"
 fontfamilysuffix_inspace  = "${plemoljp_console_suffix} ${hs_suffix}"
-fontstyle_list    = ["Thin", "ExtraLight", "Light", "Regular", "Text", "Medium", "SemiBold", "Bold"]
-fontweight_list   = [100, 200, 300, 400, 450, 500, 600, 700]
-panoseweight_list = [3, 3, 4, 5, 5, 6, 7, 8]
+
+fontstyle_list    = [ \\
+                      "Thin", \\
+                      "ExtraLight", \\
+                      "Light", \\
+                      "Regular", \\
+                      "Text", \\
+                      "Medium", \\
+                      "SemiBold", \\
+                      "Bold", \\
+                      "Thin Italic", \\
+                      "ExtraLight Italic", \\
+                      "Light Italic", \\
+                      "Regular Italic", \\
+                      "Text Italic", \\
+                      "Medium Italic", \\
+                      "SemiBold Italic", \\
+                      "Bold Italic" \\
+                    ]
+
+fontweight_list   = [ \\
+                      100, \\
+                      200, \\
+                      300, \\
+                      400, \\
+                      450, \\
+                      500, \\
+                      600, \\
+                      700, \\
+                      100, \\
+                      200, \\
+                      300, \\
+                      400, \\
+                      450, \\
+                      500, \\
+                      600, \\
+                      700 \\
+                    ]
+panoseweight_list = [ \\
+                      3, \\
+                      3, \\
+                      4, \\
+                      5, \\
+                      5, \\
+                      6, \\
+                      7, \\
+                      8, \\
+                      3, \\
+                      3, \\
+                      4, \\
+                      5, \\
+                      5, \\
+                      6, \\
+                      7, \\
+                      8 \\
+                    ]
+
 copyright         = "Copyright (c) 2019, Yuko Otawara"
 version           = "${plemoljp_version}"
 
@@ -1833,39 +2572,64 @@ while (i < SizeOf(fontstyle_list))
   # Set encoding to Unicode-bmp
   Reencode("unicode")
 
+  fontname_style = fontstyle_list[i]
+  base_style = fontstyle_list[i]
+
+  # 斜体の生成
+  if (Strstr(fontstyle_list[i], 'Italic') >= 0)
+    SetItalicAngle(${italic_angle})
+    style_split = StrSplit(fontstyle_list[i], ' ')
+    if (style_split[0] == 'Regular')
+      fontname_style = 'Italic'
+    else
+      fontname_style = style_split[0] + style_split[1]
+    endif
+    base_style = style_split[0]
+  endif
+
   # Set configuration
-  if (fontstyle_list[i] != "Regular" && fontstyle_list[i] != "Bold")
+  if (Strstr(fontstyle_list[i], 'Regular') == -1 && Strstr(fontstyle_list[i], 'Bold') == -1)
     if (fontfamilysuffix_nonspace != "")
-      SetFontNames(fontfamily + fontfamilysuffix_nonspace + "-" + fontstyle_list[i], \\
+      SetFontNames(fontfamily + fontfamilysuffix_nonspace + "-" + fontname_style, \\
+                    fontfamily + " " + fontfamilysuffix_inspace + " " + base_style, \\
                     fontfamily + " " + fontfamilysuffix_inspace + " " + fontstyle_list[i], \\
-                    fontfamily + " " + fontfamilysuffix_inspace + " " + fontstyle_list[i], \\
-                    fontstyle_list[i], \\
+                    base_style, \\
                     copyright, version)
     else
-      SetFontNames(fontfamily + "-" + fontstyle_list[i], \\
+      SetFontNames(fontfamily + "-" + fontname_style, \\
+                    fontfamily + " " + base_style, \\
                     fontfamily + " " + fontstyle_list[i], \\
-                    fontfamily + " " + fontstyle_list[i], \\
-                    fontstyle_list[i], \\
+                    base_style, \\
                     copyright, version)
     endif
     
-    SetTTFName(0x409, 2, "Regular")
-  else
-    if (fontfamilysuffix_nonspace != "")
-      SetFontNames(fontfamily + fontfamilysuffix_nonspace + "-" + fontstyle_list[i], \\
-                    fontfamily + " " + fontfamilysuffix_inspace, \\
-                    fontfamily + " " + fontfamilysuffix_inspace + " " + fontstyle_list[i], \\
-                    fontstyle_list[i], \\
-                    copyright, version)
+    if (Strstr(fontstyle_list[i], 'Italic') >= 0)
+      SetTTFName(0x409, 2, "Italic")
     else
-      SetFontNames(fontfamily + "-" + fontstyle_list[i], \\
-                    fontfamily, \\
-                    fontfamily + " " + fontstyle_list[i], \\
-                    fontstyle_list[i], \\
-                    copyright, version)
+      SetTTFName(0x409, 2, "Regular")
+    endif
+  else
+    display_style = fontstyle_list[i]
+    if (fontstyle_list[i] == 'Regular Italic')
+      SetTTFName(0x409, 2, 'Italic')
+      display_style = 'Italic'
+    else
+      SetTTFName(0x409, 2, fontstyle_list[i])
     endif
 
-    SetTTFName(0x409, 2, fontstyle_list[i])
+    if (fontfamilysuffix_nonspace != "")
+      SetFontNames(fontfamily + fontfamilysuffix_nonspace + "-" + fontname_style, \\
+                    fontfamily + " " + fontfamilysuffix_inspace, \\
+                    fontfamily + " " + fontfamilysuffix_inspace + " " + display_style, \\
+                    base_style, \\
+                    copyright, version)
+    else
+      SetFontNames(fontfamily + "-" + fontname_style, \\
+                    fontfamily, \\
+                    fontfamily + " " + display_style, \\
+                    base_style, \\
+                    copyright, version)
+    endif
   endif
 
   if (fontfamilysuffix_nonspace != "")
@@ -1873,7 +2637,11 @@ while (i < SizeOf(fontstyle_list))
   else
     SetTTFName(0x409, 16, fontfamily)
   endif
-  SetTTFName(0x409, 17, fontstyle_list[i])
+  if (fontstyle_list[i] == 'Regular Italic')
+    SetTTFName(0x409, 17, 'Italic')
+  else
+    SetTTFName(0x409, 17, fontstyle_list[i])
+  endif
 
   SetTTFName(0x409, 3, "FontForge 2.0 : " + \$fullname + " : " + Strftime("%d-%m-%Y", 0))
 
@@ -1905,11 +2673,11 @@ while (i < SizeOf(fontstyle_list))
 
   # Save PlemolJP
   if (fontfamilysuffix_nonspace != "")
-        Print("Save " + fontfamily + fontfamilysuffix_nonspace + "-" + fontstyle_list[i] + ".ttf")
-        Generate("${base_dir}/" + fontfamily + fontfamilysuffix_nonspace + "-" + fontstyle_list[i] + ".ttf", "")
+        Print("Save " + fontfamily + fontfamilysuffix_nonspace + "-" + fontname_style + ".ttf")
+        Generate("${base_dir}/" + fontfamily + fontfamilysuffix_nonspace + "-" + fontname_style + ".ttf", "")
   else
-        Print("Save " + fontfamily + "-" + fontstyle_list[i] + ".ttf")
-        Generate("${base_dir}/" + fontfamily + "-" + fontstyle_list[i] + ".ttf", "")
+        Print("Save " + fontfamily + "-" + fontname_style + ".ttf")
+        Generate("${base_dir}/" + fontfamily + "-" + fontname_style + ".ttf", "")
   endif
   Close()
 
@@ -1962,7 +2730,7 @@ $fontforge_command -script ${tmpdir}/${plemoljp35_generator} 2> $redirection_std
 # Generate PlemolJP Console - 35
 $fontforge_command -script ${tmpdir}/${plemoljp35_console_generator} 2> $redirection_stderr || exit 4
 
-for style in Thin ExtraLight Light Regular Text Medium SemiBold Bold
+for style in Thin ExtraLight Light Regular Text Medium SemiBold Bold ThinItalic ExtraLightItalic LightItalic Italic TextItalic MediumItalic SemiBoldItalic BoldItalic
 do
   plemoljp_filename="${plemoljp_familyname}${plemoljp_familyname_suffix}-${style}.ttf"
   plemoljp_console_filename="${plemoljp_familyname}${plemoljp_console_suffix}${hs_suffix}-${style}.ttf"
@@ -2029,6 +2797,54 @@ do
     marge_plexjp35_regular="${tmpdir}/${modified_plexjp35_bold}.ttf"
     marge_plexjp35_console_regular="${tmpdir}/${modified_plexjp35_console_bold}.ttf"
   fi
+  if [ "${style}" = 'ThinItalic' ]; then
+    marge_plexjp_regular="${tmpdir}/${modified_plexjp_thin_italic}.ttf"
+    marge_plexjp_console_regular="${tmpdir}/${modified_plexjp_console_thin_italic}.ttf"
+    marge_plexjp35_regular="${tmpdir}/${modified_plexjp35_thin_italic}.ttf"
+    marge_plexjp35_console_regular="${tmpdir}/${modified_plexjp35_console_thin_italic}.ttf"
+  fi
+  if [ "${style}" = 'ExtraLightItalic' ]; then
+    marge_plexjp_regular="${tmpdir}/${modified_plexjp_extralight_italic}.ttf"
+    marge_plexjp_console_regular="${tmpdir}/${modified_plexjp_console_extralight_italic}.ttf"
+    marge_plexjp35_regular="${tmpdir}/${modified_plexjp35_extralight_italic}.ttf"
+    marge_plexjp35_console_regular="${tmpdir}/${modified_plexjp35_console_extralight_italic}.ttf"
+  fi
+  if [ "${style}" = 'LightItalic' ]; then
+    marge_plexjp_regular="${tmpdir}/${modified_plexjp_light_italic}.ttf"
+    marge_plexjp_console_regular="${tmpdir}/${modified_plexjp_console_light_italic}.ttf"
+    marge_plexjp35_regular="${tmpdir}/${modified_plexjp35_light_italic}.ttf"
+    marge_plexjp35_console_regular="${tmpdir}/${modified_plexjp35_console_light_italic}.ttf"
+  fi
+  if [ "${style}" = 'Italic' ]; then
+    marge_plexjp_regular="${tmpdir}/${modified_plexjp_regular_italic}.ttf"
+    marge_plexjp_console_regular="${tmpdir}/${modified_plexjp_console_regular_italic}.ttf"
+    marge_plexjp35_regular="${tmpdir}/${modified_plexjp35_regular_italic}.ttf"
+    marge_plexjp35_console_regular="${tmpdir}/${modified_plexjp35_console_regular_italic}.ttf"
+  fi
+  if [ "${style}" = 'TextItalic' ]; then
+    marge_plexjp_regular="${tmpdir}/${modified_plexjp_text_italic}.ttf"
+    marge_plexjp_console_regular="${tmpdir}/${modified_plexjp_console_text_italic}.ttf"
+    marge_plexjp35_regular="${tmpdir}/${modified_plexjp35_text_italic}.ttf"
+    marge_plexjp35_console_regular="${tmpdir}/${modified_plexjp35_console_text_italic}.ttf"
+  fi
+  if [ "${style}" = 'MediumItalic' ]; then
+    marge_plexjp_regular="${tmpdir}/${modified_plexjp_medium_italic}.ttf"
+    marge_plexjp_console_regular="${tmpdir}/${modified_plexjp_console_medium_italic}.ttf"
+    marge_plexjp35_regular="${tmpdir}/${modified_plexjp35_medium_italic}.ttf"
+    marge_plexjp35_console_regular="${tmpdir}/${modified_plexjp35_console_medium_italic}.ttf"
+  fi
+  if [ "${style}" = 'SemiBoldItalic' ]; then
+    marge_plexjp_regular="${tmpdir}/${modified_plexjp_semibold_italic}.ttf"
+    marge_plexjp_console_regular="${tmpdir}/${modified_plexjp_console_semibold_italic}.ttf"
+    marge_plexjp35_regular="${tmpdir}/${modified_plexjp35_semibold_italic}.ttf"
+    marge_plexjp35_console_regular="${tmpdir}/${modified_plexjp35_console_semibold_italic}.ttf"
+  fi
+  if [ "${style}" = 'BoldItalic' ]; then
+    marge_plexjp_regular="${tmpdir}/${modified_plexjp_bold_italic}.ttf"
+    marge_plexjp_console_regular="${tmpdir}/${modified_plexjp_console_bold_italic}.ttf"
+    marge_plexjp35_regular="${tmpdir}/${modified_plexjp35_bold_italic}.ttf"
+    marge_plexjp35_console_regular="${tmpdir}/${modified_plexjp35_console_bold_italic}.ttf"
+  fi
 
   # PlemolJP
   echo "pyftmerge: ${plemoljp_filename}"
@@ -2053,10 +2869,6 @@ do
 done
 
 rm -f hinted_*.ttf
-rm -f "${plemoljp_evacuation_symbol_familyname}"*.ttf
-rm -f "${plemoljp35_evacuation_symbol_familyname}"*.ttf
-rm -f "${plemoljp_box_drawing_light_familyname}"*.ttf
-rm -f "${plemoljp35_box_drawing_light_familyname}"*.ttf
 
 # Remove temporary directory
 if [ "${leaving_tmp_flag}" = "false" ]

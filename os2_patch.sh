@@ -18,11 +18,11 @@ for P in ${BASE_DIR}/${FIRGE_PATTERN}; do
   fsSelection_value=$(grep fsSelection "${P%%.ttf}.ttx" | awk -F\" '{print $2}')
   if [ `echo $P | grep Regular` ]; then
     fsSelection_sed_value='00000001 01000000'
-  elif [ `echo $P | grep BoldOblique` ]; then
+  elif [ `echo $P | grep BoldItalic` ]; then
     fsSelection_sed_value='00000001 00100001'
   elif [ `echo $P | grep Bold` ]; then
     fsSelection_sed_value='00000001 00100000'
-  elif [ `echo $P | grep Oblique` ]; then
+  elif [ `echo $P | grep Italic` ]; then
     fsSelection_sed_value='00000001 00000001'
   else
     fsSelection_sed_value='00000001 00000000'
@@ -54,11 +54,11 @@ for P in ${BASE_DIR}/${FIRGE35_PATTERN}; do
   fsSelection_value=$(grep fsSelection "${P%%.ttf}.ttx" | awk -F\" '{print $2}')
   if [ `echo $P | grep Regular` ]; then
     fsSelection_sed_value='00000001 01000000'
-  elif [ `echo $P | grep BoldOblique` ]; then
+  elif [ `echo $P | grep BoldItalic` ]; then
     fsSelection_sed_value='00000001 00100001'
   elif [ `echo $P | grep Bold` ]; then
     fsSelection_sed_value='00000001 00100000'
-  elif [ `echo $P | grep Oblique` ]; then
+  elif [ `echo $P | grep Italic` ]; then
     fsSelection_sed_value='00000001 00000001'
   else
     fsSelection_sed_value='00000001 00000000'
