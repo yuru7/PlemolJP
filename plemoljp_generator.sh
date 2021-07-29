@@ -2070,6 +2070,9 @@ plexmono_list  = [ \\
 fontfamily        = "${plemoljp_familyname}"
 fontfamilysuffix_nonspace = "${plemoljp_console_suffix}${hs_suffix}"
 fontfamilysuffix_inspace  = "${plemoljp_console_suffix} ${hs_suffix}"
+if ("${hs_suffix}" == "")
+  fontfamilysuffix_inspace  = "${plemoljp_console_suffix}"
+endif
 
 fontstyle_list    = [ \\
                       "Thin", \\
@@ -2503,6 +2506,9 @@ plexmono_list  = [ \\
 fontfamily        = "${plemoljp35_familyname}"
 fontfamilysuffix_nonspace = "${plemoljp_console_suffix}${hs_suffix}"
 fontfamilysuffix_inspace  = "${plemoljp_console_suffix} ${hs_suffix}"
+if ("${hs_suffix}" == "")
+  fontfamilysuffix_inspace  = "${plemoljp_console_suffix}"
+endif
 
 fontstyle_list    = [ \\
                       "Thin", \\
