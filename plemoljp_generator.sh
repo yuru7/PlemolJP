@@ -45,13 +45,13 @@ em=$(($em_ascent + $em_descent))
 
 typo_line_gap=80
 
-hack_width=600
-genjyuu_width=1000
+plexmono_width=600
+plexjp_width=1000
 
 plemoljp_half_width=528
 plemoljp_full_width=$((${plemoljp_half_width} * 2))
-hack_shrink_x=88
-hack_shrink_y=93
+plexmono_shrink_x=88
+plexmono_shrink_y=93
 
 plemoljp35_half_width=600
 plemoljp35_full_width=$((${plemoljp35_half_width} * 5 / 3))
@@ -70,113 +70,113 @@ fonts_directories="${base_dir}/source/ ${base_dir}/source/IBM-Plex-Mono/ ${base_
 leaving_tmp_flag="false"
 
 # Set filenames
-hack_thin_src="IBMPlexMono-Thin.ttf"
-hack_extralight_src="IBMPlexMono-ExtraLight.ttf"
-hack_light_src="IBMPlexMono-Light.ttf"
-hack_regular_src="IBMPlexMono-Regular.ttf"
-hack_text_src="IBMPlexMono-Text.ttf"
-hack_medium_src="IBMPlexMono-Medium.ttf"
-hack_semibold_src="IBMPlexMono-SemiBold.ttf"
-hack_bold_src="IBMPlexMono-Bold.ttf"
+plexmono_thin_src="IBMPlexMono-Thin.ttf"
+plexmono_extralight_src="IBMPlexMono-ExtraLight.ttf"
+plexmono_light_src="IBMPlexMono-Light.ttf"
+plexmono_regular_src="IBMPlexMono-Regular.ttf"
+plexmono_text_src="IBMPlexMono-Text.ttf"
+plexmono_medium_src="IBMPlexMono-Medium.ttf"
+plexmono_semibold_src="IBMPlexMono-SemiBold.ttf"
+plexmono_bold_src="IBMPlexMono-Bold.ttf"
 
-genjyuu_thin_src="IBMPlexSansJP-Thin.ttf"
-genjyuu_extralight_src="IBMPlexSansJP-ExtraLight.ttf"
-genjyuu_light_src="IBMPlexSansJP-Light.ttf"
-genjyuu_regular_src="IBMPlexSansJP-Regular.ttf"
-genjyuu_text_src="IBMPlexSansJP-Text.ttf"
-genjyuu_medium_src="IBMPlexSansJP-Medium.ttf"
-genjyuu_semibold_src="IBMPlexSansJP-SemiBold.ttf"
-genjyuu_bold_src="IBMPlexSansJP-Bold.ttf"
+plexjp_thin_src="IBMPlexSansJP-Thin.ttf"
+plexjp_extralight_src="IBMPlexSansJP-ExtraLight.ttf"
+plexjp_light_src="IBMPlexSansJP-Light.ttf"
+plexjp_regular_src="IBMPlexSansJP-Regular.ttf"
+plexjp_text_src="IBMPlexSansJP-Text.ttf"
+plexjp_medium_src="IBMPlexSansJP-Medium.ttf"
+plexjp_semibold_src="IBMPlexSansJP-SemiBold.ttf"
+plexjp_bold_src="IBMPlexSansJP-Bold.ttf"
 
-modified_hack_material_generator="modified_hack_material_generator.pe"
-modified_hack_material_thin="Modified-Hack-Material-thin.sfd"
-modified_hack_material_extralight="Modified-Hack-Material-extralight.sfd"
-modified_hack_material_light="Modified-Hack-Material-light.sfd"
-modified_hack_material_regular="Modified-Hack-Material-Regular.sfd"
-modified_hack_material_text="Modified-Hack-Material-text.sfd"
-modified_hack_material_medium="Modified-Hack-Material-medium.sfd"
-modified_hack_material_semibold="Modified-Hack-Material-semiBold.sfd"
-modified_hack_material_bold="Modified-Hack-Material-Bold.sfd"
+modified_plexmono_material_generator="modified_plexmono_material_generator.pe"
+modified_plexmono_material_thin="Modified-IBMPlexMono-Material-thin.sfd"
+modified_plexmono_material_extralight="Modified-IBMPlexMono-Material-extralight.sfd"
+modified_plexmono_material_light="Modified-IBMPlexMono-Material-light.sfd"
+modified_plexmono_material_regular="Modified-IBMPlexMono-Material-Regular.sfd"
+modified_plexmono_material_text="Modified-IBMPlexMono-Material-text.sfd"
+modified_plexmono_material_medium="Modified-IBMPlexMono-Material-medium.sfd"
+modified_plexmono_material_semibold="Modified-IBMPlexMono-Material-semiBold.sfd"
+modified_plexmono_material_bold="Modified-IBMPlexMono-Material-Bold.sfd"
 
-modified_hack_console_generator="modified_hack_console_generator.pe"
-modified_hack_console_thin="Modified-Hack-Console-thin.sfd"
-modified_hack_console_extralight="Modified-Hack-Console-extralight.sfd"
-modified_hack_console_light="Modified-Hack-Console-light.sfd"
-modified_hack_console_regular="Modified-Hack-Console-Regular.sfd"
-modified_hack_console_text="Modified-Hack-Console-text.sfd"
-modified_hack_console_medium="Modified-Hack-Console-medium.sfd"
-modified_hack_console_semibold="Modified-Hack-Console-semiBold.sfd"
-modified_hack_console_bold="Modified-Hack-Console-Bold.sfd"
+modified_plexmono_console_generator="modified_plexmono_console_generator.pe"
+modified_plexmono_console_thin="Modified-IBMPlexMono-Console-thin.sfd"
+modified_plexmono_console_extralight="Modified-IBMPlexMono-Console-extralight.sfd"
+modified_plexmono_console_light="Modified-IBMPlexMono-Console-light.sfd"
+modified_plexmono_console_regular="Modified-IBMPlexMono-Console-Regular.sfd"
+modified_plexmono_console_text="Modified-IBMPlexMono-Console-text.sfd"
+modified_plexmono_console_medium="Modified-IBMPlexMono-Console-medium.sfd"
+modified_plexmono_console_semibold="Modified-IBMPlexMono-Console-semiBold.sfd"
+modified_plexmono_console_bold="Modified-IBMPlexMono-Console-Bold.sfd"
 
-modified_hack35_console_generator="modified_hack35_console_generator.pe"
-modified_hack35_console_thin="Modified-Hack35-Console-thin.sfd"
-modified_hack35_console_extralight="Modified-Hack35-Console-extralight.sfd"
-modified_hack35_console_light="Modified-Hack35-Console-light.sfd"
-modified_hack35_console_regular="Modified-Hack35-Console-Regular.sfd"
-modified_hack35_console_text="Modified-Hack35-Console-text.sfd"
-modified_hack35_console_medium="Modified-Hack35-Console-medium.sfd"
-modified_hack35_console_semibold="Modified-Hack35-Console-semiBold.sfd"
-modified_hack35_console_bold="Modified-Hack35-Console-Bold.sfd"
+modified_plexmono35_console_generator="modified_plexmono35_console_generator.pe"
+modified_plexmono35_console_thin="Modified-IBMPlexMono35-Console-thin.sfd"
+modified_plexmono35_console_extralight="Modified-IBMPlexMono35-Console-extralight.sfd"
+modified_plexmono35_console_light="Modified-IBMPlexMono35-Console-light.sfd"
+modified_plexmono35_console_regular="Modified-IBMPlexMono35-Console-Regular.sfd"
+modified_plexmono35_console_text="Modified-IBMPlexMono35-Console-text.sfd"
+modified_plexmono35_console_medium="Modified-IBMPlexMono35-Console-medium.sfd"
+modified_plexmono35_console_semibold="Modified-IBMPlexMono35-Console-semiBold.sfd"
+modified_plexmono35_console_bold="Modified-IBMPlexMono35-Console-Bold.sfd"
 
-modified_hack_generator="modified_hack_generator.pe"
-modified_hack_thin="Modified-Hack-thin.sfd"
-modified_hack_extralight="Modified-Hack-extralight.sfd"
-modified_hack_light="Modified-Hack-light.sfd"
-modified_hack_regular="Modified-Hack-Regular.sfd"
-modified_hack_text="Modified-Hack-text.sfd"
-modified_hack_medium="Modified-Hack-medium.sfd"
-modified_hack_semibold="Modified-Hack-semiBold.sfd"
-modified_hack_bold="Modified-Hack-Bold.sfd"
+modified_plexmono_generator="modified_plexmono_generator.pe"
+modified_plexmono_thin="Modified-IBMPlexMono-thin.sfd"
+modified_plexmono_extralight="Modified-IBMPlexMono-extralight.sfd"
+modified_plexmono_light="Modified-IBMPlexMono-light.sfd"
+modified_plexmono_regular="Modified-IBMPlexMono-Regular.sfd"
+modified_plexmono_text="Modified-IBMPlexMono-text.sfd"
+modified_plexmono_medium="Modified-IBMPlexMono-medium.sfd"
+modified_plexmono_semibold="Modified-IBMPlexMono-semiBold.sfd"
+modified_plexmono_bold="Modified-IBMPlexMono-Bold.sfd"
 
-modified_hack35_generator="modified_hack35_generator.pe"
-modified_hack35_thin="Modified-Hack35-thin.sfd"
-modified_hack35_extralight="Modified-Hack35-extralight.sfd"
-modified_hack35_light="Modified-Hack35-light.sfd"
-modified_hack35_regular="Modified-Hack35-Regular.sfd"
-modified_hack35_text="Modified-Hack35-text.sfd"
-modified_hack35_medium="Modified-Hack35-medium.sfd"
-modified_hack35_semibold="Modified-Hack35-semiBold.sfd"
-modified_hack35_bold="Modified-Hack35-Bold.sfd"
+modified_plexmono35_generator="modified_plexmono35_generator.pe"
+modified_plexmono35_thin="Modified-IBMPlexMono35-thin.sfd"
+modified_plexmono35_extralight="Modified-IBMPlexMono35-extralight.sfd"
+modified_plexmono35_light="Modified-IBMPlexMono35-light.sfd"
+modified_plexmono35_regular="Modified-IBMPlexMono35-Regular.sfd"
+modified_plexmono35_text="Modified-IBMPlexMono35-text.sfd"
+modified_plexmono35_medium="Modified-IBMPlexMono35-medium.sfd"
+modified_plexmono35_semibold="Modified-IBMPlexMono35-semiBold.sfd"
+modified_plexmono35_bold="Modified-IBMPlexMono35-Bold.sfd"
 
-modified_genjyuu_generator="modified_genjyuu_generator.pe"
-modified_genjyuu_thin="Modified-IBMPlexSansJP-thin.sfd"
-modified_genjyuu_extralight="Modified-IBMPlexSansJP-extralight.sfd"
-modified_genjyuu_light="Modified-IBMPlexSansJP-light.sfd"
-modified_genjyuu_regular="Modified-IBMPlexSansJP-regular.sfd"
-modified_genjyuu_text="Modified-IBMPlexSansJP-text.sfd"
-modified_genjyuu_medium="Modified-IBMPlexSansJP-medium.sfd"
-modified_genjyuu_semibold="Modified-IBMPlexSansJP-semibold.sfd"
-modified_genjyuu_bold="Modified-IBMPlexSansJP-bold.sfd"
+modified_plexjp_generator="modified_plexjp_generator.pe"
+modified_plexjp_thin="Modified-IBMPlexSansJP-thin.sfd"
+modified_plexjp_extralight="Modified-IBMPlexSansJP-extralight.sfd"
+modified_plexjp_light="Modified-IBMPlexSansJP-light.sfd"
+modified_plexjp_regular="Modified-IBMPlexSansJP-regular.sfd"
+modified_plexjp_text="Modified-IBMPlexSansJP-text.sfd"
+modified_plexjp_medium="Modified-IBMPlexSansJP-medium.sfd"
+modified_plexjp_semibold="Modified-IBMPlexSansJP-semibold.sfd"
+modified_plexjp_bold="Modified-IBMPlexSansJP-bold.sfd"
 
-modified_genjyuu35_generator="modified_genjyuu35_generator.pe"
-modified_genjyuu35_thin="Modified-IBMPlexSansJP35-thin.sfd"
-modified_genjyuu35_extralight="Modified-IBMPlexSansJP35-extralight.sfd"
-modified_genjyuu35_light="Modified-IBMPlexSansJP35-light.sfd"
-modified_genjyuu35_regular="Modified-IBMPlexSansJP35-Monospace-regular.sfd"
-modified_genjyuu35_text="Modified-IBMPlexSansJP35-Monospace-text.sfd"
-modified_genjyuu35_medium="Modified-IBMPlexSansJP35-medium.sfd"
-modified_genjyuu35_semibold="Modified-IBMPlexSansJP35-semibold.sfd"
-modified_genjyuu35_bold="Modified-IBMPlexSansJP35-Monospace-bold.sfd"
+modified_plexjp35_generator="modified_plexjp35_generator.pe"
+modified_plexjp35_thin="Modified-IBMPlexSansJP35-thin.sfd"
+modified_plexjp35_extralight="Modified-IBMPlexSansJP35-extralight.sfd"
+modified_plexjp35_light="Modified-IBMPlexSansJP35-light.sfd"
+modified_plexjp35_regular="Modified-IBMPlexSansJP35-Monospace-regular.sfd"
+modified_plexjp35_text="Modified-IBMPlexSansJP35-Monospace-text.sfd"
+modified_plexjp35_medium="Modified-IBMPlexSansJP35-medium.sfd"
+modified_plexjp35_semibold="Modified-IBMPlexSansJP35-semibold.sfd"
+modified_plexjp35_bold="Modified-IBMPlexSansJP35-Monospace-bold.sfd"
 
-modified_genjyuu_console_generator="modified_genjyuu_console_generator.pe"
-modified_genjyuu_console_thin="Modified-IBMPlexSansJP-thin_console.sfd"
-modified_genjyuu_console_extralight="Modified-IBMPlexSansJP-extralight_console.sfd"
-modified_genjyuu_console_light="Modified-IBMPlexSansJP-light_console.sfd"
-modified_genjyuu_console_regular="Modified-IBMPlexSansJP-regular_console.sfd"
-modified_genjyuu_console_text="Modified-IBMPlexSansJP-text_console.sfd"
-modified_genjyuu_console_medium="Modified-IBMPlexSansJP-medium_console.sfd"
-modified_genjyuu_console_semibold="Modified-IBMPlexSansJP-semibold_console.sfd"
-modified_genjyuu_console_bold="Modified-IBMPlexSansJP-bold_console.sfd"
+modified_plexjp_console_generator="modified_plexjp_console_generator.pe"
+modified_plexjp_console_thin="Modified-IBMPlexSansJP-thin_console.sfd"
+modified_plexjp_console_extralight="Modified-IBMPlexSansJP-extralight_console.sfd"
+modified_plexjp_console_light="Modified-IBMPlexSansJP-light_console.sfd"
+modified_plexjp_console_regular="Modified-IBMPlexSansJP-regular_console.sfd"
+modified_plexjp_console_text="Modified-IBMPlexSansJP-text_console.sfd"
+modified_plexjp_console_medium="Modified-IBMPlexSansJP-medium_console.sfd"
+modified_plexjp_console_semibold="Modified-IBMPlexSansJP-semibold_console.sfd"
+modified_plexjp_console_bold="Modified-IBMPlexSansJP-bold_console.sfd"
 
-modified_genjyuu35_console_generator="modified_genjyuu35_console_generator.pe"
-modified_genjyuu35_console_thin="Modified-IBMPlexSansJP-thin_console.sfd"
-modified_genjyuu35_console_extralight="Modified-IBMPlexSansJP-extralight_console.sfd"
-modified_genjyuu35_console_light="Modified-IBMPlexSansJP-light_console.sfd"
-modified_genjyuu35_console_regular="Modified-IBMPlexSansJP35-Monospace-regular_console.sfd"
-modified_genjyuu35_console_text="Modified-IBMPlexSansJP35-Monospace-text_console.sfd"
-modified_genjyuu35_console_medium="Modified-IBMPlexSansJP35-medium_console.sfd"
-modified_genjyuu35_console_semibold="Modified-IBMPlexSansJP35-semibold_console.sfd"
-modified_genjyuu35_console_bold="Modified-IBMPlexSansJP35-Monospace-bold_console.sfd"
+modified_plexjp35_console_generator="modified_plexjp35_console_generator.pe"
+modified_plexjp35_console_thin="Modified-IBMPlexSansJP-thin_console.sfd"
+modified_plexjp35_console_extralight="Modified-IBMPlexSansJP-extralight_console.sfd"
+modified_plexjp35_console_light="Modified-IBMPlexSansJP-light_console.sfd"
+modified_plexjp35_console_regular="Modified-IBMPlexSansJP35-Monospace-regular_console.sfd"
+modified_plexjp35_console_text="Modified-IBMPlexSansJP35-Monospace-text_console.sfd"
+modified_plexjp35_console_medium="Modified-IBMPlexSansJP35-medium_console.sfd"
+modified_plexjp35_console_semibold="Modified-IBMPlexSansJP35-semibold_console.sfd"
+modified_plexjp35_console_bold="Modified-IBMPlexSansJP35-Monospace-bold_console.sfd"
 
 plemoljp_generator="plemoljp_generator.pe"
 plemoljp_console_generator="plemoljp_console_generator.pe"
@@ -191,34 +191,34 @@ do
     [ -d "${i}" ] && tmp="${tmp} ${i}"
 done
 fonts_directories="${tmp}"
-# Search Hack
-input_hack_thin=`find $fonts_directories -follow -name "$hack_thin_src" | head -n 1`
-input_hack_extralight=`find $fonts_directories -follow -name "$hack_extralight_src" | head -n 1`
-input_hack_light=`find $fonts_directories -follow -name "$hack_light_src" | head -n 1`
-input_hack_regular=`find $fonts_directories -follow -name "$hack_regular_src" | head -n 1`
-input_hack_text=`find $fonts_directories -follow -name "$hack_text_src" | head -n 1`
-input_hack_medium=`find $fonts_directories -follow -name "$hack_medium_src" | head -n 1`
-input_hack_semibold=`find $fonts_directories -follow -name "$hack_semibold_src" | head -n 1`
-input_hack_bold=`find $fonts_directories -follow -name "$hack_bold_src" | head -n 1`
+# Search IBMPlexMono
+input_plexmono_thin=`find $fonts_directories -follow -name "$plexmono_thin_src" | head -n 1`
+input_plexmono_extralight=`find $fonts_directories -follow -name "$plexmono_extralight_src" | head -n 1`
+input_plexmono_light=`find $fonts_directories -follow -name "$plexmono_light_src" | head -n 1`
+input_plexmono_regular=`find $fonts_directories -follow -name "$plexmono_regular_src" | head -n 1`
+input_plexmono_text=`find $fonts_directories -follow -name "$plexmono_text_src" | head -n 1`
+input_plexmono_medium=`find $fonts_directories -follow -name "$plexmono_medium_src" | head -n 1`
+input_plexmono_semibold=`find $fonts_directories -follow -name "$plexmono_semibold_src" | head -n 1`
+input_plexmono_bold=`find $fonts_directories -follow -name "$plexmono_bold_src" | head -n 1`
 
-if [ -z "${input_hack_regular}" -o -z "${input_hack_bold}" ]
+if [ -z "${input_plexmono_regular}" -o -z "${input_plexmono_bold}" ]
 then
-  echo "Error: $hack_regular_src and/or $hack_bold_src not found" >&2
+  echo "Error: $plexmono_regular_src and/or $plexmono_bold_src not found" >&2
   exit 1
 fi
 
 # Search IBMPlexSansJP
-input_genjyuu_thin=`find $fonts_directories -follow -iname "$genjyuu_thin_src" | head -n 1`
-input_genjyuu_extralight=`find $fonts_directories -follow -iname "$genjyuu_extralight_src" | head -n 1`
-input_genjyuu_light=`find $fonts_directories -follow -iname "$genjyuu_light_src" | head -n 1`
-input_genjyuu_regular=`find $fonts_directories -follow -iname "$genjyuu_regular_src" | head -n 1`
-input_genjyuu_text=`find $fonts_directories -follow -iname "$genjyuu_text_src"    | head -n 1`
-input_genjyuu_medium=`find $fonts_directories -follow -iname "$genjyuu_medium_src"    | head -n 1`
-input_genjyuu_semibold=`find $fonts_directories -follow -iname "$genjyuu_semibold_src"    | head -n 1`
-input_genjyuu_bold=`find $fonts_directories -follow -iname "$genjyuu_bold_src"    | head -n 1`
-if [ -z "${input_genjyuu_regular}" -o -z "${input_genjyuu_bold}" ]
+input_plexjp_thin=`find $fonts_directories -follow -iname "$plexjp_thin_src" | head -n 1`
+input_plexjp_extralight=`find $fonts_directories -follow -iname "$plexjp_extralight_src" | head -n 1`
+input_plexjp_light=`find $fonts_directories -follow -iname "$plexjp_light_src" | head -n 1`
+input_plexjp_regular=`find $fonts_directories -follow -iname "$plexjp_regular_src" | head -n 1`
+input_plexjp_text=`find $fonts_directories -follow -iname "$plexjp_text_src"    | head -n 1`
+input_plexjp_medium=`find $fonts_directories -follow -iname "$plexjp_medium_src"    | head -n 1`
+input_plexjp_semibold=`find $fonts_directories -follow -iname "$plexjp_semibold_src"    | head -n 1`
+input_plexjp_bold=`find $fonts_directories -follow -iname "$plexjp_bold_src"    | head -n 1`
+if [ -z "${input_plexjp_regular}" -o -z "${input_plexjp_bold}" ]
 then
-  echo "Error: $genjyuu_regular_src and/or $genjyuu_bold_src not found" >&2
+  echo "Error: $plexjp_regular_src and/or $plexjp_bold_src not found" >&2
   exit 1
 fi
 
@@ -227,14 +227,14 @@ input_improved_legibility_regular=`find $fonts_directories -follow -iname improv
 input_improved_legibility_bold=`find $fonts_directories -follow -iname improved_legibility-Bold.sfd    | head -n 1`
 
 # Check filename
-[ "$(basename $input_hack_regular)" != "$hack_regular_src" ] &&
-  echo "Warning: ${input_hack_regular} does not seem to be IBMPlexMono Regular" >&2
-[ "$(basename $input_hack_bold)" != "$hack_bold_src" ] &&
-  echo "Warning: ${input_hack_regular} does not seem to be IBMPlexMono Bold" >&2
-[ "$(basename $input_genjyuu_regular)" != "$genjyuu_regular_src" ] &&
-  echo "Warning: ${input_genjyuu_regular} does not seem to be IBMPlexSansJP Regular" >&2
-[ "$(basename $input_genjyuu_bold)" != "$genjyuu_bold_src" ] &&
-  echo "Warning: ${input_genjyuu_bold} does not seem to be IBMPlexSansJP Bold" >&2
+[ "$(basename $input_plexmono_regular)" != "$plexmono_regular_src" ] &&
+  echo "Warning: ${input_plexmono_regular} does not seem to be IBMPlexMono Regular" >&2
+[ "$(basename $input_plexmono_bold)" != "$plexmono_bold_src" ] &&
+  echo "Warning: ${input_plexmono_regular} does not seem to be IBMPlexMono Bold" >&2
+[ "$(basename $input_plexjp_regular)" != "$plexjp_regular_src" ] &&
+  echo "Warning: ${input_plexjp_regular} does not seem to be IBMPlexSansJP Regular" >&2
+[ "$(basename $input_plexjp_bold)" != "$plexjp_bold_src" ] &&
+  echo "Warning: ${input_plexjp_bold} does not seem to be IBMPlexSansJP Bold" >&2
 
 # Check fontforge existance
 if ! which $fontforge_command > /dev/null 2>&1
@@ -412,33 +412,33 @@ set_half_to_full_right_fewer="
 # Generate script for modified IBMPlexMono Material
 ########################################
 
-cat > ${tmpdir}/${modified_hack_material_generator} << _EOT_
+cat > ${tmpdir}/${modified_plexmono_material_generator} << _EOT_
 #!$fontforge_command -script
 
 Print("Generate modified IBMPlexMono Material")
 
 # Set parameters
-input_list  = ["${input_hack_thin}", \\
-                  "${input_hack_extralight}", \\
-                  "${input_hack_light}", \\
-                  "${input_hack_regular}", \\
-                  "${input_hack_text}", \\
-                  "${input_hack_medium}", \\
-                  "${input_hack_semibold}", \\
-                  "${input_hack_bold}"]
-output_list = ["${modified_hack_material_thin}", \\
-                  "${modified_hack_material_extralight}", \\
-                  "${modified_hack_material_light}", \\
-                  "${modified_hack_material_regular}", \\
-                  "${modified_hack_material_text}", \\
-                  "${modified_hack_material_medium}", \\
-                  "${modified_hack_material_semibold}", \\
-                  "${modified_hack_material_bold}"]
+input_list  = ["${input_plexmono_thin}", \\
+                  "${input_plexmono_extralight}", \\
+                  "${input_plexmono_light}", \\
+                  "${input_plexmono_regular}", \\
+                  "${input_plexmono_text}", \\
+                  "${input_plexmono_medium}", \\
+                  "${input_plexmono_semibold}", \\
+                  "${input_plexmono_bold}"]
+output_list = ["${modified_plexmono_material_thin}", \\
+                  "${modified_plexmono_material_extralight}", \\
+                  "${modified_plexmono_material_light}", \\
+                  "${modified_plexmono_material_regular}", \\
+                  "${modified_plexmono_material_text}", \\
+                  "${modified_plexmono_material_medium}", \\
+                  "${modified_plexmono_material_semibold}", \\
+                  "${modified_plexmono_material_bold}"]
 
 # Begin loop of regular and bold
 i = 0
 while (i < SizeOf(input_list))
-  # Open Hack
+  # Open IBMPlexMono
   Print("Open " + input_list[i])
   Open(input_list[i])
 
@@ -475,7 +475,7 @@ while (i < SizeOf(input_list))
   SelectWorthOutputting()
   RoundToInt()
 
-  # Save modified Hack
+  # Save modified IBMPlexMono
   Print("Save " + output_list[i])
   Save("${tmpdir}/" + output_list[i])
 
@@ -489,42 +489,42 @@ _EOT_
 # Generate script for modified IBMPlexMono console
 ########################################
 
-cat > ${tmpdir}/${modified_hack_console_generator} << _EOT_
+cat > ${tmpdir}/${modified_plexmono_console_generator} << _EOT_
 #!$fontforge_command -script
 
 Print("Generate modified IBMPlexMono Console")
 
 # Set parameters
-input_list  = ["${tmpdir}/${modified_hack_material_thin}", \\
-                  "${tmpdir}/${modified_hack_material_extralight}", \\
-                  "${tmpdir}/${modified_hack_material_light}", \\
-                  "${tmpdir}/${modified_hack_material_regular}", \\
-                  "${tmpdir}/${modified_hack_material_text}", \\
-                  "${tmpdir}/${modified_hack_material_medium}", \\
-                  "${tmpdir}/${modified_hack_material_semibold}", \\
-                  "${tmpdir}/${modified_hack_material_bold}"]
-output_list = ["${modified_hack_console_thin}", \\
-                  "${modified_hack_console_extralight}", \\
-                  "${modified_hack_console_light}", \\
-                  "${modified_hack_console_regular}", \\
-                  "${modified_hack_console_text}", \\
-                  "${modified_hack_console_medium}", \\
-                  "${modified_hack_console_semibold}", \\
-                  "${modified_hack_console_bold}"]
+input_list  = ["${tmpdir}/${modified_plexmono_material_thin}", \\
+                  "${tmpdir}/${modified_plexmono_material_extralight}", \\
+                  "${tmpdir}/${modified_plexmono_material_light}", \\
+                  "${tmpdir}/${modified_plexmono_material_regular}", \\
+                  "${tmpdir}/${modified_plexmono_material_text}", \\
+                  "${tmpdir}/${modified_plexmono_material_medium}", \\
+                  "${tmpdir}/${modified_plexmono_material_semibold}", \\
+                  "${tmpdir}/${modified_plexmono_material_bold}"]
+output_list = ["${modified_plexmono_console_thin}", \\
+                  "${modified_plexmono_console_extralight}", \\
+                  "${modified_plexmono_console_light}", \\
+                  "${modified_plexmono_console_regular}", \\
+                  "${modified_plexmono_console_text}", \\
+                  "${modified_plexmono_console_medium}", \\
+                  "${modified_plexmono_console_semibold}", \\
+                  "${modified_plexmono_console_bold}"]
 
 # Begin loop of regular and bold
 i = 0
 while (i < SizeOf(input_list))
-  # Open Hack
+  # Open IBMPlexMono
   Print("Open " + input_list[i])
   Open(input_list[i])
   SelectWorthOutputting()
   UnlinkReference()
 
-  Scale(${hack_shrink_x}, ${hack_shrink_y}, 0, 0)
+  Scale(${plexmono_shrink_x}, ${plexmono_shrink_y}, 0, 0)
 
   # 幅の変更 (Move で文字幅も変わることに注意)
-  move_pt = $(((${plemoljp_half_width} - ${hack_width} * ${hack_shrink_x} / 100) / 2)) # -8
+  move_pt = $(((${plemoljp_half_width} - ${plexmono_width} * ${plexmono_shrink_x} / 100) / 2)) # -8
   width_pt = ${plemoljp_half_width}
   Move(move_pt, 0)
   SetWidth(width_pt, 0)
@@ -533,7 +533,7 @@ while (i < SizeOf(input_list))
   SelectWorthOutputting()
   RoundToInt()
 
-  # Save modified Hack
+  # Save modified IBMPlexMono
   Print("Save " + output_list[i])
   Save("${tmpdir}/" + output_list[i])
 
@@ -544,43 +544,43 @@ Quit()
 _EOT_
 
 ########################################
-# Generate script for modified Hack35 console
+# Generate script for modified IBMPlexMono35 console
 ########################################
 
-cat > ${tmpdir}/${modified_hack35_console_generator} << _EOT_
+cat > ${tmpdir}/${modified_plexmono35_console_generator} << _EOT_
 #!$fontforge_command -script
 
-Print("Generate modified Hack35 Console")
+Print("Generate modified IBMPlexMono35 Console")
 
 # Set parameters
-input_list  = ["${tmpdir}/${modified_hack_material_thin}", \\
-                  "${tmpdir}/${modified_hack_material_extralight}", \\
-                  "${tmpdir}/${modified_hack_material_light}", \\
-                  "${tmpdir}/${modified_hack_material_regular}", \\
-                  "${tmpdir}/${modified_hack_material_text}", \\
-                  "${tmpdir}/${modified_hack_material_medium}", \\
-                  "${tmpdir}/${modified_hack_material_semibold}", \\
-                  "${tmpdir}/${modified_hack_material_bold}"]
-output_list = ["${modified_hack35_console_thin}", \\
-                  "${modified_hack35_console_extralight}", \\
-                  "${modified_hack35_console_light}", \\
-                  "${modified_hack35_console_regular}", \\
-                  "${modified_hack35_console_text}", \\
-                  "${modified_hack35_console_medium}", \\
-                  "${modified_hack35_console_semibold}", \\
-                  "${modified_hack35_console_bold}"]
+input_list  = ["${tmpdir}/${modified_plexmono_material_thin}", \\
+                  "${tmpdir}/${modified_plexmono_material_extralight}", \\
+                  "${tmpdir}/${modified_plexmono_material_light}", \\
+                  "${tmpdir}/${modified_plexmono_material_regular}", \\
+                  "${tmpdir}/${modified_plexmono_material_text}", \\
+                  "${tmpdir}/${modified_plexmono_material_medium}", \\
+                  "${tmpdir}/${modified_plexmono_material_semibold}", \\
+                  "${tmpdir}/${modified_plexmono_material_bold}"]
+output_list = ["${modified_plexmono35_console_thin}", \\
+                  "${modified_plexmono35_console_extralight}", \\
+                  "${modified_plexmono35_console_light}", \\
+                  "${modified_plexmono35_console_regular}", \\
+                  "${modified_plexmono35_console_text}", \\
+                  "${modified_plexmono35_console_medium}", \\
+                  "${modified_plexmono35_console_semibold}", \\
+                  "${modified_plexmono35_console_bold}"]
 
 # Begin loop of regular and bold
 i = 0
 while (i < SizeOf(input_list))
-  # Open Hack
+  # Open IBMPlexMono
   Print("Open " + input_list[i])
   Open(input_list[i])
   SelectWorthOutputting()
   UnlinkReference()
 
   # 幅の変更 (Move で文字幅も変わることに注意)
-  move_pt = $(((${plemoljp35_half_width} - ${hack_width}) / 2)) # -8
+  move_pt = $(((${plemoljp35_half_width} - ${plexmono_width}) / 2)) # -8
   width_pt = ${plemoljp35_half_width}
   Move(move_pt, 0)
   SetWidth(width_pt, 0)
@@ -589,7 +589,7 @@ while (i < SizeOf(input_list))
   SelectWorthOutputting()
   RoundToInt()
 
-  # Save modified Hack
+  # Save modified IBMPlexMono
   Print("Save " + output_list[i])
   Save("${tmpdir}/" + output_list[i])
 
@@ -600,36 +600,36 @@ Quit()
 _EOT_
 
 ########################################
-# Generate script for modified Hack
+# Generate script for modified IBMPlexMono
 ########################################
 
-cat > ${tmpdir}/${modified_hack_generator} << _EOT_
+cat > ${tmpdir}/${modified_plexmono_generator} << _EOT_
 #!$fontforge_command -script
 
-Print("Generate modified Hack")
+Print("Generate modified IBMPlexMono")
 
 # Set parameters
-input_list  = ["${tmpdir}/${modified_hack_console_thin}", \\
-                  "${tmpdir}/${modified_hack_console_extralight}", \\
-                  "${tmpdir}/${modified_hack_console_light}", \\
-                  "${tmpdir}/${modified_hack_console_regular}", \\
-                  "${tmpdir}/${modified_hack_console_text}", \\
-                  "${tmpdir}/${modified_hack_console_medium}", \\
-                  "${tmpdir}/${modified_hack_console_semibold}", \\
-                  "${tmpdir}/${modified_hack_console_bold}"]
-output_list = ["${modified_hack_thin}", \\
-                  "${modified_hack_extralight}", \\
-                  "${modified_hack_light}", \\
-                  "${modified_hack_regular}", \\
-                  "${modified_hack_text}", \\
-                  "${modified_hack_medium}", \\
-                  "${modified_hack_semibold}", \\
-                  "${modified_hack_bold}"]
+input_list  = ["${tmpdir}/${modified_plexmono_console_thin}", \\
+                  "${tmpdir}/${modified_plexmono_console_extralight}", \\
+                  "${tmpdir}/${modified_plexmono_console_light}", \\
+                  "${tmpdir}/${modified_plexmono_console_regular}", \\
+                  "${tmpdir}/${modified_plexmono_console_text}", \\
+                  "${tmpdir}/${modified_plexmono_console_medium}", \\
+                  "${tmpdir}/${modified_plexmono_console_semibold}", \\
+                  "${tmpdir}/${modified_plexmono_console_bold}"]
+output_list = ["${modified_plexmono_thin}", \\
+                  "${modified_plexmono_extralight}", \\
+                  "${modified_plexmono_light}", \\
+                  "${modified_plexmono_regular}", \\
+                  "${modified_plexmono_text}", \\
+                  "${modified_plexmono_medium}", \\
+                  "${modified_plexmono_semibold}", \\
+                  "${modified_plexmono_bold}"]
 
 # Begin loop of regular and bold
 i = 0
 while (i < SizeOf(input_list))
-  # Open Hack
+  # Open IBMPlexMono
   Print("Open " + input_list[i])
   Open(input_list[i])
 
@@ -638,7 +638,7 @@ while (i < SizeOf(input_list))
   ${select_glyph_is_not_console}
   Clear()
 
-  # Save modified Hack
+  # Save modified IBMPlexMono
   Print("Save " + output_list[i])
   Save("${tmpdir}/" + output_list[i])
 
@@ -649,36 +649,36 @@ Quit()
 _EOT_
 
 ########################################
-# Generate script for modified Hack35
+# Generate script for modified IBMPlexMono35
 ########################################
 
-cat > ${tmpdir}/${modified_hack35_generator} << _EOT_
+cat > ${tmpdir}/${modified_plexmono35_generator} << _EOT_
 #!$fontforge_command -script
 
-Print("Generate modified Hack")
+Print("Generate modified IBMPlexMono")
 
 # Set parameters
-input_list  = ["${tmpdir}/${modified_hack35_console_thin}", \\
-                  "${tmpdir}/${modified_hack35_console_extralight}", \\
-                  "${tmpdir}/${modified_hack35_console_light}", \\
-                  "${tmpdir}/${modified_hack35_console_regular}", \\
-                  "${tmpdir}/${modified_hack35_console_text}", \\
-                  "${tmpdir}/${modified_hack35_console_medium}", \\
-                  "${tmpdir}/${modified_hack35_console_semibold}", \\
-                  "${tmpdir}/${modified_hack35_console_bold}"]
-output_list = ["${modified_hack35_thin}", \\
-                  "${modified_hack35_extralight}", \\
-                  "${modified_hack35_light}", \\
-                  "${modified_hack35_regular}", \\
-                  "${modified_hack35_text}", \\
-                  "${modified_hack35_medium}", \\
-                  "${modified_hack35_semibold}", \\
-                  "${modified_hack35_bold}"]
+input_list  = ["${tmpdir}/${modified_plexmono35_console_thin}", \\
+                  "${tmpdir}/${modified_plexmono35_console_extralight}", \\
+                  "${tmpdir}/${modified_plexmono35_console_light}", \\
+                  "${tmpdir}/${modified_plexmono35_console_regular}", \\
+                  "${tmpdir}/${modified_plexmono35_console_text}", \\
+                  "${tmpdir}/${modified_plexmono35_console_medium}", \\
+                  "${tmpdir}/${modified_plexmono35_console_semibold}", \\
+                  "${tmpdir}/${modified_plexmono35_console_bold}"]
+output_list = ["${modified_plexmono35_thin}", \\
+                  "${modified_plexmono35_extralight}", \\
+                  "${modified_plexmono35_light}", \\
+                  "${modified_plexmono35_regular}", \\
+                  "${modified_plexmono35_text}", \\
+                  "${modified_plexmono35_medium}", \\
+                  "${modified_plexmono35_semibold}", \\
+                  "${modified_plexmono35_bold}"]
 
 # Begin loop of regular and bold
 i = 0
 while (i < SizeOf(input_list))
-  # Open Hack
+  # Open IBMPlexMono
   Print("Open " + input_list[i])
   Open(input_list[i])
 
@@ -687,7 +687,7 @@ while (i < SizeOf(input_list))
   ${select_glyph_is_not_console}
   Clear()
 
-  # Save modified Hack
+  # Save modified IBMPlexMono
   Print("Save " + output_list[i])
   Save("${tmpdir}/" + output_list[i])
 
@@ -701,47 +701,47 @@ _EOT_
 # Generate script for modified IBMPlexSansJP
 ########################################
 
-cat > ${tmpdir}/${modified_genjyuu_generator} << _EOT_
+cat > ${tmpdir}/${modified_plexjp_generator} << _EOT_
 #!$fontforge_command -script
 
 Print("Generate modified IBMPlexSansJP")
 
 # Set parameters
-hack = "${tmpdir}/${modified_hack_regular}"
-input_list  = ["${input_genjyuu_thin}", \\
-                  "${input_genjyuu_extralight}", \\
-                  "${input_genjyuu_light}", \\
-                  "${input_genjyuu_regular}", \\
-                  "${input_genjyuu_text}", \\
-                  "${input_genjyuu_medium}", \\
-                  "${input_genjyuu_semibold}", \\
-                  "${input_genjyuu_bold}"]
-output_list = ["${modified_genjyuu_thin}", \\
-                  "${modified_genjyuu_extralight}", \\
-                  "${modified_genjyuu_light}", \\
-                  "${modified_genjyuu_regular}", \\
-                  "${modified_genjyuu_text}", \\
-                  "${modified_genjyuu_medium}", \\
-                  "${modified_genjyuu_semibold}", \\
-                  "${modified_genjyuu_bold}"]
+plexmono = "${tmpdir}/${modified_plexmono_regular}"
+input_list  = ["${input_plexjp_thin}", \\
+                  "${input_plexjp_extralight}", \\
+                  "${input_plexjp_light}", \\
+                  "${input_plexjp_regular}", \\
+                  "${input_plexjp_text}", \\
+                  "${input_plexjp_medium}", \\
+                  "${input_plexjp_semibold}", \\
+                  "${input_plexjp_bold}"]
+output_list = ["${modified_plexjp_thin}", \\
+                  "${modified_plexjp_extralight}", \\
+                  "${modified_plexjp_light}", \\
+                  "${modified_plexjp_regular}", \\
+                  "${modified_plexjp_text}", \\
+                  "${modified_plexjp_medium}", \\
+                  "${modified_plexjp_semibold}", \\
+                  "${modified_plexjp_bold}"]
 
 fontstyle_list    = ["Thin", "ExtraLight", "Light", "Regular", "Text", "Medium", "SemiBold", "Bold"]
 fontweight_list   = [100, 200, 300, 400, 450, 500, 600, 700]
 panoseweight_list = [3, 3, 4, 5, 5, 6, 7, 8]
 
-Print("Get trim target glyph from Hack")
-Open(hack)
+Print("Get trim target glyph from IBMPlexMono")
+Open(plexmono)
 i = 0
-end_hack = 65535
-hack_exist_glyph_array = Array(end_hack)
-while (i < end_hack)
+end_plexmono = 65535
+plexmono_exist_glyph_array = Array(end_plexmono)
+while (i < end_plexmono)
   if (i % 5000 == 0)
     Print("Processing progress: " + i)
   endif
   if (WorthOutputting(i))
-    hack_exist_glyph_array[i] = 1
+    plexmono_exist_glyph_array[i] = 1
   else
-    hack_exist_glyph_array[i] = 0
+    plexmono_exist_glyph_array[i] = 0
   endif
   i++
 endloop
@@ -749,18 +749,18 @@ Close()
 
 # Begin loop
 i = 0
-end_genjyuu = 1115564
+end_plexjp = 1115564
 i_halfwidth = 0
 i_width1000 = 0
 halfwidth_array = Array(10000)
 width1000_array = Array(10000)
 Print("Half width check loop start")
 Open(input_list[0])
-while (i < end_genjyuu)
+while (i < end_plexjp)
       if ( i % 10000 == 0 )
         Print("Processing progress: " + i)
       endif
-      if (WorthOutputting(i) && (i > end_hack || hack_exist_glyph_array[i] == 0))
+      if (WorthOutputting(i) && (i > end_plexmono || plexmono_exist_glyph_array[i] == 0))
         Select(i)
         glyphWidth = GlyphInfo("Width")
         if (glyphWidth < ${plemoljp_half_width})
@@ -789,11 +789,11 @@ while (i < SizeOf(input_list))
 
   Print("Remove IBMPlexMono Glyphs start")
   ii = 0
-  while ( ii < end_hack )
+  while ( ii < end_plexmono )
       if ( ii % 5000 == 0 )
         Print("Processing progress: " + ii)
       endif
-      if (WorthOutputting(ii) && hack_exist_glyph_array[ii] == 1)
+      if (WorthOutputting(ii) && plexmono_exist_glyph_array[ii] == 1)
         SelectMore(ii)
       endif
       ii = ii + 1
@@ -802,7 +802,7 @@ while (i < SizeOf(input_list))
   Print("Remove IBMPlexMono Glyphs end")
 
   Print("Full SetWidth start")
-  move_pt = $(((${plemoljp_full_width} - ${genjyuu_width}) / 2)) # 26
+  move_pt = $(((${plemoljp_full_width} - ${plexjp_width}) / 2)) # 26
   width_pt = ${plemoljp_full_width} # 1076
 
   SelectNone()
@@ -833,7 +833,7 @@ while (i < SizeOf(input_list))
   SelectNone()
 
   Print("Half SetWidth start")
-  move_pt = $(((${plemoljp_half_width} - ${genjyuu_width} / 2) / 2)) # 13
+  move_pt = $(((${plemoljp_half_width} - ${plexjp_width} / 2) / 2)) # 13
   width_pt = ${plemoljp_half_width} # 358
   ii=0
   while (ii < i_halfwidth)
@@ -856,7 +856,7 @@ while (i < SizeOf(input_list))
   ii = 0
   while (ii < SizeOf(half_left_list))
     Select(half_left_list[ii])
-    SetWidth(${genjyuu_width} / 2)
+    SetWidth(${plexjp_width} / 2)
     move_pt = (${plemoljp_half_width} - GlyphInfo('Width')) / 2
     Move(move_pt, 0)
     SetWidth(${plemoljp_half_width})
@@ -867,7 +867,7 @@ while (i < SizeOf(input_list))
   ii = 0
   while (ii < SizeOf(full_left_list))
     Select(full_left_list[ii])
-    SetWidth(${genjyuu_width})
+    SetWidth(${plexjp_width})
     move_pt = (${plemoljp_full_width} - GlyphInfo('Width')) / 2
     Move(move_pt, 0)
     SetWidth(${plemoljp_full_width})
@@ -878,9 +878,9 @@ while (i < SizeOf(input_list))
   ii = 0
   while (ii < SizeOf(full_right_list))
     Select(full_right_list[ii])
-    move_pt = (${genjyuu_width} / 2) - GlyphInfo('Width')
+    move_pt = (${plexjp_width} / 2) - GlyphInfo('Width')
     Move(move_pt, 0)
-    SetWidth(${genjyuu_width} / 2)
+    SetWidth(${plexjp_width} / 2)
     move_pt = (${plemoljp_half_width} - GlyphInfo('Width')) / 2
     Move(move_pt, 0)
     SetWidth(${plemoljp_half_width})
@@ -891,9 +891,9 @@ while (i < SizeOf(input_list))
   ii = 0
   while (ii < SizeOf(half_to_full_right_list))
     Select(half_to_full_right_list[ii])
-    move_pt = ${genjyuu_width} - GlyphInfo('Width')
+    move_pt = ${plexjp_width} - GlyphInfo('Width')
     Move(move_pt, 0)
-    SetWidth(${genjyuu_width})
+    SetWidth(${plexjp_width})
     move_pt = (${plemoljp_full_width} - GlyphInfo('Width')) / 2
     Move(move_pt, 0)
     SetWidth(${plemoljp_full_width})
@@ -941,12 +941,12 @@ while (i < SizeOf(input_list))
   Close()
 
   # Open new file
-  Print("Generate Genjyuu ttf")
+  Print("Generate IBMPlexSansJP ttf")
   New()
   # Set encoding to Unicode-bmp
   Reencode("unicode")
   # Set configuration
-  SetFontNames("modified-genjyuu" + fontstyle_list[i])
+  SetFontNames("modified-plexjp" + fontstyle_list[i])
   ScaleToEm(${em_ascent}, ${em_descent})
   SetOS2Value("Weight", fontweight_list[i]) # Book or Bold
   SetOS2Value("Width",                   5) # Medium
@@ -983,47 +983,47 @@ _EOT_
 # Generate script for modified IBMPlexSansJP for PlemolJP35
 ########################################
 
-cat > ${tmpdir}/${modified_genjyuu35_generator} << _EOT_
+cat > ${tmpdir}/${modified_plexjp35_generator} << _EOT_
 #!$fontforge_command -script
 
 Print("Generate modified IBMPlexSansJP - 35")
 
 # Set parameters
-hack = "${tmpdir}/${modified_hack35_regular}"
-input_list  = ["${input_genjyuu_thin}", \\
-                  "${input_genjyuu_extralight}", \\
-                  "${input_genjyuu_light}", \\
-                  "${input_genjyuu_regular}", \\
-                  "${input_genjyuu_text}", \\
-                  "${input_genjyuu_medium}", \\
-                  "${input_genjyuu_semibold}", \\
-                  "${input_genjyuu_bold}"]
-output_list = ["${modified_genjyuu35_thin}", \\
-                  "${modified_genjyuu35_extralight}", \\
-                  "${modified_genjyuu35_light}", \\
-                  "${modified_genjyuu35_regular}", \\
-                  "${modified_genjyuu35_text}", \\
-                  "${modified_genjyuu35_medium}", \\
-                  "${modified_genjyuu35_semibold}", \\
-                  "${modified_genjyuu35_bold}"]
+plexmono = "${tmpdir}/${modified_plexmono35_regular}"
+input_list  = ["${input_plexjp_thin}", \\
+                  "${input_plexjp_extralight}", \\
+                  "${input_plexjp_light}", \\
+                  "${input_plexjp_regular}", \\
+                  "${input_plexjp_text}", \\
+                  "${input_plexjp_medium}", \\
+                  "${input_plexjp_semibold}", \\
+                  "${input_plexjp_bold}"]
+output_list = ["${modified_plexjp35_thin}", \\
+                  "${modified_plexjp35_extralight}", \\
+                  "${modified_plexjp35_light}", \\
+                  "${modified_plexjp35_regular}", \\
+                  "${modified_plexjp35_text}", \\
+                  "${modified_plexjp35_medium}", \\
+                  "${modified_plexjp35_semibold}", \\
+                  "${modified_plexjp35_bold}"]
 
 fontstyle_list    = ["Thin", "ExtraLight", "Light", "Regular", "Text", "Medium", "SemiBold", "Bold"]
 fontweight_list   = [100, 200, 300, 400, 450, 500, 600, 700]
 panoseweight_list = [3, 3, 4, 5, 5, 6, 7, 8]
 
-Print("Get trim target glyph from Hack")
-Open(hack)
+Print("Get trim target glyph from IBMPlexMono")
+Open(plexmono)
 i = 0
-end_hack = 65535
-hack_exist_glyph_array = Array(end_hack)
-while (i < end_hack)
+end_plexmono = 65535
+plexmono_exist_glyph_array = Array(end_plexmono)
+while (i < end_plexmono)
   if (i % 5000 == 0)
     Print("Processing progress: " + i)
   endif
   if (WorthOutputting(i))
-    hack_exist_glyph_array[i] = 1
+    plexmono_exist_glyph_array[i] = 1
   else
-    hack_exist_glyph_array[i] = 0
+    plexmono_exist_glyph_array[i] = 0
   endif
   i++
 endloop
@@ -1031,18 +1031,18 @@ Close()
 
 # Begin loop
 i = 0
-end_genjyuu = 1115564
+end_plexjp = 1115564
 i_halfwidth = 0
 i_width1000 = 0
 halfwidth_array = Array(10000)
 width1000_array = Array(10000)
 Print("Half width check loop start")
 Open(input_list[0])
-while (i < end_genjyuu)
+while (i < end_plexjp)
       if ( i % 10000 == 0 )
         Print("Processing progress: " + i)
       endif
-      if (WorthOutputting(i) && (i > end_hack || hack_exist_glyph_array[i] == 0))
+      if (WorthOutputting(i) && (i > end_plexmono || plexmono_exist_glyph_array[i] == 0))
         Select(i)
         glyphWidth = GlyphInfo("Width")
         if (glyphWidth < ${plemoljp_half_width})
@@ -1071,11 +1071,11 @@ while (i < SizeOf(input_list))
 
   Print("Remove IBMPlexMono Glyphs start")
   ii = 0
-  while ( ii < end_hack )
+  while ( ii < end_plexmono )
       if ( ii % 5000 == 0 )
         Print("Processing progress: " + ii)
       endif
-      if (WorthOutputting(ii) && hack_exist_glyph_array[ii] == 1)
+      if (WorthOutputting(ii) && plexmono_exist_glyph_array[ii] == 1)
         SelectMore(ii)
       endif
       ii = ii + 1
@@ -1084,7 +1084,7 @@ while (i < SizeOf(input_list))
   Print("Remove IBMPlexMono Glyphs end")
 
   Print("Full SetWidth start")
-  move_pt = $(((${plemoljp35_full_width} - ${genjyuu_width}) / 2)) # 3
+  move_pt = $(((${plemoljp35_full_width} - ${plexjp_width}) / 2)) # 3
   width_pt = ${plemoljp35_full_width} # 1030
 
   SelectNone()
@@ -1115,7 +1115,7 @@ while (i < SizeOf(input_list))
   SelectNone()
 
   Print("Half SetWidth start")
-  move_pt = $(((${plemoljp35_half_width} - ${genjyuu_width} / 2) / 2)) # 35
+  move_pt = $(((${plemoljp35_half_width} - ${plexjp_width} / 2) / 2)) # 35
   width_pt = ${plemoljp35_half_width} # 618
   ii=0
   while (ii < i_halfwidth)
@@ -1138,7 +1138,7 @@ while (i < SizeOf(input_list))
   ii = 0
   while (ii < SizeOf(half_left_list))
     Select(half_left_list[ii])
-    SetWidth(${genjyuu_width} / 2)
+    SetWidth(${plexjp_width} / 2)
     move_pt = (${plemoljp35_half_width} - GlyphInfo('Width')) / 2
     Move(move_pt, 0)
     SetWidth(${plemoljp35_half_width})
@@ -1149,7 +1149,7 @@ while (i < SizeOf(input_list))
   ii = 0
   while (ii < SizeOf(full_left_list))
     Select(full_left_list[ii])
-    SetWidth(${genjyuu_width})
+    SetWidth(${plexjp_width})
     move_pt = (${plemoljp35_full_width} - GlyphInfo('Width')) / 2
     Move(move_pt, 0)
     SetWidth(${plemoljp35_full_width})
@@ -1160,9 +1160,9 @@ while (i < SizeOf(input_list))
   ii = 0
   while (ii < SizeOf(full_right_list))
     Select(full_right_list[ii])
-    move_pt = (${genjyuu_width} / 2) - GlyphInfo('Width')
+    move_pt = (${plexjp_width} / 2) - GlyphInfo('Width')
     Move(move_pt, 0)
-    SetWidth(${genjyuu_width} / 2)
+    SetWidth(${plexjp_width} / 2)
     move_pt = (${plemoljp35_half_width} - GlyphInfo('Width')) / 2
     Move(move_pt, 0)
     SetWidth(${plemoljp35_half_width})
@@ -1173,9 +1173,9 @@ while (i < SizeOf(input_list))
   ii = 0
   while (ii < SizeOf(half_to_full_right_list))
     Select(half_to_full_right_list[ii])
-    move_pt = ${genjyuu_width} - GlyphInfo('Width')
+    move_pt = ${plexjp_width} - GlyphInfo('Width')
     Move(move_pt, 0)
-    SetWidth(${genjyuu_width})
+    SetWidth(${plexjp_width})
     move_pt = (${plemoljp35_full_width} - GlyphInfo('Width')) / 2
     Move(move_pt, 0)
     SetWidth(${plemoljp35_full_width})
@@ -1219,12 +1219,12 @@ while (i < SizeOf(input_list))
   Close()
 
   # Open new file
-  Print("Generate Genjyuu ttf")
+  Print("Generate IBMPlexSansJP ttf")
   New()
   # Set encoding to Unicode-bmp
   Reencode("unicode")
   # Set configuration
-  SetFontNames("modified-genjyuu" + fontstyle_list[i])
+  SetFontNames("modified-plexjp" + fontstyle_list[i])
   ScaleToEm(${em_ascent}, ${em_descent})
   SetOS2Value("Weight", fontweight_list[i]) # Book or Bold
   SetOS2Value("Width",                   5) # Medium
@@ -1261,43 +1261,43 @@ _EOT_
 # Generate script for modified IBMPlexSansJP Console
 ########################################
 
-cat > ${tmpdir}/${modified_genjyuu_console_generator} << _EOT_
+cat > ${tmpdir}/${modified_plexjp_console_generator} << _EOT_
 #!$fontforge_command -script
 
 Print("Generate modified IBMPlexSansJP Console")
 
 # Set parameters
-hack = "${tmpdir}/${modified_hack_material_regular}"
-input_list  = ["${tmpdir}/${modified_genjyuu_thin}.ttf", \\
-                  "${tmpdir}/${modified_genjyuu_extralight}.ttf", \\
-                  "${tmpdir}/${modified_genjyuu_light}.ttf", \\
-                  "${tmpdir}/${modified_genjyuu_regular}.ttf", \\
-                  "${tmpdir}/${modified_genjyuu_text}.ttf", \\
-                  "${tmpdir}/${modified_genjyuu_medium}.ttf", \\
-                  "${tmpdir}/${modified_genjyuu_semibold}.ttf", \\
-                  "${tmpdir}/${modified_genjyuu_bold}.ttf"]
-output_list = ["${modified_genjyuu_console_thin}", \\
-                  "${modified_genjyuu_console_extralight}", \\
-                  "${modified_genjyuu_console_light}", \\
-                  "${modified_genjyuu_console_regular}", \\
-                  "${modified_genjyuu_console_text}", \\
-                  "${modified_genjyuu_console_medium}", \\
-                  "${modified_genjyuu_console_semibold}", \\
-                  "${modified_genjyuu_console_bold}"]
+plexmono = "${tmpdir}/${modified_plexmono_material_regular}"
+input_list  = ["${tmpdir}/${modified_plexjp_thin}.ttf", \\
+                  "${tmpdir}/${modified_plexjp_extralight}.ttf", \\
+                  "${tmpdir}/${modified_plexjp_light}.ttf", \\
+                  "${tmpdir}/${modified_plexjp_regular}.ttf", \\
+                  "${tmpdir}/${modified_plexjp_text}.ttf", \\
+                  "${tmpdir}/${modified_plexjp_medium}.ttf", \\
+                  "${tmpdir}/${modified_plexjp_semibold}.ttf", \\
+                  "${tmpdir}/${modified_plexjp_bold}.ttf"]
+output_list = ["${modified_plexjp_console_thin}", \\
+                  "${modified_plexjp_console_extralight}", \\
+                  "${modified_plexjp_console_light}", \\
+                  "${modified_plexjp_console_regular}", \\
+                  "${modified_plexjp_console_text}", \\
+                  "${modified_plexjp_console_medium}", \\
+                  "${modified_plexjp_console_semibold}", \\
+                  "${modified_plexjp_console_bold}"]
 
-Print("Get trim target glyph from Hack")
-Open(hack)
+Print("Get trim target glyph from IBMPlexMono")
+Open(plexmono)
 i = 0
-end_hack = 65535
-hack_exist_glyph_array = Array(end_hack)
-while (i < end_hack)
+end_plexmono = 65535
+plexmono_exist_glyph_array = Array(end_plexmono)
+while (i < end_plexmono)
   if (i % 5000 == 0)
     Print("Processing progress: " + i)
   endif
   if (WorthOutputting(i))
-    hack_exist_glyph_array[i] = 1
+    plexmono_exist_glyph_array[i] = 1
   else
-    hack_exist_glyph_array[i] = 0
+    plexmono_exist_glyph_array[i] = 0
   endif
   i++
 endloop
@@ -1311,20 +1311,20 @@ while (i < SizeOf(input_list))
   Open(input_list[i])
 
   ii = 0
-  end_genjyuu = end_hack
-  Print("Begin delete the glyphs contained in Hack")
+  end_plexjp = end_plexmono
+  Print("Begin delete the glyphs contained in IBMPlexMono")
   SelectNone()
-  while ( ii < end_genjyuu )
+  while ( ii < end_plexjp )
       if ( ii % 5000 == 0 )
         Print("Processing progress: " + ii)
       endif
-      if (WorthOutputting(ii) && hack_exist_glyph_array[ii] == 1)
+      if (WorthOutputting(ii) && plexmono_exist_glyph_array[ii] == 1)
         SelectMore(ii)
       endif
       ii = ii + 1
   endloop
   Clear()
-  Print("End delete the glyphs contained in Hack")
+  Print("End delete the glyphs contained in IBMPlexMono")
 
   # 結合分音記号は全て源柔ゴシック収録のものを使用する
   Select(0u0300, 0u036f)
@@ -1347,43 +1347,43 @@ _EOT_
 # Generate script for modified IBMPlexSansJP Console for PlemolJP35
 ########################################
 
-cat > ${tmpdir}/${modified_genjyuu35_console_generator} << _EOT_
+cat > ${tmpdir}/${modified_plexjp35_console_generator} << _EOT_
 #!$fontforge_command -script
 
 Print("Generate modified IBMPlexSansJP Console - 35")
 
 # Set parameters
-hack = "${tmpdir}/${modified_hack_material_regular}"
-input_list  = ["${tmpdir}/${modified_genjyuu35_thin}.ttf", \\
-                  "${tmpdir}/${modified_genjyuu35_extralight}.ttf", \\
-                  "${tmpdir}/${modified_genjyuu35_light}.ttf", \\
-                  "${tmpdir}/${modified_genjyuu35_regular}.ttf", \\
-                  "${tmpdir}/${modified_genjyuu35_text}.ttf", \\
-                  "${tmpdir}/${modified_genjyuu35_medium}.ttf", \\
-                  "${tmpdir}/${modified_genjyuu35_semibold}.ttf", \\
-                  "${tmpdir}/${modified_genjyuu35_bold}.ttf"]
-output_list = ["${modified_genjyuu35_console_thin}", \\
-                  "${modified_genjyuu35_console_extralight}", \\
-                  "${modified_genjyuu35_console_light}", \\
-                  "${modified_genjyuu35_console_regular}", \\
-                  "${modified_genjyuu35_console_text}", \\
-                  "${modified_genjyuu35_console_medium}", \\
-                  "${modified_genjyuu35_console_semibold}", \\
-                  "${modified_genjyuu35_console_bold}"]
+plexmono = "${tmpdir}/${modified_plexmono_material_regular}"
+input_list  = ["${tmpdir}/${modified_plexjp35_thin}.ttf", \\
+                  "${tmpdir}/${modified_plexjp35_extralight}.ttf", \\
+                  "${tmpdir}/${modified_plexjp35_light}.ttf", \\
+                  "${tmpdir}/${modified_plexjp35_regular}.ttf", \\
+                  "${tmpdir}/${modified_plexjp35_text}.ttf", \\
+                  "${tmpdir}/${modified_plexjp35_medium}.ttf", \\
+                  "${tmpdir}/${modified_plexjp35_semibold}.ttf", \\
+                  "${tmpdir}/${modified_plexjp35_bold}.ttf"]
+output_list = ["${modified_plexjp35_console_thin}", \\
+                  "${modified_plexjp35_console_extralight}", \\
+                  "${modified_plexjp35_console_light}", \\
+                  "${modified_plexjp35_console_regular}", \\
+                  "${modified_plexjp35_console_text}", \\
+                  "${modified_plexjp35_console_medium}", \\
+                  "${modified_plexjp35_console_semibold}", \\
+                  "${modified_plexjp35_console_bold}"]
 
-Print("Get trim target glyph from Hack")
-Open(hack)
+Print("Get trim target glyph from IBMPlexMono")
+Open(plexmono)
 i = 0
-end_hack = 65535
-hack_exist_glyph_array = Array(end_hack)
-while (i < end_hack)
+end_plexmono = 65535
+plexmono_exist_glyph_array = Array(end_plexmono)
+while (i < end_plexmono)
   if (i % 5000 == 0)
     Print("Processing progress: " + i)
   endif
   if (WorthOutputting(i))
-    hack_exist_glyph_array[i] = 1
+    plexmono_exist_glyph_array[i] = 1
   else
-    hack_exist_glyph_array[i] = 0
+    plexmono_exist_glyph_array[i] = 0
   endif
   i++
 endloop
@@ -1397,20 +1397,20 @@ while (i < SizeOf(input_list))
   Open(input_list[i])
 
   ii = 0
-  end_genjyuu = end_hack
-  Print("Begin delete the glyphs contained in Hack")
+  end_plexjp = end_plexmono
+  Print("Begin delete the glyphs contained in IBMPlexMono")
   SelectNone()
-  while ( ii < end_genjyuu )
+  while ( ii < end_plexjp )
       if ( ii % 5000 == 0 )
         Print("Processing progress: " + ii)
       endif
-      if (WorthOutputting(ii) && hack_exist_glyph_array[ii] == 1)
+      if (WorthOutputting(ii) && plexmono_exist_glyph_array[ii] == 1)
         SelectMore(ii)
       endif
       ii = ii + 1
   endloop
   Clear()
-  Print("End delete the glyphs contained in Hack")
+  Print("End delete the glyphs contained in IBMPlexMono")
 
   # 結合分音記号は全て源柔ゴシック収録のものを使用する
   Select(0u0300, 0u036f)
@@ -1440,14 +1440,14 @@ cat > ${tmpdir}/${plemoljp_generator} << _EOT_
 Print("Generate PlemolJP")
 
 # Set parameters
-hack_list  = ["${tmpdir}/${modified_hack_thin}", \\
-                    "${tmpdir}/${modified_hack_extralight}", \\
-                    "${tmpdir}/${modified_hack_light}", \\
-                    "${tmpdir}/${modified_hack_regular}", \\
-                    "${tmpdir}/${modified_hack_text}", \\
-                    "${tmpdir}/${modified_hack_medium}", \\
-                    "${tmpdir}/${modified_hack_semibold}", \\
-                     "${tmpdir}/${modified_hack_bold}"]
+plexmono_list  = ["${tmpdir}/${modified_plexmono_thin}", \\
+                    "${tmpdir}/${modified_plexmono_extralight}", \\
+                    "${tmpdir}/${modified_plexmono_light}", \\
+                    "${tmpdir}/${modified_plexmono_regular}", \\
+                    "${tmpdir}/${modified_plexmono_text}", \\
+                    "${tmpdir}/${modified_plexmono_medium}", \\
+                    "${tmpdir}/${modified_plexmono_semibold}", \\
+                     "${tmpdir}/${modified_plexmono_bold}"]
 fontfamily        = "${plemoljp_familyname}"
 fontfamilysuffix  = "${plemoljp_familyname_suffix}"
 fontstyle_list    = ["Thin", "ExtraLight", "Light", "Regular", "Text", "Medium", "SemiBold", "Bold"]
@@ -1532,8 +1532,8 @@ while (i < SizeOf(fontstyle_list))
   SetPanose([2, 11, panoseweight_list[i], 9, 2, 2, 3, 2, 2, 7])
 
   # Merge IBMPlexMono font
-  Print("Merge " + hack_list[i]:t)
-  MergeFonts(hack_list[i])
+  Print("Merge " + plexmono_list[i]:t)
+  MergeFonts(plexmono_list[i])
 
   # Save PlemolJP
   if (fontfamilysuffix != "")
@@ -1562,14 +1562,14 @@ cat > ${tmpdir}/${plemoljp_console_generator} << _EOT_
 Print("Generate PlemolJP Console")
 
 # Set parameters
-hack_list  = ["${tmpdir}/${modified_hack_console_thin}", \\
-                     "${tmpdir}/${modified_hack_console_extralight}", \\
-                     "${tmpdir}/${modified_hack_console_light}", \\
-                     "${tmpdir}/${modified_hack_console_regular}", \\
-                     "${tmpdir}/${modified_hack_console_text}", \\
-                     "${tmpdir}/${modified_hack_console_medium}", \\
-                     "${tmpdir}/${modified_hack_console_semibold}", \\
-                     "${tmpdir}/${modified_hack_console_bold}"]
+plexmono_list  = ["${tmpdir}/${modified_plexmono_console_thin}", \\
+                     "${tmpdir}/${modified_plexmono_console_extralight}", \\
+                     "${tmpdir}/${modified_plexmono_console_light}", \\
+                     "${tmpdir}/${modified_plexmono_console_regular}", \\
+                     "${tmpdir}/${modified_plexmono_console_text}", \\
+                     "${tmpdir}/${modified_plexmono_console_medium}", \\
+                     "${tmpdir}/${modified_plexmono_console_semibold}", \\
+                     "${tmpdir}/${modified_plexmono_console_bold}"]
 fontfamily        = "${plemoljp_familyname}"
 fontfamilysuffix_nonspace = "${plemoljp_console_suffix}${hs_suffix}"
 fontfamilysuffix_inspace  = "${plemoljp_console_suffix} ${hs_suffix}"
@@ -1655,8 +1655,8 @@ while (i < SizeOf(fontstyle_list))
   SetPanose([2, 11, panoseweight_list[i], 9, 2, 2, 3, 2, 2, 7])
 
   # Merge IBMPlexMono font
-  Print("Merge " + hack_list[i]:t)
-  MergeFonts(hack_list[i])
+  Print("Merge " + plexmono_list[i]:t)
+  MergeFonts(plexmono_list[i])
 
   # Save PlemolJP
   if (fontfamilysuffix_nonspace != "")
@@ -1685,14 +1685,14 @@ cat > ${tmpdir}/${plemoljp35_generator} << _EOT_
 Print("Generate PlemolJP")
 
 # Set parameters
-hack_list  = ["${tmpdir}/${modified_hack35_thin}", \\
-                     "${tmpdir}/${modified_hack35_extralight}", \\
-                     "${tmpdir}/${modified_hack35_light}", \\
-                     "${tmpdir}/${modified_hack35_regular}", \\
-                     "${tmpdir}/${modified_hack35_text}", \\
-                     "${tmpdir}/${modified_hack35_medium}", \\
-                     "${tmpdir}/${modified_hack35_semibold}", \\
-                     "${tmpdir}/${modified_hack35_bold}"]
+plexmono_list  = ["${tmpdir}/${modified_plexmono35_thin}", \\
+                     "${tmpdir}/${modified_plexmono35_extralight}", \\
+                     "${tmpdir}/${modified_plexmono35_light}", \\
+                     "${tmpdir}/${modified_plexmono35_regular}", \\
+                     "${tmpdir}/${modified_plexmono35_text}", \\
+                     "${tmpdir}/${modified_plexmono35_medium}", \\
+                     "${tmpdir}/${modified_plexmono35_semibold}", \\
+                     "${tmpdir}/${modified_plexmono35_bold}"]
 fontfamily        = "${plemoljp35_familyname}"
 fontfamilysuffix  = "${plemoljp35_familyname_suffix}"
 fontstyle_list    = ["Thin", "ExtraLight", "Light", "Regular", "Text", "Medium", "SemiBold", "Bold"]
@@ -1777,8 +1777,8 @@ while (i < SizeOf(fontstyle_list))
   SetPanose([2, 11, panoseweight_list[i], 9, 2, 2, 3, 2, 2, 7])
 
   # Merge IBMPlexMono font
-  Print("Merge " + hack_list[i]:t)
-  MergeFonts(hack_list[i])
+  Print("Merge " + plexmono_list[i]:t)
+  MergeFonts(plexmono_list[i])
 
   # Save PlemolJP
   if (fontfamilysuffix != "")
@@ -1807,14 +1807,14 @@ cat > ${tmpdir}/${plemoljp35_console_generator} << _EOT_
 Print("Generate PlemolJP Console")
 
 # Set parameters
-hack_list  = ["${tmpdir}/${modified_hack35_console_thin}", \\
-                     "${tmpdir}/${modified_hack35_console_extralight}", \\
-                     "${tmpdir}/${modified_hack35_console_light}", \\
-                     "${tmpdir}/${modified_hack35_console_regular}", \\
-                     "${tmpdir}/${modified_hack35_console_text}", \\
-                     "${tmpdir}/${modified_hack35_console_medium}", \\
-                     "${tmpdir}/${modified_hack35_console_semibold}", \\
-                     "${tmpdir}/${modified_hack35_console_bold}"]
+plexmono_list  = ["${tmpdir}/${modified_plexmono35_console_thin}", \\
+                     "${tmpdir}/${modified_plexmono35_console_extralight}", \\
+                     "${tmpdir}/${modified_plexmono35_console_light}", \\
+                     "${tmpdir}/${modified_plexmono35_console_regular}", \\
+                     "${tmpdir}/${modified_plexmono35_console_text}", \\
+                     "${tmpdir}/${modified_plexmono35_console_medium}", \\
+                     "${tmpdir}/${modified_plexmono35_console_semibold}", \\
+                     "${tmpdir}/${modified_plexmono35_console_bold}"]
 fontfamily        = "${plemoljp35_familyname}"
 fontfamilysuffix_nonspace = "${plemoljp_console_suffix}${hs_suffix}"
 fontfamilysuffix_inspace  = "${plemoljp_console_suffix} ${hs_suffix}"
@@ -1900,8 +1900,8 @@ while (i < SizeOf(fontstyle_list))
   SetPanose([2, 11, panoseweight_list[i], 9, 2, 2, 3, 2, 2, 7])
 
   # Merge IBMPlexMono font
-  Print("Merge " + hack_list[i]:t)
-  MergeFonts(hack_list[i])
+  Print("Merge " + plexmono_list[i]:t)
+  MergeFonts(plexmono_list[i])
 
   # Save PlemolJP
   if (fontfamilysuffix_nonspace != "")
@@ -1924,19 +1924,19 @@ _EOT_
 ########################################
 
 # Generate Material
-$fontforge_command -script ${tmpdir}/${modified_hack_material_generator} 2> $redirection_stderr || exit 4
+$fontforge_command -script ${tmpdir}/${modified_plexmono_material_generator} 2> $redirection_stderr || exit 4
 
 # Generate Console
-$fontforge_command -script ${tmpdir}/${modified_hack_console_generator} 2> $redirection_stderr || exit 4
+$fontforge_command -script ${tmpdir}/${modified_plexmono_console_generator} 2> $redirection_stderr || exit 4
 
-# Generate Modiifed Hack
-$fontforge_command -script ${tmpdir}/${modified_hack_generator} 2> $redirection_stderr || exit 4
+# Generate Modiifed IBMPlexMono
+$fontforge_command -script ${tmpdir}/${modified_plexmono_generator} 2> $redirection_stderr || exit 4
 
-# Generate Modified GenJyuu
-$fontforge_command -script ${tmpdir}/${modified_genjyuu_generator} 2> $redirection_stderr || exit 4
+# Generate Modified IBMPlexSansJP
+$fontforge_command -script ${tmpdir}/${modified_plexjp_generator} 2> $redirection_stderr || exit 4
 
-# Generate Modified GenJyuu Console
-$fontforge_command -script ${tmpdir}/${modified_genjyuu_console_generator} 2> $redirection_stderr || exit 4
+# Generate Modified IBMPlexSansJP Console
+$fontforge_command -script ${tmpdir}/${modified_plexjp_console_generator} 2> $redirection_stderr || exit 4
 
 # Generate PlemolJP
 $fontforge_command -script ${tmpdir}/${plemoljp_generator} 2> $redirection_stderr || exit 4
@@ -1945,16 +1945,16 @@ $fontforge_command -script ${tmpdir}/${plemoljp_generator} 2> $redirection_stder
 $fontforge_command -script ${tmpdir}/${plemoljp_console_generator} 2> $redirection_stderr || exit 4
 
 # Generate Console - 35
-$fontforge_command -script ${tmpdir}/${modified_hack35_console_generator} 2> $redirection_stderr || exit 4
+$fontforge_command -script ${tmpdir}/${modified_plexmono35_console_generator} 2> $redirection_stderr || exit 4
 
 # Generate Modiifed IBMPlexMono - 35
-$fontforge_command -script ${tmpdir}/${modified_hack35_generator} 2> $redirection_stderr || exit 4
+$fontforge_command -script ${tmpdir}/${modified_plexmono35_generator} 2> $redirection_stderr || exit 4
 
-# Generate Modified GenJyuu - 35
-$fontforge_command -script ${tmpdir}/${modified_genjyuu35_generator} 2> $redirection_stderr || exit 4
+# Generate Modified IBMPlexSansJP - 35
+$fontforge_command -script ${tmpdir}/${modified_plexjp35_generator} 2> $redirection_stderr || exit 4
 
-# Generate Modified GenJyuu Console - 35
-$fontforge_command -script ${tmpdir}/${modified_genjyuu35_console_generator} 2> $redirection_stderr || exit 4
+# Generate Modified IBMPlexSansJP Console - 35
+$fontforge_command -script ${tmpdir}/${modified_plexjp35_console_generator} 2> $redirection_stderr || exit 4
 
 # Generate PlemolJP - 35
 $fontforge_command -script ${tmpdir}/${plemoljp35_generator} 2> $redirection_stderr || exit 4
@@ -1982,72 +1982,72 @@ do
   done
 
   if [ "${style}" = 'Thin' ]; then
-    marge_genjyuu_regular="${tmpdir}/${modified_genjyuu_thin}.ttf"
-    marge_genjyuu_console_regular="${tmpdir}/${modified_genjyuu_console_thin}.ttf"
-    marge_genjyuu35_regular="${tmpdir}/${modified_genjyuu35_thin}.ttf"
-    marge_genjyuu35_console_regular="${tmpdir}/${modified_genjyuu35_console_thin}.ttf"
+    marge_plexjp_regular="${tmpdir}/${modified_plexjp_thin}.ttf"
+    marge_plexjp_console_regular="${tmpdir}/${modified_plexjp_console_thin}.ttf"
+    marge_plexjp35_regular="${tmpdir}/${modified_plexjp35_thin}.ttf"
+    marge_plexjp35_console_regular="${tmpdir}/${modified_plexjp35_console_thin}.ttf"
   fi
   if [ "${style}" = 'ExtraLight' ]; then
-    marge_genjyuu_regular="${tmpdir}/${modified_genjyuu_extralight}.ttf"
-    marge_genjyuu_console_regular="${tmpdir}/${modified_genjyuu_console_extralight}.ttf"
-    marge_genjyuu35_regular="${tmpdir}/${modified_genjyuu35_extralight}.ttf"
-    marge_genjyuu35_console_regular="${tmpdir}/${modified_genjyuu35_console_extralight}.ttf"
+    marge_plexjp_regular="${tmpdir}/${modified_plexjp_extralight}.ttf"
+    marge_plexjp_console_regular="${tmpdir}/${modified_plexjp_console_extralight}.ttf"
+    marge_plexjp35_regular="${tmpdir}/${modified_plexjp35_extralight}.ttf"
+    marge_plexjp35_console_regular="${tmpdir}/${modified_plexjp35_console_extralight}.ttf"
   fi
   if [ "${style}" = 'Light' ]; then
-    marge_genjyuu_regular="${tmpdir}/${modified_genjyuu_light}.ttf"
-    marge_genjyuu_console_regular="${tmpdir}/${modified_genjyuu_console_light}.ttf"
-    marge_genjyuu35_regular="${tmpdir}/${modified_genjyuu35_light}.ttf"
-    marge_genjyuu35_console_regular="${tmpdir}/${modified_genjyuu35_console_light}.ttf"
+    marge_plexjp_regular="${tmpdir}/${modified_plexjp_light}.ttf"
+    marge_plexjp_console_regular="${tmpdir}/${modified_plexjp_console_light}.ttf"
+    marge_plexjp35_regular="${tmpdir}/${modified_plexjp35_light}.ttf"
+    marge_plexjp35_console_regular="${tmpdir}/${modified_plexjp35_console_light}.ttf"
   fi
   if [ "${style}" = 'Regular' ]; then
-    marge_genjyuu_regular="${tmpdir}/${modified_genjyuu_regular}.ttf"
-    marge_genjyuu_console_regular="${tmpdir}/${modified_genjyuu_console_regular}.ttf"
-    marge_genjyuu35_regular="${tmpdir}/${modified_genjyuu35_regular}.ttf"
-    marge_genjyuu35_console_regular="${tmpdir}/${modified_genjyuu35_console_regular}.ttf"
+    marge_plexjp_regular="${tmpdir}/${modified_plexjp_regular}.ttf"
+    marge_plexjp_console_regular="${tmpdir}/${modified_plexjp_console_regular}.ttf"
+    marge_plexjp35_regular="${tmpdir}/${modified_plexjp35_regular}.ttf"
+    marge_plexjp35_console_regular="${tmpdir}/${modified_plexjp35_console_regular}.ttf"
   fi
   if [ "${style}" = 'Text' ]; then
-    marge_genjyuu_regular="${tmpdir}/${modified_genjyuu_text}.ttf"
-    marge_genjyuu_console_regular="${tmpdir}/${modified_genjyuu_console_text}.ttf"
-    marge_genjyuu35_regular="${tmpdir}/${modified_genjyuu35_text}.ttf"
-    marge_genjyuu35_console_regular="${tmpdir}/${modified_genjyuu35_console_text}.ttf"
+    marge_plexjp_regular="${tmpdir}/${modified_plexjp_text}.ttf"
+    marge_plexjp_console_regular="${tmpdir}/${modified_plexjp_console_text}.ttf"
+    marge_plexjp35_regular="${tmpdir}/${modified_plexjp35_text}.ttf"
+    marge_plexjp35_console_regular="${tmpdir}/${modified_plexjp35_console_text}.ttf"
   fi
   if [ "${style}" = 'Medium' ]; then
-    marge_genjyuu_regular="${tmpdir}/${modified_genjyuu_medium}.ttf"
-    marge_genjyuu_console_regular="${tmpdir}/${modified_genjyuu_console_medium}.ttf"
-    marge_genjyuu35_regular="${tmpdir}/${modified_genjyuu35_medium}.ttf"
-    marge_genjyuu35_console_regular="${tmpdir}/${modified_genjyuu35_console_medium}.ttf"
+    marge_plexjp_regular="${tmpdir}/${modified_plexjp_medium}.ttf"
+    marge_plexjp_console_regular="${tmpdir}/${modified_plexjp_console_medium}.ttf"
+    marge_plexjp35_regular="${tmpdir}/${modified_plexjp35_medium}.ttf"
+    marge_plexjp35_console_regular="${tmpdir}/${modified_plexjp35_console_medium}.ttf"
   fi
   if [ "${style}" = 'SemiBold' ]; then
-    marge_genjyuu_regular="${tmpdir}/${modified_genjyuu_semibold}.ttf"
-    marge_genjyuu_console_regular="${tmpdir}/${modified_genjyuu_console_semibold}.ttf"
-    marge_genjyuu35_regular="${tmpdir}/${modified_genjyuu35_semibold}.ttf"
-    marge_genjyuu35_console_regular="${tmpdir}/${modified_genjyuu35_console_semibold}.ttf"
+    marge_plexjp_regular="${tmpdir}/${modified_plexjp_semibold}.ttf"
+    marge_plexjp_console_regular="${tmpdir}/${modified_plexjp_console_semibold}.ttf"
+    marge_plexjp35_regular="${tmpdir}/${modified_plexjp35_semibold}.ttf"
+    marge_plexjp35_console_regular="${tmpdir}/${modified_plexjp35_console_semibold}.ttf"
   fi
   if [ "${style}" = 'Bold' ]; then
-    marge_genjyuu_regular="${tmpdir}/${modified_genjyuu_bold}.ttf"
-    marge_genjyuu_console_regular="${tmpdir}/${modified_genjyuu_console_bold}.ttf"
-    marge_genjyuu35_regular="${tmpdir}/${modified_genjyuu35_bold}.ttf"
-    marge_genjyuu35_console_regular="${tmpdir}/${modified_genjyuu35_console_bold}.ttf"
+    marge_plexjp_regular="${tmpdir}/${modified_plexjp_bold}.ttf"
+    marge_plexjp_console_regular="${tmpdir}/${modified_plexjp_console_bold}.ttf"
+    marge_plexjp35_regular="${tmpdir}/${modified_plexjp35_bold}.ttf"
+    marge_plexjp35_console_regular="${tmpdir}/${modified_plexjp35_console_bold}.ttf"
   fi
 
   # PlemolJP
   echo "pyftmerge: ${plemoljp_filename}"
-  pyftmerge "hinted_${plemoljp_filename}" "$marge_genjyuu_regular"
+  pyftmerge "hinted_${plemoljp_filename}" "$marge_plexjp_regular"
   mv merged.ttf "${plemoljp_filename}"
 
   # PlemolJP Console
   echo "pyftmerge: ${plemoljp_console_filename}"
-  pyftmerge "hinted_${plemoljp_console_filename}" "$marge_genjyuu_console_regular"
+  pyftmerge "hinted_${plemoljp_console_filename}" "$marge_plexjp_console_regular"
   mv merged.ttf "${plemoljp_console_filename}"
 
   # PlemolJP35
   echo "pyftmerge: ${plemoljp35_filename}"
-  pyftmerge "hinted_${plemoljp35_filename}" "$marge_genjyuu35_regular"
+  pyftmerge "hinted_${plemoljp35_filename}" "$marge_plexjp35_regular"
   mv merged.ttf "${plemoljp35_filename}"
 
   # PlemolJP35 Console
   echo "pyftmerge: ${plemoljp35_console_filename}"
-  pyftmerge "hinted_${plemoljp35_console_filename}" "$marge_genjyuu35_console_regular"
+  pyftmerge "hinted_${plemoljp35_console_filename}" "$marge_plexjp35_console_regular"
   mv merged.ttf "${plemoljp35_console_filename}"
 
 done
