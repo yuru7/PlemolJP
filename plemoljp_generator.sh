@@ -1048,6 +1048,7 @@ while (i < SizeOf(input_list))
 
   # 斜体の生成
   if (Strstr(fontstyle_list[i], 'Italic') >= 0)
+    Print('Generate ' + fontstyle_list[i] + ' of IBMPlexSansJP')
     Italic(${italic_angle})
   endif
 
@@ -1412,6 +1413,7 @@ while (i < SizeOf(input_list))
 
   # 斜体の生成
   if (Strstr(fontstyle_list[i], 'Italic') >= 0)
+    Print('Generate ' + fontstyle_list[i] + ' of IBMPlexSansJP')
     Italic(${italic_angle})
   endif
 
