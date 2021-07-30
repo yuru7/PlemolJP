@@ -563,15 +563,11 @@ while (i < SizeOf(input_list))
   Scale(109, 106)
 
   # ; : , . の拡大
-#  Select(0u003a)
-#  SelectMore(0u003b)
-#  SelectMore(0u002c)
-#  SelectMore(0u002e)
-#  Scale(108)
-  ## 拡大後の位置合わせ
-#  Select(0u003b); Move(0, 18) # ;
-#  Select(0u002e); Move(0, 5)  # .
-#  Select(0u002c); Move(0, -8) # ,
+  Select(0u003a)
+  SelectMore(0u003b)
+  SelectMore(0u002c)
+  SelectMore(0u002e)
+  Scale(108)
 
   # Eclipse Pleiades 半角スペース記号 (U+1d1c) 対策
   Select(0u054d); Copy()
@@ -1115,7 +1111,6 @@ while (i < SizeOf(input_list))
   $set_half_left_fewer
   $set_half_right_fewer
   $set_half_to_full_right_fewer
-  #Move(move_pt, 0)
   SetWidth(width_pt)
   CenterInWidth()
   Print("Half SetWidth end")
@@ -1196,16 +1191,12 @@ while (i < SizeOf(input_list))
   Select(0uff5d); Move( bracket_move, 0); SetWidth(${plemoljp_full_width}) # }
 
   # 全角 ，．‘’“” の調整
-  Select(0uff0e);Scale(155) ; SetWidth(${plemoljp_full_width}) # ．
-  Select(0uff0c);Scale(145) ; SetWidth(${plemoljp_full_width}) # ，
-  Select(0u2018);Scale(145) ; SetWidth(${plemoljp_full_width}) # ‘
-  Select(0u2019);Scale(145) ; SetWidth(${plemoljp_full_width}) # ’
-  Select(0u201c);Scale(145) ; SetWidth(${plemoljp_full_width}) # “
-  Select(0u201d);Scale(145) ; SetWidth(${plemoljp_full_width}) # ”
-
-  # 下限で見切れているグリフの調整
-  Select(0uff47); Scale(100, 91) # ｇ
-  Select(0uff4a); Scale(100, 91) # ｊ
+  Select(0uff0e);Scale(145) ; SetWidth(${plemoljp_full_width}) # ．
+  Select(0uff0c);Scale(140) ; SetWidth(${plemoljp_full_width}) # ，
+  Select(0u2018);Scale(125) ; SetWidth(${plemoljp_full_width}) # ‘
+  Select(0u2019);Scale(125) ; SetWidth(${plemoljp_full_width}) # ’
+  Select(0u201c);Scale(125) ; SetWidth(${plemoljp_full_width}) # “
+  Select(0u201d);Scale(125) ; SetWidth(${plemoljp_full_width}) # ”
 
   # Save modified IBMPlexSansJP
   Print("Save " + output_list[i])
@@ -1480,7 +1471,6 @@ while (i < SizeOf(input_list))
   $set_half_left_fewer
   $set_half_right_fewer
   $set_half_to_full_right_fewer
-  #Move(move_pt, 0)
   SetWidth(width_pt)
   CenterInWidth()
   Print("Half SetWidth end")
@@ -1561,12 +1551,12 @@ while (i < SizeOf(input_list))
   Select(0uff5d); Move( bracket_move, 0); SetWidth(${plemoljp35_full_width}) # }
 
   # 全角 ，．‘’“” の調整
-  Select(0uff0e);Scale(155) ; SetWidth(${plemoljp35_full_width}) # ．
-  Select(0uff0c);Scale(145) ; SetWidth(${plemoljp35_full_width}) # ，
-  Select(0u2018);Scale(145) ; SetWidth(${plemoljp35_full_width}) # ‘
-  Select(0u2019);Scale(145) ; SetWidth(${plemoljp35_full_width}) # ’
-  Select(0u201c);Scale(145) ; SetWidth(${plemoljp35_full_width}) # “
-  Select(0u201d);Scale(145) ; SetWidth(${plemoljp35_full_width}) # ”
+  Select(0uff0e);Scale(145) ; SetWidth(${plemoljp35_full_width}) # ．
+  Select(0uff0c);Scale(140) ; SetWidth(${plemoljp35_full_width}) # ，
+  Select(0u2018);Scale(125) ; SetWidth(${plemoljp35_full_width}) # ‘
+  Select(0u2019);Scale(125) ; SetWidth(${plemoljp35_full_width}) # ’
+  Select(0u201c);Scale(125) ; SetWidth(${plemoljp35_full_width}) # “
+  Select(0u201d);Scale(125) ; SetWidth(${plemoljp35_full_width}) # ”
 
   # Save modified IBMPlexSansJP
   Print("Save " + output_list[i])
