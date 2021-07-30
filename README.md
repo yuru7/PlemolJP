@@ -4,6 +4,8 @@
 
 IBM Plex Mono と IBM Plex Sans JP を合成した日本語プログラミングフォント PlemolJP (プレモル ジェイピー)
 
+> ダウンロードはこちら ➡ [Releases](https://github.com/yuru7/PlemolJP/releases)
+
 ![image](https://github.com/yuru7/PlemolJP/raw/images/beer.jpg)
 
 |**フォント ファミリー**|**説明**|
@@ -15,7 +17,9 @@ IBM Plex Mono と IBM Plex Sans JP を合成した日本語プログラミング
 
 PlemolJP では、合成元の IBM Plex シリーズと同様に8種のウェイトに対応しています。8種のウェイト×上記4種のファミリーで、計32種から使用したいフォントをお選びいただけます。
 
-また日本語環境でのプログラミングでつまずきがちな全角スペースの誤入力に気づけるように、全角スペースを可視化する修正を加えています。
+また日本語環境でのプログラミングでつまずきがちな全角スペースの誤入力に気づけるように、全角スペースを可視化する修正を加えています。  
+
+> ※全角スペースの可視化が不要な場合は、リリースの Assets より `PlemolJP_HS_vx.x.x.zip` の名前形式になっている zip ファイルを選択してください。(HS: Hidden Space)
 
 |Thin|ExtraLight|Light|Regular|
 |:---:|:---:|:---:|:---:|
