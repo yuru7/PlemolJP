@@ -431,6 +431,8 @@ select_glyph_is_not_console="
   SelectFewer(0u2219)
   SelectFewer(0u25d8)
   SelectFewer(0u25e6)
+  ## 結合文音記号は IBM Plex Mono を適用
+  SelectFewer(0u0300, 0u0328)
   ## IBM Plex Sans JP 等幅化対策 (IBM Plex Mono を適用して半角化)
   SelectFewer(171)
   SelectFewer(187)
@@ -573,9 +575,6 @@ while (i < SizeOf(input_list))
   Select(0u054d); Copy()
   Select(0u1d1c); Paste()
   Scale(85, 60)
-
-  # 結合分音記号は全て源柔ゴシックをベースにするため削除する
-#  Select(0u0300, 0u036f); Clear()
 
   # パスの小数点以下を切り捨て
   SelectWorthOutputting()
@@ -1696,11 +1695,9 @@ while (i < SizeOf(input_list))
   Clear()
   Print("End delete the glyphs contained in IBMPlexMono")
 
-  # 結合分音記号は全て源柔ゴシック収録のものを使用する
-  #Select(0u0300, 0u036f)
-  #move_pt = $(((${plemoljp_half_width} - ${plemoljp_full_width}) / 2))
-  #Move(move_pt, 0)
-  #SetWidth(${plemoljp_half_width}, 0)
+  # 結合分音記号は IBM Plex Mono を使用する
+  Select(0u0300, 0u0328)
+  Clear()
 
   # Save modified IBMPlexSansJP
   Print("Generate " + output_list[i])
@@ -1802,11 +1799,9 @@ while (i < SizeOf(input_list))
   Clear()
   Print("End delete the glyphs contained in IBMPlexMono")
 
-  # 結合分音記号は全て源柔ゴシック収録のものを使用する
-  #Select(0u0300, 0u036f)
-  #move_pt = $(((${plemoljp35_half_width} - ${plemoljp35_full_width}) / 2))
-  #Move(move_pt, 0)
-  #SetWidth(${plemoljp35_half_width}, 0)
+  # 結合分音記号は IBM Plex Mono を使用する
+  Select(0u0300, 0u0328)
+  Clear()
 
   # Save modified IBMPlexSansJP
   Print("Generate " + output_list[i])
