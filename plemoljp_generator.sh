@@ -54,7 +54,7 @@ plexjp_width=1000
 plemoljp_half_width=528
 plemoljp_full_width=$((${plemoljp_half_width} * 2))
 plexmono_shrink_x=88
-plexmono_shrink_y=93
+plexmono_shrink_y=94
 
 plemoljp35_half_width=600
 plemoljp35_full_width=$((${plemoljp35_half_width} * 5 / 3))
@@ -664,11 +664,6 @@ while (i < SizeOf(input_list))
   UnlinkReference()
 
   Scale(${plexmono_shrink_x}, ${plexmono_shrink_y}, 0, 0)
-
-  # 半角小文字アルファベットの高さを調整
-  Select(0u0061, 0u007a)
-  Scale(100, 105, 0, 0)
-  SelectWorthOutputting()
 
   # 幅の変更 (Move で文字幅も変わることに注意)
   move_pt = $(((${plemoljp_half_width} - ${plexmono_width} * ${plexmono_shrink_x} / 100) / 2)) # -8
@@ -2831,12 +2826,12 @@ do
   # PlemolJP
   for f in "$plemoljp_filename" "$plemoljp_console_filename"
   do
-    ttfautohint -l 6 -r 45 -a nnn -D latn -W -X "15" -I "$f" "hinted_${f}"
+    ttfautohint -l 6 -r 45 -a nnn -D latn -W -X "13-" -I "$f" "hinted_${f}"
   done
   # PlemolJP35
   for f in "$plemoljp35_filename" "$plemoljp35_console_filename"
   do
-    ttfautohint -l 6 -r 45 -a nnn -D latn -W -X "14-15" -I "$f" "hinted_${f}"
+    ttfautohint -l 6 -r 45 -a nnn -D latn -W -X "13-" -I "$f" "hinted_${f}"
   done
 
   if [ "${style}" = 'Thin' ]; then
