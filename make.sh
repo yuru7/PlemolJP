@@ -24,6 +24,21 @@ function mvBuildHS() {
   mv -f "${BASE_DIR}/"PlemolJP*.ttf "${BASE_DIR}/build/PlemolJP_HS/"
 }
 
+DEBUG_FLG='false'
+while getopts d OPT
+do
+  case $OPT in
+    'd' ) DEBUG_FLG='true';;
+  esac
+done
+
+if [ "$DEBUG_FLG" = 'true' ]; then
+  "${BASE_DIR}/plemoljp_generator.sh" -d \
+  && "${BASE_DIR}/os2_patch.sh" \
+  && mvBuild
+  exit
+fi
+
 "${BASE_DIR}/plemoljp_generator.sh" \
 && "${BASE_DIR}/os2_patch.sh" \
 && mvBuild

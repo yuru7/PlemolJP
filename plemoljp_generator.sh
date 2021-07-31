@@ -7,15 +7,22 @@ base_dir=$(cd $(dirname $0); pwd)
 
 # オプション解析
 HIDDEN_SPACE_FLG='false'
-while getopts h OPT
+DEBUG_FLG='false'
+while getopts dh OPT
 do
   case $OPT in
+    'd' ) DEBUG_FLG='true';;
     'h' ) HIDDEN_SPACE_FLG='true';;
   esac
 done
 
+if [ "$DEBUG_FLG" = 'true' ]; then
+  echo '### Debug Mode ###'
+  sleep 2
+fi
 if [ "$HIDDEN_SPACE_FLG" = 'true' ]; then
   echo '### Generate Hidden Space Version ###'
+  sleep 2
 fi
 
 # Set familyname
@@ -547,6 +554,11 @@ output_list = [ \\
                 "${modified_plexmono_material_bold_italic}" \\
               ]
 
+if ("$DEBUG_FLG" == 'true')
+  input_list = [input_list[3]]
+  output_list = [output_list[3]]
+endif
+
 # Begin loop of regular and bold
 i = 0
 while (i < SizeOf(input_list))
@@ -637,6 +649,11 @@ output_list = [ \\
                 "${modified_plexmono_console_bold_italic}" \\
               ]
 
+if ("$DEBUG_FLG" == 'true')
+  input_list = [input_list[3]]
+  output_list = [output_list[3]]
+endif
+
 # Begin loop of regular and bold
 i = 0
 while (i < SizeOf(input_list))
@@ -720,6 +737,11 @@ output_list = [ \\
                 "${modified_plexmono35_console_bold_italic}" \\
               ]
 
+if ("$DEBUG_FLG" == 'true')
+  input_list = [input_list[3]]
+  output_list = [output_list[3]]
+endif
+
 # Begin loop of regular and bold
 i = 0
 while (i < SizeOf(input_list))
@@ -796,6 +818,11 @@ output_list = [ \\
                 "${modified_plexmono_bold_italic}" \\
               ]
 
+if ("$DEBUG_FLG" == 'true')
+  input_list = [input_list[3]]
+  output_list = [output_list[3]]
+endif
+
 # Begin loop of regular and bold
 i = 0
 while (i < SizeOf(input_list))
@@ -864,6 +891,11 @@ output_list = [ \\
                 "${modified_plexmono35_semibold_italic}", \\
                 "${modified_plexmono35_bold_italic}" \\
               ]
+
+if ("$DEBUG_FLG" == 'true')
+  input_list = [input_list[3]]
+  output_list = [output_list[3]]
+endif
 
 # Begin loop of regular and bold
 i = 0
@@ -989,6 +1021,14 @@ panoseweight_list = [ \\
                       7, \\
                       8 \\
                     ]
+
+if ("$DEBUG_FLG" == 'true')
+  input_list = [input_list[3]]
+  output_list = [output_list[3]]
+  fontstyle_list = [fontstyle_list[3]]
+  fontweight_list = [fontweight_list[3]]
+  panoseweight_list = [panoseweight_list[3]]
+endif
 
 Print("Get trim target glyph from IBMPlexMono")
 Open(plexmono)
@@ -1350,6 +1390,14 @@ panoseweight_list = [ \\
                       8 \\
                     ]
 
+if ("$DEBUG_FLG" == 'true')
+  input_list = [input_list[3]]
+  output_list = [output_list[3]]
+  fontstyle_list = [fontstyle_list[3]]
+  fontweight_list = [fontweight_list[3]]
+  panoseweight_list = [panoseweight_list[3]]
+endif
+
 Print("Get trim target glyph from IBMPlexMono")
 Open(plexmono)
 i = 0
@@ -1654,6 +1702,11 @@ output_list = [ \\
                 "${modified_plexjp_console_bold_italic}" \\
               ]
 
+if ("$DEBUG_FLG" == 'true')
+  input_list = [input_list[3]]
+  output_list = [output_list[3]]
+endif
+
 Print("Get trim target glyph from IBMPlexMono")
 Open(plexmono)
 i = 0
@@ -1757,6 +1810,11 @@ output_list = [ \\
                 "${modified_plexjp35_console_semibold_italic}", \\
                 "${modified_plexjp35_console_bold_italic}" \\
               ]
+
+if ("$DEBUG_FLG" == 'true')
+  input_list = [input_list[3]]
+  output_list = [output_list[3]]
+endif
 
 Print("Get trim target glyph from IBMPlexMono")
 Open(plexmono)
@@ -1901,6 +1959,13 @@ panoseweight_list = [ \\
                       7, \\
                       8 \\
                     ]
+
+if ("$DEBUG_FLG" == 'true')
+  plexmono_list = [plexmono_list[3]]
+  fontstyle_list = [fontstyle_list[3]]
+  fontweight_list = [fontweight_list[3]]
+  panoseweight_list = [panoseweight_list[3]]
+endif
 
 copyright         = "Copyright (c) 2019, Yuko Otawara"
 version           = "${plemoljp_version}"
@@ -2122,6 +2187,13 @@ panoseweight_list = [ \\
                       8 \\
                     ]
 
+if ("$DEBUG_FLG" == 'true')
+  plexmono_list = [plexmono_list[3]]
+  fontstyle_list = [fontstyle_list[3]]
+  fontweight_list = [fontweight_list[3]]
+  panoseweight_list = [panoseweight_list[3]]
+endif
+
 copyright         = "Copyright (c) 2019, Yuko Otawara"
 version           = "${plemoljp_version}"
 
@@ -2337,6 +2409,13 @@ panoseweight_list = [ \\
                       7, \\
                       8 \\
                     ]
+
+if ("$DEBUG_FLG" == 'true')
+  plexmono_list = [plexmono_list[3]]
+  fontstyle_list = [fontstyle_list[3]]
+  fontweight_list = [fontweight_list[3]]
+  panoseweight_list = [panoseweight_list[3]]
+endif
 
 copyright         = "Copyright (c) 2019, Yuko Otawara"
 version           = "${plemoljp_version}"
@@ -2558,6 +2637,13 @@ panoseweight_list = [ \\
                       8 \\
                     ]
 
+if ("$DEBUG_FLG" == 'true')
+  plexmono_list = [plexmono_list[3]]
+  fontstyle_list = [fontstyle_list[3]]
+  fontweight_list = [fontweight_list[3]]
+  panoseweight_list = [panoseweight_list[3]]
+endif
+
 copyright         = "Copyright (c) 2019, Yuko Otawara"
 version           = "${plemoljp_version}"
 
@@ -2728,7 +2814,13 @@ $fontforge_command -script ${tmpdir}/${plemoljp35_generator} 2> $redirection_std
 # Generate PlemolJP Console - 35
 $fontforge_command -script ${tmpdir}/${plemoljp35_console_generator} 2> $redirection_stderr || exit 4
 
-for style in Thin ExtraLight Light Regular Text Medium SemiBold Bold ThinItalic ExtraLightItalic LightItalic Italic TextItalic MediumItalic SemiBoldItalic BoldItalic
+style_list='Thin ExtraLight Light Regular Text Medium SemiBold Bold ThinItalic ExtraLightItalic LightItalic Italic TextItalic MediumItalic SemiBoldItalic BoldItalic'
+
+if [ "$DEBUG_FLG" = 'true' ]; then
+  style_list='Regular'
+fi
+
+for style in $style_list
 do
   plemoljp_filename="${plemoljp_familyname}${plemoljp_familyname_suffix}-${style}.ttf"
   plemoljp_console_filename="${plemoljp_familyname}${plemoljp_console_suffix}${hs_suffix}-${style}.ttf"
