@@ -61,6 +61,9 @@ plemoljp35_full_width=$((${plemoljp35_half_width} * 5 / 3))
 
 italic_angle=-9
 
+end_plexmono=65535
+end_plexjp=1115564
+
 # Set path to fontforge command
 fontforge_command="fontforge"
 ttfautohint_command="ttfautohint"
@@ -670,6 +673,20 @@ while (i < SizeOf(input_list))
   Scale(100, 103, 0, 0)
   SelectWorthOutputting()
 
+  # ゼロ幅文字を幅の変更対象から除外
+  ii = 0
+  end_plexmono = $end_plexmono
+  while (ii < end_plexmono)
+    if (WorthOutputting(ii))
+      Select(ii)
+      glyphWidth = GlyphInfo("Width")
+      if (glyphWidth == 0)
+        SelectFewer(ii)
+      endif
+    endif
+    ii++
+  endloop
+
   # 幅の変更 (Move で文字幅も変わることに注意)
   move_pt = $(((${plemoljp_half_width} - ${plexmono_width} * ${plexmono_shrink_x} / 100) / 2)) # -8
   width_pt = ${plemoljp_half_width}
@@ -750,6 +767,20 @@ while (i < SizeOf(input_list))
   Open(input_list[i])
   SelectWorthOutputting()
   UnlinkReference()
+
+  # ゼロ幅文字を幅の変更対象から除外
+  ii = 0
+  end_plexmono = $end_plexmono
+  while (ii < end_plexmono)
+    if (WorthOutputting(ii))
+      Select(ii)
+      glyphWidth = GlyphInfo("Width")
+      if (glyphWidth == 0)
+        SelectFewer(ii)
+      endif
+    endif
+    ii++
+  endloop
 
   # 幅の変更 (Move で文字幅も変わることに注意)
   move_pt = $(((${plemoljp35_half_width} - ${plexmono_width}) / 2)) # -8
@@ -1033,7 +1064,7 @@ endif
 Print("Get trim target glyph from IBMPlexMono")
 Open(plexmono)
 i = 0
-end_plexmono = 65535
+end_plexmono = $end_plexmono
 plexmono_exist_glyph_array = Array(end_plexmono)
 while (i < end_plexmono)
   if (i % 5000 == 0)
@@ -1050,7 +1081,7 @@ Close()
 
 # Begin loop
 i = 0
-end_plexjp = 1115564
+end_plexjp = $end_plexjp
 i_halfwidth = 0
 i_width1000 = 0
 halfwidth_array = Array(10000)
@@ -1064,12 +1095,14 @@ while (i < end_plexjp)
       if (WorthOutputting(i) && (i > end_plexmono || plexmono_exist_glyph_array[i] == 0))
         Select(i)
         glyphWidth = GlyphInfo("Width")
-        if (glyphWidth < ${plemoljp_half_width})
-          halfwidth_array[i_halfwidth] = i
-          i_halfwidth = i_halfwidth + 1
-        elseif (glyphWidth == 1000)
-          width1000_array[i_width1000] = i
-          i_width1000 = i_width1000 + 1
+        if (glyphWidth > 0)
+          if (glyphWidth < ${plemoljp_half_width})
+            halfwidth_array[i_halfwidth] = i
+            i_halfwidth = i_halfwidth + 1
+          elseif (glyphWidth == 1000)
+            width1000_array[i_width1000] = i
+            i_width1000 = i_width1000 + 1
+          endif
         endif
       endif
       i = i + 1
@@ -1401,7 +1434,7 @@ endif
 Print("Get trim target glyph from IBMPlexMono")
 Open(plexmono)
 i = 0
-end_plexmono = 65535
+end_plexmono = $end_plexmono
 plexmono_exist_glyph_array = Array(end_plexmono)
 while (i < end_plexmono)
   if (i % 5000 == 0)
@@ -1418,7 +1451,7 @@ Close()
 
 # Begin loop
 i = 0
-end_plexjp = 1115564
+end_plexjp = $end_plexjp
 i_halfwidth = 0
 i_width1000 = 0
 halfwidth_array = Array(10000)
@@ -1432,12 +1465,14 @@ while (i < end_plexjp)
       if (WorthOutputting(i) && (i > end_plexmono || plexmono_exist_glyph_array[i] == 0))
         Select(i)
         glyphWidth = GlyphInfo("Width")
-        if (glyphWidth < ${plemoljp_half_width})
-          halfwidth_array[i_halfwidth] = i
-          i_halfwidth = i_halfwidth + 1
-        elseif (glyphWidth == 1000)
-          width1000_array[i_width1000] = i
-          i_width1000 = i_width1000 + 1
+        if (glyphWidth > 0)
+          if (glyphWidth < ${plemoljp_half_width})
+            halfwidth_array[i_halfwidth] = i
+            i_halfwidth = i_halfwidth + 1
+          elseif (glyphWidth == 1000)
+            width1000_array[i_width1000] = i
+            i_width1000 = i_width1000 + 1
+          endif
         endif
       endif
       i = i + 1
@@ -1710,7 +1745,7 @@ endif
 Print("Get trim target glyph from IBMPlexMono")
 Open(plexmono)
 i = 0
-end_plexmono = 65535
+end_plexmono = $end_plexmono
 plexmono_exist_glyph_array = Array(end_plexmono)
 while (i < end_plexmono)
   if (i % 5000 == 0)
@@ -1819,7 +1854,7 @@ endif
 Print("Get trim target glyph from IBMPlexMono")
 Open(plexmono)
 i = 0
-end_plexmono = 65535
+end_plexmono = $end_plexmono
 plexmono_exist_glyph_array = Array(end_plexmono)
 while (i < end_plexmono)
   if (i % 5000 == 0)
