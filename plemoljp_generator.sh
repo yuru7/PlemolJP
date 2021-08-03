@@ -1270,6 +1270,20 @@ while (i < SizeOf(input_list))
   Select(0u201c);Scale(125) ; SetWidth(${plemoljp_full_width}) # “
   Select(0u201d);Scale(125) ; SetWidth(${plemoljp_full_width}) # ”
 
+  # カーニング情報を削除
+  lookups = GetLookups("GPOS"); numlookups = SizeOf(lookups); ii = 0;
+  while (ii < numlookups)
+    if (Strstr(lookups[ii], 'halt') >= 0 \\
+        || Strstr(lookups[ii], 'vhal') >= 0 \\
+        || Strstr(lookups[ii], 'palt') >= 0 \\
+        || Strstr(lookups[ii], 'vpal') >= 0 \\
+        || Strstr(lookups[ii], 'kern') >= 0 \\
+      )
+      RemoveLookup(lookups[ii]);
+    endif
+    ii++
+  endloop
+
   # Save modified IBMPlexSansJP
   Print("Save " + output_list[i])
   Save("${tmpdir}/" + output_list[i])
@@ -1639,6 +1653,20 @@ while (i < SizeOf(input_list))
   Select(0u2019);Scale(125) ; SetWidth(${plemoljp35_full_width}) # ’
   Select(0u201c);Scale(125) ; SetWidth(${plemoljp35_full_width}) # “
   Select(0u201d);Scale(125) ; SetWidth(${plemoljp35_full_width}) # ”
+
+  # カーニング情報を削除
+  lookups = GetLookups("GPOS"); numlookups = SizeOf(lookups); ii = 0;
+  while (ii < numlookups)
+    if (Strstr(lookups[ii], 'halt') >= 0 \\
+        || Strstr(lookups[ii], 'vhal') >= 0 \\
+        || Strstr(lookups[ii], 'palt') >= 0 \\
+        || Strstr(lookups[ii], 'vpal') >= 0 \\
+        || Strstr(lookups[ii], 'kern') >= 0 \\
+      )
+      RemoveLookup(lookups[ii]);
+    endif
+    ii++
+  endloop
 
   # Save modified IBMPlexSansJP
   Print("Save " + output_list[i])
