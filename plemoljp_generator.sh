@@ -1130,6 +1130,11 @@ while (i < SizeOf(input_list))
   CenterInWidth()
   Print("Full SetWidth end")
 
+  # 半角罫線の開始位置を取得
+  Select('uni2500.half')
+  half_box_drawing_start = GlyphInfo('Encoding')
+  half_box_drawing_end = half_box_drawing_start + 75
+
   SelectNone()
 
   Print("Half SetWidth start")
@@ -1143,8 +1148,14 @@ while (i < SizeOf(input_list))
   $set_half_left_fewer
   $set_half_right_fewer
   $set_half_to_full_right_fewer
+  SelectFewer(half_box_drawing_start, half_box_drawing_end)
   SetWidth(width_pt)
   CenterInWidth()
+
+  # 半角罫線の幅設定
+  Select(half_box_drawing_start, half_box_drawing_end)
+  SetWidth(width_pt)
+
   Print("Half SetWidth end")
 
   $set_width_full_and_center
@@ -1514,6 +1525,10 @@ while (i < SizeOf(input_list))
   CenterInWidth()
   Print("Full SetWidth end")
 
+  # 半角罫線の開始位置を取得
+  Select('uni2500.half')
+  half_box_drawing_start = GlyphInfo('Encoding')
+  half_box_drawing_end = half_box_drawing_start + 75
   SelectNone()
 
   Print("Half SetWidth start")
@@ -1527,8 +1542,14 @@ while (i < SizeOf(input_list))
   $set_half_left_fewer
   $set_half_right_fewer
   $set_half_to_full_right_fewer
+  SelectFewer(half_box_drawing_start, half_box_drawing_end)
   SetWidth(width_pt)
   CenterInWidth()
+
+  # 半角罫線の幅設定
+  Select(half_box_drawing_start, half_box_drawing_end)
+  SetWidth(width_pt)
+
   Print("Half SetWidth end")
 
   $set_width_full_and_center
@@ -1771,6 +1792,16 @@ while (i < SizeOf(input_list))
   Clear()
   Print("End delete the glyphs contained in IBMPlexMono")
 
+  # 罫線を半角化
+  Select('uni2500.half')
+  half_box_drawing_start = GlyphInfo('Encoding')
+  half_box_drawing_end = half_box_drawing_start + 75
+  Select(half_box_drawing_start, half_box_drawing_end); Copy(); Select(0u2500, 0u254B); Paste()
+  Select(0u2500, 0u254B); Scale(${plemoljp_half_width}.0 / (${plexjp_width} / 2) * 100, 100, 0, 0)
+  Select(0u2581, 0u259F); Scale(${plemoljp_half_width}.0 / ${plexjp_width} * 100, 100, -30, 0)
+  Select(0u2500, 0u254B); SelectMore(0u2581, 0u259F)
+  SetWidth(${plemoljp_half_width})
+
   # 結合分音記号は IBM Plex Mono を使用する
   Select(0u0300, 0u0328)
   Clear()
@@ -1879,6 +1910,16 @@ while (i < SizeOf(input_list))
   endloop
   Clear()
   Print("End delete the glyphs contained in IBMPlexMono")
+
+  # 罫線を半角化
+  Select('uni2500.half')
+  half_box_drawing_start = GlyphInfo('Encoding')
+  half_box_drawing_end = half_box_drawing_start + 75
+  Select(half_box_drawing_start, half_box_drawing_end); Copy(); Select(0u2500, 0u254B); Paste()
+  Select(0u2500, 0u254B); Scale(${plemoljp35_half_width}.0 / (${plexjp_width} / 2) * 100, 100, 0, 0)
+  Select(0u2581, 0u259F); Scale(${plemoljp35_half_width}.0 / ${plexjp_width} * 100, 100, 0, 0)
+  Select(0u2500, 0u254B); SelectMore(0u2581, 0u259F)
+  SetWidth(${plemoljp35_half_width})
 
   # 結合分音記号は IBM Plex Mono を使用する
   Select(0u0300, 0u0328)
