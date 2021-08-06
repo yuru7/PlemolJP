@@ -563,6 +563,10 @@ $select_nerd_symbols
 SelectInvert()
 Clear()
 
+# Powerline 記号の位置調整
+Select(0ue0b0); SelectMore(0ue0b4); SelectMore(0ue0b8); SelectMore(0ue0bc)
+Move(-20, 0)
+
 # Save modified NerdFonts35
 Print("Save " + output_nerdfonts35)
 SetOS2Value("WinAscentIsOffset",       0)
@@ -581,6 +585,10 @@ SetOS2Value("HHeadDescent",         -${plemoljp35_descent})
 SetOS2Value("HHeadLineGap",            0)
 SetPanose([2, 11, 5, 9, 2, 2, 3, 2, 2, 7])
 Generate("${tmpdir}/" + output_nerdfonts35, '')
+
+# Powerline 記号の位置調整
+Select(0ue0b0); SelectMore(0ue0b4); SelectMore(0ue0b8); SelectMore(0ue0bc)
+Move(-3, 0)
 
 SelectWorthOutputting()
 Scale(${plexmono_shrink_x}, ${plexmono_shrink_y}, 0, 0)
