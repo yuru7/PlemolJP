@@ -7,12 +7,14 @@ base_dir=$(cd $(dirname $0); pwd)
 
 # オプション解析
 HIDDEN_SPACE_FLG='false'
+NERDFONTS_FLG='false'
 DEBUG_FLG='false'
-while getopts dh OPT
+while getopts dhn OPT
 do
   case $OPT in
     'd' ) DEBUG_FLG='true';;
     'h' ) HIDDEN_SPACE_FLG='true';;
+    'n' ) NERDFONTS_FLG='true';;
   esac
 done
 
@@ -23,12 +25,17 @@ fi
 if [ "$HIDDEN_SPACE_FLG" = 'true' ]; then
   echo '### Generate Hidden Space Version ###'
   sleep 2
+elif [ "$NERDFONTS_FLG" = 'true' ]; then
+  echo '### Generate Nerd Fonts Version ###'
+  sleep 2
 fi
 
 # Set familyname
 hs_suffix=''
 if [ "$HIDDEN_SPACE_FLG" = 'true' ]; then
   hs_suffix='HS'
+elif [ "$NERDFONTS_FLG" = 'true' ]; then
+  hs_suffix='NF'
 fi
 plemoljp_familyname="PlemolJP"
 plemoljp_familyname_suffix="${hs_suffix}"
@@ -469,6 +476,108 @@ set_half_to_full_right_fewer="
   SelectFewer(8216)
   SelectFewer(8220)
 "
+
+########################################
+# Generate script for Nerd Fonts Symbols
+########################################
+
+nerdfonts_src="Blex Mono Nerd Font Complete.ttf"
+modified_nerdfonts_generator="modified_nerdfonts_generator.pe"
+input_nerdfonts=`find $fonts_directories -follow -iname "$nerdfonts_src" | head -n 1`
+modified_nerdfonts='modified-nerdfonts.ttf'
+modified_nerdfonts35='modified-nerdfonts35.ttf'
+
+# Nerd Fonts から適用するグリフ
+select_nerd_symbols="
+  # Powerline
+  SelectMore(0ue0a0, 0ue0a2)
+  SelectMore(0ue0b0, 0ue0b3)
+
+  # Powerline Extra
+  SelectMore(0ue0a3)
+  SelectMore(0ue0b4, 0ue0c8)
+  SelectMore(0ue0ca)
+  SelectMore(0ue0cc, 0ue0d2)
+  SelectMore(0ue0d4)
+
+  # IEC Power Symbols
+  SelectMore(0u23fb, 0u23fe)
+  SelectMore(0u2b58)
+
+  # Octicons
+  SelectMore(0u2665)
+  SelectMore(0u26A1)
+  SelectMore(0uf27c)
+  SelectMore(0uf400, 0uf4a8)
+
+  # Font Awesome Extension
+  SelectMore(0ue200, 0ue2a9)
+
+  # Weather
+  SelectMore(0ue300, 0ue3e3)
+
+  # Seti-UI + Custom
+  SelectMore(0ue5fa, 0ue62e)
+
+  # Devicons
+  SelectMore(0ue700, 0ue7c5)
+
+  # Font Awesome
+  SelectMore(0uf000, 0uf2e0)
+
+  # Font Logos (Formerly Font Linux)
+  SelectMore(0uf300, 0uf31c)
+
+  # Material Design Icons
+  SelectMore(0uf500, 0ufd46)
+
+  # オリジナル Hack の未使用領域を一括選択 (拾い漏れ防止)
+  SelectMore(0ue0d5, 0ufefd)
+
+  # Pomicons -> 商用不可のため除外
+  SelectFewer(0ue000, 0ue00d)
+"
+
+cat > ${tmpdir}/${modified_nerdfonts_generator} << _EOT_
+#!$fontforge_command -script
+
+Print("Generate modified IBMPlexMono Material")
+
+# Set parameters
+input_nerdfonts  = "$input_nerdfonts"
+output_nerdfonts = "$modified_nerdfonts"
+output_nerdfonts35 = "$modified_nerdfonts35"
+
+# Begin loop of regular and bold
+# Open IBMPlexMono
+Print("Open " + input_nerdfonts)
+Open(input_nerdfonts)
+
+SelectWorthOutputting()
+UnlinkReference()
+ScaleToEm(${em_ascent}, ${em_descent})
+
+# NerdFonts 以外のグリフを削除
+SelectNone()
+$select_nerd_symbols
+SelectInvert()
+Clear()
+
+# Save modified NerdFonts35
+Print("Save " + output_nerdfonts35)
+Generate("${tmpdir}/" + output_nerdfonts35, '')
+
+SelectWorthOutputting()
+Scale(${plexmono_shrink_x}, ${plexmono_shrink_y}, 0, 0)
+SetWidth(${plemoljp_half_width}, 0)
+
+# Save modified NerdFonts
+Print("Save " + output_nerdfonts)
+Generate("${tmpdir}/" + output_nerdfonts, '')
+
+Quit()
+_EOT_
+
 
 ########################################
 # Generate script for modified IBMPlexMono Material
@@ -2839,6 +2948,11 @@ _EOT_
 # Generate PlemolJP
 ########################################
 
+# Generate Nerd Fonts Symbols
+if [ "$NERDFONTS_FLG" = 'true' ]; then
+  $fontforge_command -script ${tmpdir}/${modified_nerdfonts_generator} 2> $redirection_stderr || exit 4
+fi
+
 # Generate Material
 $fontforge_command -script ${tmpdir}/${modified_plexmono_material_generator} 2> $redirection_stderr || exit 4
 
@@ -2890,6 +3004,8 @@ do
   plemoljp_console_filename="${plemoljp_familyname}${plemoljp_console_suffix}${hs_suffix}-${style}.ttf"
   plemoljp35_filename="${plemoljp35_familyname}${plemoljp_familyname_suffix}-${style}.ttf"
   plemoljp35_console_filename="${plemoljp35_familyname}${plemoljp_console_suffix}${hs_suffix}-${style}.ttf"
+  nerdfonts="${tmpdir}/${modified_nerdfonts}"
+  nerdfonts35="${tmpdir}/${modified_nerdfonts35}"
 
   # Add hinting
   # PlemolJP
@@ -2998,6 +3114,23 @@ do
     marge_plexjp_console_regular="${tmpdir}/${modified_plexjp_console_bold_italic}.ttf"
     marge_plexjp35_regular="${tmpdir}/${modified_plexjp35_bold_italic}.ttf"
     marge_plexjp35_console_regular="${tmpdir}/${modified_plexjp35_console_bold_italic}.ttf"
+  fi
+
+  # Generate Nerd Fonts version
+  if [ "$NERDFONTS_FLG" = 'true' ]; then
+    # PlemolJP Console NF
+    echo "pyftmerge: ${plemoljp_console_filename}"
+    pyftmerge "hinted_${plemoljp_console_filename}" "$nerdfonts"
+    pyftmerge merged.ttf "$marge_plexjp_console_regular"
+    mv merged.ttf "${plemoljp_console_filename}"
+
+    # PlemolJP35 Console NF
+    echo "pyftmerge: ${plemoljp35_console_filename}"
+    pyftmerge "hinted_${plemoljp35_console_filename}" "$nerdfonts35"
+    pyftmerge merged.ttf "$marge_plexjp35_console_regular"
+    mv merged.ttf "${plemoljp35_console_filename}"
+
+    continue
   fi
 
   # PlemolJP

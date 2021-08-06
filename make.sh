@@ -24,6 +24,14 @@ function mvBuildHS() {
   mv -f "${BASE_DIR}/"PlemolJP*.ttf "${BASE_DIR}/build/PlemolJP_HS/"
 }
 
+function mvBuildNF() {
+  mkdir -p "${BASE_DIR}/build/PlemolJPConsole_NF"
+  mkdir -p "${BASE_DIR}/build/PlemolJP35Console_NF"
+  mv -f "${BASE_DIR}/"PlemolJP35Console*.ttf "${BASE_DIR}/build/PlemolJP35Console_NF/"
+  mv -f "${BASE_DIR}/"PlemolJPConsole*.ttf "${BASE_DIR}/build/PlemolJPConsole_NF/"
+  rm -f "${BASE_DIR}/"PlemolJP*.ttf
+}
+
 DEBUG_FLG='false'
 while getopts d OPT
 do
@@ -33,16 +41,20 @@ do
 done
 
 if [ "$DEBUG_FLG" = 'true' ]; then
-  "${BASE_DIR}/plemoljp_generator.sh" -d \
+  ("${BASE_DIR}/plemoljp_generator.sh" -d \
   && "${BASE_DIR}/os2_patch.sh" \
-  && mvBuild
+  && mvBuild)
   exit
 fi
 
-"${BASE_DIR}/plemoljp_generator.sh" \
+("${BASE_DIR}/plemoljp_generator.sh" \
 && "${BASE_DIR}/os2_patch.sh" \
-&& mvBuild
+&& mvBuild)
 
-"${BASE_DIR}/plemoljp_generator.sh" -h \
+("${BASE_DIR}/plemoljp_generator.sh" -h \
 && "${BASE_DIR}/os2_patch.sh" \
-&& mvBuildHS
+&& mvBuildHS)
+
+("${BASE_DIR}/plemoljp_generator.sh" -n \
+&& "${BASE_DIR}/os2_patch.sh" \
+&& mvBuildNF)
