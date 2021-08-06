@@ -1936,8 +1936,8 @@ while (i < SizeOf(input_list))
   half_box_drawing_start = GlyphInfo('Encoding')
   half_box_drawing_end = half_box_drawing_start + 75
   Select(half_box_drawing_start, half_box_drawing_end); Copy(); Select(0u2500, 0u254B); Paste()
-  Select(0u2500, 0u254B); Scale(${plemoljp_half_width}.0 / (${plexjp_width} / 2) * 100, 100, 0, 0)
-  Select(0u2581, 0u259F); Scale(${plemoljp_half_width}.0 / ${plexjp_width} * 100, 100, -30, 0)
+  Select(0u2500, 0u254B); Scale(${plemoljp_half_width}.0 / (${plexjp_width} / 2) * 100, 130, 0, 430)
+  Select(0u2581, 0u259F); Scale(${plemoljp_half_width}.0 / ${plexjp_width} * 100, 130, -30, 430)
   Select(0u2500, 0u254B); SelectMore(0u2581, 0u259F)
   SetWidth(${plemoljp_half_width})
 
@@ -2055,8 +2055,8 @@ while (i < SizeOf(input_list))
   half_box_drawing_start = GlyphInfo('Encoding')
   half_box_drawing_end = half_box_drawing_start + 75
   Select(half_box_drawing_start, half_box_drawing_end); Copy(); Select(0u2500, 0u254B); Paste()
-  Select(0u2500, 0u254B); Scale(${plemoljp35_half_width}.0 / (${plexjp_width} / 2) * 100, 100, 0, 0)
-  Select(0u2581, 0u259F); Scale(${plemoljp35_half_width}.0 / ${plexjp_width} * 100, 100, 0, 0)
+  Select(0u2500, 0u254B); Scale(${plemoljp35_half_width}.0 / (${plexjp_width} / 2) * 100, 140, 0, 430)
+  Select(0u2581, 0u259F); Scale(${plemoljp35_half_width}.0 / ${plexjp_width} * 100, 140, 0, 430)
   Select(0u2500, 0u254B); SelectMore(0u2581, 0u259F)
   SetWidth(${plemoljp35_half_width})
 
