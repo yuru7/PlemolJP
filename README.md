@@ -21,6 +21,8 @@ PlemolJP では合成元の IBM Plex Mono シリーズと同様に、ノーマ�
 
 > 全角スペースの可視化が不要な場合は、リリースの Assets より `PlemolJP_HS_vx.x.x.zip` の名前形式になっている zip ファイルを選択してください。(HS: Hidden Space)
 
+> Powerline 記号等が含まれる Nerd Fonts 対応版は、リリースの Assets より `PlemolJP_NF_vx.x.x.zip` の名前形式になっている zip ファイルを選択してください。(NF: Nerd Fonts)
+
 |Thin|ExtraLight|Light|Regular|
 |:---:|:---:|:---:|:---:|
 |![image](https://user-images.githubusercontent.com/13458509/127088872-ee3b076e-5695-4151-9842-9c7d1175c864.png)|![image](https://user-images.githubusercontent.com/13458509/127088958-c3da0175-32a5-4773-9dc6-4aa565579408.png)|![image](https://user-images.githubusercontent.com/13458509/127088996-468862a8-febc-4e37-9fbb-ff374015c8b8.png)|![image](https://user-images.githubusercontent.com/13458509/127089028-5329a5d8-aacf-4398-aa9b-b92fbb7d7e35.png)|
