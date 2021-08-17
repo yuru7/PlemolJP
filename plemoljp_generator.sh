@@ -367,6 +367,8 @@ else
   trap "echo 'Abnormally terminated'; exit 3" HUP INT QUIT
 fi
 
+input_ideographic_space=`find $fonts_directories -follow -iname "Ideographic_Space.sfd" | head -n 1`
+
 # console 版と通常版の IBMPlexMono から合成するグリフ差分
 select_glyph_is_not_console="
 
@@ -1222,6 +1224,13 @@ while (i < SizeOf(input_list))
   # Open IBMPlexSansJP
   Print("Open " + input_list[i])
   Open(input_list[i])
+
+  # Edit zenkaku space (from ballot box and heavy greek cross)
+  if ("${HIDDEN_SPACE_FLG}" != "true")
+    Select(0u3000); Clear()
+    MergeFonts("$input_ideographic_space")
+  endif
+
   SelectWorthOutputting()
   UnlinkReference()
   ScaleToEm(${em_ascent}, ${em_descent})
@@ -1356,16 +1365,6 @@ while (i < SizeOf(input_list))
     SetWidth(${plemoljp_full_width})
     ii = ii + 1
   endloop
-
-  # Edit zenkaku space (from ballot box and heavy greek cross)
-  if ("${HIDDEN_SPACE_FLG}" != "true")
-        Print("Edit zenkaku space")
-        Select(0u25A1); Copy(); Select(0u3000); Paste(); ExpandStroke(20, 0, 0, 0, 1)
-        Select(0u254B); Copy(); Select(0uFFFE); Paste(); Scale(180); Copy()
-        Select(0u3000); PasteInto()
-        Select(0uFFFE); Clear(); Select(0u3000);
-        OverlapIntersect()
-  endif
 
   # broken bar は IBMPlexMono ベースにする
   Select(0u00a6); Clear()
@@ -1617,6 +1616,13 @@ while (i < SizeOf(input_list))
   # Open IBMPlexSansJP
   Print("Open " + input_list[i])
   Open(input_list[i])
+
+  # Edit zenkaku space (from ballot box and heavy greek cross)
+  if ("${HIDDEN_SPACE_FLG}" != "true")
+    Select(0u3000); Clear()
+    MergeFonts("$input_ideographic_space")
+  endif
+
   SelectWorthOutputting()
   UnlinkReference()
   ScaleToEm(${em_ascent}, ${em_descent})
@@ -1750,16 +1756,6 @@ while (i < SizeOf(input_list))
     SetWidth(${plemoljp35_full_width})
     ii = ii + 1
   endloop
-
-  # Edit zenkaku space (from ballot box and heavy greek cross)
-  if ("${HIDDEN_SPACE_FLG}" != "true")
-        Print("Edit zenkaku space")
-        Select(0u25A1); Copy(); Select(0u3000); Paste(); ExpandStroke(20, 0, 0, 0, 1)
-        Select(0u254B); Copy(); Select(0uFFFE); Paste(); Scale(180); Copy()
-        Select(0u3000); PasteInto()
-        Select(0uFFFE); Clear(); Select(0u3000);
-        OverlapIntersect()
-  endif
 
   # broken bar は IBMPlexMono ベースにする
   Select(0u00a6); Clear()
