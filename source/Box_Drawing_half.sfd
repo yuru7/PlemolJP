@@ -1,0 +1,2747 @@
+SplineFontDB: 3.2
+FontName: IBMPlexSansJP
+FullName: IBM Plex Sans JP
+FamilyName: IBM Plex Sans JP
+Weight: Book
+Copyright: Copyright 2018 IBM Corp. All rights reserved.
+Version: 1.000
+ItalicAngle: 0
+UnderlinePosition: -125
+UnderlineWidth: 60
+Ascent: 880
+Descent: 120
+InvalidEm: 0
+sfntRevision: 0x00010000
+LayerCount: 2
+Layer: 0 1 "+gMyXYgAA" 1
+Layer: 1 1 "+Uk2XYgAA" 0
+HasVMetrics: 1
+XUID: [1021 1004 1376950171 15735839]
+BaseHoriz: 4 'icfb' 'icft' 'ideo' 'romn'
+BaseScript: 'DFLT' 2  -75 835 -120 0
+BaseScript: 'cyrl' 3  -75 835 -120 0
+BaseScript: 'grek' 3  -75 835 -120 0
+BaseScript: 'hani' 2  -75 835 -120 0
+BaseScript: 'kana' 2  -75 835 -120 0
+BaseScript: 'latn' 3  -75 835 -120 0
+BaseVert: 4 'icfb' 'icft' 'ideo' 'romn'
+BaseScript: 'DFLT' 2  45 955 0 120
+BaseScript: 'cyrl' 3  45 955 0 120
+BaseScript: 'grek' 3  45 955 0 120
+BaseScript: 'hani' 2  45 955 0 120
+BaseScript: 'kana' 2  45 955 0 120
+BaseScript: 'latn' 3  45 955 0 120
+StyleMap: 0x0040
+FSType: 0
+OS2Version: 4
+OS2_WeightWidthSlopeOnly: 1
+OS2_UseTypoMetrics: 0
+CreationTime: 1622177159
+ModificationTime: 1629255896
+PfmFamily: 17
+TTFWeight: 400
+TTFWidth: 5
+LineGap: 0
+VLineGap: 0
+Panose: 2 11 5 3 5 2 3 0 2 3
+OS2TypoAscent: 880
+OS2TypoAOffset: 0
+OS2TypoDescent: -120
+OS2TypoDOffset: 0
+OS2TypoLinegap: 500
+OS2WinAscent: 1060
+OS2WinAOffset: 0
+OS2WinDescent: 440
+OS2WinDOffset: 0
+HheadAscent: 1060
+HheadAOffset: 0
+HheadDescent: -440
+HheadDOffset: 0
+OS2SubXSize: 650
+OS2SubYSize: 600
+OS2SubXOff: 0
+OS2SubYOff: 75
+OS2SupXSize: 650
+OS2SupYSize: 600
+OS2SupXOff: 0
+OS2SupYOff: 350
+OS2StrikeYSize: 60
+OS2StrikeYPos: 323
+OS2CapHeight: 733
+OS2XHeight: 541
+OS2Vendor: 'IBM '
+OS2CodePages: 20020005.00000000
+OS2UnicodeRanges: 800002ef.6ac7fcf8.00000012.00000000
+Lookup: 1 0 0 "'aalt' Access All Alternates lookup 0" { "'aalt' Access All Alternates lookup 0 subtable"  } ['aalt' ('DFLT' <'dflt' > 'cyrl' <'dflt' > 'grek' <'dflt' > 'hani' <'dflt' > 'kana' <'dflt' > 'latn' <'dflt' > ) ]
+Lookup: 3 0 0 "'aalt' Access All Alternates lookup 1" { "'aalt' Access All Alternates lookup 1 subtable"  } ['aalt' ('DFLT' <'dflt' > 'cyrl' <'dflt' > 'grek' <'dflt' > 'hani' <'dflt' > 'kana' <'dflt' > 'latn' <'dflt' > ) ]
+Lookup: 1 0 0 "Single Substitution lookup 2" { "Single Substitution lookup 2 subtable"  } []
+Lookup: 1 0 0 "Single Substitution lookup 3" { "Single Substitution lookup 3 subtable"  } []
+Lookup: 6 0 0 "'ccmp' Glyph Composition/Decomposition lookup 4" { "'ccmp' Glyph Composition/Decomposition lookup 4 contextual 0"  "'ccmp' Glyph Composition/Decomposition lookup 4 contextual 1"  "'ccmp' Glyph Composition/Decomposition lookup 4 contextual 2"  "'ccmp' Glyph Composition/Decomposition lookup 4 contextual 3"  "'ccmp' Glyph Composition/Decomposition lookup 4 contextual 4"  } ['ccmp' ('DFLT' <'dflt' > 'cyrl' <'dflt' > 'grek' <'dflt' > 'hani' <'dflt' > 'kana' <'dflt' > 'latn' <'dflt' > ) ]
+Lookup: 1 0 0 "'dnom' Denominators lookup 5" { "'dnom' Denominators lookup 5 subtable"  } ['dnom' ('DFLT' <'dflt' > 'cyrl' <'dflt' > 'grek' <'dflt' > 'hani' <'dflt' > 'kana' <'dflt' > 'latn' <'dflt' > ) ]
+Lookup: 4 0 0 "'dlig' Discretionary Ligatures lookup 6" { "'dlig' Discretionary Ligatures lookup 6 subtable"  } ['dlig' ('DFLT' <'dflt' > 'cyrl' <'dflt' > 'grek' <'dflt' > 'hani' <'dflt' > 'kana' <'dflt' > 'latn' <'dflt' > ) ]
+Lookup: 1 0 0 "'expt' Expert Forms lookup 7" { "'expt' Expert Forms lookup 7 subtable"  } ['expt' ('DFLT' <'dflt' > 'cyrl' <'dflt' > 'grek' <'dflt' > 'hani' <'dflt' > 'kana' <'dflt' > 'latn' <'dflt' > ) ]
+Lookup: 1 0 0 "'fwid' Full Widths lookup 8" { "'fwid' Full Widths lookup 8 subtable" ("full") } ['fwid' ('DFLT' <'dflt' > 'cyrl' <'dflt' > 'grek' <'dflt' > 'hani' <'dflt' > 'kana' <'dflt' > 'latn' <'dflt' > ) ]
+Lookup: 1 0 0 "'hwid' Half Widths lookup 9" { "'hwid' Half Widths lookup 9 subtable" ("hw") } ['hwid' ('DFLT' <'dflt' > 'cyrl' <'dflt' > 'grek' <'dflt' > 'hani' <'dflt' > 'kana' <'dflt' > 'latn' <'dflt' > ) ]
+Lookup: 1 0 0 "'jp78' JIS78 Forms lookup 10" { "'jp78' JIS78 Forms lookup 10 subtable"  } ['jp78' ('DFLT' <'dflt' > 'cyrl' <'dflt' > 'grek' <'dflt' > 'hani' <'dflt' > 'kana' <'dflt' > 'latn' <'dflt' > ) ]
+Lookup: 1 0 0 "'jp90' JIS90 Forms lookup 11" { "'jp90' JIS90 Forms lookup 11 subtable"  } ['jp90' ('DFLT' <'dflt' > 'cyrl' <'dflt' > 'grek' <'dflt' > 'hani' <'dflt' > 'kana' <'dflt' > 'latn' <'dflt' > ) ]
+Lookup: 1 0 0 "'nlck' NLC Kanji Forms lookup 12" { "'nlck' NLC Kanji Forms lookup 12 subtable"  } ['nlck' ('DFLT' <'dflt' > 'cyrl' <'dflt' > 'grek' <'dflt' > 'hani' <'dflt' > 'kana' <'dflt' > 'latn' <'dflt' > ) ]
+Lookup: 1 0 0 "'pwid' Proportional Width lookup 13" { "'pwid' Proportional Width lookup 13 subtable"  } ['pwid' ('DFLT' <'dflt' > 'cyrl' <'dflt' > 'grek' <'dflt' > 'hani' <'dflt' > 'kana' <'dflt' > 'latn' <'dflt' > ) ]
+Lookup: 4 0 1 "'liga' Standard Ligatures lookup 14" { "'liga' Standard Ligatures lookup 14 subtable"  } ['liga' ('DFLT' <'dflt' > 'cyrl' <'dflt' > 'grek' <'dflt' > 'hani' <'dflt' > 'kana' <'dflt' > 'latn' <'dflt' > ) ]
+Lookup: 1 0 0 "'trad' Traditional Forms lookup 15" { "'trad' Traditional Forms lookup 15 subtable"  } ['trad' ('DFLT' <'dflt' > 'cyrl' <'dflt' > 'grek' <'dflt' > 'hani' <'dflt' > 'kana' <'dflt' > 'latn' <'dflt' > ) ]
+Lookup: 3 0 0 "'trad' Traditional Forms lookup 16" { "'trad' Traditional Forms lookup 16 subtable"  } ['trad' ('DFLT' <'dflt' > 'cyrl' <'dflt' > 'grek' <'dflt' > 'hani' <'dflt' > 'kana' <'dflt' > 'latn' <'dflt' > ) ]
+Lookup: 1 0 0 "'zero' Slashed Zero lookup 17" { "'zero' Slashed Zero lookup 17 subtable"  } ['zero' ('DFLT' <'dflt' > 'cyrl' <'dflt' > 'grek' <'dflt' > 'hani' <'dflt' > 'kana' <'dflt' > 'latn' <'dflt' > ) ]
+Lookup: 1 0 0 "'vert' Vertical Alternates lookup 18" { "'vert' Vertical Alternates lookup 18 subtable"  } ['vert' ('DFLT' <'dflt' > 'cyrl' <'dflt' > 'grek' <'dflt' > 'hani' <'dflt' > 'kana' <'dflt' > 'latn' <'dflt' > ) ]
+Lookup: 1 0 0 "'vrt2' Vertical Rotation & Alternates lookup 19" { "'vrt2' Vertical Rotation & Alternates lookup 19 subtable" ("vert") } ['vrt2' ('DFLT' <'dflt' > 'cyrl' <'dflt' > 'grek' <'dflt' > 'hani' <'dflt' > 'kana' <'dflt' > 'latn' <'dflt' > ) ]
+Lookup: 1 0 0 "'numr' Numerators lookup 20" { "'numr' Numerators lookup 20 subtable"  } ['numr' ('DFLT' <'dflt' > 'cyrl' <'dflt' > 'grek' <'dflt' > 'hani' <'dflt' > 'kana' <'dflt' > 'latn' <'dflt' > ) ]
+Lookup: 1 0 0 "'ordn' Ordinals lookup 21" { "'ordn' Ordinals lookup 21 subtable"  } ['ordn' ('DFLT' <'dflt' > 'cyrl' <'dflt' > 'grek' <'dflt' > 'hani' <'dflt' > 'kana' <'dflt' > 'latn' <'dflt' > ) ]
+Lookup: 1 0 0 "'salt' Stylistic Alternatives lookup 22" { "'salt' Stylistic Alternatives lookup 22 subtable"  } ['salt' ('DFLT' <'dflt' > 'cyrl' <'dflt' > 'grek' <'dflt' > 'hani' <'dflt' > 'kana' <'dflt' > 'latn' <'dflt' > ) ]
+Lookup: 1 0 0 "'ss01' Style Set 1 lookup 23" { "'ss01' Style Set 1 lookup 23 subtable"  } ['ss01' ('DFLT' <'dflt' > 'cyrl' <'dflt' > 'grek' <'dflt' > 'hani' <'dflt' > 'kana' <'dflt' > 'latn' <'dflt' > ) ]
+Lookup: 1 0 0 "'ss02' Style Set 2 lookup 24" { "'ss02' Style Set 2 lookup 24 subtable"  } ['ss02' ('DFLT' <'dflt' > 'cyrl' <'dflt' > 'grek' <'dflt' > 'hani' <'dflt' > 'kana' <'dflt' > 'latn' <'dflt' > ) ]
+Lookup: 1 0 0 "'ss04' Style Set 4 lookup 25" { "'ss04' Style Set 4 lookup 25 subtable"  } ['ss04' ('DFLT' <'dflt' > 'cyrl' <'dflt' > 'grek' <'dflt' > 'hani' <'dflt' > 'kana' <'dflt' > 'latn' <'dflt' > ) ]
+Lookup: 1 0 0 "'sups' Superscript lookup 26" { "'sups' Superscript lookup 26 subtable" ("superior") } ['sups' ('DFLT' <'dflt' > 'cyrl' <'dflt' > 'grek' <'dflt' > 'hani' <'dflt' > 'kana' <'dflt' > 'latn' <'dflt' > ) ]
+Lookup: 257 0 0 "'halt' Alternative Half Widths in Hiragana & Katakana lookup 0" { "'halt' Alternative Half Widths in Hiragana & Katakana lookup 0 per glyph data 0"  "'halt' Alternative Half Widths in Hiragana & Katakana lookup 0 per glyph data 1"  "'halt' Alternative Half Widths in Hiragana & Katakana lookup 0 per glyph data 2"  } ['halt' ('kana' <'dflt' > ) ]
+Lookup: 257 0 0 "'halt' Alternative Half Widths in CJK Ideographic lookup 1" { "'halt' Alternative Half Widths in CJK Ideographic lookup 1 per glyph data 0"  "'halt' Alternative Half Widths in CJK Ideographic lookup 1 per glyph data 1"  "'halt' Alternative Half Widths in CJK Ideographic lookup 1 per glyph data 2"  } ['halt' ('hani' <'dflt' > ) ]
+Lookup: 257 0 0 "'halt' Alternative Half Widths in Greek lookup 2" { "'halt' Alternative Half Widths in Greek lookup 2 per glyph data 0"  "'halt' Alternative Half Widths in Greek lookup 2 per glyph data 1"  "'halt' Alternative Half Widths in Greek lookup 2 per glyph data 2"  } ['halt' ('grek' <'dflt' > ) ]
+Lookup: 257 0 0 "'halt' Alternative Half Widths in Cyrillic lookup 3" { "'halt' Alternative Half Widths in Cyrillic lookup 3 per glyph data 0"  "'halt' Alternative Half Widths in Cyrillic lookup 3 per glyph data 1"  "'halt' Alternative Half Widths in Cyrillic lookup 3 per glyph data 2"  } ['halt' ('cyrl' <'dflt' > ) ]
+Lookup: 257 0 0 "'halt' Alternative Half Widths in Latin lookup 4" { "'halt' Alternative Half Widths in Latin lookup 4 per glyph data 0"  "'halt' Alternative Half Widths in Latin lookup 4 per glyph data 1"  "'halt' Alternative Half Widths in Latin lookup 4 per glyph data 2"  } ['halt' ('latn' <'dflt' > ) ]
+Lookup: 257 0 0 "'vhal' Alternate Vertical Half Metrics in Hiragana & Katakana lookup 5" { "'vhal' Alternate Vertical Half Metrics in Hiragana & Katakana lookup 5 per glyph data 0"  "'vhal' Alternate Vertical Half Metrics in Hiragana & Katakana lookup 5 per glyph data 1"  "'vhal' Alternate Vertical Half Metrics in Hiragana & Katakana lookup 5 per glyph data 2"  } ['vhal' ('kana' <'dflt' > ) ]
+Lookup: 257 0 0 "'vhal' Alternate Vertical Half Metrics in CJK Ideographic lookup 6" { "'vhal' Alternate Vertical Half Metrics in CJK Ideographic lookup 6 per glyph data 0"  "'vhal' Alternate Vertical Half Metrics in CJK Ideographic lookup 6 per glyph data 1"  "'vhal' Alternate Vertical Half Metrics in CJK Ideographic lookup 6 per glyph data 2"  } ['vhal' ('hani' <'dflt' > ) ]
+Lookup: 257 0 0 "'vhal' Alternate Vertical Half Metrics in Greek lookup 7" { "'vhal' Alternate Vertical Half Metrics in Greek lookup 7 per glyph data 0"  "'vhal' Alternate Vertical Half Metrics in Greek lookup 7 per glyph data 1"  "'vhal' Alternate Vertical Half Metrics in Greek lookup 7 per glyph data 2"  } ['vhal' ('grek' <'dflt' > ) ]
+Lookup: 257 0 0 "'vhal' Alternate Vertical Half Metrics in Cyrillic lookup 8" { "'vhal' Alternate Vertical Half Metrics in Cyrillic lookup 8 per glyph data 0"  "'vhal' Alternate Vertical Half Metrics in Cyrillic lookup 8 per glyph data 1"  "'vhal' Alternate Vertical Half Metrics in Cyrillic lookup 8 per glyph data 2"  } ['vhal' ('cyrl' <'dflt' > ) ]
+Lookup: 257 0 0 "'vhal' Alternate Vertical Half Metrics in Latin lookup 9" { "'vhal' Alternate Vertical Half Metrics in Latin lookup 9 per glyph data 0"  "'vhal' Alternate Vertical Half Metrics in Latin lookup 9 per glyph data 1"  "'vhal' Alternate Vertical Half Metrics in Latin lookup 9 per glyph data 2"  } ['vhal' ('latn' <'dflt' > ) ]
+Lookup: 258 8 0 "'kern' Horizontal Kerning lookup 10" { "'kern' Horizontal Kerning lookup 10 per glyph data 0"  "'kern' Horizontal Kerning lookup 10 kerning class 1"  "'kern' Horizontal Kerning lookup 10 kerning class 2"  "'kern' Horizontal Kerning lookup 10 kerning class 3"  } ['kern' ('DFLT' <'dflt' > 'cyrl' <'dflt' > 'grek' <'dflt' > 'hani' <'dflt' > 'kana' <'dflt' > 'latn' <'dflt' > ) ]
+Lookup: 258 8 0 "'kern' Horizontal Kerning lookup 11" { "'kern' Horizontal Kerning lookup 11 per glyph data 0"  "'kern' Horizontal Kerning lookup 11 kerning class 1"  "'kern' Horizontal Kerning lookup 11 kerning class 2"  "'kern' Horizontal Kerning lookup 11 kerning class 3"  "'kern' Horizontal Kerning lookup 11 kerning class 4"  } ['kern' ('DFLT' <'dflt' > 'cyrl' <'dflt' > 'grek' <'dflt' > 'hani' <'dflt' > 'kana' <'dflt' > 'latn' <'dflt' > ) ]
+Lookup: 258 8 0 "'kern' Horizontal Kerning lookup 12" { "'kern' Horizontal Kerning lookup 12 per glyph data 0"  "'kern' Horizontal Kerning lookup 12 kerning class 1"  "'kern' Horizontal Kerning lookup 12 kerning class 2"  } ['kern' ('DFLT' <'dflt' > 'cyrl' <'dflt' > 'grek' <'dflt' > 'hani' <'dflt' > 'kana' <'dflt' > 'latn' <'dflt' > ) ]
+Lookup: 258 0 0 "'vkrn' Vertical Kerning lookup 13" { "'vkrn' Vertical Kerning lookup 13 per glyph data 0"  "'vkrn' Vertical Kerning lookup 13 kerning class 1" (1) } ['vkrn' ('DFLT' <'dflt' > 'cyrl' <'dflt' > 'grek' <'dflt' > 'hani' <'dflt' > 'kana' <'dflt' > 'latn' <'dflt' > ) ]
+Lookup: 257 0 0 "'palt' Proportional Alternate Metrics lookup 14" { "'palt' Proportional Alternate Metrics lookup 14 per glyph data 0"  "'palt' Proportional Alternate Metrics lookup 14 per glyph data 1"  "'palt' Proportional Alternate Metrics lookup 14 per glyph data 2"  "'palt' Proportional Alternate Metrics lookup 14 per glyph data 3"  "'palt' Proportional Alternate Metrics lookup 14 per glyph data 4"  "'palt' Proportional Alternate Metrics lookup 14 per glyph data 5"  "'palt' Proportional Alternate Metrics lookup 14 per glyph data 6"  "'palt' Proportional Alternate Metrics lookup 14 per glyph data 7"  "'palt' Proportional Alternate Metrics lookup 14 per glyph data 8"  "'palt' Proportional Alternate Metrics lookup 14 per glyph data 9"  "'palt' Proportional Alternate Metrics lookup 14 per glyph data 10"  } ['palt' ('DFLT' <'dflt' > 'cyrl' <'dflt' > 'grek' <'dflt' > 'hani' <'dflt' > 'kana' <'dflt' > 'latn' <'dflt' > ) ]
+Lookup: 257 0 0 "'vpal' Proportional Alternate Vertical Metrics lookup 15" { "'vpal' Proportional Alternate Vertical Metrics lookup 15 per glyph data 0"  "'vpal' Proportional Alternate Vertical Metrics lookup 15 per glyph data 1"  "'vpal' Proportional Alternate Vertical Metrics lookup 15 per glyph data 2"  "'vpal' Proportional Alternate Vertical Metrics lookup 15 per glyph data 3"  "'vpal' Proportional Alternate Vertical Metrics lookup 15 per glyph data 4"  "'vpal' Proportional Alternate Vertical Metrics lookup 15 per glyph data 5"  "'vpal' Proportional Alternate Vertical Metrics lookup 15 per glyph data 6"  "'vpal' Proportional Alternate Vertical Metrics lookup 15 per glyph data 7"  "'vpal' Proportional Alternate Vertical Metrics lookup 15 per glyph data 8"  "'vpal' Proportional Alternate Vertical Metrics lookup 15 per glyph data 9"  "'vpal' Proportional Alternate Vertical Metrics lookup 15 per glyph data 10"  } ['vpal' ('DFLT' <'dflt' > 'cyrl' <'dflt' > 'grek' <'dflt' > 'hani' <'dflt' > 'kana' <'dflt' > 'latn' <'dflt' > ) ]
+DEI: 91125
+KernClass2: 3+ 21 "'kern' Horizontal Kerning lookup 10 kerning class 1"
+ 7 uni00B9
+ 7 uni00B3
+ 7 uni00B2
+ 53 A AE Agrave Aacute Acircumflex Atilde Adieresis Aring
+ 69 C G O Q Oslash OE Ccedilla Ograve Oacute Ocircumflex Otilde Odieresis
+ 37 I Igrave Iacute Icircumflex Idieresis
+ 1 J
+ 1 T
+ 1 W
+ 18 Y Yacute Ydieresis
+ 8 Z Zcaron
+ 19 eth a.alt01 g.alt01
+ 103 c e o oslash oe ccedilla egrave eacute ecircumflex edieresis ograve oacute ocircumflex otilde odieresis
+ 18 f fi fl germandbls
+ 72 comma period quotesinglbase quotedblbase comma.half period.half ellipsis
+ 1 t
+ 1 w
+ 8 fraction
+ 9 g g.alt02
+ 37 i igrave iacute icircumflex idieresis
+ 1 j
+ 18 y yacute ydieresis
+ 8 z zcaron
+ 0 {} -40 {} -5 {} -20 {} -60 {} -10 {} 5 {} -30 {} -20 {} 10 {} 10 {} 5 {} -50 {} 10 {} 10 {} 15 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -50 {} -5 {} 0 {} -40 {} 10 {} 20 {} 0 {} 0 {} 0 {} 0 {} 10 {} -50 {} 10 {} 20 {} 5 {} -10 {} 15 {} 20 {} 20 {} 10 {} 0 {} -30 {} 0 {} 0 {} -40 {} 10 {} 20 {} 0 {} 0 {} 0 {} 0 {} 10 {} -50 {} 10 {} 25 {} 15 {} 0 {} 25 {} 0 {} 20 {} 10 {}
+KernClass2: 2+ 4 "'kern' Horizontal Kerning lookup 10 kerning class 2"
+ 7 percent
+ 11 perthousand
+ 20 uni02BB quotedblleft
+ 21 uni02BC quotedblright
+ 29 quotedbl quotesingle asterisk
+ 0 {} -60 {} -60 {} -60 {} 0 {} -60 {} -60 {} -60 {}
+KernClass2: 5+ 12 "'kern' Horizontal Kerning lookup 10 kerning class 3"
+ 49 comma period quotesinglbase quotedblbase ellipsis
+ 8 question
+ 20 uni02BB quotedblleft
+ 21 uni02BC quotedblright
+ 29 quotedbl quotesingle asterisk
+ 7 uni00B9
+ 8 question
+ 20 uni02BB quotedblleft
+ 21 uni02BC quotedblright
+ 29 quotedbl quotesingle asterisk
+ 7 uni00B3
+ 7 uni00B2
+ 72 comma period quotesinglbase quotedblbase comma.half period.half ellipsis
+ 12 questiondown
+ 15 colon semicolon
+ 29 hyphen endash uni0336 uni00AD
+ 0 {} -50 {} -75 {} -70 {} -70 {} -90 {} -50 {} -50 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 30 {} 30 {} 0 {} 0 {} 0 {} -115 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -70 {} -90 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -70 {} -100 {} -20 {} -40 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -90 {} -90 {} 0 {} 0 {}
+KernClass2: 23+ 50 "'kern' Horizontal Kerning lookup 11 kerning class 1"
+ 50 A Agrave Aacute Acircumflex Atilde Adieresis Aring
+ 1 B
+ 10 C Ccedilla
+ 5 D Eth
+ 43 E AE OE Egrave Eacute Ecircumflex Edieresis
+ 1 F
+ 1 G
+ 37 I Igrave Iacute Icircumflex Idieresis
+ 1 J
+ 1 K
+ 8 L Lslash
+ 53 O Q Oslash Ograve Oacute Ocircumflex Otilde Odieresis
+ 1 P
+ 1 R
+ 8 S Scaron
+ 1 T
+ 5 Thorn
+ 37 U Ugrave Uacute Ucircumflex Udieresis
+ 1 V
+ 1 W
+ 1 X
+ 18 Y Yacute Ydieresis
+ 8 Z Zcaron
+ 53 A AE Agrave Aacute Acircumflex Atilde Adieresis Aring
+ 69 C G O Q Oslash OE Ccedilla Ograve Oacute Ocircumflex Otilde Odieresis
+ 1 J
+ 1 T
+ 37 U Ugrave Uacute Ucircumflex Udieresis
+ 1 V
+ 1 W
+ 1 X
+ 18 Y Yacute Ydieresis
+ 53 a ae agrave aacute acircumflex atilde adieresis aring
+ 9 ampersand
+ 2 at
+ 29 hyphen endash uni0336 uni00AD
+ 7 uni00B9
+ 72 comma period quotesinglbase quotedblbase comma.half period.half ellipsis
+ 8 question
+ 20 uni02BB quotedblleft
+ 21 uni02BC quotedblright
+ 29 quotedbl quotesingle asterisk
+ 10 registered
+ 1 t
+ 7 uni00B3
+ 9 trademark
+ 7 uni00B2
+ 10 underscore
+ 1 v
+ 1 w
+ 18 y yacute ydieresis
+ 8 z zcaron
+ 18 f fi fl germandbls
+ 9 g g.alt02
+ 8 Z Zcaron
+ 27 guillemotleft guilsinglleft
+ 5 slash
+ 19 eth a.alt01 g.alt01
+ 103 c e o oslash oe ccedilla egrave eacute ecircumflex edieresis ograve oacute ocircumflex otilde odieresis
+ 1 j
+ 21 m n r dotlessi ntilde
+ 8 s scaron
+ 37 u ugrave uacute ucircumflex udieresis
+ 8 S Scaron
+ 29 guilsinglright guillemotright
+ 1 p
+ 10 parenright
+ 1 x
+ 37 I Igrave Iacute Icircumflex Idieresis
+ 15 colon semicolon
+ 5 b h k
+ 37 i igrave iacute icircumflex idieresis
+ 0 {} 15 {} -15 {} 5 {} -65 {} -13 {} -41 {} -4 {} 5 {} -55 {} 3 {} -10 {} -5 {} -20 {} -40 {} 15 {} -10 {} -65 {} -50 {} -50 {} -60 {} -4 {} -40 {} -75 {} -30 {} 15 {} -20 {} -10 {} -15 {} 10 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -10 {} 0 {} -10 {} -25 {} 0 {} 0 {} -5 {} 0 {} -30 {} 0 {} 0 {} 0 {} 0 {} 0 {} -15 {} 0 {} 0 {} 0 {} 0 {} 0 {} -5 {} 0 {} 0 {} 0 {} 0 {} 0 {} -5 {} -10 {} 0 {} -5 {} -5 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -13 {} 0 {} 0 {} 0 {} 0 {} 5 {} 0 {} -5 {} 0 {} -5 {} -10 {} -20 {} 5 {} 0 {} 0 {} 10 {} 10 {} 10 {} 5 {} 0 {} 0 {} 0 {} 0 {} -20 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -12 {} 0 {} -14 {} -27 {} 0 {} -12 {} 0 {} -15 {} -30 {} 0 {} 0 {} 0 {} 15 {} -5 {} -30 {} 0 {} -10 {} -15 {} -10 {} -5 {} 0 {} -5 {} -25 {} -5 {} -80 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -15 {} 20 {} -10 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -15 {} 0 {} 0 {} -10 {} 0 {} 0 {} -20 {} 0 {} -10 {} -10 {} 0 {} -5 {} 0 {} 0 {} 5 {} 0 {} 0 {} 0 {} 0 {} -5 {} 10 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -5 {} 0 {} 0 {} 0 {} -10 {} -10 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -44 {} -17 {} -55 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -40 {} 0 {} 0 {} 0 {} 0 {} -80 {} 0 {} 5 {} 5 {} 5 {} 0 {} -5 {} 0 {} 0 {} 0 {} 0 {} 0 {} -10 {} -20 {} -10 {} -5 {} -40 {} 0 {} 0 {} 0 {} -25 {} -25 {} -10 {} -20 {} -20 {} -25 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -38 {} 0 {} -15 {} -3 {} -5 {} -34 {} 0 {} 0 {} 0 {} 10 {} -10 {} 0 {} 0 {} -10 {} -10 {} -10 {} -10 {} 0 {} -10 {} -30 {} -5 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -7 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -10 {} -15 {} -30 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 10 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -5 {} -5 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -6 {} 0 {} -7 {} 0 {} 0 {} 0 {} 0 {} -15 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -20 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -60 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -10 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -25 {} -15 {} -20 {} 0 {} -15 {} -10 {} 0 {} -15 {} -15 {} -25 {} -40 {} -55 {} -25 {} 10 {} 0 {} -13 {} -10 {} -5 {} -30 {} -20 {} -20 {} 0 {} -20 {} 0 {} -10 {} -10 {} -10 {} 10 {} -20 {} -10 {} 0 {} -30 {} 0 {} -25 {} -25 {} 0 {} -10 {} 0 {} -10 {} -5 {} -20 {} -10 {} 10 {} -10 {} 0 {} 0 {} 0 {} 0 {} 0 {} 19 {} -30 {} 0 {} -70 {} -28 {} -62 {} -26 {} 0 {} -74 {} -1 {} -10 {} -20 {} -40 {} -70 {} 25 {} -45 {} -70 {} -70 {} -70 {} -110 {} -10 {} -60 {} -90 {} -70 {} 30 {} -50 {} -30 {} -40 {} 16 {} 0 {} 0 {} 0 {} -26 {} 25 {} -9 {} -10 {} 0 {} 0 {} 0 {} -10 {} 0 {} 0 {} 0 {} 0 {} 10 {} 0 {} 0 {} 0 {} 0 {} 0 {} -15 {} 0 {} -14 {} -20 {} 0 {} -12 {} 0 {} -15 {} -30 {} 0 {} 0 {} 0 {} 15 {} -5 {} -30 {} 0 {} -10 {} -15 {} -10 {} -5 {} 0 {} -5 {} -25 {} -5 {} -80 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -14 {} 20 {} -10 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -45 {} 0 {} -40 {} 0 {} 0 {} 0 {} 5 {} 0 {} 0 {} -10 {} 0 {} 0 {} 0 {} 0 {} -100 {} 0 {} 20 {} 20 {} 5 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 5 {} 0 {} 0 {} 0 {} -35 {} -25 {} 0 {} 0 {} -20 {} -20 {} 0 {} -10 {} -10 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -10 {} -20 {} -24 {} -12 {} -25 {} -8 {} 0 {} -36 {} -10 {} -25 {} -20 {} -15 {} -10 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -10 {} -10 {} -10 {} 0 {} 0 {} 0 {} -4 {} 0 {} 0 {} -30 {} 0 {} 0 {} -10 {} -15 {} -15 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -13 {} 0 {} 0 {} 3 {} 0 {} -10 {} 0 {} 0 {} 0 {} 10 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -5 {} 0 {} -5 {} 0 {} -5 {} -40 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 20 {} -10 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -10 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -65 {} -20 {} -40 {} 23 {} 0 {} 5 {} 15 {} 0 {} 5 {} -70 {} -25 {} -40 {} -50 {} 15 {} -80 {} 0 {} 20 {} 20 {} 15 {} 0 {} 0 {} 10 {} 20 {} 10 {} -80 {} -35 {} -40 {} -40 {} -50 {} -15 {} -80 {} 0 {} -40 {} -70 {} -65 {} -65 {} 0 {} -45 {} -70 {} -50 {} -11 {} -30 {} -45 {} 20 {} -50 {} -7 {} -40 {} 0 {} 0 {} 0 {} -20 {} 0 {} -35 {} 0 {} 0 {} 0 {} -3 {} 0 {} -27 {} 0 {} 0 {} 0 {} 30 {} 0 {} -40 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 10 {} 10 {} 0 {} 0 {} 0 {} 0 {} 30 {} 0 {} 15 {} 15 {} 0 {} 0 {} 10 {} 0 {} 0 {} 5 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -13 {} 0 {} -14 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -20 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -50 {} 0 {} 5 {} 0 {} 0 {} 0 {} -10 {} 0 {} 0 {} -20 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -41 {} -12 {} -25 {} 5 {} 0 {} 0 {} 5 {} 0 {} 5 {} -30 {} 0 {} 0 {} -25 {} 0 {} -60 {} 0 {} 20 {} 25 {} 10 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -10 {} -10 {} -10 {} 0 {} -40 {} 0 {} -10 {} 0 {} -30 {} -30 {} 0 {} -15 {} -20 {} -20 {} -10 {} -10 {} 0 {} 0 {} 0 {} 0 {} -20 {} 0 {} 0 {} 0 {} -4 {} 0 {} -20 {} 15 {} 0 {} 5 {} 5 {} 0 {} 5 {} -10 {} -10 {} -20 {} -10 {} 30 {} -30 {} 30 {} 20 {} 20 {} 15 {} 15 {} 0 {} 20 {} 30 {} 20 {} -50 {} 0 {} -5 {} 0 {} -5 {} 0 {} -20 {} 0 {} 0 {} -10 {} -15 {} -15 {} 0 {} -10 {} -10 {} -5 {} 0 {} 0 {} -5 {} 10 {} -10 {} 0 {} 0 {} 0 {} 0 {} 0 {} 5 {} -15 {} -10 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -10 {} 0 {} 0 {} -40 {} 0 {} 10 {} 0 {} -5 {} 5 {} 0 {} 0 {} -10 {} 0 {} 0 {} 0 {} 0 {} 0 {} -20 {} -10 {} 10 {} 0 {} 0 {} 0 {} -20 {} 0 {} -15 {} -15 {} 0 {} 0 {} -5 {} -10 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -10 {} 0 {} 0 {} 0 {} -55 {} -30 {} -40 {} 5 {} 0 {} 5 {} 5 {} 0 {} 0 {} -50 {} -40 {} -50 {} -50 {} 20 {} -60 {} 15 {} 20 {} 30 {} 10 {} 5 {} -10 {} 0 {} 30 {} 0 {} -60 {} -25 {} -20 {} -25 {} -20 {} -15 {} -55 {} 0 {} -40 {} -60 {} -50 {} -50 {} -20 {} -40 {} -40 {} -30 {} -22 {} -40 {} -40 {} 20 {} -20 {} 0 {} -40 {} -10 {} -20 {} 0 {} 0 {} -15 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -10 {} -20 {} -40 {} 10 {} 30 {} 0 {} 10 {} 10 {} 5 {} 10 {} -10 {} 0 {} 20 {} 0 {} 15 {} 0 {} 0 {} -5 {} 0 {} 0 {} 0 {} 0 {} -20 {} 0 {} 0 {} -5 {} 0 {} 0 {} 0 {} -5 {} 0 {} -10 {} 0 {} 10 {} 0 {} 0 {} 0 {} 0 {} 0 {}
+KernClass2: 22+ 47 "'kern' Horizontal Kerning lookup 11 kerning class 2"
+ 50 a agrave aacute acircumflex atilde adieresis aring
+ 43 ugrave uacute ucircumflex udieresis a.alt01
+ 9 b p thorn
+ 10 c ccedilla
+ 43 e ae oe egrave eacute ecircumflex edieresis
+ 1 f
+ 9 g g.alt02
+ 16 dotlessi g.alt01
+ 10 germandbls
+ 12 h m n ntilde
+ 40 i fi igrave iacute icircumflex idieresis
+ 1 k
+ 11 l fl lslash
+ 55 o oslash eth ograve oacute ocircumflex otilde odieresis
+ 1 r
+ 8 s scaron
+ 1 t
+ 1 v
+ 1 w
+ 1 x
+ 18 y yacute ydieresis
+ 8 z zcaron
+ 53 A AE Agrave Aacute Acircumflex Atilde Adieresis Aring
+ 1 T
+ 1 V
+ 18 Y Yacute Ydieresis
+ 8 Z Zcaron
+ 29 hyphen endash uni0336 uni00AD
+ 7 uni00B9
+ 72 comma period quotesinglbase quotedblbase comma.half period.half ellipsis
+ 20 uni02BB quotedblleft
+ 29 quotedbl quotesingle asterisk
+ 5 slash
+ 9 trademark
+ 7 uni00B2
+ 10 underscore
+ 1 v
+ 1 w
+ 18 y yacute ydieresis
+ 21 uni02BC quotedblright
+ 37 I Igrave Iacute Icircumflex Idieresis
+ 1 W
+ 1 X
+ 18 f fi fl germandbls
+ 27 guillemotleft guilsinglleft
+ 10 registered
+ 1 t
+ 1 x
+ 8 z zcaron
+ 1 J
+ 8 S Scaron
+ 19 eth a.alt01 g.alt01
+ 9 ampersand
+ 103 c e o oslash oe ccedilla egrave eacute ecircumflex edieresis ograve oacute ocircumflex otilde odieresis
+ 9 g g.alt02
+ 7 uni00B3
+ 69 C G O Q Oslash OE Ccedilla Ograve Oacute Ocircumflex Otilde Odieresis
+ 23 bracketright braceright
+ 6 exclam
+ 10 parenright
+ 8 question
+ 53 a ae agrave aacute acircumflex atilde adieresis aring
+ 2 at
+ 1 j
+ 37 u ugrave uacute ucircumflex udieresis
+ 29 guilsinglright guillemotright
+ 8 s scaron
+ 8 l lslash
+ 0 {} 8 {} -70 {} -30 {} -50 {} 6 {} -5 {} -10 {} 10 {} -20 {} -15 {} 20 {} -10 {} -10 {} 10 {} -8 {} -3 {} -5 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -45 {} -20 {} -40 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 10 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -70 {} -30 {} -40 {} 0 {} 10 {} 0 {} -20 {} -30 {} -20 {} 0 {} -15 {} 0 {} -60 {} -8 {} -5 {} -5 {} -25 {} -5 {} -15 {} -15 {} -6 {} 15 {} -5 {} -6 {} -12 {} -5 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 8 {} -46 {} -27 {} -32 {} 6 {} 0 {} 0 {} 0 {} 5 {} 0 {} 10 {} 0 {} 15 {} -10 {} 0 {} 0 {} 0 {} 10 {} 0 {} -5 {} 0 {} 0 {} 5 {} 0 {} 0 {} 0 {} 0 {} 5 {} 3 {} -6 {} -5 {} -6 {} -4 {} 15 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -70 {} -30 {} -40 {} -5 {} 10 {} 0 {} -20 {} -30 {} -20 {} 0 {} -15 {} 0 {} -50 {} -8 {} -5 {} -5 {} -25 {} -5 {} -15 {} -15 {} 0 {} 15 {} -5 {} 0 {} -12 {} -5 {} 0 {} -10 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -6 {} 35 {} 12 {} 14 {} 2 {} 0 {} 10 {} -30 {} 40 {} 30 {} -20 {} 40 {} 20 {} -70 {} 10 {} 0 {} 10 {} 40 {} 0 {} 20 {} 8 {} 0 {} 0 {} 30 {} 0 {} 0 {} 0 {} -20 {} 0 {} -3 {} -10 {} -4 {} -5 {} 30 {} 15 {} 15 {} 20 {} 25 {} 30 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 15 {} -13 {} -10 {} -10 {} 10 {} 0 {} 10 {} 13 {} 20 {} 5 {} 20 {} 20 {} 10 {} 50 {} 0 {} 4 {} 5 {} 20 {} 0 {} 0 {} 5 {} 0 {} 0 {} 20 {} 0 {} 0 {} 0 {} -5 {} 0 {} -6 {} 0 {} -6 {} 2 {} 10 {} 5 {} 5 {} 0 {} 25 {} 0 {} -3 {} -5 {} 11 {} -4 {} 0 {} 0 {} 0 {} 0 {} 0 {} -40 {} -25 {} -60 {} 0 {} 0 {} 20 {} 0 {} -15 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 10 {} 0 {} -10 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 10 {} -20 {} 0 {} -20 {} 0 {} -10 {} 0 {} 20 {} -20 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -5 {} -5 {} -20 {} 0 {} -10 {} 0 {} 0 {} 30 {} 0 {} 0 {} 0 {} 0 {} 10 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 10 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -55 {} -30 {} -50 {} 0 {} 0 {} -10 {} 0 {} -30 {} -15 {} 0 {} -15 {} 0 {} 0 {} -8 {} -5 {} -8 {} -10 {} 0 {} -20 {} 0 {} 0 {} 0 {} -5 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -5 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -20 {} 0 {} 0 {} 15 {} 0 {} 0 {} 0 {} 0 {} 0 {} 20 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -5 {} 0 {} 0 {} 0 {} 0 {} 0 {} 20 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 15 {} -32 {} -18 {} -48 {} 13 {} -45 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -20 {} 10 {} -15 {} 0 {} 0 {} 15 {} 0 {} -11 {} 0 {} 0 {} -10 {} 5 {} -10 {} 0 {} 0 {} -5 {} -2 {} -15 {} -20 {} -17 {} -10 {} -20 {} -8 {} 0 {} 0 {} 0 {} 0 {} -5 {} -20 {} 0 {} -10 {} -10 {} -10 {} 0 {} 0 {} 10 {} -20 {} -10 {} -25 {} 16 {} -10 {} -10 {} 10 {} -20 {} 0 {} 0 {} 0 {} -10 {} 15 {} -10 {} -5 {} -10 {} -10 {} 0 {} 0 {} 14 {} 0 {} 0 {} 0 {} -5 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -10 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -5 {} 0 {} 0 {} -70 {} -30 {} -50 {} -5 {} 10 {} 0 {} -20 {} -30 {} -20 {} 0 {} -15 {} 0 {} -50 {} -8 {} -5 {} -5 {} -25 {} -5 {} -15 {} -15 {} -6 {} 15 {} -5 {} 0 {} -12 {} -5 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -25 {} -10 {} 0 {} -20 {} -11 {} -20 {} 20 {} -80 {} 50 {} 30 {} -15 {} 40 {} 30 {} -80 {} 10 {} 5 {} 10 {} 55 {} 0 {} 15 {} -20 {} 4 {} 0 {} 40 {} 4 {} 0 {} 0 {} -20 {} 7 {} -6 {} -20 {} -5 {} -23 {} 30 {} 10 {} 0 {} 0 {} 0 {} 0 {} -4 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -4 {} -65 {} -30 {} -40 {} 0 {} -10 {} -20 {} -5 {} -15 {} -10 {} 0 {} 0 {} -10 {} -20 {} -13 {} -9 {} -18 {} 0 {} 0 {} 0 {} -23 {} -5 {} 0 {} 0 {} -7 {} -20 {} -10 {} -5 {} 0 {} 0 {} -5 {} 0 {} -10 {} -5 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -6 {} 0 {} 0 {} 6 {} -24 {} 0 {} -20 {} 0 {} -20 {} 0 {} 0 {} 0 {} 0 {} 0 {} 5 {} 10 {} 10 {} 0 {} 0 {} 0 {} 20 {} 0 {} 0 {} 0 {} -10 {} -10 {} 15 {} -9 {} 0 {} 0 {} 0 {} 0 {} -4 {} -15 {} -4 {} -10 {} 10 {} 0 {} 20 {} 0 {} 0 {} 0 {} 0 {} -5 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -20 {} -35 {} 0 {} -25 {} 0 {} -10 {} 0 {} -45 {} 35 {} 20 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 40 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 3 {} 0 {} 0 {} 0 {} 0 {} -8 {} 0 {} -8 {} -12 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -9 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -10 {} -40 {} -10 {} -20 {} 0 {} -4 {} 10 {} -30 {} 15 {} 20 {} 0 {} 10 {} 25 {} -40 {} 0 {} 0 {} 0 {} 40 {} 0 {} -5 {} 0 {} 0 {} 0 {} 30 {} 0 {} 0 {} 0 {} 0 {} 0 {} -5 {} -20 {} -5 {} -17 {} 20 {} 0 {} 0 {} 0 {} 0 {} 0 {} -9 {} 0 {} 0 {} 0 {} 0 {} -2 {} 0 {} 0 {} 0 {} -50 {} 0 {} -20 {} 0 {} -35 {} 0 {} 0 {} 5 {} 10 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 20 {} 0 {} -10 {} 0 {} 0 {} -10 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -12 {} 0 {} -12 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -4 {} 0 {} 0 {} -15 {} -40 {} -10 {} -25 {} 0 {} -10 {} 0 {} -55 {} 30 {} 20 {} -5 {} 20 {} 20 {} -80 {} 0 {} 0 {} 0 {} 40 {} 0 {} 0 {} 0 {} 3 {} 0 {} 40 {} 0 {} 0 {} 0 {} -27 {} 0 {} -5 {} -20 {} -5 {} -30 {} 20 {} 0 {} 0 {} 0 {} 0 {} 0 {} -14 {} -10 {} 0 {} 0 {} 0 {} -4 {} 0 {} 0 {} 10 {} -40 {} -10 {} -20 {} 0 {} -20 {} 0 {} 15 {} 10 {} 10 {} 0 {} 10 {} 10 {} 10 {} 0 {} 0 {} 0 {} 20 {} 0 {} -5 {} 10 {} 0 {} 0 {} 25 {} 0 {} 0 {} 0 {} 0 {} 0 {} -10 {} -10 {} -10 {} 0 {} 10 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -5 {} 0 {} 0 {} 0 {} 0 {} 0 {}
+KernClass2: 4+ 15 "'kern' Horizontal Kerning lookup 11 kerning class 3"
+ 9 ampersand
+ 2 at
+ 10 registered
+ 9 trademark
+ 1 T
+ 1 W
+ 18 Y Yacute Ydieresis
+ 19 eth a.alt01 g.alt01
+ 103 c e o oslash oe ccedilla egrave eacute ecircumflex edieresis ograve oacute ocircumflex otilde odieresis
+ 1 t
+ 1 w
+ 18 y yacute ydieresis
+ 53 A AE Agrave Aacute Acircumflex Atilde Adieresis Aring
+ 37 I Igrave Iacute Icircumflex Idieresis
+ 1 J
+ 8 S Scaron
+ 8 Z Zcaron
+ 8 z zcaron
+ 0 {} -50 {} -10 {} -40 {} 10 {} 10 {} -5 {} -10 {} -10 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -40 {} -20 {} -50 {} 0 {} 0 {} 0 {} 0 {} -10 {} -10 {} -15 {} -20 {} -10 {} -15 {} -10 {} 0 {} 0 {} 15 {} 5 {} 0 {} 0 {} 0 {} 0 {} 0 {} -60 {} 0 {} 0 {} 0 {} -5 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -75 {} 0 {} 0 {} 0 {} 0 {} 0 {}
+KernClass2: 15+ 30 "'kern' Horizontal Kerning lookup 11 kerning class 4"
+ 21 bracketleft braceleft
+ 15 colon semicolon
+ 10 exclamdown
+ 27 guillemotleft guilsinglleft
+ 29 guilsinglright guillemotright
+ 29 hyphen endash uni0336 uni00AD
+ 9 parenleft
+ 49 comma period quotesinglbase quotedblbase ellipsis
+ 8 question
+ 12 questiondown
+ 20 uni02BB quotedblleft
+ 21 uni02BC quotedblright
+ 29 quotedbl quotesingle asterisk
+ 5 slash
+ 10 underscore
+ 1 j
+ 1 T
+ 1 V
+ 1 X
+ 18 Y Yacute Ydieresis
+ 9 g g.alt02
+ 1 t
+ 69 C G O Q Oslash OE Ccedilla Ograve Oacute Ocircumflex Otilde Odieresis
+ 19 eth a.alt01 g.alt01
+ 103 c e o oslash oe ccedilla egrave eacute ecircumflex edieresis ograve oacute ocircumflex otilde odieresis
+ 1 x
+ 53 A AE Agrave Aacute Acircumflex Atilde Adieresis Aring
+ 37 I Igrave Iacute Icircumflex Idieresis
+ 1 J
+ 8 S Scaron
+ 1 W
+ 8 Z Zcaron
+ 1 v
+ 1 w
+ 18 y yacute ydieresis
+ 8 z zcaron
+ 37 U Ugrave Uacute Ucircumflex Udieresis
+ 53 a ae agrave aacute acircumflex atilde adieresis aring
+ 18 f fi fl germandbls
+ 37 u ugrave uacute ucircumflex udieresis
+ 8 l lslash
+ 21 m n r dotlessi ntilde
+ 1 p
+ 8 s scaron
+ 0 {} 10 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -40 {} -20 {} -10 {} -40 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -20 {} 0 {} 0 {} -30 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -30 {} -10 {} 0 {} -40 {} -10 {} 5 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -40 {} -10 {} -20 {} -40 {} 0 {} 0 {} 20 {} 15 {} 15 {} -10 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -50 {} -25 {} -40 {} -50 {} 0 {} 0 {} 15 {} 10 {} 10 {} -35 {} -20 {} -30 {} -30 {} -20 {} -10 {} -40 {} -10 {} -4 {} -10 {} -15 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 50 {} 20 {} 0 {} 0 {} 20 {} 10 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 20 {} 0 {} 0 {} 0 {} 10 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -80 {} -60 {} 10 {} -60 {} -5 {} -15 {} -30 {} -20 {} -10 {} 0 {} 15 {} 0 {} 0 {} 0 {} -30 {} 30 {} -45 {} -30 {} -45 {} 15 {} -20 {} 5 {} -15 {} -5 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -20 {} 0 {} 0 {} 0 {} 15 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 20 {} -90 {} 0 {} 0 {} -65 {} 0 {} -10 {} -30 {} -10 {} -10 {} 0 {} 0 {} 0 {} -30 {} 0 {} -20 {} 0 {} 0 {} -20 {} -20 {} 10 {} -30 {} -10 {} 0 {} -10 {} -10 {} 0 {} 0 {} 0 {} 0 {} 0 {} 20 {} 20 {} 0 {} 20 {} -40 {} 14 {} -10 {} -45 {} -45 {} -15 {} -60 {} 0 {} -10 {} -5 {} 20 {} 5 {} 15 {} -5 {} 10 {} 0 {} 0 {} -30 {} 10 {} 0 {} 0 {} -20 {} -20 {} -15 {} 0 {} 0 {} 20 {} 20 {} 0 {} 20 {} -65 {} 0 {} -15 {} -70 {} -70 {} -15 {} -60 {} 0 {} -20 {} 0 {} 25 {} 10 {} -15 {} -10 {} -15 {} -20 {} 0 {} -30 {} 0 {} -10 {} 0 {} -40 {} -15 {} -50 {} 0 {} 0 {} 15 {} 10 {} 0 {} 10 {} 0 {} 0 {} -10 {} -20 {} -20 {} 10 {} -50 {} 0 {} -30 {} 0 {} 15 {} 5 {} 20 {} 20 {} 20 {} 10 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 30 {} 0 {} 0 {} 20 {} -30 {} 0 {} -15 {} -16 {} -15 {} 0 {} -45 {} 0 {} 0 {} -15 {} 20 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -10 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 50 {} -80 {} 0 {} 0 {} -60 {} 20 {} -25 {} -80 {} -60 {} -60 {} 0 {} 15 {} 10 {} -40 {} -40 {} -50 {} 25 {} 0 {} -40 {} -15 {} 10 {} -50 {} -30 {} -25 {} -35 {} -5 {} 0 {} 0 {} -35 {}
+KernClass2: 91+ 52 "'kern' Horizontal Kerning lookup 12 kerning class 1"
+ 15 uni30A2 uni30DE
+ 15 uni3070 uni3071
+ 15 uni30D0 uni30D1
+ 15 uni3079 uni307A
+ 15 uni3073 uni3074
+ 15 uni30D3 uni30D4
+ 15 uni307C uni307D
+ 31 uni30AC uni30B4 uni30DC uni30DD
+ 15 uni3076 uni3077
+ 55 uni30B0 uni30C0 uni30D6 uni30D7 uni30F4 uni30F7 uni30FA
+ 39 uni30A7 uni30A9 uni30E5 uni30E7 uni30F5
+ 15 uni30B6 uni30C7
+ 7 uni30AE
+ 15 uni30CF uni30E0
+ 15 uni30C8 uni30D8
+ 23 uni30CD uni30DB uni30E2
+ 71 uni30A6 uni30AF uni30B7 uni30BF uni30D5 uni30E9 uni30EF uni30F2 uni30F3
+ 7 uni30B1
+ 15 uni30CC uni30E1
+ 23 uni30A8 uni30CB uni30D2
+ 63 uni3064 uni306C uni306D uni306E uni3081 uni3086 uni308A uni308F
+ 15 uni30BD uni30C4
+ 39 uni30AB uni30B3 uni30E6 uni30E8 uni30ED
+ 15 uni308B uni308D
+ 7 uni30B5
+ 15 uni30C1 uni30C6
+ 55 uni3043 uni3049 uni3063 uni3083 uni3085 uni308E uni3095
+ 39 uni30A1 uni30A5 uni30C3 uni30E3 uni30EE
+ 7 uni3047
+ 23 uni30B8 uni30BE uni30C5
+ 7 uni3041
+ 7 uni3060
+ 7 uni3067
+ 7 uni3062
+ 7 uni30C2
+ 7 uni3069
+ 7 uni3065
+ 7 uni3048
+ 7 uni304C
+ 7 uni3052
+ 7 uni30B2
+ 7 uni304E
+ 7 uni3054
+ 7 uni3050
+ 7 uni3078
+ 7 uni3072
+ 7 uni3075
+ 7 uni3044
+ 7 uni30A4
+ 7 uni30A3
+ 7 uni304B
+ 7 uni3051
+ 7 uni30F6
+ 7 uni30AD
+ 7 uni3053
+ 7 uni304F
+ 7 uni307F
+ 7 uni30DF
+ 7 uni3082
+ 7 uni3093
+ 7 uni30CA
+ 7 uni30CE
+ 7 uni30AA
+ 7 uni3089
+ 7 uni308C
+ 7 uni30EC
+ 7 uni30EB
+ 7 uni305B
+ 7 uni3057
+ 7 uni305D
+ 7 uni3059
+ 7 uni30B9
+ 7 uni3066
+ 7 uni3061
+ 7 uni3068
+ 7 uni3046
+ 7 uni3045
+ 7 uni30F9
+ 7 uni3094
+ 7 uni3091
+ 7 uni3090
+ 7 uni3092
+ 7 uni3084
+ 7 uni30E4
+ 7 uni3088
+ 7 uni3087
+ 7 uni3056
+ 7 uni305C
+ 7 uni305E
+ 7 uni305A
+ 7 uni30BA
+ 31 uni30CF uni30D0 uni30D1 uni30EB
+ 23 uni30D8 uni30D9 uni30DA
+ 31 uniFF61 uniFF64 uni3001 uni3002
+ 7 uni30A4
+ 7 uni30E1
+ 7 uni30E2
+ 7 uni30E0
+ 7 uni30F3
+ 7 uni30CE
+ 63 uni3041 uni3043 uni3045 uni3049 uni3063 uni3085 uni308E uni3096
+ 127 uni3044 uni3051 uni3052 uni3057 uni3058 uni306B uni306F uni3070 uni3071 uni307B uni307C uni307D uni3080 uni3086 uni3089 uni308A
+ 23 uni306C uni306E uni3081
+ 7 uni30FC
+ 7 uni3087
+ 7 uni3084
+ 31 uni3042 uni304A uni3055 uni3056
+ 15 uni308B uni308D
+ 15 uni3068 uni3069
+ 7 uni3048
+ 7 uni3093
+ 7 uni3088
+ 15 uni30AD uni30AE
+ 47 uni30AF uni30B0 uni30B1 uni30B2 uni30BF uni30C0
+ 23 uni30BB uni30BC uni30E4
+ 15 uni305D uni305E
+ 15 uni3064 uni3065
+ 7 uni3047
+ 23 uni30A8 uni30F1 uni30F9
+ 23 uni30D5 uni30D6 uni30D7
+ 31 uni30B3 uni30B4 uni30CB uni30E6
+ 15 uni30B9 uni30BA
+ 31 uni30A6 uni30EF uni30F4 uni30F7
+ 7 uni30A2
+ 7 uni30DE
+ 15 uni30B5 uni30B6
+ 55 uni30C1 uni30C2 uni30C6 uni30C7 uni30E9 uni30F2 uni30FA
+ 7 uni30CA
+ 15 uni30AB uni30AC
+ 7 uni30EA
+ 31 uni30BD uni30BE uni30C4 uni30C5
+ 15 uni307F uni3090
+ 15 uni305B uni305C
+ 15 uni3059 uni305A
+ 15 uni3066 uni3067
+ 55 uni304B uni304C uni305F uni3060 uni3061 uni3062 uni306A
+ 23 uni3072 uni3073 uni3074
+ 15 uni3046 uni3094
+ 23 uni3078 uni3079 uni307A
+ 7 uni3082
+ 23 uni304D uni304E uni307E
+ 23 uni3075 uni3076 uni3077
+ 0 {} -50 {} -40 {} -120 {} -50 {} -20 {} -20 {} -40 {} -20 {} -60 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -35 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -10 {} -10 {} -10 {} -10 {} -10 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -40 {} 0 {} -20 {} 0 {} 0 {} 0 {} 0 {} -40 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -30 {} 0 {} -20 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -135 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -35 {} -35 {} 0 {} -60 {} 0 {} -15 {} -25 {} -25 {} -25 {} -40 {} -45 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -20 {} -40 {} -60 {} -30 {} 0 {} 0 {} -50 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -20 {} -20 {} -20 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -45 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -20 {} -10 {} -15 {} -20 {} -20 {} 0 {} 0 {} 0 {} 0 {} 0 {} -10 {} -10 {} 0 {} 0 {} 0 {} -10 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -25 {} 0 {} 0 {} 0 {} -30 {} -20 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -30 {} -40 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -15 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -15 {} 0 {} -10 {} -15 {} -15 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -25 {} 15 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -40 {} -50 {} -120 {} -30 {} -70 {} -30 {} -60 {} 0 {} -80 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -20 {} -30 {} -40 {} 0 {} 0 {} 0 {} -50 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -20 {} 0 {} 0 {} -30 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -10 {} 0 {} -20 {} 0 {} 0 {} 0 {} -20 {} -20 {} -20 {} -20 {} -20 {} -20 {} -20 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -40 {} -30 {} -100 {} 0 {} -50 {} 0 {} -60 {} 0 {} -90 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -30 {} -15 {} 0 {} 0 {} -35 {} 0 {} -20 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -20 {} 0 {} -20 {} 0 {} 0 {} 0 {} 0 {} -20 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -20 {} 0 {} 0 {} 0 {} 0 {} -30 {} 0 {} 0 {} -20 {} 0 {} -20 {} -40 {} -20 {} -20 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -30 {} -30 {} -50 {} -10 {} -30 {} -30 {} 0 {} 0 {} 0 {} -20 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -40 {} 0 {} 0 {} 0 {} 0 {} 0 {} -60 {} 0 {} -40 {} -40 {} 0 {} -20 {} -20 {} -40 {} -40 {} -20 {} -40 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -20 {} 0 {} 0 {} 0 {} 0 {} -20 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -40 {} -30 {} -80 {} 0 {} -20 {} 0 {} -40 {} 0 {} -45 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -10 {} 0 {} 0 {} 0 {} -20 {} 0 {} -20 {} -15 {} 0 {} -20 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -30 {} -35 {} -120 {} -60 {} -50 {} 0 {} -70 {} -30 {} -70 {} 0 {} 0 {} 0 {} -30 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -20 {} -20 {} 0 {} 0 {} 0 {} -30 {} -30 {} -30 {} -40 {} 0 {} -20 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -20 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -20 {} 0 {} 0 {} -30 {} -20 {} 0 {} -20 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -20 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -30 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -15 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -10 {} -10 {} -15 {} -15 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -30 {} 0 {} -80 {} 0 {} -20 {} 0 {} -40 {} 0 {} -30 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -10 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -20 {} -20 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -20 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -10 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -15 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -25 {} -35 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -30 {} -30 {} -100 {} -20 {} -30 {} 0 {} -60 {} 0 {} -80 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -20 {} -30 {} -20 {} 0 {} -20 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -40 {} -30 {} -120 {} -30 {} -20 {} 0 {} -80 {} -40 {} -60 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -20 {} 0 {} 0 {} 0 {} 0 {} -30 {} -20 {} -30 {} -20 {} 0 {} -20 {} 0 {} -20 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -30 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -20 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -25 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -40 {} -70 {} -15 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -10 {} 0 {} -20 {} 0 {} 0 {} 0 {} 0 {} 0 {} -40 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -15 {} -20 {} -10 {} -20 {} 0 {} -10 {} -10 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -20 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -20 {} -25 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -20 {} -20 {} 0 {} 0 {} -20 {} -15 {} 0 {} 0 {} 0 {} 0 {} 0 {} -50 {} 0 {} -80 {} 0 {} -40 {} 0 {} -40 {} 0 {} -50 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -20 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 25 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -20 {} -40 {} -10 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -10 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -100 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -65 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -35 {} -35 {} 0 {} 0 {} 0 {} -25 {} -20 {} -25 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -15 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -15 {} 0 {} 0 {} -20 {} 0 {} 0 {} 0 {} -35 {} 0 {} 0 {} 0 {} 0 {} -40 {} 0 {} -120 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -50 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -15 {} -15 {} 0 {} 0 {} 0 {} 0 {} 0 {} -15 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -75 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -20 {} 0 {} 0 {} 0 {} 0 {} 0 {} -15 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -25 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -40 {} 0 {} 0 {} 0 {} -20 {} -15 {} 0 {} 0 {} 0 {} 0 {} 0 {} -85 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -35 {} -15 {} -35 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -25 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -15 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -115 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -30 {} -10 {} -20 {} 0 {} 0 {} 0 {} 0 {} -25 {} -10 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -30 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -10 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -120 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -20 {} 0 {} 0 {} 0 {} 0 {} -20 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -55 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -40 {} -20 {} -35 {} 0 {} 0 {} 0 {} -15 {} -20 {} -25 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -20 {} 0 {} 0 {} 0 {} -20 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -40 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -60 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -20 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -15 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -20 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -40 {} -60 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -90 {} -70 {} -100 {} -25 {} -40 {} -30 {} 0 {} -40 {} -15 {} 0 {} 0 {} 0 {} 0 {} -70 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 10 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 20 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -25 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -20 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 15 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -15 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -30 {} -25 {} -60 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -10 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -10 {} 0 {} -40 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -40 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -15 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -60 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -15 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -40 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -20 {} 0 {} 0 {} 0 {} 0 {} -40 {} -30 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -10 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -20 {} 0 {} 0 {} 0 {} 0 {} -20 {} 0 {} 0 {} 0 {} 0 {} 0 {} -20 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -10 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -10 {} -25 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -10 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 10 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -10 {} -25 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -10 {} -20 {} -10 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -30 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -10 {} 0 {} 0 {} 0 {} 0 {} 0 {} -20 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -20 {} 0 {} -25 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -20 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -20 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -15 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -30 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -15 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -40 {} -25 {} -60 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -50 {} -30 {} -120 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -10 {} 0 {} 0 {} 0 {} -40 {} -40 {} -30 {} -40 {} 0 {} 0 {} 0 {} -30 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -30 {} -40 {} -100 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -20 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -30 {} -40 {} -50 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -20 {} -20 {} -20 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -15 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -20 {} 0 {} -20 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -20 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -30 {} 0 {} -20 {} -20 {} 0 {} 0 {} 0 {} -20 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -20 {} 0 {} 0 {} -20 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -20 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -10 {} 0 {} 0 {} 0 {} 0 {} -20 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -15 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -20 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -30 {} -60 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -60 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -140 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -40 {} -10 {} -40 {} 0 {} 0 {} 0 {} 0 {} -20 {} -20 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -20 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -20 {} 0 {} 0 {} -40 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -20 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -20 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -80 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -20 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -10 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -25 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -10 {} 0 {} 0 {} -10 {} 0 {} -15 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -15 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -10 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -10 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -30 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -50 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -30 {} -35 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -85 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -30 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -20 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -15 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -10 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -20 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -50 {} -40 {} -60 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -30 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -50 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -30 {} -20 {} -80 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -15 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -20 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -90 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -70 {} -50 {} -50 {} 0 {} 0 {} 0 {} -40 {} -50 {} -20 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -30 {} 0 {} 0 {} -20 {} 0 {} 0 {} 0 {} -50 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -55 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -25 {} -5 {} -15 {} 0 {} 0 {} 0 {} 0 {} -20 {} -5 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -25 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -20 {} 0 {} 0 {} 0 {} -15 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -115 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -40 {} -20 {} -20 {} 0 {} 0 {} 0 {} 0 {} -10 {} -20 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -195 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -90 {} -40 {} -50 {} 0 {} 0 {} 0 {} -20 {} -40 {} -60 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -30 {} -40 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -20 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -50 {} 0 {} 0 {} -60 {} 0 {} -20 {} -45 {} -50 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {}
+KernClass2: 2+ 9 "'kern' Horizontal Kerning lookup 12 kerning class 2"
+ 7 uni30FC
+ 7 uni309E
+ 23 uni30A8 uni30F1 uni30F9
+ 23 uni30D5 uni30D6 uni30D7
+ 31 uni30B3 uni30B4 uni30CB uni30E6
+ 15 uni3059 uni305A
+ 15 uni30B9 uni30BA
+ 15 uni3066 uni3067
+ 15 uni3064 uni3065
+ 31 uniFF61 uniFF64 uni3001 uni3002
+ 0 {} -50 {} -70 {} -50 {} -15 {} -50 {} -60 {} -15 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} 0 {} -50 {}
+VKernClass2: 9+ 5 "'vkrn' Vertical Kerning lookup 13 kerning class 1"
+ 79 uni30A6 uni30D5 uni30D6 uni30D7 uni30E9 uni30EF uni30F2 uni30F4 uni30F7 uni30FA
+ 23 uni30B7 uni30B8 uni30F3
+ 47 uni30A2 uni30C1 uni30C2 uni30C6 uni30C7 uni30CA
+ 31 uni30AF uni30B0 uni30BF uni30C0
+ 31 uni30AA uni30DB uni30DC uni30DD
+ 23 uni30A4 uni30C8 uni30C9
+ 31 uni30B5 uni30B6 uni30EA uni30EC
+ 15 uni3059 uni305A
+ 7 uni30CE
+ 36 uniFE11 uniFE12 uniFE10 uniFF0E.vert
+ 7 uni30CE
+ 7 uni30A4
+ 15 uni304F uni3050
+ 0 {} -50 {} -20 {} -50 {} 0 {} 0 {} -50 {} 0 {} -50 {} 0 {} 0 {} -80 {} 0 {} -80 {} 0 {} 0 {} 0 {} -40 {} 0 {} 0 {} 0 {} 0 {} 0 {} -20 {} 0 {} 0 {} 0 {} 0 {} -30 {} 0 {} 0 {} 0 {} 0 {} -40 {} 0 {} 0 {} -50 {} 0 {} 0 {} 0 {} 0 {} 0 {} -40 {} 0 {} -40 {}
+ChainSub2: coverage "'ccmp' Glyph Composition/Decomposition lookup 4 contextual 4" 0 0 0 1
+ 1 0 0
+  Coverage: 90 A B C D E F G H I J K L M N O P Q R S T U V W X Y Z AE Lslash Oslash OE Ccedilla Eth Thorn
+ 1
+  SeqLookup: 0 "Single Substitution lookup 2"
+EndFPST
+ChainSub2: coverage "'ccmp' Glyph Composition/Decomposition lookup 4 contextual 3" 0 0 0 1
+ 1 0 1
+  Coverage: 1 j
+  FCoverage: 47 uni02CA uni0306 uni0307 uni0308 uni030B uni030C
+ 1
+  SeqLookup: 0 "Single Substitution lookup 2"
+EndFPST
+ChainSub2: coverage "'ccmp' Glyph Composition/Decomposition lookup 4 contextual 2" 0 0 0 1
+ 1 0 1
+  Coverage: 1 i
+  FCoverage: 47 uni02CA uni0306 uni0307 uni0308 uni030B uni030C
+ 1
+  SeqLookup: 0 "Single Substitution lookup 2"
+EndFPST
+ChainSub2: coverage "'ccmp' Glyph Composition/Decomposition lookup 4 contextual 1" 0 0 0 1
+ 1 0 1
+  Coverage: 1 g
+  FCoverage: 47 uni02CA uni0306 uni0307 uni0308 uni030B uni030C
+ 1
+  SeqLookup: 0 "Single Substitution lookup 2"
+EndFPST
+ChainSub2: coverage "'ccmp' Glyph Composition/Decomposition lookup 4 contextual 0" 0 0 0 1
+ 1 1 0
+  Coverage: 7 uni030C
+  BCoverage: 7 L d l t
+ 1
+  SeqLookup: 0 "Single Substitution lookup 2"
+EndFPST
+ShortTable: maxp 16
+  1
+  0
+  9505
+  219
+  23
+  0
+  0
+  1
+  2
+  30
+  6
+  0
+  100
+  0
+  0
+  0
+EndShort
+LangName: 1033 "" "" "Regular" "IBM;IBMPlexSansJP;1.000;2021" "" "Version 1.000" "" "IBM Plex+AK4A is a trademark of IBM Corp, registered in many jurisdictions worldwide." "Sandoll Inc." "Mike Abbink; Paul van der Laan; Pieter van Rosmalen; Wujin Sim; Yejin Wi; Jinhee Kim; Boomi Park; Yona Kim; Kichan Ma" "" "http://www.sandoll.co.kr" "http://www.ibm.com" "This Font Software is licensed under the SIL Open Font License, Version 1.1. This license is available with a FAQ at: http://scripts.sil.org/OFL" "http://scripts.sil.org/OFL" "" "IBM Plex Sans JP" "Regular"
+LangName: 65535 "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "" "IBMPlexSansJP-Regular-83pv-RKSJ-H"
+Encoding: UnicodeFull
+UnicodeInterp: none
+NameList: AGL For New Fonts
+DisplaySize: -48
+AntiAlias: 1
+FitToEm: 0
+WinInfo: 9490 13 9
+BeginChars: 1115565 87
+
+StartChar: uni2500
+Encoding: 9472 9472 0
+Width: 500
+Flags: W
+LayerCount: 2
+Fore
+SplineSet
+0 400 m 1,0,-1
+ 500 400 l 1,1,-1
+ 500 360 l 1,2,-1
+ 0 360 l 1,3,-1
+ 0 400 l 1,0,-1
+EndSplineSet
+Substitution2: "'vrt2' Vertical Rotation & Alternates lookup 19 subtable" uni2502
+Substitution2: "'vert' Vertical Alternates lookup 18 subtable" uni2502
+Substitution2: "'hwid' Half Widths lookup 9 subtable" uni2500.half
+AlternateSubs2: "'aalt' Access All Alternates lookup 1 subtable" uni2500.half uni2502
+EndChar
+
+StartChar: uni2501
+Encoding: 9473 9473 1
+Width: 500
+Flags: W
+LayerCount: 2
+Fore
+SplineSet
+0 320 m 1,0,-1
+ 0 440 l 1,1,-1
+ 500 440 l 1,2,-1
+ 500 320 l 1,3,-1
+ 0 320 l 1,0,-1
+EndSplineSet
+Substitution2: "'vrt2' Vertical Rotation & Alternates lookup 19 subtable" uni2503
+Substitution2: "'vert' Vertical Alternates lookup 18 subtable" uni2503
+Substitution2: "'hwid' Half Widths lookup 9 subtable" uni2501.half
+AlternateSubs2: "'aalt' Access All Alternates lookup 1 subtable" uni2501.half uni2503
+EndChar
+
+StartChar: uni2502
+Encoding: 9474 9474 2
+Width: 500
+Flags: W
+LayerCount: 2
+Fore
+SplineSet
+230 -120 m 1,0,-1
+ 230 880 l 1,1,-1
+ 270 880 l 1,2,-1
+ 270 -120 l 1,3,-1
+ 230 -120 l 1,0,-1
+EndSplineSet
+Substitution2: "'vrt2' Vertical Rotation & Alternates lookup 19 subtable" uni2500
+Substitution2: "'vert' Vertical Alternates lookup 18 subtable" uni2500
+Substitution2: "'hwid' Half Widths lookup 9 subtable" uni2502.half
+AlternateSubs2: "'aalt' Access All Alternates lookup 1 subtable" uni2502.half uni2500
+EndChar
+
+StartChar: uni2503
+Encoding: 9475 9475 3
+Width: 500
+Flags: W
+LayerCount: 2
+Fore
+SplineSet
+190 -120 m 1,0,-1
+ 190 880 l 1,1,-1
+ 310 880 l 1,2,-1
+ 310 -120 l 1,3,-1
+ 190 -120 l 1,0,-1
+EndSplineSet
+Substitution2: "'vrt2' Vertical Rotation & Alternates lookup 19 subtable" uni2501
+Substitution2: "'vert' Vertical Alternates lookup 18 subtable" uni2501
+Substitution2: "'hwid' Half Widths lookup 9 subtable" uni2503.half
+AlternateSubs2: "'aalt' Access All Alternates lookup 1 subtable" uni2503.half uni2501
+EndChar
+
+StartChar: uni2504
+Encoding: 9476 9476 4
+Width: 500
+Flags: W
+LayerCount: 2
+Fore
+SplineSet
+0 400 m 1,0,-1
+ 125 400 l 1,1,-1
+ 125 360 l 1,2,-1
+ 0 360 l 1,3,-1
+ 0 400 l 1,0,-1
+167 400 m 1,4,-1
+ 292 400 l 1,5,-1
+ 292 360 l 1,6,-1
+ 167 360 l 1,7,-1
+ 167 400 l 1,4,-1
+334 400 m 1,8,-1
+ 459 400 l 1,9,-1
+ 459 360 l 1,10,-1
+ 334 360 l 1,11,-1
+ 334 400 l 1,8,-1
+EndSplineSet
+Substitution2: "'vrt2' Vertical Rotation & Alternates lookup 19 subtable" uni2506
+Substitution2: "'vert' Vertical Alternates lookup 18 subtable" uni2506
+Substitution2: "'hwid' Half Widths lookup 9 subtable" uni2504.half
+AlternateSubs2: "'aalt' Access All Alternates lookup 1 subtable" uni2504.half uni2506
+EndChar
+
+StartChar: uni2505
+Encoding: 9477 9477 5
+Width: 500
+Flags: W
+LayerCount: 2
+Fore
+SplineSet
+0 320 m 1,0,-1
+ 0 440 l 1,1,-1
+ 125 440 l 1,2,-1
+ 125 320 l 1,3,-1
+ 0 320 l 1,0,-1
+167 320 m 1,4,-1
+ 167 440 l 1,5,-1
+ 292 440 l 1,6,-1
+ 292 320 l 1,7,-1
+ 167 320 l 1,4,-1
+334 320 m 1,8,-1
+ 334 440 l 1,9,-1
+ 459 440 l 1,10,-1
+ 459 320 l 1,11,-1
+ 334 320 l 1,8,-1
+EndSplineSet
+Substitution2: "'vrt2' Vertical Rotation & Alternates lookup 19 subtable" uni2507
+Substitution2: "'vert' Vertical Alternates lookup 18 subtable" uni2507
+Substitution2: "'hwid' Half Widths lookup 9 subtable" uni2505.half
+AlternateSubs2: "'aalt' Access All Alternates lookup 1 subtable" uni2505.half uni2507
+EndChar
+
+StartChar: uni2506
+Encoding: 9478 9478 6
+Width: 500
+Flags: W
+LayerCount: 2
+Fore
+SplineSet
+230 880 m 1,0,-1
+ 270 880 l 1,1,-1
+ 270 769 l 1,2,-1
+ 230 769 l 1,3,-1
+ 230 880 l 1,0,-1
+230 713 m 1,4,-1
+ 270 713 l 1,5,-1
+ 270 602 l 1,6,-1
+ 230 602 l 1,7,-1
+ 230 713 l 1,4,-1
+230 546 m 1,8,-1
+ 270 546 l 1,9,-1
+ 270 435 l 1,10,-1
+ 230 435 l 1,11,-1
+ 230 546 l 1,8,-1
+230 380 m 1,12,-1
+ 270 380 l 1,13,-1
+ 270 269 l 1,14,-1
+ 230 269 l 1,15,-1
+ 230 380 l 1,12,-1
+230 213 m 1,16,-1
+ 270 213 l 1,17,-1
+ 270 102 l 1,18,-1
+ 230 102 l 1,19,-1
+ 230 213 l 1,16,-1
+230 46 m 1,20,-1
+ 270 46 l 1,21,-1
+ 270 -65 l 1,22,-1
+ 230 -65 l 1,23,-1
+ 230 46 l 1,20,-1
+EndSplineSet
+Substitution2: "'vrt2' Vertical Rotation & Alternates lookup 19 subtable" uni2504
+Substitution2: "'vert' Vertical Alternates lookup 18 subtable" uni2504
+Substitution2: "'hwid' Half Widths lookup 9 subtable" uni2506.half
+AlternateSubs2: "'aalt' Access All Alternates lookup 1 subtable" uni2506.half uni2504
+EndChar
+
+StartChar: uni2507
+Encoding: 9479 9479 7
+Width: 500
+Flags: W
+LayerCount: 2
+Fore
+SplineSet
+190 880 m 1,0,-1
+ 310 880 l 1,1,-1
+ 310 769 l 1,2,-1
+ 190 769 l 1,3,-1
+ 190 880 l 1,0,-1
+190 713 m 1,4,-1
+ 310 713 l 1,5,-1
+ 310 602 l 1,6,-1
+ 190 602 l 1,7,-1
+ 190 713 l 1,4,-1
+190 546 m 1,8,-1
+ 310 546 l 1,9,-1
+ 310 435 l 1,10,-1
+ 190 435 l 1,11,-1
+ 190 546 l 1,8,-1
+190 380 m 1,12,-1
+ 310 380 l 1,13,-1
+ 310 269 l 1,14,-1
+ 190 269 l 1,15,-1
+ 190 380 l 1,12,-1
+190 213 m 1,16,-1
+ 310 213 l 1,17,-1
+ 310 102 l 1,18,-1
+ 190 102 l 1,19,-1
+ 190 213 l 1,16,-1
+190 46 m 1,20,-1
+ 310 46 l 1,21,-1
+ 310 -65 l 1,22,-1
+ 190 -65 l 1,23,-1
+ 190 46 l 1,20,-1
+EndSplineSet
+Substitution2: "'vrt2' Vertical Rotation & Alternates lookup 19 subtable" uni2505
+Substitution2: "'vert' Vertical Alternates lookup 18 subtable" uni2505
+Substitution2: "'hwid' Half Widths lookup 9 subtable" uni2507.half
+AlternateSubs2: "'aalt' Access All Alternates lookup 1 subtable" uni2507.half uni2505
+EndChar
+
+StartChar: uni2508
+Encoding: 9480 9480 8
+Width: 500
+Flags: W
+LayerCount: 2
+Fore
+SplineSet
+0 400 m 1,0,-1
+ 83 400 l 1,1,-1
+ 83 360 l 1,2,-1
+ 0 360 l 1,3,-1
+ 0 400 l 1,0,-1
+166 400 m 1,4,-1
+ 250 400 l 1,5,-1
+ 250 360 l 1,6,-1
+ 166 360 l 1,7,-1
+ 166 400 l 1,4,-1
+333 400 m 1,8,-1
+ 416 400 l 1,9,-1
+ 416 360 l 1,10,-1
+ 333 360 l 1,11,-1
+ 333 400 l 1,8,-1
+EndSplineSet
+Substitution2: "'vrt2' Vertical Rotation & Alternates lookup 19 subtable" uni250A
+Substitution2: "'vert' Vertical Alternates lookup 18 subtable" uni250A
+Substitution2: "'hwid' Half Widths lookup 9 subtable" uni2508.half
+AlternateSubs2: "'aalt' Access All Alternates lookup 1 subtable" uni2508.half uni250A
+EndChar
+
+StartChar: uni2509
+Encoding: 9481 9481 9
+Width: 500
+Flags: W
+LayerCount: 2
+Fore
+SplineSet
+0 440 m 1,0,-1
+ 83 440 l 1,1,-1
+ 83 320 l 1,2,-1
+ 0 320 l 1,3,-1
+ 0 440 l 1,0,-1
+166 440 m 1,4,-1
+ 250 440 l 1,5,-1
+ 250 320 l 1,6,-1
+ 166 320 l 1,7,-1
+ 166 440 l 1,4,-1
+333 440 m 1,8,-1
+ 416 440 l 1,9,-1
+ 416 320 l 1,10,-1
+ 333 320 l 1,11,-1
+ 333 440 l 1,8,-1
+EndSplineSet
+Substitution2: "'vrt2' Vertical Rotation & Alternates lookup 19 subtable" uni250B
+Substitution2: "'vert' Vertical Alternates lookup 18 subtable" uni250B
+Substitution2: "'hwid' Half Widths lookup 9 subtable" uni2509.half
+AlternateSubs2: "'aalt' Access All Alternates lookup 1 subtable" uni2509.half uni250B
+EndChar
+
+StartChar: uni250A
+Encoding: 9482 9482 10
+Width: 500
+Flags: W
+LayerCount: 2
+Fore
+SplineSet
+230 880 m 1,0,-1
+ 270 880 l 1,1,-1
+ 270 797 l 1,2,-1
+ 230 797 l 1,3,-1
+ 230 880 l 1,0,-1
+230 713 m 1,4,-1
+ 270 713 l 1,5,-1
+ 270 630 l 1,6,-1
+ 230 630 l 1,7,-1
+ 230 713 l 1,4,-1
+230 546 m 1,8,-1
+ 270 546 l 1,9,-1
+ 270 463 l 1,10,-1
+ 230 463 l 1,11,-1
+ 230 546 l 1,8,-1
+230 380 m 1,12,-1
+ 270 380 l 1,13,-1
+ 270 297 l 1,14,-1
+ 230 297 l 1,15,-1
+ 230 380 l 1,12,-1
+230 213 m 1,16,-1
+ 270 213 l 1,17,-1
+ 270 130 l 1,18,-1
+ 230 130 l 1,19,-1
+ 230 213 l 1,16,-1
+230 46 m 1,20,-1
+ 270 46 l 1,21,-1
+ 270 -37 l 1,22,-1
+ 230 -37 l 1,23,-1
+ 230 46 l 1,20,-1
+EndSplineSet
+Substitution2: "'vrt2' Vertical Rotation & Alternates lookup 19 subtable" uni2508
+Substitution2: "'vert' Vertical Alternates lookup 18 subtable" uni2508
+Substitution2: "'hwid' Half Widths lookup 9 subtable" uni250A.half
+AlternateSubs2: "'aalt' Access All Alternates lookup 1 subtable" uni250A.half uni2508
+EndChar
+
+StartChar: uni250B
+Encoding: 9483 9483 11
+Width: 500
+Flags: W
+LayerCount: 2
+Fore
+SplineSet
+190 880 m 1,0,-1
+ 310 880 l 1,1,-1
+ 310 797 l 1,2,-1
+ 190 797 l 1,3,-1
+ 190 880 l 1,0,-1
+190 713 m 1,4,-1
+ 310 713 l 1,5,-1
+ 310 630 l 1,6,-1
+ 190 630 l 1,7,-1
+ 190 713 l 1,4,-1
+190 546 m 1,8,-1
+ 310 546 l 1,9,-1
+ 310 463 l 1,10,-1
+ 190 463 l 1,11,-1
+ 190 546 l 1,8,-1
+190 380 m 1,12,-1
+ 310 380 l 1,13,-1
+ 310 297 l 1,14,-1
+ 190 297 l 1,15,-1
+ 190 380 l 1,12,-1
+190 213 m 1,16,-1
+ 310 213 l 1,17,-1
+ 310 130 l 1,18,-1
+ 190 130 l 1,19,-1
+ 190 213 l 1,16,-1
+190 46 m 1,20,-1
+ 310 46 l 1,21,-1
+ 310 -37 l 1,22,-1
+ 190 -37 l 1,23,-1
+ 190 46 l 1,20,-1
+EndSplineSet
+Substitution2: "'vrt2' Vertical Rotation & Alternates lookup 19 subtable" uni2509
+Substitution2: "'vert' Vertical Alternates lookup 18 subtable" uni2509
+Substitution2: "'hwid' Half Widths lookup 9 subtable" uni250B.half
+AlternateSubs2: "'aalt' Access All Alternates lookup 1 subtable" uni250B.half uni2509
+EndChar
+
+StartChar: uni250C
+Encoding: 9484 9484 12
+Width: 500
+Flags: W
+LayerCount: 2
+Fore
+SplineSet
+230 -120 m 1,0,-1
+ 230 400 l 1,1,-1
+ 500 400 l 1,2,-1
+ 500 360 l 1,3,-1
+ 270 360 l 1,4,-1
+ 270 -120 l 1,5,-1
+ 230 -120 l 1,0,-1
+EndSplineSet
+Substitution2: "'vrt2' Vertical Rotation & Alternates lookup 19 subtable" uni2510
+Substitution2: "'vert' Vertical Alternates lookup 18 subtable" uni2510
+Substitution2: "'hwid' Half Widths lookup 9 subtable" uni250C.half
+AlternateSubs2: "'aalt' Access All Alternates lookup 1 subtable" uni250C.half uni2510
+EndChar
+
+StartChar: uni250D
+Encoding: 9485 9485 13
+Width: 500
+Flags: W
+LayerCount: 2
+Fore
+SplineSet
+230 -120 m 1,0,-1
+ 230 440 l 1,1,-1
+ 500 440 l 1,2,-1
+ 500 320 l 1,3,-1
+ 270 320 l 1,4,-1
+ 270 -120 l 1,5,-1
+ 230 -120 l 1,0,-1
+EndSplineSet
+Substitution2: "'vrt2' Vertical Rotation & Alternates lookup 19 subtable" uni2512
+Substitution2: "'vert' Vertical Alternates lookup 18 subtable" uni2512
+Substitution2: "'hwid' Half Widths lookup 9 subtable" uni250D.half
+AlternateSubs2: "'aalt' Access All Alternates lookup 1 subtable" uni250D.half uni2512
+EndChar
+
+StartChar: uni250E
+Encoding: 9486 9486 14
+Width: 500
+Flags: W
+LayerCount: 2
+Fore
+SplineSet
+190 -120 m 1,0,-1
+ 190 400 l 1,1,-1
+ 500 400 l 1,2,-1
+ 500 360 l 1,3,-1
+ 310 360 l 1,4,-1
+ 310 -120 l 1,5,-1
+ 190 -120 l 1,0,-1
+EndSplineSet
+Substitution2: "'vrt2' Vertical Rotation & Alternates lookup 19 subtable" uni2511
+Substitution2: "'vert' Vertical Alternates lookup 18 subtable" uni2511
+Substitution2: "'hwid' Half Widths lookup 9 subtable" uni250E.half
+AlternateSubs2: "'aalt' Access All Alternates lookup 1 subtable" uni250E.half uni2511
+EndChar
+
+StartChar: uni250F
+Encoding: 9487 9487 15
+Width: 500
+Flags: W
+LayerCount: 2
+Fore
+SplineSet
+190 -120 m 1,0,-1
+ 190 440 l 1,1,-1
+ 500 440 l 1,2,-1
+ 500 320 l 1,3,-1
+ 310 320 l 1,4,-1
+ 310 -120 l 1,5,-1
+ 190 -120 l 1,0,-1
+EndSplineSet
+Substitution2: "'vrt2' Vertical Rotation & Alternates lookup 19 subtable" uni2513
+Substitution2: "'vert' Vertical Alternates lookup 18 subtable" uni2513
+Substitution2: "'hwid' Half Widths lookup 9 subtable" uni250F.half
+AlternateSubs2: "'aalt' Access All Alternates lookup 1 subtable" uni250F.half uni2513
+EndChar
+
+StartChar: uni2510
+Encoding: 9488 9488 16
+Width: 500
+Flags: W
+LayerCount: 2
+Fore
+SplineSet
+230 -120 m 1,0,-1
+ 230 360 l 1,1,-1
+ 0 360 l 1,2,-1
+ 0 400 l 1,3,-1
+ 270 400 l 1,4,-1
+ 270 -120 l 1,5,-1
+ 230 -120 l 1,0,-1
+EndSplineSet
+Substitution2: "'vrt2' Vertical Rotation & Alternates lookup 19 subtable" uni2518
+Substitution2: "'vert' Vertical Alternates lookup 18 subtable" uni2518
+Substitution2: "'hwid' Half Widths lookup 9 subtable" uni2510.half
+AlternateSubs2: "'aalt' Access All Alternates lookup 1 subtable" uni2510.half uni2518
+EndChar
+
+StartChar: uni2511
+Encoding: 9489 9489 17
+Width: 500
+Flags: W
+LayerCount: 2
+Fore
+SplineSet
+230 -120 m 1,0,-1
+ 230 320 l 1,1,-1
+ 0 320 l 1,2,-1
+ 0 440 l 1,3,-1
+ 270 440 l 1,4,-1
+ 270 -120 l 1,5,-1
+ 230 -120 l 1,0,-1
+EndSplineSet
+Substitution2: "'vrt2' Vertical Rotation & Alternates lookup 19 subtable" uni251A
+Substitution2: "'vert' Vertical Alternates lookup 18 subtable" uni251A
+Substitution2: "'hwid' Half Widths lookup 9 subtable" uni2511.half
+AlternateSubs2: "'aalt' Access All Alternates lookup 1 subtable" uni2511.half uni251A
+EndChar
+
+StartChar: uni2512
+Encoding: 9490 9490 18
+Width: 500
+Flags: W
+LayerCount: 2
+Fore
+SplineSet
+190 -120 m 1,0,-1
+ 190 360 l 1,1,-1
+ 0 360 l 1,2,-1
+ 0 400 l 1,3,-1
+ 310 400 l 1,4,-1
+ 310 -120 l 1,5,-1
+ 190 -120 l 1,0,-1
+EndSplineSet
+Substitution2: "'vrt2' Vertical Rotation & Alternates lookup 19 subtable" uni2519
+Substitution2: "'vert' Vertical Alternates lookup 18 subtable" uni2519
+Substitution2: "'hwid' Half Widths lookup 9 subtable" uni2512.half
+AlternateSubs2: "'aalt' Access All Alternates lookup 1 subtable" uni2512.half uni2519
+EndChar
+
+StartChar: uni2513
+Encoding: 9491 9491 19
+Width: 500
+Flags: W
+LayerCount: 2
+Fore
+SplineSet
+190 -120 m 1,0,-1
+ 190 320 l 1,1,-1
+ 0 320 l 1,2,-1
+ 0 440 l 1,3,-1
+ 310 440 l 1,4,-1
+ 310 -120 l 1,5,-1
+ 190 -120 l 1,0,-1
+EndSplineSet
+Substitution2: "'vrt2' Vertical Rotation & Alternates lookup 19 subtable" uni251B
+Substitution2: "'vert' Vertical Alternates lookup 18 subtable" uni251B
+Substitution2: "'hwid' Half Widths lookup 9 subtable" uni2513.half
+AlternateSubs2: "'aalt' Access All Alternates lookup 1 subtable" uni2513.half uni251B
+EndChar
+
+StartChar: uni2514
+Encoding: 9492 9492 20
+Width: 500
+Flags: W
+LayerCount: 2
+Fore
+SplineSet
+230 880 m 1,0,-1
+ 270 880 l 1,1,-1
+ 270 400 l 1,2,-1
+ 500 400 l 1,3,-1
+ 500 360 l 1,4,-1
+ 230 360 l 1,5,-1
+ 230 880 l 1,0,-1
+EndSplineSet
+Substitution2: "'vrt2' Vertical Rotation & Alternates lookup 19 subtable" uni250C
+Substitution2: "'vert' Vertical Alternates lookup 18 subtable" uni250C
+Substitution2: "'hwid' Half Widths lookup 9 subtable" uni2514.half
+AlternateSubs2: "'aalt' Access All Alternates lookup 1 subtable" uni2514.half uni250C
+EndChar
+
+StartChar: uni2515
+Encoding: 9493 9493 21
+Width: 500
+Flags: W
+LayerCount: 2
+Fore
+SplineSet
+230 880 m 1,0,-1
+ 270 880 l 1,1,-1
+ 270 440 l 1,2,-1
+ 500 440 l 1,3,-1
+ 500 320 l 1,4,-1
+ 230 320 l 1,5,-1
+ 230 880 l 1,0,-1
+EndSplineSet
+Substitution2: "'vrt2' Vertical Rotation & Alternates lookup 19 subtable" uni250E
+Substitution2: "'vert' Vertical Alternates lookup 18 subtable" uni250E
+Substitution2: "'hwid' Half Widths lookup 9 subtable" uni2515.half
+AlternateSubs2: "'aalt' Access All Alternates lookup 1 subtable" uni2515.half uni250E
+EndChar
+
+StartChar: uni2516
+Encoding: 9494 9494 22
+Width: 500
+Flags: W
+LayerCount: 2
+Fore
+SplineSet
+190 880 m 1,0,-1
+ 310 880 l 1,1,-1
+ 310 400 l 1,2,-1
+ 500 400 l 1,3,-1
+ 500 360 l 1,4,-1
+ 190 360 l 1,5,-1
+ 190 880 l 1,0,-1
+EndSplineSet
+Substitution2: "'vrt2' Vertical Rotation & Alternates lookup 19 subtable" uni250D
+Substitution2: "'vert' Vertical Alternates lookup 18 subtable" uni250D
+Substitution2: "'hwid' Half Widths lookup 9 subtable" uni2516.half
+AlternateSubs2: "'aalt' Access All Alternates lookup 1 subtable" uni2516.half uni250D
+EndChar
+
+StartChar: uni2517
+Encoding: 9495 9495 23
+Width: 500
+Flags: W
+LayerCount: 2
+Fore
+SplineSet
+190 880 m 1,0,-1
+ 310 880 l 1,1,-1
+ 310 440 l 1,2,-1
+ 500 440 l 1,3,-1
+ 500 320 l 1,4,-1
+ 190 320 l 1,5,-1
+ 190 880 l 1,0,-1
+EndSplineSet
+Substitution2: "'vrt2' Vertical Rotation & Alternates lookup 19 subtable" uni250F
+Substitution2: "'vert' Vertical Alternates lookup 18 subtable" uni250F
+Substitution2: "'hwid' Half Widths lookup 9 subtable" uni2517.half
+AlternateSubs2: "'aalt' Access All Alternates lookup 1 subtable" uni2517.half uni250F
+EndChar
+
+StartChar: uni2518
+Encoding: 9496 9496 24
+Width: 500
+Flags: W
+LayerCount: 2
+Fore
+SplineSet
+230 880 m 1,0,-1
+ 270 880 l 1,1,-1
+ 270 360 l 1,2,-1
+ 0 360 l 1,3,-1
+ 0 400 l 1,4,-1
+ 230 400 l 1,5,-1
+ 230 880 l 1,0,-1
+EndSplineSet
+Substitution2: "'vrt2' Vertical Rotation & Alternates lookup 19 subtable" uni2514
+Substitution2: "'vert' Vertical Alternates lookup 18 subtable" uni2514
+Substitution2: "'hwid' Half Widths lookup 9 subtable" uni2518.half
+AlternateSubs2: "'aalt' Access All Alternates lookup 1 subtable" uni2518.half uni2514
+EndChar
+
+StartChar: uni2519
+Encoding: 9497 9497 25
+Width: 500
+Flags: W
+LayerCount: 2
+Fore
+SplineSet
+230 880 m 1,0,-1
+ 270 880 l 1,1,-1
+ 270 320 l 1,2,-1
+ 0 320 l 1,3,-1
+ 0 440 l 1,4,-1
+ 230 440 l 1,5,-1
+ 230 880 l 1,0,-1
+EndSplineSet
+Substitution2: "'vrt2' Vertical Rotation & Alternates lookup 19 subtable" uni2516
+Substitution2: "'vert' Vertical Alternates lookup 18 subtable" uni2516
+Substitution2: "'hwid' Half Widths lookup 9 subtable" uni2519.half
+AlternateSubs2: "'aalt' Access All Alternates lookup 1 subtable" uni2519.half uni2516
+EndChar
+
+StartChar: uni251A
+Encoding: 9498 9498 26
+Width: 500
+Flags: W
+LayerCount: 2
+Fore
+SplineSet
+190 880 m 1,0,-1
+ 310 880 l 1,1,-1
+ 310 360 l 1,2,-1
+ 0 360 l 1,3,-1
+ 0 400 l 1,4,-1
+ 190 400 l 1,5,-1
+ 190 880 l 1,0,-1
+EndSplineSet
+Substitution2: "'vrt2' Vertical Rotation & Alternates lookup 19 subtable" uni2515
+Substitution2: "'vert' Vertical Alternates lookup 18 subtable" uni2515
+Substitution2: "'hwid' Half Widths lookup 9 subtable" uni251A.half
+AlternateSubs2: "'aalt' Access All Alternates lookup 1 subtable" uni251A.half uni2515
+EndChar
+
+StartChar: uni251B
+Encoding: 9499 9499 27
+Width: 500
+Flags: W
+LayerCount: 2
+Fore
+SplineSet
+190 880 m 1,0,-1
+ 310 880 l 1,1,-1
+ 310 320 l 1,2,-1
+ 0 320 l 1,3,-1
+ 0 440 l 1,4,-1
+ 190 440 l 1,5,-1
+ 190 880 l 1,0,-1
+EndSplineSet
+Substitution2: "'vrt2' Vertical Rotation & Alternates lookup 19 subtable" uni2517
+Substitution2: "'vert' Vertical Alternates lookup 18 subtable" uni2517
+Substitution2: "'hwid' Half Widths lookup 9 subtable" uni251B.half
+AlternateSubs2: "'aalt' Access All Alternates lookup 1 subtable" uni251B.half uni2517
+EndChar
+
+StartChar: uni251C
+Encoding: 9500 9500 28
+Width: 500
+Flags: W
+LayerCount: 2
+Fore
+SplineSet
+230 880 m 1,0,-1
+ 270 880 l 1,1,-1
+ 270 400 l 1,2,-1
+ 500 400 l 1,3,-1
+ 500 360 l 1,4,-1
+ 270 360 l 1,5,-1
+ 270 -120 l 1,6,-1
+ 230 -120 l 1,7,-1
+ 230 880 l 1,0,-1
+EndSplineSet
+Substitution2: "'vrt2' Vertical Rotation & Alternates lookup 19 subtable" uni252C
+Substitution2: "'vert' Vertical Alternates lookup 18 subtable" uni252C
+Substitution2: "'hwid' Half Widths lookup 9 subtable" uni251C.half
+AlternateSubs2: "'aalt' Access All Alternates lookup 1 subtable" uni251C.half uni252C
+EndChar
+
+StartChar: uni251D
+Encoding: 9501 9501 29
+Width: 500
+Flags: W
+LayerCount: 2
+Fore
+SplineSet
+230 880 m 1,0,-1
+ 270 880 l 1,1,-1
+ 270 440 l 1,2,-1
+ 500 440 l 1,3,-1
+ 500 320 l 1,4,-1
+ 270 320 l 1,5,-1
+ 270 -120 l 1,6,-1
+ 230 -120 l 1,7,-1
+ 230 880 l 1,0,-1
+EndSplineSet
+Substitution2: "'vrt2' Vertical Rotation & Alternates lookup 19 subtable" uni2530
+Substitution2: "'vert' Vertical Alternates lookup 18 subtable" uni2530
+Substitution2: "'hwid' Half Widths lookup 9 subtable" uni251D.half
+AlternateSubs2: "'aalt' Access All Alternates lookup 1 subtable" uni251D.half uni2530
+EndChar
+
+StartChar: uni251E
+Encoding: 9502 9502 30
+Width: 500
+Flags: W
+LayerCount: 2
+Fore
+SplineSet
+190 880 m 1,0,-1
+ 310 880 l 1,1,-1
+ 310 400 l 1,2,-1
+ 500 400 l 1,3,-1
+ 500 360 l 1,4,-1
+ 270 360 l 1,5,-1
+ 270 -120 l 1,6,-1
+ 230 -120 l 1,7,-1
+ 230 360 l 1,8,-1
+ 190 360 l 1,9,-1
+ 190 880 l 1,0,-1
+EndSplineSet
+Substitution2: "'vrt2' Vertical Rotation & Alternates lookup 19 subtable" uni252E
+Substitution2: "'vert' Vertical Alternates lookup 18 subtable" uni252E
+Substitution2: "'hwid' Half Widths lookup 9 subtable" uni251E.half
+AlternateSubs2: "'aalt' Access All Alternates lookup 1 subtable" uni251E.half uni252E
+EndChar
+
+StartChar: uni251F
+Encoding: 9503 9503 31
+Width: 500
+Flags: W
+LayerCount: 2
+Fore
+SplineSet
+230 880 m 1,0,-1
+ 270 880 l 1,1,-1
+ 270 400 l 1,2,-1
+ 500 400 l 1,3,-1
+ 500 360 l 1,4,-1
+ 310 360 l 1,5,-1
+ 310 -120 l 1,6,-1
+ 190 -120 l 1,7,-1
+ 190 400 l 1,8,-1
+ 230 400 l 1,9,-1
+ 230 880 l 1,0,-1
+EndSplineSet
+Substitution2: "'vrt2' Vertical Rotation & Alternates lookup 19 subtable" uni252D
+Substitution2: "'vert' Vertical Alternates lookup 18 subtable" uni252D
+Substitution2: "'hwid' Half Widths lookup 9 subtable" uni251F.half
+AlternateSubs2: "'aalt' Access All Alternates lookup 1 subtable" uni251F.half uni252D
+EndChar
+
+StartChar: uni2520
+Encoding: 9504 9504 32
+Width: 500
+Flags: W
+LayerCount: 2
+Fore
+SplineSet
+190 880 m 1,0,-1
+ 310 880 l 1,1,-1
+ 310 400 l 1,2,-1
+ 500 400 l 1,3,-1
+ 500 360 l 1,4,-1
+ 310 360 l 1,5,-1
+ 310 -120 l 1,6,-1
+ 190 -120 l 1,7,-1
+ 190 880 l 1,0,-1
+EndSplineSet
+Substitution2: "'vrt2' Vertical Rotation & Alternates lookup 19 subtable" uni252F
+Substitution2: "'vert' Vertical Alternates lookup 18 subtable" uni252F
+Substitution2: "'hwid' Half Widths lookup 9 subtable" uni2520.half
+AlternateSubs2: "'aalt' Access All Alternates lookup 1 subtable" uni2520.half uni252F
+EndChar
+
+StartChar: uni2521
+Encoding: 9505 9505 33
+Width: 500
+Flags: W
+LayerCount: 2
+Fore
+SplineSet
+190 880 m 1,0,-1
+ 310 880 l 1,1,-1
+ 310 440 l 1,2,-1
+ 500 440 l 1,3,-1
+ 500 320 l 1,4,-1
+ 270 320 l 1,5,-1
+ 270 -120 l 1,6,-1
+ 230 -120 l 1,7,-1
+ 230 320 l 1,8,-1
+ 190 320 l 1,9,-1
+ 190 880 l 1,0,-1
+EndSplineSet
+Substitution2: "'vrt2' Vertical Rotation & Alternates lookup 19 subtable" uni2532
+Substitution2: "'vert' Vertical Alternates lookup 18 subtable" uni2532
+Substitution2: "'hwid' Half Widths lookup 9 subtable" uni2521.half
+AlternateSubs2: "'aalt' Access All Alternates lookup 1 subtable" uni2521.half uni2532
+EndChar
+
+StartChar: uni2522
+Encoding: 9506 9506 34
+Width: 500
+Flags: W
+LayerCount: 2
+Fore
+SplineSet
+230 880 m 1,0,-1
+ 270 880 l 1,1,-1
+ 270 440 l 1,2,-1
+ 500 440 l 1,3,-1
+ 500 320 l 1,4,-1
+ 310 320 l 1,5,-1
+ 310 -120 l 1,6,-1
+ 190 -120 l 1,7,-1
+ 190 440 l 1,8,-1
+ 230 440 l 1,9,-1
+ 230 880 l 1,0,-1
+EndSplineSet
+Substitution2: "'vrt2' Vertical Rotation & Alternates lookup 19 subtable" uni2531
+Substitution2: "'vert' Vertical Alternates lookup 18 subtable" uni2531
+Substitution2: "'hwid' Half Widths lookup 9 subtable" uni2522.half
+AlternateSubs2: "'aalt' Access All Alternates lookup 1 subtable" uni2522.half uni2531
+EndChar
+
+StartChar: uni2523
+Encoding: 9507 9507 35
+Width: 500
+Flags: W
+LayerCount: 2
+Fore
+SplineSet
+190 880 m 1,0,-1
+ 310 880 l 1,1,-1
+ 310 440 l 1,2,-1
+ 500 440 l 1,3,-1
+ 500 320 l 1,4,-1
+ 310 320 l 1,5,-1
+ 310 -120 l 1,6,-1
+ 190 -120 l 1,7,-1
+ 190 880 l 1,0,-1
+EndSplineSet
+Substitution2: "'vrt2' Vertical Rotation & Alternates lookup 19 subtable" uni2533
+Substitution2: "'vert' Vertical Alternates lookup 18 subtable" uni2533
+Substitution2: "'hwid' Half Widths lookup 9 subtable" uni2523.half
+AlternateSubs2: "'aalt' Access All Alternates lookup 1 subtable" uni2523.half uni2533
+EndChar
+
+StartChar: uni2524
+Encoding: 9508 9508 36
+Width: 500
+Flags: W
+LayerCount: 2
+Fore
+SplineSet
+230 880 m 1,0,-1
+ 270 880 l 1,1,-1
+ 270 -120 l 1,2,-1
+ 230 -120 l 1,3,-1
+ 230 360 l 1,4,-1
+ 0 360 l 1,5,-1
+ 0 400 l 1,6,-1
+ 230 400 l 1,7,-1
+ 230 880 l 1,0,-1
+EndSplineSet
+Substitution2: "'vrt2' Vertical Rotation & Alternates lookup 19 subtable" uni2534
+Substitution2: "'vert' Vertical Alternates lookup 18 subtable" uni2534
+Substitution2: "'hwid' Half Widths lookup 9 subtable" uni2524.half
+AlternateSubs2: "'aalt' Access All Alternates lookup 1 subtable" uni2524.half uni2534
+EndChar
+
+StartChar: uni2525
+Encoding: 9509 9509 37
+Width: 500
+Flags: W
+LayerCount: 2
+Fore
+SplineSet
+230 880 m 1,0,-1
+ 270 880 l 1,1,-1
+ 270 -120 l 1,2,-1
+ 230 -120 l 1,3,-1
+ 230 320 l 1,4,-1
+ 0 320 l 1,5,-1
+ 0 440 l 1,6,-1
+ 230 440 l 1,7,-1
+ 230 880 l 1,0,-1
+EndSplineSet
+Substitution2: "'vrt2' Vertical Rotation & Alternates lookup 19 subtable" uni2538
+Substitution2: "'vert' Vertical Alternates lookup 18 subtable" uni2538
+Substitution2: "'hwid' Half Widths lookup 9 subtable" uni2525.half
+AlternateSubs2: "'aalt' Access All Alternates lookup 1 subtable" uni2525.half uni2538
+EndChar
+
+StartChar: uni2526
+Encoding: 9510 9510 38
+Width: 500
+Flags: W
+LayerCount: 2
+Fore
+SplineSet
+190 880 m 1,0,-1
+ 310 880 l 1,1,-1
+ 310 360 l 1,2,-1
+ 270 360 l 1,3,-1
+ 270 -120 l 1,4,-1
+ 230 -120 l 1,5,-1
+ 230 360 l 1,6,-1
+ 0 360 l 1,7,-1
+ 0 400 l 1,8,-1
+ 190 400 l 1,9,-1
+ 190 880 l 1,0,-1
+EndSplineSet
+Substitution2: "'vrt2' Vertical Rotation & Alternates lookup 19 subtable" uni2536
+Substitution2: "'vert' Vertical Alternates lookup 18 subtable" uni2536
+Substitution2: "'hwid' Half Widths lookup 9 subtable" uni2526.half
+AlternateSubs2: "'aalt' Access All Alternates lookup 1 subtable" uni2526.half uni2536
+EndChar
+
+StartChar: uni2527
+Encoding: 9511 9511 39
+Width: 500
+Flags: W
+LayerCount: 2
+Fore
+SplineSet
+230 880 m 1,0,-1
+ 270 880 l 1,1,-1
+ 270 400 l 1,2,-1
+ 310 400 l 1,3,-1
+ 310 -120 l 1,4,-1
+ 190 -120 l 1,5,-1
+ 190 360 l 1,6,-1
+ 0 360 l 1,7,-1
+ 0 400 l 1,8,-1
+ 230 400 l 1,9,-1
+ 230 880 l 1,0,-1
+EndSplineSet
+Substitution2: "'vrt2' Vertical Rotation & Alternates lookup 19 subtable" uni2535
+Substitution2: "'vert' Vertical Alternates lookup 18 subtable" uni2535
+Substitution2: "'hwid' Half Widths lookup 9 subtable" uni2527.half
+AlternateSubs2: "'aalt' Access All Alternates lookup 1 subtable" uni2527.half uni2535
+EndChar
+
+StartChar: uni2528
+Encoding: 9512 9512 40
+Width: 500
+Flags: W
+LayerCount: 2
+Fore
+SplineSet
+190 880 m 1,0,-1
+ 310 880 l 1,1,-1
+ 310 -120 l 1,2,-1
+ 190 -120 l 1,3,-1
+ 190 360 l 1,4,-1
+ 0 360 l 1,5,-1
+ 0 400 l 1,6,-1
+ 190 400 l 1,7,-1
+ 190 880 l 1,0,-1
+EndSplineSet
+Substitution2: "'vrt2' Vertical Rotation & Alternates lookup 19 subtable" uni2537
+Substitution2: "'vert' Vertical Alternates lookup 18 subtable" uni2537
+Substitution2: "'hwid' Half Widths lookup 9 subtable" uni2528.half
+AlternateSubs2: "'aalt' Access All Alternates lookup 1 subtable" uni2528.half uni2537
+EndChar
+
+StartChar: uni2529
+Encoding: 9513 9513 41
+Width: 500
+Flags: W
+LayerCount: 2
+Fore
+SplineSet
+190 880 m 1,0,-1
+ 310 880 l 1,1,-1
+ 310 320 l 1,2,-1
+ 270 320 l 1,3,-1
+ 270 -120 l 1,4,-1
+ 230 -120 l 1,5,-1
+ 230 320 l 1,6,-1
+ 0 320 l 1,7,-1
+ 0 440 l 1,8,-1
+ 190 440 l 1,9,-1
+ 190 880 l 1,0,-1
+EndSplineSet
+Substitution2: "'vrt2' Vertical Rotation & Alternates lookup 19 subtable" uni253A
+Substitution2: "'vert' Vertical Alternates lookup 18 subtable" uni253A
+Substitution2: "'hwid' Half Widths lookup 9 subtable" uni2529.half
+AlternateSubs2: "'aalt' Access All Alternates lookup 1 subtable" uni2529.half uni253A
+EndChar
+
+StartChar: uni252A
+Encoding: 9514 9514 42
+Width: 500
+Flags: W
+LayerCount: 2
+Fore
+SplineSet
+230 880 m 1,0,-1
+ 270 880 l 1,1,-1
+ 270 440 l 1,2,-1
+ 310 440 l 1,3,-1
+ 310 -120 l 1,4,-1
+ 190 -120 l 1,5,-1
+ 190 320 l 1,6,-1
+ 0 320 l 1,7,-1
+ 0 440 l 1,8,-1
+ 230 440 l 1,9,-1
+ 230 880 l 1,0,-1
+EndSplineSet
+Substitution2: "'vrt2' Vertical Rotation & Alternates lookup 19 subtable" uni2539
+Substitution2: "'vert' Vertical Alternates lookup 18 subtable" uni2539
+Substitution2: "'hwid' Half Widths lookup 9 subtable" uni252A.half
+AlternateSubs2: "'aalt' Access All Alternates lookup 1 subtable" uni252A.half uni2539
+EndChar
+
+StartChar: uni252B
+Encoding: 9515 9515 43
+Width: 500
+Flags: W
+LayerCount: 2
+Fore
+SplineSet
+190 880 m 1,0,-1
+ 310 880 l 1,1,-1
+ 310 -120 l 1,2,-1
+ 190 -120 l 1,3,-1
+ 190 320 l 1,4,-1
+ 0 320 l 1,5,-1
+ 0 440 l 1,6,-1
+ 190 440 l 1,7,-1
+ 190 880 l 1,0,-1
+EndSplineSet
+Substitution2: "'vrt2' Vertical Rotation & Alternates lookup 19 subtable" uni253B
+Substitution2: "'vert' Vertical Alternates lookup 18 subtable" uni253B
+Substitution2: "'hwid' Half Widths lookup 9 subtable" uni252B.half
+AlternateSubs2: "'aalt' Access All Alternates lookup 1 subtable" uni252B.half uni253B
+EndChar
+
+StartChar: uni252C
+Encoding: 9516 9516 44
+Width: 500
+Flags: W
+LayerCount: 2
+Fore
+SplineSet
+0 360 m 1,0,-1
+ 0 400 l 1,1,-1
+ 500 400 l 1,2,-1
+ 500 360 l 1,3,-1
+ 270 360 l 1,4,-1
+ 270 -120 l 1,5,-1
+ 230 -120 l 1,6,-1
+ 230 360 l 1,7,-1
+ 0 360 l 1,0,-1
+EndSplineSet
+Substitution2: "'vrt2' Vertical Rotation & Alternates lookup 19 subtable" uni2524
+Substitution2: "'vert' Vertical Alternates lookup 18 subtable" uni2524
+Substitution2: "'hwid' Half Widths lookup 9 subtable" uni252C.half
+AlternateSubs2: "'aalt' Access All Alternates lookup 1 subtable" uni252C.half uni2524
+EndChar
+
+StartChar: uni252D
+Encoding: 9517 9517 45
+Width: 500
+Flags: W
+LayerCount: 2
+Fore
+SplineSet
+0 320 m 1,0,-1
+ 0 440 l 1,1,-1
+ 270 440 l 1,2,-1
+ 270 400 l 1,3,-1
+ 500 400 l 1,4,-1
+ 500 360 l 1,5,-1
+ 270 360 l 1,6,-1
+ 270 -120 l 1,7,-1
+ 230 -120 l 1,8,-1
+ 230 320 l 1,9,-1
+ 0 320 l 1,0,-1
+EndSplineSet
+Substitution2: "'vrt2' Vertical Rotation & Alternates lookup 19 subtable" uni2526
+Substitution2: "'vert' Vertical Alternates lookup 18 subtable" uni2526
+Substitution2: "'hwid' Half Widths lookup 9 subtable" uni252D.half
+AlternateSubs2: "'aalt' Access All Alternates lookup 1 subtable" uni252D.half uni2526
+EndChar
+
+StartChar: uni252E
+Encoding: 9518 9518 46
+Width: 500
+Flags: W
+LayerCount: 2
+Fore
+SplineSet
+0 360 m 1,0,-1
+ 0 400 l 1,1,-1
+ 230 400 l 1,2,-1
+ 230 440 l 1,3,-1
+ 500 440 l 1,4,-1
+ 500 320 l 1,5,-1
+ 270 320 l 1,6,-1
+ 270 -120 l 1,7,-1
+ 230 -120 l 1,8,-1
+ 230 360 l 1,9,-1
+ 0 360 l 1,0,-1
+EndSplineSet
+Substitution2: "'vrt2' Vertical Rotation & Alternates lookup 19 subtable" uni2527
+Substitution2: "'vert' Vertical Alternates lookup 18 subtable" uni2527
+Substitution2: "'hwid' Half Widths lookup 9 subtable" uni252E.half
+AlternateSubs2: "'aalt' Access All Alternates lookup 1 subtable" uni252E.half uni2527
+EndChar
+
+StartChar: uni252F
+Encoding: 9519 9519 47
+Width: 500
+Flags: W
+LayerCount: 2
+Fore
+SplineSet
+0 320 m 1,0,-1
+ 0 440 l 1,1,-1
+ 500 440 l 1,2,-1
+ 500 320 l 1,3,-1
+ 270 320 l 1,4,-1
+ 270 -120 l 1,5,-1
+ 230 -120 l 1,6,-1
+ 230 320 l 1,7,-1
+ 0 320 l 1,0,-1
+EndSplineSet
+Substitution2: "'vrt2' Vertical Rotation & Alternates lookup 19 subtable" uni2528
+Substitution2: "'vert' Vertical Alternates lookup 18 subtable" uni2528
+Substitution2: "'hwid' Half Widths lookup 9 subtable" uni252F.half
+AlternateSubs2: "'aalt' Access All Alternates lookup 1 subtable" uni252F.half uni2528
+EndChar
+
+StartChar: uni2530
+Encoding: 9520 9520 48
+Width: 500
+Flags: W
+LayerCount: 2
+Fore
+SplineSet
+0 360 m 1,0,-1
+ 0 400 l 1,1,-1
+ 500 400 l 1,2,-1
+ 500 360 l 1,3,-1
+ 310 360 l 1,4,-1
+ 310 -120 l 1,5,-1
+ 190 -120 l 1,6,-1
+ 190 360 l 1,7,-1
+ 0 360 l 1,0,-1
+EndSplineSet
+Substitution2: "'vrt2' Vertical Rotation & Alternates lookup 19 subtable" uni2525
+Substitution2: "'vert' Vertical Alternates lookup 18 subtable" uni2525
+Substitution2: "'hwid' Half Widths lookup 9 subtable" uni2530.half
+AlternateSubs2: "'aalt' Access All Alternates lookup 1 subtable" uni2530.half uni2525
+EndChar
+
+StartChar: uni2531
+Encoding: 9521 9521 49
+Width: 500
+Flags: W
+LayerCount: 2
+Fore
+SplineSet
+0 320 m 1,0,-1
+ 0 440 l 1,1,-1
+ 310 440 l 1,2,-1
+ 310 400 l 1,3,-1
+ 500 400 l 1,4,-1
+ 500 360 l 1,5,-1
+ 310 360 l 1,6,-1
+ 310 -120 l 1,7,-1
+ 190 -120 l 1,8,-1
+ 190 320 l 1,9,-1
+ 0 320 l 1,0,-1
+EndSplineSet
+Substitution2: "'vrt2' Vertical Rotation & Alternates lookup 19 subtable" uni2529
+Substitution2: "'vert' Vertical Alternates lookup 18 subtable" uni2529
+Substitution2: "'hwid' Half Widths lookup 9 subtable" uni2531.half
+AlternateSubs2: "'aalt' Access All Alternates lookup 1 subtable" uni2531.half uni2529
+EndChar
+
+StartChar: uni2532
+Encoding: 9522 9522 50
+Width: 500
+Flags: W
+LayerCount: 2
+Fore
+SplineSet
+0 360 m 1,0,-1
+ 0 400 l 1,1,-1
+ 190 400 l 1,2,-1
+ 190 440 l 1,3,-1
+ 500 440 l 1,4,-1
+ 500 320 l 1,5,-1
+ 310 320 l 1,6,-1
+ 310 -120 l 1,7,-1
+ 190 -120 l 1,8,-1
+ 190 360 l 1,9,-1
+ 0 360 l 1,0,-1
+EndSplineSet
+Substitution2: "'vrt2' Vertical Rotation & Alternates lookup 19 subtable" uni252A
+Substitution2: "'vert' Vertical Alternates lookup 18 subtable" uni252A
+Substitution2: "'hwid' Half Widths lookup 9 subtable" uni2532.half
+AlternateSubs2: "'aalt' Access All Alternates lookup 1 subtable" uni2532.half uni252A
+EndChar
+
+StartChar: uni2533
+Encoding: 9523 9523 51
+Width: 500
+Flags: W
+LayerCount: 2
+Fore
+SplineSet
+0 320 m 1,0,-1
+ 0 440 l 1,1,-1
+ 500 440 l 1,2,-1
+ 500 320 l 1,3,-1
+ 310 320 l 1,4,-1
+ 310 -120 l 1,5,-1
+ 190 -120 l 1,6,-1
+ 190 320 l 1,7,-1
+ 0 320 l 1,0,-1
+EndSplineSet
+Substitution2: "'vrt2' Vertical Rotation & Alternates lookup 19 subtable" uni252B
+Substitution2: "'vert' Vertical Alternates lookup 18 subtable" uni252B
+Substitution2: "'hwid' Half Widths lookup 9 subtable" uni2533.half
+AlternateSubs2: "'aalt' Access All Alternates lookup 1 subtable" uni2533.half uni252B
+EndChar
+
+StartChar: uni2534
+Encoding: 9524 9524 52
+Width: 500
+Flags: W
+LayerCount: 2
+Fore
+SplineSet
+0 360 m 1,0,-1
+ 0 400 l 1,1,-1
+ 230 400 l 1,2,-1
+ 230 880 l 1,3,-1
+ 270 880 l 1,4,-1
+ 270 400 l 1,5,-1
+ 500 400 l 1,6,-1
+ 500 360 l 1,7,-1
+ 0 360 l 1,0,-1
+EndSplineSet
+Substitution2: "'vrt2' Vertical Rotation & Alternates lookup 19 subtable" uni251C
+Substitution2: "'vert' Vertical Alternates lookup 18 subtable" uni251C
+Substitution2: "'hwid' Half Widths lookup 9 subtable" uni2534.half
+AlternateSubs2: "'aalt' Access All Alternates lookup 1 subtable" uni2534.half uni251C
+EndChar
+
+StartChar: uni2535
+Encoding: 9525 9525 53
+Width: 500
+Flags: W
+LayerCount: 2
+Fore
+SplineSet
+0 320 m 1,0,-1
+ 0 440 l 1,1,-1
+ 230 440 l 1,2,-1
+ 230 880 l 1,3,-1
+ 270 880 l 1,4,-1
+ 270 400 l 1,5,-1
+ 500 400 l 1,6,-1
+ 500 360 l 1,7,-1
+ 270 360 l 1,8,-1
+ 270 320 l 1,9,-1
+ 0 320 l 1,0,-1
+EndSplineSet
+Substitution2: "'vrt2' Vertical Rotation & Alternates lookup 19 subtable" uni251E
+Substitution2: "'vert' Vertical Alternates lookup 18 subtable" uni251E
+Substitution2: "'hwid' Half Widths lookup 9 subtable" uni2535.half
+AlternateSubs2: "'aalt' Access All Alternates lookup 1 subtable" uni2535.half uni251E
+EndChar
+
+StartChar: uni2536
+Encoding: 9526 9526 54
+Width: 500
+Flags: W
+LayerCount: 2
+Fore
+SplineSet
+0 360 m 1,0,-1
+ 0 400 l 1,1,-1
+ 230 400 l 1,2,-1
+ 230 880 l 1,3,-1
+ 270 880 l 1,4,-1
+ 270 440 l 1,5,-1
+ 500 440 l 1,6,-1
+ 500 320 l 1,7,-1
+ 230 320 l 1,8,-1
+ 230 360 l 1,9,-1
+ 0 360 l 1,0,-1
+EndSplineSet
+Substitution2: "'vrt2' Vertical Rotation & Alternates lookup 19 subtable" uni251F
+Substitution2: "'vert' Vertical Alternates lookup 18 subtable" uni251F
+Substitution2: "'hwid' Half Widths lookup 9 subtable" uni2536.half
+AlternateSubs2: "'aalt' Access All Alternates lookup 1 subtable" uni2536.half uni251F
+EndChar
+
+StartChar: uni2537
+Encoding: 9527 9527 55
+Width: 500
+Flags: W
+LayerCount: 2
+Fore
+SplineSet
+0 320 m 1,0,-1
+ 0 440 l 1,1,-1
+ 230 440 l 1,2,-1
+ 230 880 l 1,3,-1
+ 270 880 l 1,4,-1
+ 270 440 l 1,5,-1
+ 500 440 l 1,6,-1
+ 500 320 l 1,7,-1
+ 0 320 l 1,0,-1
+EndSplineSet
+Substitution2: "'vrt2' Vertical Rotation & Alternates lookup 19 subtable" uni2520
+Substitution2: "'vert' Vertical Alternates lookup 18 subtable" uni2520
+Substitution2: "'hwid' Half Widths lookup 9 subtable" uni2537.half
+AlternateSubs2: "'aalt' Access All Alternates lookup 1 subtable" uni2537.half uni2520
+EndChar
+
+StartChar: uni2538
+Encoding: 9528 9528 56
+Width: 500
+Flags: W
+LayerCount: 2
+Fore
+SplineSet
+0 360 m 1,0,-1
+ 0 400 l 1,1,-1
+ 190 400 l 1,2,-1
+ 190 880 l 1,3,-1
+ 310 880 l 1,4,-1
+ 310 400 l 1,5,-1
+ 500 400 l 1,6,-1
+ 500 360 l 1,7,-1
+ 0 360 l 1,0,-1
+EndSplineSet
+Substitution2: "'vrt2' Vertical Rotation & Alternates lookup 19 subtable" uni251D
+Substitution2: "'vert' Vertical Alternates lookup 18 subtable" uni251D
+Substitution2: "'hwid' Half Widths lookup 9 subtable" uni2538.half
+AlternateSubs2: "'aalt' Access All Alternates lookup 1 subtable" uni2538.half uni251D
+EndChar
+
+StartChar: uni2539
+Encoding: 9529 9529 57
+Width: 500
+Flags: W
+LayerCount: 2
+Fore
+SplineSet
+0 320 m 1,0,-1
+ 0 440 l 1,1,-1
+ 190 440 l 1,2,-1
+ 190 880 l 1,3,-1
+ 310 880 l 1,4,-1
+ 310 400 l 1,5,-1
+ 500 400 l 1,6,-1
+ 500 360 l 1,7,-1
+ 310 360 l 1,8,-1
+ 310 320 l 1,9,-1
+ 0 320 l 1,0,-1
+EndSplineSet
+Substitution2: "'vrt2' Vertical Rotation & Alternates lookup 19 subtable" uni2521
+Substitution2: "'vert' Vertical Alternates lookup 18 subtable" uni2521
+Substitution2: "'hwid' Half Widths lookup 9 subtable" uni2539.half
+AlternateSubs2: "'aalt' Access All Alternates lookup 1 subtable" uni2539.half uni2521
+EndChar
+
+StartChar: uni253A
+Encoding: 9530 9530 58
+Width: 500
+Flags: W
+LayerCount: 2
+Fore
+SplineSet
+0 360 m 1,0,-1
+ 0 400 l 1,1,-1
+ 190 400 l 1,2,-1
+ 190 880 l 1,3,-1
+ 310 880 l 1,4,-1
+ 310 440 l 1,5,-1
+ 500 440 l 1,6,-1
+ 500 320 l 1,7,-1
+ 190 320 l 1,8,-1
+ 190 360 l 1,9,-1
+ 0 360 l 1,0,-1
+EndSplineSet
+Substitution2: "'vrt2' Vertical Rotation & Alternates lookup 19 subtable" uni2522
+Substitution2: "'vert' Vertical Alternates lookup 18 subtable" uni2522
+Substitution2: "'hwid' Half Widths lookup 9 subtable" uni253A.half
+AlternateSubs2: "'aalt' Access All Alternates lookup 1 subtable" uni253A.half uni2522
+EndChar
+
+StartChar: uni253B
+Encoding: 9531 9531 59
+Width: 500
+Flags: W
+LayerCount: 2
+Fore
+SplineSet
+0 320 m 1,0,-1
+ 0 440 l 1,1,-1
+ 190 440 l 1,2,-1
+ 190 880 l 1,3,-1
+ 310 880 l 1,4,-1
+ 310 440 l 1,5,-1
+ 500 440 l 1,6,-1
+ 500 320 l 1,7,-1
+ 0 320 l 1,0,-1
+EndSplineSet
+Substitution2: "'vrt2' Vertical Rotation & Alternates lookup 19 subtable" uni2523
+Substitution2: "'vert' Vertical Alternates lookup 18 subtable" uni2523
+Substitution2: "'hwid' Half Widths lookup 9 subtable" uni253B.half
+AlternateSubs2: "'aalt' Access All Alternates lookup 1 subtable" uni253B.half uni2523
+EndChar
+
+StartChar: uni253C
+Encoding: 9532 9532 60
+Width: 500
+Flags: W
+LayerCount: 2
+Fore
+SplineSet
+0 360 m 1,0,-1
+ 0 400 l 1,1,-1
+ 230 400 l 1,2,-1
+ 230 880 l 1,3,-1
+ 270 880 l 1,4,-1
+ 270 400 l 1,5,-1
+ 500 400 l 1,6,-1
+ 500 360 l 1,7,-1
+ 270 360 l 1,8,-1
+ 270 -120 l 1,9,-1
+ 230 -120 l 1,10,-1
+ 230 360 l 1,11,-1
+ 0 360 l 1,0,-1
+EndSplineSet
+Substitution2: "'hwid' Half Widths lookup 9 subtable" uni253C.half
+AlternateSubs2: "'aalt' Access All Alternates lookup 1 subtable" uni253C.half
+EndChar
+
+StartChar: uni253D
+Encoding: 9533 9533 61
+Width: 500
+Flags: W
+LayerCount: 2
+Fore
+SplineSet
+0 320 m 1,0,-1
+ 0 440 l 1,1,-1
+ 230 440 l 1,2,-1
+ 230 880 l 1,3,-1
+ 270 880 l 1,4,-1
+ 270 400 l 1,5,-1
+ 500 400 l 1,6,-1
+ 500 360 l 1,7,-1
+ 270 360 l 1,8,-1
+ 270 -120 l 1,9,-1
+ 230 -120 l 1,10,-1
+ 230 320 l 1,11,-1
+ 0 320 l 1,0,-1
+EndSplineSet
+Substitution2: "'vrt2' Vertical Rotation & Alternates lookup 19 subtable" uni2540
+Substitution2: "'vert' Vertical Alternates lookup 18 subtable" uni2540
+Substitution2: "'hwid' Half Widths lookup 9 subtable" uni253D.half
+AlternateSubs2: "'aalt' Access All Alternates lookup 1 subtable" uni253D.half uni2540
+EndChar
+
+StartChar: uni253E
+Encoding: 9534 9534 62
+Width: 500
+Flags: W
+LayerCount: 2
+Fore
+SplineSet
+0 360 m 1,0,-1
+ 0 400 l 1,1,-1
+ 230 400 l 1,2,-1
+ 230 880 l 1,3,-1
+ 270 880 l 1,4,-1
+ 270 440 l 1,5,-1
+ 500 440 l 1,6,-1
+ 500 320 l 1,7,-1
+ 270 320 l 1,8,-1
+ 270 -120 l 1,9,-1
+ 230 -120 l 1,10,-1
+ 230 360 l 1,11,-1
+ 0 360 l 1,0,-1
+EndSplineSet
+Substitution2: "'vrt2' Vertical Rotation & Alternates lookup 19 subtable" uni2541
+Substitution2: "'vert' Vertical Alternates lookup 18 subtable" uni2541
+Substitution2: "'hwid' Half Widths lookup 9 subtable" uni253E.half
+AlternateSubs2: "'aalt' Access All Alternates lookup 1 subtable" uni253E.half uni2541
+EndChar
+
+StartChar: uni253F
+Encoding: 9535 9535 63
+Width: 500
+Flags: W
+LayerCount: 2
+Fore
+SplineSet
+0 320 m 1,0,-1
+ 0 440 l 1,1,-1
+ 230 440 l 1,2,-1
+ 230 880 l 1,3,-1
+ 270 880 l 1,4,-1
+ 270 440 l 1,5,-1
+ 500 440 l 1,6,-1
+ 500 320 l 1,7,-1
+ 270 320 l 1,8,-1
+ 270 -120 l 1,9,-1
+ 230 -120 l 1,10,-1
+ 230 320 l 1,11,-1
+ 0 320 l 1,0,-1
+EndSplineSet
+Substitution2: "'vrt2' Vertical Rotation & Alternates lookup 19 subtable" uni2542
+Substitution2: "'vert' Vertical Alternates lookup 18 subtable" uni2542
+Substitution2: "'hwid' Half Widths lookup 9 subtable" uni253F.half
+AlternateSubs2: "'aalt' Access All Alternates lookup 1 subtable" uni253F.half uni2542
+EndChar
+
+StartChar: uni2540
+Encoding: 9536 9536 64
+Width: 500
+Flags: W
+LayerCount: 2
+Fore
+SplineSet
+0 360 m 1,0,-1
+ 0 400 l 1,1,-1
+ 190 400 l 1,2,-1
+ 190 880 l 1,3,-1
+ 310 880 l 1,4,-1
+ 310 400 l 1,5,-1
+ 500 400 l 1,6,-1
+ 500 360 l 1,7,-1
+ 270 360 l 1,8,-1
+ 270 -120 l 1,9,-1
+ 230 -120 l 1,10,-1
+ 230 360 l 1,11,-1
+ 0 360 l 1,0,-1
+EndSplineSet
+Substitution2: "'vrt2' Vertical Rotation & Alternates lookup 19 subtable" uni253E
+Substitution2: "'vert' Vertical Alternates lookup 18 subtable" uni253E
+Substitution2: "'hwid' Half Widths lookup 9 subtable" uni2540.half
+AlternateSubs2: "'aalt' Access All Alternates lookup 1 subtable" uni2540.half uni253E
+EndChar
+
+StartChar: uni2541
+Encoding: 9537 9537 65
+Width: 500
+Flags: W
+LayerCount: 2
+Fore
+SplineSet
+0 360 m 1,0,-1
+ 0 400 l 1,1,-1
+ 230 400 l 1,2,-1
+ 230 880 l 1,3,-1
+ 270 880 l 1,4,-1
+ 270 400 l 1,5,-1
+ 500 400 l 1,6,-1
+ 500 360 l 1,7,-1
+ 310 360 l 1,8,-1
+ 310 -120 l 1,9,-1
+ 190 -120 l 1,10,-1
+ 190 360 l 1,11,-1
+ 0 360 l 1,0,-1
+EndSplineSet
+Substitution2: "'vrt2' Vertical Rotation & Alternates lookup 19 subtable" uni253D
+Substitution2: "'vert' Vertical Alternates lookup 18 subtable" uni253D
+Substitution2: "'hwid' Half Widths lookup 9 subtable" uni2541.half
+AlternateSubs2: "'aalt' Access All Alternates lookup 1 subtable" uni2541.half uni253D
+EndChar
+
+StartChar: uni2542
+Encoding: 9538 9538 66
+Width: 500
+Flags: W
+LayerCount: 2
+Fore
+SplineSet
+0 360 m 1,0,-1
+ 0 400 l 1,1,-1
+ 190 400 l 1,2,-1
+ 190 880 l 1,3,-1
+ 310 880 l 1,4,-1
+ 310 400 l 1,5,-1
+ 500 400 l 1,6,-1
+ 500 360 l 1,7,-1
+ 310 360 l 1,8,-1
+ 310 -120 l 1,9,-1
+ 190 -120 l 1,10,-1
+ 190 360 l 1,11,-1
+ 0 360 l 1,0,-1
+EndSplineSet
+Substitution2: "'vrt2' Vertical Rotation & Alternates lookup 19 subtable" uni253F
+Substitution2: "'vert' Vertical Alternates lookup 18 subtable" uni253F
+Substitution2: "'hwid' Half Widths lookup 9 subtable" uni2542.half
+AlternateSubs2: "'aalt' Access All Alternates lookup 1 subtable" uni2542.half uni253F
+EndChar
+
+StartChar: uni2543
+Encoding: 9539 9539 67
+Width: 500
+Flags: W
+LayerCount: 2
+Fore
+SplineSet
+0 320 m 1,0,-1
+ 0 440 l 1,1,-1
+ 190 440 l 1,2,-1
+ 190 880 l 1,3,-1
+ 310 880 l 1,4,-1
+ 310 400 l 1,5,-1
+ 500 400 l 1,6,-1
+ 500 360 l 1,7,-1
+ 310 360 l 1,8,-1
+ 310 320 l 1,9,-1
+ 270 320 l 1,10,-1
+ 270 -120 l 1,11,-1
+ 230 -120 l 1,12,-1
+ 230 320 l 1,13,-1
+ 0 320 l 1,0,-1
+EndSplineSet
+Substitution2: "'vrt2' Vertical Rotation & Alternates lookup 19 subtable" uni2544
+Substitution2: "'vert' Vertical Alternates lookup 18 subtable" uni2544
+Substitution2: "'hwid' Half Widths lookup 9 subtable" uni2543.half
+AlternateSubs2: "'aalt' Access All Alternates lookup 1 subtable" uni2543.half uni2544
+EndChar
+
+StartChar: uni2544
+Encoding: 9540 9540 68
+Width: 500
+Flags: W
+LayerCount: 2
+Fore
+SplineSet
+0 360 m 1,0,-1
+ 0 400 l 1,1,-1
+ 190 400 l 1,2,-1
+ 190 880 l 1,3,-1
+ 310 880 l 1,4,-1
+ 310 440 l 1,5,-1
+ 500 440 l 1,6,-1
+ 500 320 l 1,7,-1
+ 270 320 l 1,8,-1
+ 270 -120 l 1,9,-1
+ 230 -120 l 1,10,-1
+ 230 320 l 1,11,-1
+ 190 320 l 1,12,-1
+ 190 360 l 1,13,-1
+ 0 360 l 1,0,-1
+EndSplineSet
+Substitution2: "'vrt2' Vertical Rotation & Alternates lookup 19 subtable" uni2546
+Substitution2: "'vert' Vertical Alternates lookup 18 subtable" uni2546
+Substitution2: "'hwid' Half Widths lookup 9 subtable" uni2544.half
+AlternateSubs2: "'aalt' Access All Alternates lookup 1 subtable" uni2544.half uni2546
+EndChar
+
+StartChar: uni2545
+Encoding: 9541 9541 69
+Width: 500
+Flags: W
+LayerCount: 2
+Fore
+SplineSet
+0 320 m 1,0,-1
+ 0 440 l 1,1,-1
+ 230 440 l 1,2,-1
+ 230 880 l 1,3,-1
+ 270 880 l 1,4,-1
+ 270 440 l 1,5,-1
+ 310 440 l 1,6,-1
+ 310 400 l 1,7,-1
+ 500 400 l 1,8,-1
+ 500 360 l 1,9,-1
+ 310 360 l 1,10,-1
+ 310 -120 l 1,11,-1
+ 190 -120 l 1,12,-1
+ 190 320 l 1,13,-1
+ 0 320 l 1,0,-1
+EndSplineSet
+Substitution2: "'vrt2' Vertical Rotation & Alternates lookup 19 subtable" uni2543
+Substitution2: "'vert' Vertical Alternates lookup 18 subtable" uni2543
+Substitution2: "'hwid' Half Widths lookup 9 subtable" uni2545.half
+AlternateSubs2: "'aalt' Access All Alternates lookup 1 subtable" uni2545.half uni2543
+EndChar
+
+StartChar: uni2546
+Encoding: 9542 9542 70
+Width: 500
+Flags: W
+LayerCount: 2
+Fore
+SplineSet
+0 360 m 1,0,-1
+ 0 400 l 1,1,-1
+ 190 400 l 1,2,-1
+ 190 440 l 1,3,-1
+ 230 440 l 1,4,-1
+ 230 880 l 1,5,-1
+ 270 880 l 1,6,-1
+ 270 440 l 1,7,-1
+ 500 440 l 1,8,-1
+ 500 320 l 1,9,-1
+ 310 320 l 1,10,-1
+ 310 -120 l 1,11,-1
+ 190 -120 l 1,12,-1
+ 190 360 l 1,13,-1
+ 0 360 l 1,0,-1
+EndSplineSet
+Substitution2: "'vrt2' Vertical Rotation & Alternates lookup 19 subtable" uni2545
+Substitution2: "'vert' Vertical Alternates lookup 18 subtable" uni2545
+Substitution2: "'hwid' Half Widths lookup 9 subtable" uni2546.half
+AlternateSubs2: "'aalt' Access All Alternates lookup 1 subtable" uni2546.half uni2545
+EndChar
+
+StartChar: uni2547
+Encoding: 9543 9543 71
+Width: 500
+Flags: W
+LayerCount: 2
+Fore
+SplineSet
+0 320 m 1,0,-1
+ 0 440 l 1,1,-1
+ 190 440 l 1,2,-1
+ 190 880 l 1,3,-1
+ 310 880 l 1,4,-1
+ 310 440 l 1,5,-1
+ 500 440 l 1,6,-1
+ 500 320 l 1,7,-1
+ 270 320 l 1,8,-1
+ 270 -120 l 1,9,-1
+ 230 -120 l 1,10,-1
+ 230 320 l 1,11,-1
+ 0 320 l 1,0,-1
+EndSplineSet
+Substitution2: "'vrt2' Vertical Rotation & Alternates lookup 19 subtable" uni254A
+Substitution2: "'vert' Vertical Alternates lookup 18 subtable" uni254A
+Substitution2: "'hwid' Half Widths lookup 9 subtable" uni2547.half
+AlternateSubs2: "'aalt' Access All Alternates lookup 1 subtable" uni2547.half uni254A
+EndChar
+
+StartChar: uni2548
+Encoding: 9544 9544 72
+Width: 500
+Flags: W
+LayerCount: 2
+Fore
+SplineSet
+0 320 m 1,0,-1
+ 0 440 l 1,1,-1
+ 230 440 l 1,2,-1
+ 230 880 l 1,3,-1
+ 270 880 l 1,4,-1
+ 270 440 l 1,5,-1
+ 500 440 l 1,6,-1
+ 500 320 l 1,7,-1
+ 310 320 l 1,8,-1
+ 310 -120 l 1,9,-1
+ 190 -120 l 1,10,-1
+ 190 320 l 1,11,-1
+ 0 320 l 1,0,-1
+EndSplineSet
+Substitution2: "'vrt2' Vertical Rotation & Alternates lookup 19 subtable" uni2549
+Substitution2: "'vert' Vertical Alternates lookup 18 subtable" uni2549
+Substitution2: "'hwid' Half Widths lookup 9 subtable" uni2548.half
+AlternateSubs2: "'aalt' Access All Alternates lookup 1 subtable" uni2548.half uni2549
+EndChar
+
+StartChar: uni2549
+Encoding: 9545 9545 73
+Width: 500
+Flags: W
+LayerCount: 2
+Fore
+SplineSet
+0 320 m 1,0,-1
+ 0 440 l 1,1,-1
+ 190 440 l 1,2,-1
+ 190 880 l 1,3,-1
+ 310 880 l 1,4,-1
+ 310 400 l 1,5,-1
+ 500 400 l 1,6,-1
+ 500 360 l 1,7,-1
+ 310 360 l 1,8,-1
+ 310 -120 l 1,9,-1
+ 190 -120 l 1,10,-1
+ 190 320 l 1,11,-1
+ 0 320 l 1,0,-1
+EndSplineSet
+Substitution2: "'vrt2' Vertical Rotation & Alternates lookup 19 subtable" uni2547
+Substitution2: "'vert' Vertical Alternates lookup 18 subtable" uni2547
+Substitution2: "'hwid' Half Widths lookup 9 subtable" uni2549.half
+AlternateSubs2: "'aalt' Access All Alternates lookup 1 subtable" uni2549.half uni2547
+EndChar
+
+StartChar: uni254A
+Encoding: 9546 9546 74
+Width: 500
+Flags: W
+LayerCount: 2
+Fore
+SplineSet
+0 360 m 1,0,-1
+ 0 400 l 1,1,-1
+ 190 400 l 1,2,-1
+ 190 880 l 1,3,-1
+ 310 880 l 1,4,-1
+ 310 440 l 1,5,-1
+ 500 440 l 1,6,-1
+ 500 320 l 1,7,-1
+ 310 320 l 1,8,-1
+ 310 -120 l 1,9,-1
+ 190 -120 l 1,10,-1
+ 190 360 l 1,11,-1
+ 0 360 l 1,0,-1
+EndSplineSet
+Substitution2: "'vrt2' Vertical Rotation & Alternates lookup 19 subtable" uni2548
+Substitution2: "'vert' Vertical Alternates lookup 18 subtable" uni2548
+Substitution2: "'hwid' Half Widths lookup 9 subtable" uni254A.half
+AlternateSubs2: "'aalt' Access All Alternates lookup 1 subtable" uni254A.half uni2548
+EndChar
+
+StartChar: uni254B
+Encoding: 9547 9547 75
+Width: 500
+Flags: W
+LayerCount: 2
+Fore
+SplineSet
+0 320 m 1,0,-1
+ 0 440 l 1,1,-1
+ 190 440 l 1,2,-1
+ 190 880 l 1,3,-1
+ 310 880 l 1,4,-1
+ 310 440 l 1,5,-1
+ 500 440 l 1,6,-1
+ 500 320 l 1,7,-1
+ 310 320 l 1,8,-1
+ 310 -120 l 1,9,-1
+ 190 -120 l 1,10,-1
+ 190 320 l 1,11,-1
+ 0 320 l 1,0,-1
+EndSplineSet
+Substitution2: "'hwid' Half Widths lookup 9 subtable" uni254B.half
+AlternateSubs2: "'aalt' Access All Alternates lookup 1 subtable" uni254B.half
+EndChar
+
+StartChar: uni256D
+Encoding: 9581 9581 76
+Width: 500
+Flags: W
+LayerCount: 2
+Fore
+SplineSet
+190 -120 m 5,0,-1
+ 190 290 l 21,1,2
+ 190 440 190 440 340 440 c 13,3,-1
+ 500 440 l 5,4,-1
+ 500 320 l 5,5,-1
+ 410.713867188 320 l 5,6,7
+ 312 319 312 319 310 220 c 13,8,-1
+ 310 -120 l 5,9,-1
+ 190 -120 l 5,0,-1
+EndSplineSet
+EndChar
+
+StartChar: uni256E
+Encoding: 9582 9582 77
+Width: 500
+Flags: W
+LayerCount: 2
+Fore
+SplineSet
+310 -120 m 1,0,-1
+ 310 290 l 17,1,2
+ 310 440 310 440 160 440 c 9,3,-1
+ 0 440 l 1,4,-1
+ 0 320 l 1,5,-1
+ 89.2861328125 320 l 1,6,7
+ 188 319 188 319 190 220 c 9,8,-1
+ 190 -120 l 1,9,-1
+ 310 -120 l 1,0,-1
+EndSplineSet
+EndChar
+
+StartChar: uni2570
+Encoding: 9584 9584 78
+Width: 500
+Flags: W
+LayerCount: 2
+Fore
+SplineSet
+190 880 m 1,0,-1
+ 190 470 l 17,1,2
+ 190 320 190 320 340 320 c 9,3,-1
+ 500 320 l 1,4,-1
+ 500 440 l 1,5,-1
+ 410.713867188 440 l 1,6,7
+ 312 441 312 441 310 540 c 9,8,-1
+ 310 880 l 1,9,-1
+ 190 880 l 1,0,-1
+EndSplineSet
+EndChar
+
+StartChar: uni256F
+Encoding: 9583 9583 79
+Width: 500
+Flags: W
+LayerCount: 2
+Fore
+SplineSet
+310 880 m 1,0,-1
+ 310 470 l 17,1,2
+ 310 320 310 320 160 320 c 9,3,-1
+ 0 320 l 1,4,-1
+ 0 440 l 1,5,-1
+ 89.2861328125 440 l 1,6,7
+ 188 441 188 441 190 540 c 9,8,-1
+ 190 880 l 1,9,-1
+ 310 880 l 1,0,-1
+EndSplineSet
+EndChar
+
+StartChar: uni2550
+Encoding: 9552 9552 80
+Width: 500
+Flags: W
+LayerCount: 2
+Fore
+SplineSet
+0 485 m 1,0,-1
+ 0 609 l 1,1,-1
+ 500 609 l 1,2,-1
+ 500 485 l 1,3,-1
+ 0 485 l 1,0,-1
+0 141 m 1,4,-1
+ 0 265 l 1,5,-1
+ 500 265 l 1,6,-1
+ 500 141 l 1,7,-1
+ 0 141 l 1,4,-1
+EndSplineSet
+EndChar
+
+StartChar: uni255E
+Encoding: 9566 9566 81
+Width: 500
+Flags: W
+LayerCount: 2
+Fore
+SplineSet
+188 880 m 1,0,-1
+ 312 880 l 1,1,-1
+ 312 609 l 1,2,-1
+ 500 609 l 1,3,-1
+ 500 485 l 1,4,-1
+ 312 485 l 1,5,-1
+ 312 265 l 1,6,-1
+ 500 265 l 1,7,-1
+ 500 141 l 1,8,-1
+ 312 141 l 1,9,-1
+ 312 -120 l 1,10,-1
+ 188 -120 l 1,11,-1
+ 188 880 l 1,0,-1
+EndSplineSet
+EndChar
+
+StartChar: uni256A
+Encoding: 9578 9578 82
+Width: 500
+Flags: W
+LayerCount: 2
+Fore
+SplineSet
+188 880 m 1,0,-1
+ 312 880 l 1,1,-1
+ 312 609 l 1,2,-1
+ 500 609 l 1,3,-1
+ 500 485 l 1,4,-1
+ 312 485 l 1,5,-1
+ 312 265 l 1,6,-1
+ 500 265 l 1,7,-1
+ 500 141 l 1,8,-1
+ 312 141 l 1,9,-1
+ 312 -120 l 1,10,-1
+ 188 -120 l 1,11,-1
+ 188 141 l 1,12,-1
+ 0 141 l 1,13,-1
+ 0 265 l 1,14,-1
+ 188 265 l 1,15,-1
+ 188 485 l 1,16,-1
+ 0 485 l 1,17,-1
+ 0 609 l 1,18,-1
+ 188 609 l 1,19,-1
+ 188 880 l 1,0,-1
+EndSplineSet
+EndChar
+
+StartChar: uni2561
+Encoding: 9569 9569 83
+Width: 1000
+Flags: W
+LayerCount: 2
+Fore
+SplineSet
+438 880 m 1,0,-1
+ 562 880 l 1,1,-1
+ 562 -120 l 1,2,-1
+ 438 -120 l 1,3,-1
+ 438 141 l 1,4,-1
+ 0 141 l 1,5,-1
+ 0 265 l 1,6,-1
+ 438 265 l 1,7,-1
+ 438 485 l 1,8,-1
+ 0 485 l 1,9,-1
+ 0 609 l 1,10,-1
+ 438 609 l 1,11,-1
+ 438 880 l 1,0,-1
+EndSplineSet
+EndChar
+
+StartChar: uni2571
+Encoding: 9585 9585 84
+Width: 500
+Flags: W
+LayerCount: 2
+Fore
+SplineSet
+90 -60 m 1,0,-1
+ 52 -44 l 1,1,-1
+ 403 803 l 1,2,-1
+ 441 787 l 1,3,-1
+ 90 -60 l 1,0,-1
+EndSplineSet
+EndChar
+
+StartChar: uni2572
+Encoding: 9586 9586 85
+Width: 500
+Flags: W
+LayerCount: 2
+Fore
+SplineSet
+403 -60 m 1,0,-1
+ 52 787 l 1,1,-1
+ 90 803 l 1,2,-1
+ 441 -44 l 1,3,-1
+ 403 -60 l 1,0,-1
+EndSplineSet
+EndChar
+
+StartChar: uni2573
+Encoding: 9587 9587 86
+Width: 500
+Flags: W
+LayerCount: 2
+Fore
+SplineSet
+466 85 m 1,0,-1
+ 435 54 l 1,1,-1
+ 250 339 l 1,2,-1
+ 65 54 l 1,3,-1
+ 34 85 l 1,4,-1
+ 219 370 l 1,5,-1
+ 34 655 l 1,6,-1
+ 65 686 l 1,7,-1
+ 250 401 l 1,8,-1
+ 435 686 l 1,9,-1
+ 466 655 l 1,10,-1
+ 281 370 l 1,11,-1
+ 466 85 l 1,0,-1
+EndSplineSet
+EndChar
+EndChars
+EndSplineFont
