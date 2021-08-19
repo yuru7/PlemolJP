@@ -684,23 +684,27 @@ while (i < SizeOf(input_list))
   UnlinkReference()
   ScaleToEm(${em_ascent}, ${em_descent})
 
+  # 半角スペースから幅を取得
+  Select(0u0020)
+  glyphWidth = GlyphInfo("Width")
+
   # クォーテーションの拡大
   Select(0u0022)
   SelectMore(0u0027)
   SelectMore(0u0060)
-  Scale(109, 106)
+  Scale(109, 106); SetWidth(glyphWidth)
 
   # ; : , . の拡大
   Select(0u003a)
   SelectMore(0u003b)
   SelectMore(0u002c)
   SelectMore(0u002e)
-  Scale(108)
+  Scale(108); SetWidth(glyphWidth)
 
   # Eclipse Pleiades 半角スペース記号 (U+1d1c) 対策
   Select(0u054d); Copy()
   Select(0u1d1c); Paste()
-  Scale(85, 60)
+  Scale(85, 60); SetWidth(glyphWidth)
 
   # パスの小数点以下を切り捨て
   SelectWorthOutputting()
