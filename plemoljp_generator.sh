@@ -587,7 +587,7 @@ SetOS2Value("TypoLineGap",           ${typo_line_gap})
 SetOS2Value("HHeadAscent",           ${plemoljp35_ascent})
 SetOS2Value("HHeadDescent",         -${plemoljp35_descent})
 SetOS2Value("HHeadLineGap",            0)
-SetPanose([2, 11, 5, 9, 2, 2, 3, 2, 2, 7])
+SetPanose([2, 11, 5, 3, 2, 2, 3, 2, 2, 7])
 Generate("${tmpdir}/" + output_nerdfonts35, '')
 
 # Powerline 記号の位置調整
@@ -1814,7 +1814,7 @@ while (i < SizeOf(input_list))
   SetOS2Value("HHeadAscent",           ${plemoljp35_ascent})
   SetOS2Value("HHeadDescent",         -${plemoljp35_descent})
   SetOS2Value("HHeadLineGap",            0)
-  SetPanose([2, 11, panoseweight_list[i], 9, 2, 2, 3, 2, 2, 7])
+  SetPanose([2, 11, panoseweight_list[i], 3, 2, 2, 3, 2, 2, 7])
 
   MergeFonts("${tmpdir}/" + output_list[i])
   Generate("${tmpdir}/" + output_list[i] + ".ttf", "")
@@ -2719,7 +2719,7 @@ while (i < SizeOf(fontstyle_list))
   SetOS2Value("HHeadAscent",           ${plemoljp35_ascent})
   SetOS2Value("HHeadDescent",         -${plemoljp35_descent})
   SetOS2Value("HHeadLineGap",            0)
-  SetPanose([2, 11, panoseweight_list[i], 9, 2, 2, 3, 2, 2, 7])
+  SetPanose([2, 11, panoseweight_list[i], 3, 2, 2, 3, 2, 2, 7])
 
   # Merge IBMPlexMono font
   Print("Merge " + plexmono_list[i]:t)
@@ -2945,7 +2945,7 @@ while (i < SizeOf(fontstyle_list))
   SetOS2Value("HHeadAscent",           ${plemoljp35_ascent})
   SetOS2Value("HHeadDescent",         -${plemoljp35_descent})
   SetOS2Value("HHeadLineGap",            0)
-  SetPanose([2, 11, panoseweight_list[i], 9, 2, 2, 3, 2, 2, 7])
+  SetPanose([2, 11, panoseweight_list[i], 3, 2, 2, 3, 2, 2, 7])
 
   # Merge IBMPlexMono font
   Print("Merge " + plexmono_list[i]:t)
