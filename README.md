@@ -23,6 +23,10 @@ PlemolJP では合成元の IBM Plex Mono シリーズと同様に、ノーマ�
 
 > 💡 Powerline 記号等が含まれる Nerd Fonts 対応版は、リリースの Assets より `PlemolJP_NF_vx.x.x.zip` の名前形式になっている zip ファイルを選択してください。(NF: Nerd Fonts)
 
+> 💡 その他、公開中のプログラミングフォント
+> - 日本語文字に源柔ゴシック、英数字部分に Hack を使った [**白源 (はくげん／HackGen)**](https://github.com/yuru7/HackGen)
+> - 日本語文字に源真ゴシック、英数字部分に Fira Mono を使った [**Firge (ファージ)**](https://github.com/yuru7/Firge)
+
 |Thin|ExtraLight|Light|Regular|
 |:---:|:---:|:---:|:---:|
 |![image](https://user-images.githubusercontent.com/13458509/127088872-ee3b076e-5695-4151-9842-9c7d1175c864.png)|![image](https://user-images.githubusercontent.com/13458509/127088958-c3da0175-32a5-4773-9dc6-4aa565579408.png)|![image](https://user-images.githubusercontent.com/13458509/127088996-468862a8-febc-4e37-9fbb-ff374015c8b8.png)|![image](https://user-images.githubusercontent.com/13458509/127089028-5329a5d8-aacf-4398-aa9b-b92fbb7d7e35.png)|
