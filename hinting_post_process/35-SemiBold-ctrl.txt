@@ -1,0 +1,9 @@
+dollar left 24-25
+dollar left 40-41
+
+five left 5-10
+
+six nodir 11
+six left 37-40
+
+Q left 19

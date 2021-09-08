@@ -3039,7 +3039,12 @@ do
   # PlemolJP35
   for f in "$plemoljp35_filename" "$plemoljp35_console_filename"
   do
-    ttfautohint -l 6 -r 45 -a nnn -D latn -W -X "14-" -I "$f" "hinted_${f}"
+    m_opt=''
+    post_process_file="${base_dir}/hinting_post_process/35-${style}-ctrl.txt"
+    if [ -f "$post_process_file" ]; then
+      m_opt="-m $post_process_file"
+    fi
+    ttfautohint $m_opt -l 6 -r 45 -a nnn -D latn -W -X "13-" -I "$f" "hinted_${f}"
   done
 
   if [ "${style}" = 'Thin' ]; then
