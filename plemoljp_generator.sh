@@ -1,7 +1,7 @@
 #!/bin/sh
 
 # PlemolJP Generator
-plemoljp_version="0.3.0"
+plemoljp_version="0.4.0"
 
 base_dir=$(cd $(dirname $0); pwd)
 
