@@ -29,8 +29,8 @@ PlemolJP では合成元の IBM Plex Mono シリーズと同様に、ノーマ�
 
 |Thin|ExtraLight|Light|Regular|
 |:---:|:---:|:---:|:---:|
-|![image](https://user-images.githubusercontent.com/13458509/127088872-ee3b076e-5695-4151-9842-9c7d1175c864.png)|![image](https://user-images.githubusercontent.com/13458509/127088958-c3da0175-32a5-4773-9dc6-4aa565579408.png)|![image](https://user-images.githubusercontent.com/13458509/127088996-468862a8-febc-4e37-9fbb-ff374015c8b8.png)|![image](https://user-images.githubusercontent.com/13458509/127089028-5329a5d8-aacf-4398-aa9b-b92fbb7d7e35.png)|
+|![Thin](https://user-images.githubusercontent.com/13458509/133928702-21f1f391-e83a-4825-9059-36cf3d35f6f7.png)|![ExtraLight](https://user-images.githubusercontent.com/13458509/133928717-f5e17c66-b4e1-47fe-950f-ca3bc574a874.png)|![Light](https://user-images.githubusercontent.com/13458509/133928734-3ca98395-97b9-417b-96a1-ef83f614739a.png)|![Regular](https://user-images.githubusercontent.com/13458509/133928745-fe85ba2e-0d5e-406c-9d23-c832e11bc7b4.png)|
 
 |Text|Medium|SemiBold|Bold|
 |:---:|:---:|:---:|:---:|
-|![image](https://user-images.githubusercontent.com/13458509/127089080-4581f82d-da7e-4cef-8ca5-4f2ce3dc3c04.png)|![image](https://user-images.githubusercontent.com/13458509/127089109-dc3f8b1f-3e75-4f92-b650-64a67613afad.png)|![image](https://user-images.githubusercontent.com/13458509/127089141-48cd56ef-1109-481e-b0b1-d87eec06cfb7.png)|![image](https://user-images.githubusercontent.com/13458509/127089194-f17a5f0c-efb3-4923-aa45-353bf83d0c60.png)|
+|![Text](https://user-images.githubusercontent.com/13458509/133928757-af5b6b82-5e1f-41bb-a925-f03769bdad00.png)|![Medium](https://user-images.githubusercontent.com/13458509/133928766-a4b22651-cc1c-48d7-b729-15a6a4070f44.png)|![SemiBold](https://user-images.githubusercontent.com/13458509/133928774-d8467d02-c301-4bef-84e5-1702f9f9645d.png)|![Bold](https://user-images.githubusercontent.com/13458509/133928784-7cc5f571-1161-41de-81b8-b97573e3f524.png)|
