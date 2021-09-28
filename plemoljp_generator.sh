@@ -701,6 +701,10 @@ while (i < SizeOf(input_list))
   SelectMore(0u002e)
   Scale(108); SetWidth(glyphWidth)
 
+  # 罫線記号の削除（ttfautohint対策）
+  Select(0u2500, 0u259f)
+  Clear()
+
   # Eclipse Pleiades 半角スペース記号 (U+1d1c) 対策
   Select(0u054d); Copy()
   Select(0u1d1c); Paste()
@@ -1921,11 +1925,12 @@ while (i < SizeOf(input_list))
   Print("End delete the glyphs contained in IBMPlexMono")
 
   # 罫線を半角化
-  Select(0u2500, 0u257F); Clear()
-  MergeFonts("$input_box_drawing")
-  Select(0u2500, 0u257F); Scale(${plemoljp_half_width}.0 / (${plexjp_width} / 2) * 100, 130, 0, 430)
-  Select(0u2581, 0u259F); Scale(${plemoljp_half_width}.0 / ${plexjp_width} * 100, 130, -30, 430)
   Select(0u2500, 0u259F)
+  Clear()
+  MergeFonts("$input_box_drawing")
+  Select(0u2500, 0u259F)
+  Move(0, 100)
+  Scale(${plexmono_shrink_x}, ${plexmono_shrink_y}, 0, 0)
   foreach
     if (WorthOutputting())
       SetWidth(${plemoljp_half_width})
@@ -2042,16 +2047,11 @@ while (i < SizeOf(input_list))
   Print("End delete the glyphs contained in IBMPlexMono")
 
   # 罫線を半角化
-  Select(0u2500, 0u257F); Clear()
-  MergeFonts("$input_box_drawing")
-  Select(0u2500, 0u257F); Scale(${plemoljp35_half_width}.0 / (${plexjp_width} / 2) * 100, 140, 0, 430)
-  Select(0u2581, 0u259F); Scale(${plemoljp35_half_width}.0 / ${plexjp_width} * 100, 140, 0, 430)
   Select(0u2500, 0u259F)
-  foreach
-    if (WorthOutputting())
-      SetWidth(${plemoljp35_half_width})
-    endif
-  endloop
+  Clear()
+  MergeFonts("$input_box_drawing")
+  Select(0u2500, 0u259F)
+  Move(0, 100)
 
   # 結合分音記号は IBM Plex Mono を使用する
   Select(0u0300, 0u0328)
