@@ -689,7 +689,7 @@ while (i < SizeOf(input_list))
   glyphWidth = GlyphInfo("Width")
 
   # クォーテーションの拡大
-  Select(0u0022)
+  Select(0u0060); Rotate(-25); Scale(100, 118); Rotate(33)
   SelectMore(0u0027)
   SelectMore(0u0060)
   Scale(109, 106); SetWidth(glyphWidth)
