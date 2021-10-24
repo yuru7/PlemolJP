@@ -1,0 +1,916 @@
+SplineFontDB: 3.2
+FontName: IBMPlexMono-Bold
+FullName: IBM Plex Mono Bold
+FamilyName: IBM Plex Mono
+Weight: Bold
+Copyright: Copyright 2017 IBM Corp. All rights reserved.
+Version: 2.3
+ItalicAngle: 0
+UnderlinePosition: -150
+UnderlineWidth: 100
+Ascent: 780
+Descent: 220
+InvalidEm: 0
+sfntRevision: 0x000200c4
+LayerCount: 2
+Layer: 0 1 "+gMyXYgAA" 1
+Layer: 1 1 "+Uk2XYgAA" 0
+XUID: [1021 265 74709229 3765931]
+StyleMap: 0x0020
+FSType: 0
+OS2Version: 4
+OS2_WeightWidthSlopeOnly: 1
+OS2_UseTypoMetrics: 0
+CreationTime: 1628853117
+ModificationTime: 1635029321
+PfmFamily: 17
+TTFWeight: 700
+TTFWidth: 5
+LineGap: 0
+VLineGap: 0
+Panose: 2 11 8 9 5 2 3 0 2 3
+OS2TypoAscent: 780
+OS2TypoAOffset: 0
+OS2TypoDescent: -220
+OS2TypoDOffset: 0
+OS2TypoLinegap: 300
+OS2WinAscent: 1025
+OS2WinAOffset: 0
+OS2WinDescent: 275
+OS2WinDOffset: 0
+HheadAscent: 1025
+HheadAOffset: 0
+HheadDescent: -275
+HheadDOffset: 0
+OS2SubXSize: 650
+OS2SubYSize: 600
+OS2SubXOff: 0
+OS2SubYOff: 75
+OS2SupXSize: 650
+OS2SupYSize: 600
+OS2SupXOff: 0
+OS2SupYOff: 350
+OS2StrikeYSize: 100
+OS2StrikeYPos: 309
+OS2CapHeight: 698
+OS2XHeight: 516
+OS2FamilyClass: 2057
+OS2Vendor: 'IBM '
+OS2CodePages: 60000197.00000000
+OS2UnicodeRanges: a000026f.4000383b.00000000.00000000
+Lookup: 1 0 0 "'aalt' Access All Alternates lookup 0" { "'aalt' Access All Alternates lookup 0 subtable"  } ['aalt' ('DFLT' <'dflt' > 'cyrl' <'dflt' > 'latn' <'dflt' > ) ]
+Lookup: 3 0 0 "'aalt' Access All Alternates lookup 1" { "'aalt' Access All Alternates lookup 1 subtable"  } ['aalt' ('DFLT' <'dflt' > 'cyrl' <'dflt' > 'latn' <'dflt' > ) ]
+Lookup: 4 0 0 "'ccmp' Glyph Composition/Decomposition lookup 2" { "'ccmp' Glyph Composition/Decomposition lookup 2 subtable"  } ['ccmp' ('DFLT' <'dflt' > 'cyrl' <'dflt' > 'latn' <'dflt' > ) ]
+Lookup: 6 0 0 "'ccmp' Glyph Composition/Decomposition lookup 3" { "'ccmp' Glyph Composition/Decomposition lookup 3 contextual 0"  "'ccmp' Glyph Composition/Decomposition lookup 3 contextual 1"  "'ccmp' Glyph Composition/Decomposition lookup 3 contextual 2"  "'ccmp' Glyph Composition/Decomposition lookup 3 contextual 3"  "'ccmp' Glyph Composition/Decomposition lookup 3 contextual 4"  } ['ccmp' ('DFLT' <'dflt' > 'cyrl' <'dflt' > 'latn' <'dflt' > ) ]
+Lookup: 1 0 0 "'ordn' Ordinals lookup 4" { "'ordn' Ordinals lookup 4 subtable"  } ['ordn' ('DFLT' <'dflt' > 'cyrl' <'dflt' > 'latn' <'dflt' > ) ]
+Lookup: 4 0 0 "'frac' Diagonal Fractions lookup 5" { "'frac' Diagonal Fractions lookup 5 subtable"  } ['frac' ('DFLT' <'dflt' > 'cyrl' <'dflt' > 'latn' <'dflt' > ) ]
+Lookup: 1 0 0 "'numr' Numerators lookup 6" { "'numr' Numerators lookup 6 subtable"  } ['numr' ('DFLT' <'dflt' > 'cyrl' <'dflt' > 'latn' <'dflt' > ) ]
+Lookup: 1 0 0 "'dnom' Denominators lookup 7" { "'dnom' Denominators lookup 7 subtable"  } ['dnom' ('DFLT' <'dflt' > 'cyrl' <'dflt' > 'latn' <'dflt' > ) ]
+Lookup: 1 0 0 "'sups' Superscript lookup 8" { "'sups' Superscript lookup 8 subtable" ("superior") } ['sups' ('DFLT' <'dflt' > 'cyrl' <'dflt' > 'latn' <'dflt' > ) ]
+Lookup: 1 0 0 "'sinf' Scientific Inferiors lookup 9" { "'sinf' Scientific Inferiors lookup 9 subtable"  } ['sinf' ('DFLT' <'dflt' > 'cyrl' <'dflt' > 'latn' <'dflt' > ) ]
+Lookup: 1 0 0 "'zero' Slashed Zero lookup 10" { "'zero' Slashed Zero lookup 10 subtable"  } ['zero' ('DFLT' <'dflt' > 'cyrl' <'dflt' > 'latn' <'dflt' > ) ]
+Lookup: 1 0 0 "'ss01' Style Set 1 lookup 11" { "'ss01' Style Set 1 lookup 11 subtable"  } ['ss01' ('DFLT' <'dflt' > 'cyrl' <'dflt' > 'latn' <'dflt' > ) ]
+Lookup: 1 0 0 "'ss02' Style Set 2 lookup 12" { "'ss02' Style Set 2 lookup 12 subtable"  } ['ss02' ('DFLT' <'dflt' > 'cyrl' <'dflt' > 'latn' <'dflt' > ) ]
+Lookup: 1 0 0 "'ss03' Style Set 3 lookup 13" { "'ss03' Style Set 3 lookup 13 subtable"  } ['ss03' ('DFLT' <'dflt' > 'cyrl' <'dflt' > 'latn' <'dflt' > ) ]
+Lookup: 1 0 0 "'ss04' Style Set 4 lookup 14" { "'ss04' Style Set 4 lookup 14 subtable"  } ['ss04' ('DFLT' <'dflt' > 'cyrl' <'dflt' > 'latn' <'dflt' > ) ]
+Lookup: 1 0 0 "'ss05' Style Set 5 lookup 15" { "'ss05' Style Set 5 lookup 15 subtable"  } ['ss05' ('DFLT' <'dflt' > 'cyrl' <'dflt' > 'latn' <'dflt' > ) ]
+Lookup: 1 0 0 "'salt' Stylistic Alternatives lookup 16" { "'salt' Stylistic Alternatives lookup 16 subtable"  } ['salt' ('DFLT' <'dflt' > 'cyrl' <'dflt' > 'latn' <'dflt' > ) ]
+Lookup: 1 0 0 "Single Substitution lookup 17" { "Single Substitution lookup 17 subtable"  } []
+Lookup: 260 0 0 "'mark' Mark Positioning lookup 0" { "'mark' Mark Positioning lookup 0 subtable"  } ['mark' ('DFLT' <'dflt' > 'cyrl' <'dflt' > 'latn' <'dflt' > ) ]
+Lookup: 260 0 0 "'mark' Mark Positioning lookup 1" { "'mark' Mark Positioning lookup 1 subtable"  } ['mark' ('DFLT' <'dflt' > 'cyrl' <'dflt' > 'latn' <'dflt' > ) ]
+Lookup: 260 0 0 "'mark' Mark Positioning lookup 2" { "'mark' Mark Positioning lookup 2 subtable"  } ['mark' ('DFLT' <'dflt' > 'cyrl' <'dflt' > 'latn' <'dflt' > ) ]
+Lookup: 260 0 0 "'mark' Mark Positioning lookup 3" { "'mark' Mark Positioning lookup 3 subtable"  } ['mark' ('DFLT' <'dflt' > 'cyrl' <'dflt' > 'latn' <'dflt' > ) ]
+DEI: 91125
+ChainSub2: coverage "'ccmp' Glyph Composition/Decomposition lookup 3 contextual 4" 0 0 0 1
+ 1 1 0
+  Coverage: 186 uni0309 breveacute brevegrave brevehook brevetilde dieresisacute dieresiscaron dieresisgrave circumflexacute circumflexbreve circumflexgrave circumflexhook dieresismacron circumflextilde
+  BCoverage: 125 A B C D E F G H I J K L M N O P Q R S T U V W X Y Z Aogonek AE Ccedilla Eogonek uni018F Iogonek Oslash Ohorn OE Uogonek Uhorn
+ 1
+  SeqLookup: 0 "Single Substitution lookup 17"
+EndFPST
+ChainSub2: coverage "'ccmp' Glyph Composition/Decomposition lookup 3 contextual 3" 0 0 0 1
+ 1 0 1
+  Coverage: 1 j
+  FCoverage: 298 uni0303 uni0304 uni0307 uni0308 uni030B uni0301 uni0300 uni0302 uni030C uni0306 uni030A uni0309 uni0312 uni0315 uni031B breveacute brevegrave brevehook brevetilde dieresisacute dieresiscaron dieresisgrave circumflexacute circumflexbreve circumflexgrave circumflexhook dieresismacron circumflextilde
+ 1
+  SeqLookup: 0 "Single Substitution lookup 17"
+EndFPST
+ChainSub2: coverage "'ccmp' Glyph Composition/Decomposition lookup 3 contextual 2" 0 0 0 1
+ 1 0 1
+  Coverage: 1 i
+  FCoverage: 298 uni0303 uni0304 uni0307 uni0308 uni030B uni0301 uni0300 uni0302 uni030C uni0306 uni030A uni0309 uni0312 uni0315 uni031B breveacute brevegrave brevehook brevetilde dieresisacute dieresiscaron dieresisgrave circumflexacute circumflexbreve circumflexgrave circumflexhook dieresismacron circumflextilde
+ 1
+  SeqLookup: 0 "Single Substitution lookup 17"
+EndFPST
+ChainSub2: coverage "'ccmp' Glyph Composition/Decomposition lookup 3 contextual 1" 0 0 0 1
+ 1 1 0
+  Coverage: 7 uni0326
+  BCoverage: 1 g
+ 1
+  SeqLookup: 0 "Single Substitution lookup 17"
+EndFPST
+ChainSub2: coverage "'ccmp' Glyph Composition/Decomposition lookup 3 contextual 0" 0 0 0 1
+ 1 1 0
+  Coverage: 7 uni030C
+  BCoverage: 7 d l t L
+ 1
+  SeqLookup: 0 "Single Substitution lookup 17"
+EndFPST
+TtTable: prep
+PUSHW_1
+ 0
+CALL
+SVTCA[y-axis]
+PUSHW_3
+ 1
+ 13
+ 2
+CALL
+SVTCA[x-axis]
+PUSHW_3
+ 14
+ 2
+ 2
+CALL
+SVTCA[x-axis]
+PUSHW_8
+ 14
+ 37
+ 30
+ 24
+ 17
+ 10
+ 0
+ 8
+CALL
+PUSHW_8
+ 15
+ 37
+ 30
+ 24
+ 17
+ 10
+ 0
+ 8
+CALL
+SVTCA[y-axis]
+PUSHW_8
+ 1
+ 69
+ 57
+ 41
+ 27
+ 17
+ 0
+ 8
+CALL
+PUSHW_8
+ 2
+ 57
+ 48
+ 39
+ 27
+ 15
+ 0
+ 8
+CALL
+PUSHW_8
+ 3
+ 47
+ 39
+ 31
+ 23
+ 15
+ 0
+ 8
+CALL
+PUSHW_8
+ 4
+ 104
+ 85
+ 67
+ 38
+ 23
+ 0
+ 8
+CALL
+PUSHW_8
+ 5
+ 84
+ 81
+ 54
+ 42
+ 33
+ 0
+ 8
+CALL
+PUSHW_8
+ 6
+ 52
+ 43
+ 33
+ 22
+ 14
+ 0
+ 8
+CALL
+PUSHW_8
+ 7
+ 33
+ 27
+ 23
+ 15
+ 9
+ 0
+ 8
+CALL
+PUSHW_8
+ 8
+ 84
+ 60
+ 29
+ 23
+ 19
+ 0
+ 8
+CALL
+PUSHW_8
+ 9
+ 48
+ 39
+ 30
+ 22
+ 15
+ 0
+ 8
+CALL
+PUSHW_8
+ 10
+ 28
+ 23
+ 18
+ 13
+ 8
+ 0
+ 8
+CALL
+PUSHW_8
+ 11
+ 131
+ 108
+ 84
+ 60
+ 36
+ 0
+ 8
+CALL
+PUSHW_8
+ 12
+ 75
+ 61
+ 48
+ 33
+ 18
+ 0
+ 8
+CALL
+PUSHW_8
+ 13
+ 43
+ 39
+ 30
+ 22
+ 15
+ 0
+ 8
+CALL
+SVTCA[y-axis]
+PUSHW_3
+ 16
+ 9
+ 7
+CALL
+PUSHW_1
+ 0
+DUP
+RCVT
+RDTG
+ROUND[Black]
+RTG
+WCVTP
+PUSHW_3
+ 64
+ 20
+ 1
+DELTAC2
+PUSHW_3
+ 16
+ 20
+ 1
+DELTAC2
+PUSHW_3
+ 63
+ 20
+ 1
+DELTAC2
+PUSHW_3
+ 112
+ 20
+ 1
+DELTAC2
+PUSHW_3
+ 160
+ 20
+ 1
+DELTAC2
+PUSHW_3
+ 16
+ 20
+ 1
+DELTAC3
+PUSHW_3
+ 63
+ 20
+ 1
+DELTAC3
+PUSHW_3
+ 64
+ 20
+ 1
+DELTAC3
+PUSHW_3
+ 63
+ 22
+ 1
+DELTAC2
+PUSHW_3
+ 64
+ 22
+ 1
+DELTAC2
+PUSHW_3
+ 112
+ 22
+ 1
+DELTAC2
+PUSHW_3
+ 159
+ 22
+ 1
+DELTAC2
+PUSHW_3
+ 160
+ 22
+ 1
+DELTAC2
+PUSHW_3
+ 207
+ 22
+ 1
+DELTAC2
+PUSHW_3
+ 111
+ 24
+ 1
+DELTAC2
+PUSHW_3
+ 96
+ 26
+ 1
+DELTAC1
+PUSHW_3
+ 111
+ 26
+ 1
+DELTAC3
+PUSHW_3
+ 15
+ 26
+ 1
+DELTAC3
+PUSHW_3
+ 159
+ 26
+ 1
+DELTAC3
+PUSHW_3
+ 111
+ 26
+ 1
+DELTAC2
+EndTTInstrs
+TtTable: fpgm
+PUSHW_1
+ 0
+FDEF
+MPPEM
+PUSHW_1
+ 9
+LT
+IF
+PUSHB_2
+ 1
+ 1
+INSTCTRL
+EIF
+PUSHW_1
+ 511
+SCANCTRL
+PUSHW_1
+ 68
+SCVTCI
+PUSHW_2
+ 9
+ 3
+SDS
+SDB
+ENDF
+PUSHW_1
+ 1
+FDEF
+DUP
+DUP
+RCVT
+ROUND[Black]
+WCVTP
+PUSHB_1
+ 1
+ADD
+ENDF
+PUSHW_1
+ 2
+FDEF
+PUSHW_1
+ 1
+LOOPCALL
+POP
+ENDF
+PUSHW_1
+ 3
+FDEF
+DUP
+GC[cur]
+PUSHB_1
+ 3
+CINDEX
+GC[cur]
+GT
+IF
+SWAP
+EIF
+DUP
+ROLL
+DUP
+ROLL
+MD[grid]
+ABS
+ROLL
+DUP
+GC[cur]
+DUP
+ROUND[Grey]
+SUB
+ABS
+PUSHB_1
+ 4
+CINDEX
+GC[cur]
+DUP
+ROUND[Grey]
+SUB
+ABS
+GT
+IF
+SWAP
+NEG
+ROLL
+EIF
+MDAP[rnd]
+DUP
+PUSHB_1
+ 0
+GTEQ
+IF
+ROUND[Black]
+DUP
+PUSHB_1
+ 0
+EQ
+IF
+POP
+PUSHB_1
+ 64
+EIF
+ELSE
+ROUND[Black]
+DUP
+PUSHB_1
+ 0
+EQ
+IF
+POP
+PUSHB_1
+ 64
+NEG
+EIF
+EIF
+MSIRP[no-rp0]
+ENDF
+PUSHW_1
+ 4
+FDEF
+DUP
+GC[cur]
+PUSHB_1
+ 4
+CINDEX
+GC[cur]
+GT
+IF
+SWAP
+ROLL
+EIF
+DUP
+GC[cur]
+DUP
+ROUND[White]
+SUB
+ABS
+PUSHB_1
+ 4
+CINDEX
+GC[cur]
+DUP
+ROUND[White]
+SUB
+ABS
+GT
+IF
+SWAP
+ROLL
+EIF
+MDAP[rnd]
+MIRP[rp0,min,rnd,black]
+ENDF
+PUSHW_1
+ 5
+FDEF
+MPPEM
+DUP
+PUSHB_1
+ 3
+MINDEX
+LT
+IF
+LTEQ
+IF
+PUSHB_1
+ 128
+WCVTP
+ELSE
+PUSHB_1
+ 64
+WCVTP
+EIF
+ELSE
+POP
+POP
+DUP
+RCVT
+PUSHB_1
+ 192
+LT
+IF
+PUSHB_1
+ 192
+WCVTP
+ELSE
+POP
+EIF
+EIF
+ENDF
+PUSHW_1
+ 6
+FDEF
+DUP
+DUP
+RCVT
+ROUND[Black]
+WCVTP
+PUSHB_1
+ 1
+ADD
+DUP
+DUP
+RCVT
+RDTG
+ROUND[Black]
+RTG
+WCVTP
+PUSHB_1
+ 1
+ADD
+ENDF
+PUSHW_1
+ 7
+FDEF
+PUSHW_1
+ 6
+LOOPCALL
+ENDF
+PUSHW_1
+ 8
+FDEF
+MPPEM
+DUP
+PUSHB_1
+ 3
+MINDEX
+GTEQ
+IF
+PUSHB_1
+ 64
+ELSE
+PUSHB_1
+ 0
+EIF
+ROLL
+ROLL
+DUP
+PUSHB_1
+ 3
+MINDEX
+GTEQ
+IF
+SWAP
+POP
+PUSHB_1
+ 128
+ROLL
+ROLL
+ELSE
+ROLL
+SWAP
+EIF
+DUP
+PUSHB_1
+ 3
+MINDEX
+GTEQ
+IF
+SWAP
+POP
+PUSHW_1
+ 192
+ROLL
+ROLL
+ELSE
+ROLL
+SWAP
+EIF
+DUP
+PUSHB_1
+ 3
+MINDEX
+GTEQ
+IF
+SWAP
+POP
+PUSHW_1
+ 256
+ROLL
+ROLL
+ELSE
+ROLL
+SWAP
+EIF
+DUP
+PUSHB_1
+ 3
+MINDEX
+GTEQ
+IF
+SWAP
+POP
+PUSHW_1
+ 320
+ROLL
+ROLL
+ELSE
+ROLL
+SWAP
+EIF
+DUP
+PUSHW_1
+ 3
+MINDEX
+GTEQ
+IF
+PUSHB_1
+ 3
+CINDEX
+RCVT
+PUSHW_1
+ 384
+LT
+IF
+SWAP
+POP
+PUSHW_1
+ 384
+SWAP
+POP
+ELSE
+PUSHB_1
+ 3
+CINDEX
+RCVT
+SWAP
+POP
+SWAP
+POP
+EIF
+ELSE
+POP
+EIF
+WCVTP
+ENDF
+PUSHW_1
+ 9
+FDEF
+MPPEM
+GTEQ
+IF
+RCVT
+WCVTP
+ELSE
+POP
+POP
+EIF
+ENDF
+EndTTInstrs
+ShortTable: cvt  34
+  23
+  80
+  92
+  123
+  53
+  72
+  107
+  169
+  66
+  116
+  201
+  42
+  74
+  121
+  150
+  152
+  0
+  12
+  -200
+  12
+  329
+  6
+  363
+  6
+  335
+  6
+  369
+  6
+  516
+  12
+  698
+  12
+  740
+  12
+EndShort
+ShortTable: maxp 16
+  1
+  0
+  1033
+  504
+  42
+  104
+  6
+  1
+  0
+  0
+  10
+  0
+  512
+  935
+  3
+  1
+EndShort
+LangName: 1033 "" "" "" "2.3;IBM ;IBMPlexMono-Bold" "" "Version 2.3" "" "IBM Plex+AK4A is a trademark of IBM Corp, registered in many jurisdictions worldwide." "Bold Monday" "Mike Abbink, Paul van der Laan, Pieter van Rosmalen" "" "http://www.boldmonday.com" "http://www.ibm.com" "This Font Software is licensed under the SIL Open Font License, Version 1.1. This license is available with a FAQ at: http://scripts.sil.org/OFL" "http://scripts.sil.org/OFL" "" "" "" "" "How razorback-jumping frogs can level six piqued gymnasts!"
+GaspTable: 3 8 10 16 5 65535 15 1
+OtfFeatName: 'ss01' 1033 "simple lowercase a"
+OtfFeatName: 'ss02' 1033 "simple lowercase g"
+OtfFeatName: 'ss03' 1033 "slashed number zero"
+OtfFeatName: 'ss04' 1033 "plain number zero"
+OtfFeatName: 'ss05' 1033 "alternate lowercase eszett"
+Encoding: UnicodeBmp
+UnicodeInterp: none
+NameList: AGL For New Fonts
+DisplaySize: -48
+AntiAlias: 1
+FitToEm: 0
+WinInfo: 65 13 9
+AnchorClass2: "Anchor-0" "'mark' Mark Positioning lookup 0 subtable" "Anchor-1" "'mark' Mark Positioning lookup 1 subtable" "Anchor-2" "'mark' Mark Positioning lookup 2 subtable" "Anchor-3" "'mark' Mark Positioning lookup 3 subtable"
+BeginChars: 65639 5
+
+StartChar: l
+Encoding: 108 108 0
+Width: 600
+GlyphClass: 2
+Flags: W
+AnchorPoint: "Anchor-3" 437 740 basechar 0
+AnchorPoint: "Anchor-2" 300 698 basechar 0
+AnchorPoint: "Anchor-0" 300 0 basechar 0
+LayerCount: 2
+Fore
+SplineSet
+226 625 m 1,0,-1
+ 68 625 l 1,1,-1
+ 68 740 l 1,2,-1
+ 374 740 l 1,3,-1
+ 374 115 l 1,4,-1
+ 532 115 l 1,5,-1
+ 532 0 l 1,6,-1
+ 226 0 l 5,7,-1
+ 226 625 l 1,0,-1
+EndSplineSet
+EndChar
+
+StartChar: lacute
+Encoding: 314 314 1
+Width: 600
+Flags: W
+LayerCount: 2
+Fore
+SplineSet
+316 752 m 1,0,-1
+ 228 795 l 1,1,-1
+ 327 989 l 1,2,-1
+ 450 928 l 1,3,-1
+ 316 752 l 1,0,-1
+EndSplineSet
+Refer: 0 108 N 1 0 0 1 0 0 3
+EndChar
+
+StartChar: lcaron
+Encoding: 318 318 2
+Width: 600
+Flags: W
+LayerCount: 2
+Fore
+SplineSet
+534 525 m 1,0,-1
+ 437 525 l 1,1,-1
+ 443 740 l 1,2,-1
+ 600 740 l 1,3,-1
+ 534 525 l 1,0,-1
+EndSplineSet
+Refer: 0 108 N 1 0 0 1 0 0 3
+EndChar
+
+StartChar: lcommaaccent
+Encoding: 316 316 3
+Width: 600
+Flags: W
+LayerCount: 2
+Fore
+SplineSet
+222 -54 m 1,0,-1
+ 379 -54 l 1,1,-1
+ 292 -269 l 1,2,-1
+ 204 -269 l 1,3,-1
+ 222 -54 l 1,0,-1
+EndSplineSet
+Refer: 0 108 N 1 0 0 1 0 0 3
+EndChar
+
+StartChar: ldot
+Encoding: 320 320 4
+Width: 600
+Flags: W
+LayerCount: 2
+Fore
+SplineSet
+511 224 m 256,0,1
+ 461 224 461 224 441.5 244.5 c 0,2,3
+ 422 265 422 265 422 294 c 2,4,-1
+ 422 323 l 2,5,6
+ 422 353 422 353 441.5 373 c 0,7,8
+ 461 393 461 393 511 393 c 256,9,10
+ 561 393 561 393 580.5 373 c 0,11,12
+ 600 353 600 353 600 323 c 2,13,-1
+ 600 294 l 2,14,15
+ 600 265 600 265 580.5 244.5 c 0,16,17
+ 561 224 561 224 511 224 c 256,0,1
+EndSplineSet
+Refer: 0 108 N 1 0 0 1 -14 0 3
+EndChar
+EndChars
+EndSplineFont

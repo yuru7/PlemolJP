@@ -312,6 +312,15 @@ input_plexmono_medium_italic=`find $fonts_directories -follow -name "$plexmono_m
 input_plexmono_semibold_italic=`find $fonts_directories -follow -name "$plexmono_semibold_italic_src" | head -n 1`
 input_plexmono_bold_italic=`find $fonts_directories -follow -name "$plexmono_bold_italic_src" | head -n 1`
 
+input_r_thin=`find $fonts_directories -follow -name "r-Thin.sfd" | head -n 1`
+input_r_extralight=`find $fonts_directories -follow -name "r-ExtraLight.sfd" | head -n 1`
+input_r_light=`find $fonts_directories -follow -name "r-Light.sfd" | head -n 1`
+input_r_regular=`find $fonts_directories -follow -name "r-Regular.sfd" | head -n 1`
+input_r_text=`find $fonts_directories -follow -name "r-Text.sfd" | head -n 1`
+input_r_medium=`find $fonts_directories -follow -name "r-Medium.sfd" | head -n 1`
+input_r_semibold=`find $fonts_directories -follow -name "r-SemiBold.sfd" | head -n 1`
+input_r_bold=`find $fonts_directories -follow -name "r-Bold.sfd" | head -n 1`
+
 if [ -z "${input_plexmono_regular}" -o -z "${input_plexmono_bold}" ]
 then
   echo "Error: $plexmono_regular_src and/or $plexmono_bold_src not found" >&2
@@ -545,7 +554,7 @@ select_nerd_symbols="
 cat > ${tmpdir}/${modified_nerdfonts_generator} << _EOT_
 #!$fontforge_command -script
 
-Print("Generate modified IBMPlexMono Material")
+Print("Generate Nerd Fonts parts")
 
 # Set parameters
 input_nerdfonts  = "$input_nerdfonts"
@@ -649,6 +658,16 @@ input_list  = [ \\
                 "${input_plexmono_semibold_italic}", \\
                 "${input_plexmono_bold_italic}" \\
               ]
+r_list = [ \\
+  "${input_r_thin}", \\
+  "${input_r_extralight}", \\
+  "${input_r_light}", \\
+  "${input_r_regular}", \\
+  "${input_r_text}", \\
+  "${input_r_medium}", \\
+  "${input_r_semibold}", \\
+  "${input_r_bold}" \\
+]
 output_list = [ \\
                 "${modified_plexmono_material_thin}", \\
                 "${modified_plexmono_material_extralight}", \\
@@ -670,6 +689,7 @@ output_list = [ \\
 
 if ("$DEBUG_FLG" == 'true')
   input_list = [input_list[3]]
+  r_list = [r_list[3]]
   output_list = [output_list[3]]
 endif
 
@@ -679,6 +699,16 @@ while (i < SizeOf(input_list))
   # Open IBMPlexMono
   Print("Open " + input_list[i])
   Open(input_list[i])
+
+  # r グリフの調整
+  if (i < SizeOf(r_list))
+    Select(0u0072)
+    SelectMore(0u0155)
+    SelectMore(0u0157)
+    SelectMore(0u0159)
+    Clear()
+    MergeFonts(r_list[i])
+  endif
 
   SelectWorthOutputting()
   UnlinkReference()
