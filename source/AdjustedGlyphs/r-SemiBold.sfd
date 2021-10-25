@@ -22,7 +22,7 @@ OS2Version: 4
 OS2_WeightWidthSlopeOnly: 1
 OS2_UseTypoMetrics: 0
 CreationTime: 1628853119
-ModificationTime: 1634964434
+ModificationTime: 1635122894
 PfmFamily: 17
 TTFWeight: 600
 TTFWidth: 5
@@ -805,11 +805,11 @@ ShortTable: maxp 16
 EndShort
 LangName: 1033 "" "" "Regular" "2.3;IBM ;IBMPlexMono-SmBld" "" "Version 2.3" "" "IBM Plex+AK4A is a trademark of IBM Corp, registered in many jurisdictions worldwide." "Bold Monday" "Mike Abbink, Paul van der Laan, Pieter van Rosmalen" "" "http://www.boldmonday.com" "http://www.ibm.com" "This Font Software is licensed under the SIL Open Font License, Version 1.1. This license is available with a FAQ at: http://scripts.sil.org/OFL" "http://scripts.sil.org/OFL" "" "IBM Plex Mono" "SemiBold" "" "How razorback-jumping frogs can level six piqued gymnasts!"
 GaspTable: 3 8 10 16 5 65535 15 1
-OtfFeatName: 'ss05' 1033 "alternate lowercase eszett"
-OtfFeatName: 'ss04' 1033 "plain number zero"
-OtfFeatName: 'ss03' 1033 "slashed number zero"
-OtfFeatName: 'ss02' 1033 "simple lowercase g"
 OtfFeatName: 'ss01' 1033 "simple lowercase a"
+OtfFeatName: 'ss02' 1033 "simple lowercase g"
+OtfFeatName: 'ss03' 1033 "slashed number zero"
+OtfFeatName: 'ss04' 1033 "plain number zero"
+OtfFeatName: 'ss05' 1033 "alternate lowercase eszett"
 Encoding: UnicodeBmp
 UnicodeInterp: none
 NameList: AGL For New Fonts
@@ -912,33 +912,33 @@ MDRP[rp0,grey]
 IUP[y]
 IUP[x]
 EndTTInstrs
-AnchorPoint: "Anchor-2" 298 516 basechar 0
-AnchorPoint: "Anchor-0" 233 0 basechar 0
+AnchorPoint: "Anchor-2" 283 516 basechar 0
+AnchorPoint: "Anchor-0" 218 0 basechar 0
 LayerCount: 2
 Fore
 SplineSet
-75 101 m 1,0,-1
- 168 101 l 1,1,-1
- 168 415 l 1,2,-1
- 75 415 l 1,3,-1
- 75 516 l 1,4,-1
- 296 516 l 1,5,-1
- 296 375 l 1,6,-1
- 304 375 l 1,7,8
- 311 402 311 402 323.5 427.5 c 128,-1,9
- 336 453 336 453 355.5 472.5 c 128,-1,10
- 375 492 375 492 403 504 c 128,-1,11
- 431 516 431 516 505 516 c 2,12,-1
+60 101 m 1,0,-1
+ 153 101 l 1,1,-1
+ 153 415 l 1,2,-1
+ 60 415 l 1,3,-1
+ 60 516 l 1,4,-1
+ 281 516 l 1,5,-1
+ 281 375 l 1,6,-1
+ 289 375 l 1,7,8
+ 296 402 296 402 308.5 427.5 c 128,-1,9
+ 321 453 321 453 340.5 472.5 c 128,-1,10
+ 360 492 360 492 388 504 c 128,-1,11
+ 416 516 416 516 490 516 c 2,12,-1
  561 516 l 1,13,-1
  561 396 l 1,14,-1
- 420 396 l 2,15,16
- 362 396 362 396 329 362 c 128,-1,17
- 296 328 296 328 296 275 c 2,18,-1
- 296 101 l 1,19,-1
- 460 101 l 5,20,-1
- 460 0 l 5,21,-1
- 75 0 l 1,22,-1
- 75 101 l 1,0,-1
+ 405 396 l 2,15,16
+ 347 396 347 396 314 362 c 128,-1,17
+ 281 328 281 328 281 275 c 2,18,-1
+ 281 101 l 1,19,-1
+ 445 101 l 1,20,-1
+ 445 0 l 1,21,-1
+ 60 0 l 1,22,-1
+ 60 101 l 1,0,-1
 EndSplineSet
 EndChar
 
