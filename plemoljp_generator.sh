@@ -1427,7 +1427,7 @@ while (i < SizeOf(input_list))
   Select(0u00A2)
   SelectMore(0u00A3)
   SelectMore(0u00A5)
-  Scale(87, 100);
+  Scale(83, 100);
   SetWidth(${plemoljp_half_width})
   CenterInWidth();
 
@@ -1815,7 +1815,7 @@ while (i < SizeOf(input_list))
   Select(0u00A2)
   SelectMore(0u00A3)
   SelectMore(0u00A5)
-  Scale(98, 100)
+  Scale(94, 100)
   SetWidth(${plemoljp35_half_width})
   CenterInWidth()
 
