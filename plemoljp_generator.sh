@@ -740,6 +740,12 @@ while (i < SizeOf(input_list))
   Select(0u1d1c); Paste()
   Scale(85, 60); SetWidth(glyphWidth)
 
+  # Cent Sign, Pound Sign, Yen Sign は IBM Plex Sans JP を使用
+  Select(0u00A2)
+  SelectMore(0u00A3)
+  SelectMore(0u00A5)
+  Clear()
+
   # パスの小数点以下を切り捨て
   SelectWorthOutputting()
   RoundToInt()
@@ -1417,6 +1423,14 @@ while (i < SizeOf(input_list))
   Select(0u201c);Scale(125) ; SetWidth(${plemoljp_full_width}) # “
   Select(0u201d);Scale(125) ; SetWidth(${plemoljp_full_width}) # ”
 
+  # Cent Sign, Pound Sign, Yen Sign は IBM Plex Sans JP を使用
+  Select(0u00A2)
+  SelectMore(0u00A3)
+  SelectMore(0u00A5)
+  Scale(87, 100);
+  SetWidth(${plemoljp_half_width})
+  CenterInWidth();
+
   # カーニング情報を削除
   lookups = GetLookups("GPOS"); numlookups = SizeOf(lookups); ii = 0;
   while (ii < numlookups)
@@ -1796,6 +1810,14 @@ while (i < SizeOf(input_list))
   Select(0u2019);Scale(125) ; SetWidth(${plemoljp35_full_width}) # ’
   Select(0u201c);Scale(125) ; SetWidth(${plemoljp35_full_width}) # “
   Select(0u201d);Scale(125) ; SetWidth(${plemoljp35_full_width}) # ”
+
+  # Cent Sign, Pound Sign, Yen Sign は IBM Plex Sans JP を使用
+  Select(0u00A2)
+  SelectMore(0u00A3)
+  SelectMore(0u00A5)
+  Scale(98, 100)
+  SetWidth(${plemoljp35_half_width})
+  CenterInWidth()
 
   # カーニング情報を削除
   lookups = GetLookups("GPOS"); numlookups = SizeOf(lookups); ii = 0;
