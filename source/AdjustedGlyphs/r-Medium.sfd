@@ -22,7 +22,7 @@ OS2Version: 4
 OS2_WeightWidthSlopeOnly: 1
 OS2_UseTypoMetrics: 0
 CreationTime: 1628853119
-ModificationTime: 1635122844
+ModificationTime: 1635334544
 PfmFamily: 17
 TTFWeight: 500
 TTFWidth: 5
@@ -810,11 +810,11 @@ ShortTable: maxp 16
 EndShort
 LangName: 1033 "" "" "Regular" "2.3;IBM ;IBMPlexMono-Medm" "" "Version 2.3" "" "IBM Plex+AK4A is a trademark of IBM Corp, registered in many jurisdictions worldwide." "Bold Monday" "Mike Abbink, Paul van der Laan, Pieter van Rosmalen" "" "http://www.boldmonday.com" "http://www.ibm.com" "This Font Software is licensed under the SIL Open Font License, Version 1.1. This license is available with a FAQ at: http://scripts.sil.org/OFL" "http://scripts.sil.org/OFL" "" "IBM Plex Mono" "Medium" "" "How razorback-jumping frogs can level six piqued gymnasts!"
 GaspTable: 3 8 10 16 5 65535 15 1
-OtfFeatName: 'ss01' 1033 "simple lowercase a"
-OtfFeatName: 'ss02' 1033 "simple lowercase g"
-OtfFeatName: 'ss03' 1033 "slashed number zero"
-OtfFeatName: 'ss04' 1033 "plain number zero"
 OtfFeatName: 'ss05' 1033 "alternate lowercase eszett"
+OtfFeatName: 'ss04' 1033 "plain number zero"
+OtfFeatName: 'ss03' 1033 "slashed number zero"
+OtfFeatName: 'ss02' 1033 "simple lowercase g"
+OtfFeatName: 'ss01' 1033 "simple lowercase a"
 Encoding: UnicodeBmp
 UnicodeInterp: none
 NameList: AGL For New Fonts
@@ -934,8 +934,8 @@ SplineSet
  311 456 311 456 331 474.5 c 128,-1,10
  351 493 351 493 380 504.5 c 128,-1,11
  409 516 409 516 483 516 c 2,12,-1
- 560 516 l 1,13,-1
- 560 412 l 1,14,-1
+ 545 516 l 5,13,-1
+ 545 412 l 5,14,-1
  408 412 l 2,15,16
  348 412 348 412 310 376.5 c 128,-1,17
  272 341 272 341 272 281 c 2,18,-1
