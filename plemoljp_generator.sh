@@ -830,14 +830,24 @@ while (i < SizeOf(input_list))
 
   # ゼロ幅文字を幅の変更対象から除外
   ii = 0
-  end_plexmono = $end_plexmono
-  while (ii < end_plexmono)
-    if (WorthOutputting(ii))
-      Select(ii)
+  iii = 0
+  zeroArray = Array($end_plexmono)
+  SelectWorthOutputting()
+  foreach
+    if (WorthOutputting())
       glyphWidth = GlyphInfo("Width")
       if (glyphWidth == 0)
-        SelectFewer(ii)
+        zeroArray[iii] = GlyphInfo("Encoding")
+        iii++
       endif
+    endif
+    ii++
+  endloop
+  ii = 0
+  SelectWorthOutputting()
+  while (ii < $end_plexmono)
+    if (TypeOf(zeroArray[ii]) != "LValue")
+      SelectFewer(zeroArray[ii])
     endif
     ii++
   endloop
@@ -925,14 +935,24 @@ while (i < SizeOf(input_list))
 
   # ゼロ幅文字を幅の変更対象から除外
   ii = 0
-  end_plexmono = $end_plexmono
-  while (ii < end_plexmono)
-    if (WorthOutputting(ii))
-      Select(ii)
+  iii = 0
+  zeroArray = Array($end_plexmono)
+  SelectWorthOutputting()
+  foreach
+    if (WorthOutputting())
       glyphWidth = GlyphInfo("Width")
       if (glyphWidth == 0)
-        SelectFewer(ii)
+        zeroArray[iii] = GlyphInfo("Encoding")
+        iii++
       endif
+    endif
+    ii++
+  endloop
+  ii = 0
+  SelectWorthOutputting()
+  while (ii < $end_plexmono)
+    if (TypeOf(zeroArray[ii]) != "LValue")
+      SelectFewer(zeroArray[ii])
     endif
     ii++
   endloop
