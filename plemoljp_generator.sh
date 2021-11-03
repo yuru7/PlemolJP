@@ -60,8 +60,8 @@ plexjp_width=1000
 
 plemoljp_half_width=528
 plemoljp_full_width=$((${plemoljp_half_width} * 2))
-plexmono_shrink_x=88
-plexmono_shrink_y=94
+plexmono_shrink_x=91
+plexmono_shrink_y=97
 
 plemoljp35_half_width=600
 plemoljp35_full_width=$((${plemoljp35_half_width} * 5 / 3))
@@ -73,7 +73,6 @@ end_plexjp=1115564
 
 # Set path to fontforge command
 fontforge_command="fontforge"
-ttfautohint_command="ttfautohint"
 
 # Set redirection of stderr
 redirection_stderr="${base_dir}/error.log"
@@ -822,11 +821,6 @@ while (i < SizeOf(input_list))
   UnlinkReference()
 
   Scale(${plexmono_shrink_x}, ${plexmono_shrink_y}, 0, 0)
-
-  # 半角小文字アルファベットの高さを調整
-  Select(0u0061, 0u007a)
-  Scale(100, 103, 0, 0)
-  SelectWorthOutputting()
 
   # ゼロ幅文字を幅の変更対象から除外
   ii = 0
@@ -3106,7 +3100,12 @@ do
   # PlemolJP
   for f in "$plemoljp_filename" "$plemoljp_console_filename"
   do
-    ttfautohint -l 6 -r 45 -a nnn -D latn -W -X "15-" -I "$f" "hinted_${f}"
+    m_opt=''
+    post_process_file="${base_dir}/hinting_post_process/normal-${style}-ctrl.txt"
+    if [ -f "$post_process_file" ]; then
+      m_opt="-m $post_process_file"
+    fi
+    ttfautohint $m_opt -l 6 -r 45 -a nnn -D latn -W -X "13-" -I "$f" "hinted_${f}"
   done
   # PlemolJP35
   for f in "$plemoljp35_filename" "$plemoljp35_console_filename"
@@ -3116,7 +3115,7 @@ do
     if [ -f "$post_process_file" ]; then
       m_opt="-m $post_process_file"
     fi
-    ttfautohint $m_opt -l 6 -r 45 -a nnn -D latn -W -X "13-" -I "$f" "hinted_${f}"
+    ttfautohint $m_opt -l 6 -r 45 -a nnn -D latn -W -X "11-" -I "$f" "hinted_${f}"
   done
 
   if [ "${style}" = 'Thin' ]; then

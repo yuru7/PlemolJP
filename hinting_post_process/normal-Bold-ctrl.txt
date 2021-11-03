@@ -1,0 +1,6 @@
+five left 5-10
+
+six nodir 11
+six left 37-40
+
+Q left 17
