@@ -1421,7 +1421,7 @@ while (i < SizeOf(input_list))
 
   # Edit zenkaku brackets
   Print("Edit zenkaku brackets")
-  bracket_move = $((${plemoljp_half_width} / 2 + ${plemoljp_half_width} / 30))
+  bracket_move = $((${plemoljp_half_width} / 2))
   Select(0uff08); Move(-bracket_move, 0); SetWidth(${plemoljp_full_width}) # (
   Select(0uff09); Move( bracket_move, 0); SetWidth(${plemoljp_full_width}) # )
   Select(0uff3b); Move(-bracket_move, 0); SetWidth(${plemoljp_full_width}) # [
@@ -1809,7 +1809,7 @@ while (i < SizeOf(input_list))
 
   # Edit zenkaku brackets
   Print("Edit zenkaku brackets")
-  bracket_move = $((${plemoljp35_half_width} / 2 + ${plemoljp35_half_width} / 30))
+  bracket_move = $((${plemoljp35_half_width} / 2))
   Select(0uff08); Move(-bracket_move, 0); SetWidth(${plemoljp35_full_width}) # (
   Select(0uff09); Move( bracket_move, 0); SetWidth(${plemoljp35_full_width}) # )
   Select(0uff3b); Move(-bracket_move, 0); SetWidth(${plemoljp35_full_width}) # [
