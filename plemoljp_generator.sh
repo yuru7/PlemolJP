@@ -730,6 +730,10 @@ while (i < SizeOf(input_list))
   SelectMore(0u002e)
   Scale(108); SetWidth(glyphWidth)
 
+  # U+274C (CROSS MARK) を削除 (OSに含まれる絵文字フォントにフォールバックさせるため)
+  Select(0u274c)
+  Clear()
+
   # 罫線記号の削除（ttfautohint対策）
   Select(0u2500, 0u259f)
   Clear()
