@@ -2011,6 +2011,20 @@ while (i < SizeOf(input_list))
   Select(0u0300, 0u0328)
   Clear()
 
+  # カーニング情報を削除
+  lookups = GetLookups("GPOS"); numlookups = SizeOf(lookups); ii = 0;
+  while (ii < numlookups)
+    if (Strstr(lookups[ii], 'halt') >= 0 \\
+        || Strstr(lookups[ii], 'vhal') >= 0 \\
+        || Strstr(lookups[ii], 'palt') >= 0 \\
+        || Strstr(lookups[ii], 'vpal') >= 0 \\
+        || Strstr(lookups[ii], 'kern') >= 0 \\
+      )
+      RemoveLookup(lookups[ii]);
+    endif
+    ii++
+  endloop
+
   # Save modified IBMPlexSansJP
   Print("Generate " + output_list[i])
   Generate("${tmpdir}/" + output_list[i] + ".ttf", "")
@@ -2126,6 +2140,20 @@ while (i < SizeOf(input_list))
   # 結合分音記号は IBM Plex Mono を使用する
   Select(0u0300, 0u0328)
   Clear()
+
+  # カーニング情報を削除
+  lookups = GetLookups("GPOS"); numlookups = SizeOf(lookups); ii = 0;
+  while (ii < numlookups)
+    if (Strstr(lookups[ii], 'halt') >= 0 \\
+        || Strstr(lookups[ii], 'vhal') >= 0 \\
+        || Strstr(lookups[ii], 'palt') >= 0 \\
+        || Strstr(lookups[ii], 'vpal') >= 0 \\
+        || Strstr(lookups[ii], 'kern') >= 0 \\
+      )
+      RemoveLookup(lookups[ii]);
+    endif
+    ii++
+  endloop
 
   # Save modified IBMPlexSansJP
   Print("Generate " + output_list[i])
