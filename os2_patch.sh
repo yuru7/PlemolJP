@@ -4,12 +4,12 @@ BASE_DIR=$(cd $(dirname $0); pwd)
 PREFIX="$1"
 
 xAvgCharWidth_SETVAL=528
-FIRGE_PATTERN=${PREFIX}'PlemolJP[^3]*.ttf'
+FONT_PATTERN=${PREFIX}'PlemolJP[^3]*.ttf'
 
 xAvgCharWidth35_SETVAL=1000
-FIRGE35_PATTERN=${PREFIX}'PlemolJP35*.ttf'
+FONT35_PATTERN=${PREFIX}'PlemolJP35*.ttf'
 
-for P in ${BASE_DIR}/${FIRGE_PATTERN}; do
+for P in ${BASE_DIR}/${FONT_PATTERN}; do
   ttx -t OS/2 -t post "$P"
 
   xAvgCharWidth_value=$(grep xAvgCharWidth "${P%%.ttf}.ttx" | awk -F\" '{print $2}')
@@ -29,11 +29,10 @@ for P in ${BASE_DIR}/${FIRGE_PATTERN}; do
   fi
   sed -i.bak -e 's,fsSelection value="'"$fsSelection_value"'",fsSelection value="'"$fsSelection_sed_value"'",' "${P%%.ttf}.ttx"
 
-  #sed -i.bak -e 's,version value="1",version value="4",' "${P%%.ttf}.ttx"
-  
   underlinePosition_value=$(grep 'underlinePosition value' "${P%%.ttf}.ttx" | awk -F\" '{print $2}')
-  #sed -i.bak -e 's,underlinePosition value="'$underlinePosition_value'",underlinePosition value="-125",' "${P%%.ttf}.ttx"
   sed -i.bak -e 's,underlinePosition value="'$underlinePosition_value'",underlinePosition value="-70",' "${P%%.ttf}.ttx"
+
+  sed -i.bak -e 's,<isFixedPitch value="0"/>,<isFixedPitch value="1"/>,' "${P%%.ttf}.ttx"
 
   mv "$P" "${P}_orig"
   ttx -m "${P}_orig" "${P%%.ttf}.ttx"
@@ -45,7 +44,7 @@ for P in ${BASE_DIR}/${FIRGE_PATTERN}; do
   fi
 done
 
-for P in ${BASE_DIR}/${FIRGE35_PATTERN}; do
+for P in ${BASE_DIR}/${FONT35_PATTERN}; do
   ttx -t OS/2 -t post "$P"
 
   xAvgCharWidth_value=$(grep xAvgCharWidth "${P%%.ttf}.ttx" | awk -F\" '{print $2}')
@@ -65,10 +64,7 @@ for P in ${BASE_DIR}/${FIRGE35_PATTERN}; do
   fi
   sed -i.bak -e 's,fsSelection value="'"$fsSelection_value"'",fsSelection value="'"$fsSelection_sed_value"'",' "${P%%.ttf}.ttx"
 
-  #sed -i.bak -e 's,version value="1",version value="4",' "${P%%.ttf}.ttx"
-  
   underlinePosition_value=$(grep 'underlinePosition value' "${P%%.ttf}.ttx" | awk -F\" '{print $2}')
-  #sed -i.bak -e 's,underlinePosition value="'$underlinePosition_value'",underlinePosition value="-125",' "${P%%.ttf}.ttx"
   sed -i.bak -e 's,underlinePosition value="'$underlinePosition_value'",underlinePosition value="-70",' "${P%%.ttf}.ttx"
 
   mv "$P" "${P}_orig"
