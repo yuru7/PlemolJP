@@ -6,4 +6,6 @@ five left 5-7
 six nodir 11
 six left 37-41
 
+eight nodir 41, 52
+
 Q left 24

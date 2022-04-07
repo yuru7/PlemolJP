@@ -3137,7 +3137,7 @@ do
     if [ -f "$post_process_file" ]; then
       m_opt="-m $post_process_file"
     fi
-    ttfautohint $m_opt -l 6 -r 45 -a nnn -D latn -W -X "13-" -I "$f" "hinted_${f}"
+    python3 -m ttfautohint $m_opt -l 6 -r 45 -a nnn -D latn -W -X "13-" -I "$f" "hinted_${f}"
   done
   # PlemolJP35
   for f in "$plemoljp35_filename" "$plemoljp35_console_filename"
@@ -3147,7 +3147,7 @@ do
     if [ -f "$post_process_file" ]; then
       m_opt="-m $post_process_file"
     fi
-    ttfautohint $m_opt -l 6 -r 45 -a nnn -D latn -W -X "11-" -I "$f" "hinted_${f}"
+    python3 -m ttfautohint $m_opt -l 6 -r 45 -a nnn -D latn -W -X "11-" -I "$f" "hinted_${f}"
   done
 
   if [ "${style}" = 'Thin' ]; then
