@@ -43,18 +43,22 @@ done
 if [ "$DEBUG_FLG" = 'true' ]; then
   ("${BASE_DIR}/plemoljp_generator.sh" -d \
   && "${BASE_DIR}/os2_patch.sh" \
+  && "${BASE_DIR}/copyright.sh" \
   && mvBuild)
   exit
 fi
 
 ("${BASE_DIR}/plemoljp_generator.sh" \
 && "${BASE_DIR}/os2_patch.sh" \
+&& "${BASE_DIR}/copyright.sh" \
 && mvBuild)
 
 ("${BASE_DIR}/plemoljp_generator.sh" -h \
 && "${BASE_DIR}/os2_patch.sh" \
+&& "${BASE_DIR}/copyright.sh" \
 && mvBuildHS)
 
 ("${BASE_DIR}/plemoljp_generator.sh" -n \
 && "${BASE_DIR}/os2_patch.sh" \
+&& "${BASE_DIR}/copyright.sh" \
 && mvBuildNF)

@@ -43,6 +43,8 @@ plemoljp35_familyname=${plemoljp_familyname}"35"
 plemoljp35_familyname_suffix="${hs_suffix}"
 plemoljp_console_suffix="Console"
 
+copyright='###COPYRIGHT###'
+
 # Set ascent and descent (line width parameters)
 plemoljp_ascent=950
 plemoljp_descent=225
@@ -2261,7 +2263,7 @@ if ("$DEBUG_FLG" == 'true')
   panoseweight_list = [panoseweight_list[3]]
 endif
 
-copyright         = "Copyright (c) 2019, Yuko Otawara"
+copyright         = "${copyright}"
 version           = "${plemoljp_version}"
 
 # Begin loop of regular and bold
@@ -2488,7 +2490,7 @@ if ("$DEBUG_FLG" == 'true')
   panoseweight_list = [panoseweight_list[3]]
 endif
 
-copyright         = "Copyright (c) 2019, Yuko Otawara"
+copyright         = "${copyright}"
 version           = "${plemoljp_version}"
 
 # Begin loop of regular and bold
@@ -2711,7 +2713,7 @@ if ("$DEBUG_FLG" == 'true')
   panoseweight_list = [panoseweight_list[3]]
 endif
 
-copyright         = "Copyright (c) 2019, Yuko Otawara"
+copyright         = "${copyright}"
 version           = "${plemoljp_version}"
 
 # Begin loop of regular and bold
@@ -2938,7 +2940,7 @@ if ("$DEBUG_FLG" == 'true')
   panoseweight_list = [panoseweight_list[3]]
 endif
 
-copyright         = "Copyright (c) 2019, Yuko Otawara"
+copyright         = "${copyright}"
 version           = "${plemoljp_version}"
 
 # Begin loop of regular and bold
