@@ -9,3 +9,5 @@ six left 39-43
 eight nodir 37, 44
 
 Q left 17
+
+R nodir 10, 13, 15
