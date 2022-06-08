@@ -11,3 +11,5 @@ eight nodir 41, 52
 Q left 24
 
 R nodir 10, 13, 15
+
+three nodir 0, 49, 50, 51
