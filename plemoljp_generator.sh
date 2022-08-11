@@ -522,7 +522,7 @@ select_nerd_symbols="
   SelectMore(0u2665)
   SelectMore(0u26A1)
   SelectMore(0uf27c)
-  SelectMore(0uf400, 0uf4a8)
+  SelectMore(0uf400, 0uf4a9)
 
   # Font Awesome Extension
   SelectMore(0ue200, 0ue2a9)
@@ -545,11 +545,11 @@ select_nerd_symbols="
   # Material Design Icons
   SelectMore(0uf500, 0ufd46)
 
-  # オリジナル Hack の未使用領域を一括選択 (拾い漏れ防止)
-  SelectMore(0ue0d5, 0ufefd)
+  # Pomicons
+  SelectMore(0ue000, 0ue00a)
 
-  # Pomicons -> 商用不可のため除外
-  SelectFewer(0ue000, 0ue00d)
+  # Eye Bee M (IBM)
+  SelectMore(0uebe7)
 "
 
 cat > ${tmpdir}/${modified_nerdfonts_generator} << _EOT_
