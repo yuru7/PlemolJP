@@ -1,7 +1,6 @@
 #!/bin/sh
 
 # PlemolJP Generator
-plemoljp_version="1.2.6"
 
 base_dir=$(cd $(dirname $0); pwd)
 
@@ -9,12 +8,13 @@ base_dir=$(cd $(dirname $0); pwd)
 HIDDEN_SPACE_FLG='false'
 NERDFONTS_FLG='false'
 DEBUG_FLG='false'
-while getopts dhn OPT
+while getopts dhnv: OPT
 do
   case $OPT in
     'd' ) DEBUG_FLG='true';;
     'h' ) HIDDEN_SPACE_FLG='true';;
     'n' ) NERDFONTS_FLG='true';;
+    'v' ) plemoljp_version="$OPTARG";;
   esac
 done
 

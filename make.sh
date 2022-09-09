@@ -1,5 +1,7 @@
 #!/bin/bash
 
+plemoljp_version="1.2.7"
+
 BASE_DIR=$(cd $(dirname $0); pwd)
 
 function mvBuild() {
@@ -41,24 +43,24 @@ do
 done
 
 if [ "$DEBUG_FLG" = 'true' ]; then
-  ("${BASE_DIR}/plemoljp_generator.sh" -d \
+  ("${BASE_DIR}/plemoljp_generator.sh" -d -v "$plemoljp_version" \
   && "${BASE_DIR}/os2_patch.sh" \
   && "${BASE_DIR}/copyright.sh" \
   && mvBuild)
   exit
 fi
 
-("${BASE_DIR}/plemoljp_generator.sh" \
+("${BASE_DIR}/plemoljp_generator.sh" -v "$plemoljp_version" \
 && "${BASE_DIR}/os2_patch.sh" \
 && "${BASE_DIR}/copyright.sh" \
 && mvBuild)
 
-("${BASE_DIR}/plemoljp_generator.sh" -h \
+("${BASE_DIR}/plemoljp_generator.sh" -h -v "$plemoljp_version" \
 && "${BASE_DIR}/os2_patch.sh" \
 && "${BASE_DIR}/copyright.sh" \
 && mvBuildHS)
 
-("${BASE_DIR}/plemoljp_generator.sh" -n \
+("${BASE_DIR}/plemoljp_generator.sh" -n -v "$plemoljp_version" \
 && "${BASE_DIR}/os2_patch.sh" \
 && "${BASE_DIR}/copyright.sh" \
 && mvBuildNF)
