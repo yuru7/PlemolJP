@@ -1,6 +1,6 @@
 #!/bin/bash
 
-plemoljp_version="1.2.7"
+plemoljp_version="1.3.0"
 
 BASE_DIR=$(cd $(dirname $0); pwd)
 
