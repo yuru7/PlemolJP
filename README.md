@@ -6,6 +6,8 @@ IBM Plex Mono と IBM Plex Sans JP を合成した日本語プログラミング
 
 > ダウンロードはこちら ➡ [Releases](https://github.com/yuru7/PlemolJP/releases)
 
+> 💡 [Homebrew (Mac) でのインストール方法](doc/install_via_homebrew.md)
+
 ![image](https://github.com/yuru7/PlemolJP/raw/images/beer.jpg)
 
 |**フォント ファミリー**|**説明**|
