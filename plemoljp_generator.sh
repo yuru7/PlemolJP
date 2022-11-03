@@ -3253,42 +3253,99 @@ do
     marge_plexjp35_console_regular="${tmpdir}/${modified_plexjp35_console_bold_italic}.ttf"
   fi
 
+  # pyftmergeの出力ファイル名が"merged.ttf"で固定なので、並列処理時に競合しないように、それぞれ別のフォルダで作業する
+
+  cdAutoMakeDir() {
+    mkdir -p "$1"
+    cd "$1"
+  }
+
   # Generate Nerd Fonts version
   if [ "$NERDFONTS_FLG" = 'true' ]; then
     # PlemolJP Console NF
     echo "pyftmerge: ${plemoljp_console_filename}"
-    pyftmerge "hinted_${plemoljp_console_filename}" "$nerdfonts"
-    pyftmerge merged.ttf "$marge_plexjp_console_regular"
-    mv merged.ttf "${plemoljp_console_filename}"
+    (
+      cdAutoMakeDir "${tmpdir}/parallel_merge/${plemoljp_console_filename}"
+      pyftmerge "${base_dir}/hinted_${plemoljp_console_filename}" "$nerdfonts"
+      pyftmerge merged.ttf "$marge_plexjp_console_regular"
+      mv merged.ttf "${base_dir}/${plemoljp_console_filename}"
+    ) > "${tmpdir}/${plemoljp_console_filename}.pyftmerge_output" 2>&1 &
 
     # PlemolJP35 Console NF
     echo "pyftmerge: ${plemoljp35_console_filename}"
-    pyftmerge "hinted_${plemoljp35_console_filename}" "$nerdfonts35"
-    pyftmerge merged.ttf "$marge_plexjp35_console_regular"
-    mv merged.ttf "${plemoljp35_console_filename}"
+    (
+      cdAutoMakeDir "${tmpdir}/parallel_merge/${plemoljp35_console_filename}"
+      pyftmerge "${base_dir}/hinted_${plemoljp35_console_filename}" "$nerdfonts35"
+      pyftmerge merged.ttf "$marge_plexjp35_console_regular"
+      mv merged.ttf "${base_dir}/${plemoljp35_console_filename}"
+    ) > "${tmpdir}/${plemoljp35_console_filename}.pyftmerge_output" 2>&1 &
+
+    wait
+
+    # 並列処理からの出力内容をまとめて出力
+    pyftmerged_ttf_files="
+      ${plemoljp_console_filename}
+      ${plemoljp35_console_filename}
+    "
+    for ttf_file in $pyftmerged_ttf_files
+    do
+      output_filename="${ttf_file}.pyftmerge_output"
+      echo "$output_filename" | sed -r "s/(.+)\.pyftmerge_output/# pyftmerge output: \1/"
+      cat "${tmpdir}/${output_filename}"
+      rm "${tmpdir}/${output_filename}"
+    done
 
     continue
   fi
 
   # PlemolJP
   echo "pyftmerge: ${plemoljp_filename}"
-  pyftmerge "hinted_${plemoljp_filename}" "$marge_plexjp_regular"
-  mv merged.ttf "${plemoljp_filename}"
+  (
+    cdAutoMakeDir "${tmpdir}/parallel_merge/${plemoljp_filename}"
+    pyftmerge "${base_dir}/hinted_${plemoljp_filename}" "$marge_plexjp_regular"
+    mv merged.ttf "${base_dir}/${plemoljp_filename}"
+  ) > "${tmpdir}/${plemoljp_filename}.pyftmerge_output" 2>&1 &
 
   # PlemolJP Console
   echo "pyftmerge: ${plemoljp_console_filename}"
-  pyftmerge "hinted_${plemoljp_console_filename}" "$marge_plexjp_console_regular"
-  mv merged.ttf "${plemoljp_console_filename}"
+  (
+    cdAutoMakeDir "${tmpdir}/parallel_merge/${plemoljp_console_filename}"
+    pyftmerge "${base_dir}/hinted_${plemoljp_console_filename}" "$marge_plexjp_console_regular"
+    mv merged.ttf "${base_dir}/${plemoljp_console_filename}"
+  ) > "${tmpdir}/${plemoljp_console_filename}.pyftmerge_output" 2>&1 &
 
   # PlemolJP35
   echo "pyftmerge: ${plemoljp35_filename}"
-  pyftmerge "hinted_${plemoljp35_filename}" "$marge_plexjp35_regular"
-  mv merged.ttf "${plemoljp35_filename}"
+  (
+    cdAutoMakeDir "${tmpdir}/parallel_merge/${plemoljp35_filename}"
+    pyftmerge "${base_dir}/hinted_${plemoljp35_filename}" "$marge_plexjp35_regular"
+    mv merged.ttf "${base_dir}/${plemoljp35_filename}"
+  ) > "${tmpdir}/${plemoljp35_filename}.pyftmerge_output" 2>&1 &
 
   # PlemolJP35 Console
   echo "pyftmerge: ${plemoljp35_console_filename}"
-  pyftmerge "hinted_${plemoljp35_console_filename}" "$marge_plexjp35_console_regular"
-  mv merged.ttf "${plemoljp35_console_filename}"
+  (
+    cdAutoMakeDir "${tmpdir}/parallel_merge/${plemoljp35_console_filename}"
+    pyftmerge "${base_dir}/hinted_${plemoljp35_console_filename}" "$marge_plexjp35_console_regular"
+    mv merged.ttf "${base_dir}/${plemoljp35_console_filename}"
+  ) > "${tmpdir}/${plemoljp35_console_filename}.pyftmerge_output" 2>&1 &
+
+  wait
+  
+  # 並列処理からの出力内容をまとめて出力
+  pyftmerged_ttf_files="
+    ${plemoljp_filename}
+    ${plemoljp_console_filename}
+    ${plemoljp35_filename}
+    ${plemoljp35_console_filename}
+  "
+  for ttf_file in $pyftmerged_ttf_files
+  do
+    output_filename="${ttf_file}.pyftmerge_output"
+    echo "$output_filename" | sed -r "s/(.+)\.pyftmerge_output/# pyftmerge output: \1/"
+    cat "${tmpdir}/${output_filename}"
+    rm "${tmpdir}/${output_filename}"
+  done
 
 done
 
