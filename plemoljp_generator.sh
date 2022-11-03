@@ -3295,6 +3295,7 @@ do
       sed -i -e 's/Console NF/Console NFJ/g; s/ConsoleNF/ConsoleNFJ/g' "${plemoljp_nfj_filename%%.ttf}.ttx"
       mv "${plemoljp_nfj_filename}" "${plemoljp_nfj_filename}_orig"
       ttx -m "${plemoljp_nfj_filename}_orig" "${plemoljp_nfj_filename%%.ttf}.ttx"
+      rm "${plemoljp_nfj_filename%%.ttf}.ttx"
     ) > "${tmpdir}/${plemoljp_nfj_filename}.pyftmerge_output" 2>&1 &
 
     # PlemolJP35 Console NFJ
@@ -3310,6 +3311,7 @@ do
       sed -i -e 's/Console NF/Console NFJ/g; s/ConsoleNF/ConsoleNFJ/g' "${plemoljp35_nfj_filename%%.ttf}.ttx"
       mv "${plemoljp35_nfj_filename}" "${plemoljp35_nfj_filename}_orig"
       ttx -m "${plemoljp35_nfj_filename}_orig" "${plemoljp35_nfj_filename%%.ttf}.ttx"
+      rm "${plemoljp35_nfj_filename%%.ttf}.ttx"
     ) > "${tmpdir}/${plemoljp35_nfj_filename}.pyftmerge_output" 2>&1 &
 
     wait
