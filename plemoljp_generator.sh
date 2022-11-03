@@ -3133,6 +3133,8 @@ do
   plemoljp35_console_filename="${plemoljp35_familyname}${plemoljp_console_suffix}${hs_suffix}-${style}.ttf"
   nerdfonts="${tmpdir}/${modified_nerdfonts}"
   nerdfonts35="${tmpdir}/${modified_nerdfonts35}"
+  plemoljp_nfj_filename="${plemoljp_familyname}${plemoljp_console_suffix}${hs_suffix}J-${style}.ttf"
+  plemoljp35_nfj_filename="${plemoljp35_familyname}${plemoljp_console_suffix}${hs_suffix}J-${style}.ttf"
 
   # Add hinting
   # PlemolJP
@@ -3280,12 +3282,44 @@ do
       mv merged.ttf "${base_dir}/${plemoljp35_console_filename}"
     ) > "${tmpdir}/${plemoljp35_console_filename}.pyftmerge_output" 2>&1 &
 
+    # PlemolJP Console NFJ
+    echo "pyftmerge: ${plemoljp_nfj_filename}"
+    (
+      cdAutoMakeDir "${tmpdir}/parallel_merge/${plemoljp_nfj_filename}"
+      pyftmerge "${base_dir}/hinted_${plemoljp_console_filename}" "$marge_plexjp_console_regular"
+      pyftmerge merged.ttf "$nerdfonts"
+      mv merged.ttf "${base_dir}/${plemoljp_nfj_filename}"
+
+      cd "${base_dir}"
+      ttx -t name "${plemoljp_nfj_filename}"
+      sed -i -e 's/Console NF/Console NFJ/g; s/ConsoleNF/ConsoleNFJ/g' "${plemoljp_nfj_filename%%.ttf}.ttx"
+      mv "${plemoljp_nfj_filename}" "${plemoljp_nfj_filename}_orig"
+      ttx -m "${plemoljp_nfj_filename}_orig" "${plemoljp_nfj_filename%%.ttf}.ttx"
+    ) > "${tmpdir}/${plemoljp_nfj_filename}.pyftmerge_output" 2>&1 &
+
+    # PlemolJP35 Console NFJ
+    echo "pyftmerge: ${plemoljp35_nfj_filename}"
+    (
+      cdAutoMakeDir "${tmpdir}/parallel_merge/${plemoljp35_nfj_filename}"
+      pyftmerge "${base_dir}/hinted_${plemoljp35_console_filename}" "$marge_plexjp35_console_regular"
+      pyftmerge merged.ttf "$nerdfonts35"
+      mv merged.ttf "${base_dir}/${plemoljp35_nfj_filename}"
+
+      cd "${base_dir}"
+      ttx -t name "${plemoljp35_nfj_filename}"
+      sed -i -e 's/Console NF/Console NFJ/g; s/ConsoleNF/ConsoleNFJ/g' "${plemoljp35_nfj_filename%%.ttf}.ttx"
+      mv "${plemoljp35_nfj_filename}" "${plemoljp35_nfj_filename}_orig"
+      ttx -m "${plemoljp35_nfj_filename}_orig" "${plemoljp35_nfj_filename%%.ttf}.ttx"
+    ) > "${tmpdir}/${plemoljp35_nfj_filename}.pyftmerge_output" 2>&1 &
+
     wait
 
     # 並列処理からの出力内容をまとめて出力
     pyftmerged_ttf_files="
       ${plemoljp_console_filename}
       ${plemoljp35_console_filename}
+      ${plemoljp_nfj_filename}
+      ${plemoljp35_nfj_filename}
     "
     for ttf_file in $pyftmerged_ttf_files
     do

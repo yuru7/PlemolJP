@@ -29,6 +29,10 @@ function mvBuildHS() {
 function mvBuildNF() {
   mkdir -p "${BASE_DIR}/build/PlemolJPConsole_NF"
   mkdir -p "${BASE_DIR}/build/PlemolJP35Console_NF"
+  mkdir -p "${BASE_DIR}/build/PlemolJPConsole_NFJ"
+  mkdir -p "${BASE_DIR}/build/PlemolJP35Console_NFJ"
+  mv -f "${BASE_DIR}/"PlemolJP35ConsoleNFJ*.ttf "${BASE_DIR}/build/PlemolJP35Console_NFJ/"
+  mv -f "${BASE_DIR}/"PlemolJPConsoleNFJ*.ttf "${BASE_DIR}/build/PlemolJPConsole_NFJ/"
   mv -f "${BASE_DIR}/"PlemolJP35Console*.ttf "${BASE_DIR}/build/PlemolJP35Console_NF/"
   mv -f "${BASE_DIR}/"PlemolJPConsole*.ttf "${BASE_DIR}/build/PlemolJPConsole_NF/"
   rm -f "${BASE_DIR}/"PlemolJP*.ttf
