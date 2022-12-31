@@ -13,7 +13,7 @@ Copyright © 2017 IBM Corp.
 Copyright (c) 2014, Ryan L McIntyre (https://ryanlmcintyre.com).
 
 [PlemolJP]
-Copyright (c) 2021, Yuko OTAWARA'
+Copyright (c) 2021, Yuko Otawara'
 
 for P in ${BASE_DIR}/${FONT_PATTERN}
 do

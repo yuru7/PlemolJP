@@ -548,8 +548,8 @@ select_nerd_symbols="
   # Pomicons
   SelectMore(0ue000, 0ue00a)
 
-  # Eye Bee M (IBM)
-  SelectMore(0uebe7)
+  # Codicons
+  SelectMore(0uea60, 0uebeb)
 "
 
 cat > ${tmpdir}/${modified_nerdfonts_generator} << _EOT_
