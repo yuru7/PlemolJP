@@ -654,7 +654,7 @@ select_eaaw="
 # Generate script for Nerd Fonts Symbols
 ########################################
 
-nerdfonts_src="Blex Mono Nerd Font Complete.ttf"
+nerdfonts_src="BlexMonoNerdFont-Regular.ttf"
 modified_nerdfonts_generator="modified_nerdfonts_generator.pe"
 input_nerdfonts=`find $fonts_directories -follow -iname "$nerdfonts_src" | head -n 1`
 modified_nerdfonts='modified-nerdfonts.ttf'
@@ -662,53 +662,41 @@ modified_nerdfonts35='modified-nerdfonts35.ttf'
 
 # Nerd Fonts から適用するグリフ
 select_nerd_symbols="
+  # IEC Power Symbols
+  SelectMore(0u23fb, 0u23fe)
+  SelectMore(0u2b58)
+  # Octicons
+  SelectMore(0u2665)
+  SelectMore(0u26a1)
+  SelectMore(0uf400, 0uf532)
+  # Pomicons
+  SelectMore(0ue000, 0ue00a)
   # Powerline
   SelectMore(0ue0a0, 0ue0a2)
   SelectMore(0ue0b0, 0ue0b3)
-
   # Powerline Extra
   SelectMore(0ue0a3)
   SelectMore(0ue0b4, 0ue0c8)
   SelectMore(0ue0ca)
-  SelectMore(0ue0cc, 0ue0d2)
-  SelectMore(0ue0d4)
-
-  # IEC Power Symbols
-  SelectMore(0u23fb, 0u23fe)
-  SelectMore(0u2b58)
-
-  # Octicons
-  SelectMore(0u2665)
-  SelectMore(0u26A1)
-  SelectMore(0uf27c)
-  SelectMore(0uf400, 0uf4a9)
-
+  SelectMore(0ue0cc, 0ue0d4)
   # Font Awesome Extension
   SelectMore(0ue200, 0ue2a9)
-
-  # Weather
+  # Weather Icons
   SelectMore(0ue300, 0ue3e3)
-
   # Seti-UI + Custom
-  SelectMore(0ue5fa, 0ue62e)
-
+  SelectMore(0ue5fa, 0ue6ac)
   # Devicons
   SelectMore(0ue700, 0ue7c5)
-
-  # Font Awesome
-  SelectMore(0uf000, 0uf2e0)
-
-  # Font Logos (Formerly Font Linux)
-  SelectMore(0uf300, 0uf31c)
-
-  # Material Design Icons
-  SelectMore(0uf500, 0ufd46)
-
-  # Pomicons
-  SelectMore(0ue000, 0ue00a)
-
   # Codicons
   SelectMore(0uea60, 0uebeb)
+  # Font Awesome
+  SelectMore(0uf000, 0uf2e0)
+  # Font Logos
+  SelectMore(0uf300, 0uf32f)
+  # Material Design
+  SelectMore(0uf0001, 0uf1af0)
+  # Other
+  SelectMore(0u2630)
 "
 
 cat > ${tmpdir}/${modified_nerdfonts_generator} << _EOT_
@@ -3376,8 +3364,6 @@ do
   plemoljp35_console_filename="${plemoljp35_familyname}${plemoljp_console_suffix}${hs_suffix}-${style}.ttf"
   nerdfonts="${tmpdir}/${modified_nerdfonts}"
   nerdfonts35="${tmpdir}/${modified_nerdfonts35}"
-  plemoljp_nfj_filename="${plemoljp_familyname}${plemoljp_console_suffix}${hs_suffix}J-${style}.ttf"
-  plemoljp35_nfj_filename="${plemoljp35_familyname}${plemoljp_console_suffix}${hs_suffix}J-${style}.ttf"
 
   # Add hinting
   # PlemolJP
@@ -3525,46 +3511,12 @@ do
       mv merged.ttf "${base_dir}/${plemoljp35_console_filename}"
     ) > "${tmpdir}/${plemoljp35_console_filename}.pyftmerge_output" 2>&1 &
 
-    # PlemolJP Console NFJ
-    echo "pyftmerge: ${plemoljp_nfj_filename}"
-    (
-      cdAutoMakeDir "${tmpdir}/parallel_merge/${plemoljp_nfj_filename}"
-      pyftmerge "${base_dir}/hinted_${plemoljp_console_filename}" "$marge_plexjp_console_regular"
-      pyftmerge merged.ttf "$nerdfonts"
-      mv merged.ttf "${base_dir}/${plemoljp_nfj_filename}"
-
-      cd "${base_dir}"
-      ttx -t name "${plemoljp_nfj_filename}"
-      sed -i -e 's/Console NF/Console NFJ/g; s/ConsoleNF/ConsoleNFJ/g' "${plemoljp_nfj_filename%%.ttf}.ttx"
-      mv "${plemoljp_nfj_filename}" "${plemoljp_nfj_filename}_orig"
-      ttx -m "${plemoljp_nfj_filename}_orig" "${plemoljp_nfj_filename%%.ttf}.ttx"
-      rm "${plemoljp_nfj_filename%%.ttf}.ttx"
-    ) > "${tmpdir}/${plemoljp_nfj_filename}.pyftmerge_output" 2>&1 &
-
-    # PlemolJP35 Console NFJ
-    echo "pyftmerge: ${plemoljp35_nfj_filename}"
-    (
-      cdAutoMakeDir "${tmpdir}/parallel_merge/${plemoljp35_nfj_filename}"
-      pyftmerge "${base_dir}/hinted_${plemoljp35_console_filename}" "$marge_plexjp35_console_regular"
-      pyftmerge merged.ttf "$nerdfonts35"
-      mv merged.ttf "${base_dir}/${plemoljp35_nfj_filename}"
-
-      cd "${base_dir}"
-      ttx -t name "${plemoljp35_nfj_filename}"
-      sed -i -e 's/Console NF/Console NFJ/g; s/ConsoleNF/ConsoleNFJ/g' "${plemoljp35_nfj_filename%%.ttf}.ttx"
-      mv "${plemoljp35_nfj_filename}" "${plemoljp35_nfj_filename}_orig"
-      ttx -m "${plemoljp35_nfj_filename}_orig" "${plemoljp35_nfj_filename%%.ttf}.ttx"
-      rm "${plemoljp35_nfj_filename%%.ttf}.ttx"
-    ) > "${tmpdir}/${plemoljp35_nfj_filename}.pyftmerge_output" 2>&1 &
-
     wait
 
     # 並列処理からの出力内容をまとめて出力
     pyftmerged_ttf_files="
       ${plemoljp_console_filename}
       ${plemoljp35_console_filename}
-      ${plemoljp_nfj_filename}
-      ${plemoljp35_nfj_filename}
     "
     for ttf_file in $pyftmerged_ttf_files
     do
