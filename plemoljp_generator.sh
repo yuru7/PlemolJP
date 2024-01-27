@@ -401,7 +401,8 @@ select_glyph_is_not_console="
   SelectMore(0u0401)
   SelectMore(0u0410, 0u044f)
   SelectMore(0u0451)
-  SelectMore(0u2010, 0u2044)
+  SelectMore(0u2010, 0u2026)
+  SelectMore(0u2030, 0u2044)
   SelectMore(0u2113, 0u2122)
   SelectMore(0u2202)
   SelectMore(0u2211, 0u222b)
@@ -426,6 +427,10 @@ select_glyph_is_not_console="
   ## IBM Plex Sans JP 等幅化対策 (IBM Plex Mono を適用して半角化)
   SelectFewer(171)
   SelectFewer(187)
+  ## flaction slash
+  SelectFewer(0u2044)
+  ## broken bar
+  SelectFewer(0u00a6)
 "
 
 # IBM Plex Sans JP 等幅化対策 (全角左寄せの除外)
@@ -1454,6 +1459,11 @@ while (i < SizeOf(input_list))
     Italic(${italic_angle})
   endif
 
+  # U+2011 non-breaking hyphen が消失する対策
+  Select(0u2011); DetachGlyphs()
+  Select(0u002d); Copy()
+  Select(0u2011); Paste()
+
   SelectNone()
 
   Print("Remove IBMPlexMono Glyphs start")
@@ -1568,9 +1578,6 @@ while (i < SizeOf(input_list))
     SetWidth(${plemoljp_full_width})
     ii = ii + 1
   endloop
-
-  # broken bar は IBMPlexMono ベースにする
-  Select(0u00a6); Clear()
 
   # Edit zenkaku brackets
   Print("Edit zenkaku brackets")
@@ -1846,6 +1853,11 @@ while (i < SizeOf(input_list))
     Italic(${italic_angle})
   endif
 
+  # U+2011 non-breaking hyphen が消失する対策
+  Select(0u2011); DetachGlyphs()
+  Select(0u002d); Copy()
+  Select(0u2011); Paste()
+
   SelectNone()
 
   Print("Remove IBMPlexMono Glyphs start")
@@ -1958,9 +1970,6 @@ while (i < SizeOf(input_list))
     SetWidth(${plemoljp35_full_width})
     ii = ii + 1
   endloop
-
-  # broken bar は IBMPlexMono ベースにする
-  Select(0u00a6); Clear()
 
   # Edit zenkaku brackets
   Print("Edit zenkaku brackets")
