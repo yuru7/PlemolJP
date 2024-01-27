@@ -897,10 +897,11 @@ while (i < SizeOf(input_list))
   Select(0u1d1c); Paste()
   Scale(85, 60); SetWidth(glyphWidth)
 
-  # Cent Sign, Pound Sign, Yen Sign は IBM Plex Sans JP を使用
-  Select(0u00A2)
-  SelectMore(0u00A3)
-  SelectMore(0u00A5)
+  # IBM Plex Sans JP グリフを使用
+  Select(0u00A2) # Cent Sign
+  SelectMore(0u00A3) # Pound Sign
+  SelectMore(0u00A5) # Yen Sign
+  SelectMore(0u3000) # 全角スペース
   Clear()
 
   # パスの小数点以下を切り捨て
@@ -1443,12 +1444,6 @@ while (i < SizeOf(input_list))
   Print("Open " + input_list[i])
   Open(input_list[i])
 
-  # Edit zenkaku space (from ballot box and heavy greek cross)
-  if ("${HIDDEN_SPACE_FLG}" != "true")
-    Select(0u3000); Clear()
-    MergeFonts("$input_ideographic_space")
-  endif
-
   SelectWorthOutputting()
   UnlinkReference()
   ScaleToEm(${em_ascent}, ${em_descent})
@@ -1578,6 +1573,13 @@ while (i < SizeOf(input_list))
     SetWidth(${plemoljp_full_width})
     ii = ii + 1
   endloop
+
+  # Edit zenkaku space (from ballot box and heavy greek cross)
+  if ("${HIDDEN_SPACE_FLG}" != "true")
+    Print("Edit zenkaku space")
+    Select(0u3000); SelectMore(0u2003); DetachAndRemoveGlyphs()
+    MergeFonts("$input_ideographic_space")
+  endif
 
   # Edit zenkaku brackets
   Print("Edit zenkaku brackets")
@@ -1837,12 +1839,6 @@ while (i < SizeOf(input_list))
   Print("Open " + input_list[i])
   Open(input_list[i])
 
-  # Edit zenkaku space (from ballot box and heavy greek cross)
-  if ("${HIDDEN_SPACE_FLG}" != "true")
-    Select(0u3000); Clear()
-    MergeFonts("$input_ideographic_space")
-  endif
-
   SelectWorthOutputting()
   UnlinkReference()
   ScaleToEm(${em_ascent}, ${em_descent})
@@ -1970,6 +1966,13 @@ while (i < SizeOf(input_list))
     SetWidth(${plemoljp35_full_width})
     ii = ii + 1
   endloop
+
+  # Edit zenkaku space (from ballot box and heavy greek cross)
+  if ("${HIDDEN_SPACE_FLG}" != "true")
+    Print("Edit zenkaku space")
+    Select(0u3000); SelectMore(0u2003); DetachAndRemoveGlyphs()
+    MergeFonts("$input_ideographic_space")
+  endif
 
   # Edit zenkaku brackets
   Print("Edit zenkaku brackets")
