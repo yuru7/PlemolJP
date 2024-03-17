@@ -241,6 +241,9 @@ def generate_font(jp_style, eng_style, merged_style):
     if not options.get("hidden-zenkaku-space"):
         visualize_zenkaku_space(jp_font)
 
+    # 規定の幅からはみ出したグリフサイズを削除する
+    down_scale_redundant_size_glyph(jp_font, eng_font)
+
     # Nerd Fontのグリフを追加する
     if options.get("nerd-font"):
         add_nerd_font_glyphs(jp_font, eng_font)
@@ -851,6 +854,47 @@ def eaaw_width_to_half(jp_font):
             glyph.transform(psMat.scale(0.67, 0.9))
             glyph.transform(psMat.translate((half_width - glyph.width) / 2, 0))
             glyph.width = half_width
+
+
+def down_scale_redundant_size_glyph(jp_font, eng_font):
+    """規定の幅からはみ出したグリフサイズを調整"""
+    for glyph in eng_font.glyphs():
+        if (
+            glyph.width > 0
+            and glyph.boundingBox()[0] < 0
+            and not (
+                0xE0B0 <= glyph.unicode <= 0xE0D4
+            )  # Powerline系のグリフ 0xE0B0 - 0xE0D4 は無視
+            and not (
+                0x2500 <= glyph.unicode <= 0x257F
+            )  # 罫線系のグリフ 0x2500 - 0x257F は無視
+            and not (
+                0x2591 <= glyph.unicode <= 0x2593
+            )  # SHADE グリフ 0x2591 - 0x2593 は無視
+        ):
+            before_width = glyph.width
+            x_scale = (
+                math.floor((1 + (glyph.boundingBox()[0] * 2) / glyph.width) * 100) / 100
+            )
+            glyph.transform(psMat.scale(x_scale, 1))
+            glyph.transform(psMat.translate((before_width - glyph.width) / 2, 0))
+            glyph.width = before_width
+    for glyph in jp_font.glyphs():
+        if (
+            glyph.width > 0
+            and glyph.boundingBox()[0] < 0
+            and ".rotat" not in glyph.glyphname  # glyphname = *.rotat 系は無視
+            and not (
+                0x2500 <= glyph.unicode <= 0x257F
+            )  # 罫線系のグリフ 0x2500 - 0x257F は無視
+        ):
+            before_width = glyph.width
+            x_scale = (
+                math.floor((1 + (glyph.boundingBox()[0] * 2) / glyph.width) * 100) / 100
+            )
+            glyph.transform(psMat.scale(x_scale, 1))
+            glyph.transform(psMat.translate((before_width - glyph.width) / 2, 0))
+            glyph.width = before_width
 
 
 def add_nerd_font_glyphs(jp_font, eng_font):
