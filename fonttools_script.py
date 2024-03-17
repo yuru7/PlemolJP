@@ -266,14 +266,12 @@ def fix_post_table(xml: ET, flag_35):
 
 def fix_name_table(xml: ET):
     """name テーブルを編集する
-    何故か "alternate lowercase eszett" という文字列の
-    著作権フィールドが含まれてしまうので、削除する。
+    何故か謎の内容の著作権フィールドが含まれてしまうので、削除する。
     """
     # タグ形式: <namerecord nameID="0" platformID="1" platEncID="0" langID="0x0" unicode="True">COPYLIGHT</namerecord>
     parent = xml.find("name")
     for element in parent.findall("namerecord[@nameID='0']"):
-        if element.text.strip() == "alternate lowercase eszett":
-            print(element.text.strip())
+        if "PlemolJP" not in element.text:
             parent.remove(element)
 
 

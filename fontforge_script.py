@@ -223,7 +223,7 @@ def generate_font(jp_style, eng_style, merged_style):
         transform_italic_glyphs(jp_font)
 
     # 半角幅か全角幅になるように変換する
-    width_600_or_1000(jp_font)
+    set_width_600_or_1000(jp_font)
 
     if options.get("35"):
         # eng_fontを3:5幅にする
@@ -234,7 +234,7 @@ def generate_font(jp_style, eng_style, merged_style):
         # 1:2 幅にする
         transform_half_width(jp_font, eng_font)
         # 規定の幅からはみ出したグリフサイズを縮小する
-        down_scale_redundant_size_glyph(jp_font, eng_font)
+        down_scale_redundant_size_glyph(eng_font)
 
     # GSUBテーブルを削除する (ひらがな等の全角文字が含まれる行でリガチャが解除される対策)
     remove_lookups(jp_font)
@@ -437,9 +437,12 @@ def adjust_some_glyph(jp_font, eng_font, style="Regular"):
     jp_font.selection.select(("unicode", "more"), 0x00A3)
     jp_font.selection.select(("unicode", "more"), 0x00A5)
     for glyph in jp_font.selection.byGlyphs:
-        glyph.transform(psMat.scale(0.83, 1))
-        glyph.transform(psMat.translate((half_width - glyph.width) / 2, 0))
-        glyph.width = half_width
+        x_scale = half_width / glyph.width
+        if x_scale < 1:
+            glyph.transform(psMat.scale(x_scale, 1))
+        # 後から英語フォントと同じ幅にするために一旦500幅として扱う
+        glyph.transform(psMat.translate((500 - glyph.width) / 2, 0))
+        glyph.width = 500
 
     # r グリフの調整
     if "Italic" not in style:
@@ -474,6 +477,14 @@ def delete_duplicate_glyphs(jp_font, eng_font, is_console=False):
     eng_font[0x3000].clear()  # 全角スペース
     # U+274C (CROSS MARK) を削除 (OSに含まれる絵文字フォントにフォールバックさせるため)
     eng_font[0x274C].clear()
+    # LATIN 系グリフには IBM Plex Mono を使用
+    for glyph in jp_font.glyphs():
+        if 0x00C0 <= glyph.unicode <= 0x00D6:
+            glyph.clear()
+        elif 0x00D8 <= glyph.unicode <= 0x00F6:
+            glyph.clear()
+        elif 0x00F8 <= glyph.unicode <= 0x0259:
+            glyph.clear()
 
     for glyph in jp_font.glyphs("encoding"):
         try:
@@ -497,14 +508,9 @@ def delete_not_console_glyphs(eng_font):
 
     # 記号
     eng_font.selection.select(("more", "unicode", "ranges"), 0x00A1, 0x00A5)
-    eng_font.selection.select(("more", "unicode", "ranges"), 0x00A7, 0x00FF)
-    eng_font.selection.select(("more", "unicode"), 0x0131)
-    eng_font.selection.select(("more", "unicode", "ranges"), 0x0141, 0x0142)
-    eng_font.selection.select(("more", "unicode", "ranges"), 0x0152, 0x0153)
-    eng_font.selection.select(("more", "unicode", "ranges"), 0x0160, 0x0161)
-    eng_font.selection.select(("more", "unicode"), 0x0178)
-    eng_font.selection.select(("more", "unicode", "ranges"), 0x017D, 0x017E)
-    eng_font.selection.select(("more", "unicode"), 0x0192)
+    eng_font.selection.select(("more", "unicode", "ranges"), 0x00A7, 0x00B8)
+    eng_font.selection.select(("more", "unicode"), 0x00D7)
+    eng_font.selection.select(("more", "unicode"), 0x00F7)
     eng_font.selection.select(("more", "unicode", "ranges"), 0x02BB, 0x02BC)
     eng_font.selection.select(("more", "unicode"), 0x02C6)
     eng_font.selection.select(("more", "unicode", "ranges"), 0x02DA, 0x02DC)
@@ -555,26 +561,32 @@ def remove_lookups(font):
 def transform_italic_glyphs(font):
     # 傾きを設定する
     font.italicangle = -ITALIC_ANGLE
-    orig_width = font[0x3000].width
     # 全グリフを斜体に変換
     for glyph in font.glyphs():
+        orig_width = glyph.width
         glyph.transform(psMat.skew(ITALIC_ANGLE * math.pi / 180))
-        glyph.transform(psMat.translate(-94, 0))
+        glyph.transform(psMat.translate(-40, 0))
         glyph.width = orig_width
 
 
-def width_600_or_1000(jp_font):
+def set_width_600_or_1000(jp_font):
     """半角幅か全角幅になるように変換する"""
     for glyph in jp_font.glyphs():
-        if 0 < glyph.width < 600:
+        if 0 < glyph.width < 500:
             # グリフ位置を調整してから幅を設定
-            glyph.transform(psMat.translate((600 - glyph.width) / 2, 0))
-            glyph.width = 600
-        elif 600 < glyph.width < 1000:
+            glyph.transform(psMat.translate((500 - glyph.width) / 2, 0))
+            glyph.width = 500
+        elif (
+            500 < glyph.width < 1000 or 0xC0 <= glyph.unicode <= 0x192
+        ):  # 特定のアルファベット関連文字 0xC0 - 0x192 は全角幅にする
             # グリフ位置を調整してから幅を設定
             glyph.transform(psMat.translate((1000 - glyph.width) / 2, 0))
             glyph.width = 1000
-        # 600の場合はそのまま
+
+        # 500幅の場合は一旦 600 幅にする
+        if glyph.width == 500:
+            glyph.transform(psMat.translate((600 - glyph.width) / 2, 0))
+            glyph.width = 600
 
 
 def adjust_width_35_eng(eng_font):
@@ -616,7 +628,8 @@ def transform_half_width(jp_font, eng_font):
     """1:2幅になるように変換する"""
     before_width_eng = eng_font[0x0030].width
     after_width_eng = HALF_WIDTH_12
-    # 単純 縮小後幅 / 元の幅 だと狭くなりすりぎるので、倍率を考慮する
+    # 単純な 縮小後幅 / 元の幅 だと狭くなりすりぎるので、
+    # 倍率を考慮して分子は大きめにしている
     x_scale = 546 / before_width_eng
     for glyph in eng_font.glyphs():
         if glyph.width > 0:
@@ -855,12 +868,16 @@ def eaaw_width_to_half(jp_font):
             glyph.width = half_width
 
 
-def down_scale_redundant_size_glyph(jp_font, eng_font):
+def down_scale_redundant_size_glyph(eng_font):
     """規定の幅からはみ出したグリフサイズを縮小する"""
+
     for glyph in eng_font.glyphs():
         if (
             glyph.width > 0
             and glyph.boundingBox()[0] < 0
+            and not (
+                0x0020 <= glyph.unicode <= 0x02AF
+            )  # latin 系のグリフ 0x0020 - 0x0192 は無視
             and not (
                 0xE0B0 <= glyph.unicode <= 0xE0D4
             )  # Powerline系のグリフ 0xE0B0 - 0xE0D4 は無視
@@ -870,22 +887,6 @@ def down_scale_redundant_size_glyph(jp_font, eng_font):
             and not (
                 0x2591 <= glyph.unicode <= 0x2593
             )  # SHADE グリフ 0x2591 - 0x2593 は無視
-        ):
-            before_width = glyph.width
-            x_scale = (
-                math.floor((1 + (glyph.boundingBox()[0] * 2) / glyph.width) * 100) / 100
-            )
-            glyph.transform(psMat.scale(x_scale, 1))
-            glyph.transform(psMat.translate((before_width - glyph.width) / 2, 0))
-            glyph.width = before_width
-    for glyph in jp_font.glyphs():
-        if (
-            glyph.width > 0
-            and glyph.boundingBox()[0] < 0
-            and ".rotat" not in glyph.glyphname  # glyphname = *.rotat 系は無視
-            and not (
-                0x2500 <= glyph.unicode <= 0x257F
-            )  # 罫線系のグリフ 0x2500 - 0x257F は無視
         ):
             before_width = glyph.width
             x_scale = (
