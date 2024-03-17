@@ -233,6 +233,8 @@ def generate_font(jp_style, eng_style, merged_style):
     else:
         # 1:2 幅にする
         transform_half_width(jp_font, eng_font)
+        # 規定の幅からはみ出したグリフサイズを縮小する
+        down_scale_redundant_size_glyph(jp_font, eng_font)
 
     # GSUBテーブルを削除する (ひらがな等の全角文字が含まれる行でリガチャが解除される対策)
     remove_lookups(jp_font)
@@ -240,9 +242,6 @@ def generate_font(jp_style, eng_style, merged_style):
     # 全角スペースを可視化する
     if not options.get("hidden-zenkaku-space"):
         visualize_zenkaku_space(jp_font)
-
-    # 規定の幅からはみ出したグリフサイズを削除する
-    down_scale_redundant_size_glyph(jp_font, eng_font)
 
     # Nerd Fontのグリフを追加する
     if options.get("nerd-font"):
@@ -857,7 +856,7 @@ def eaaw_width_to_half(jp_font):
 
 
 def down_scale_redundant_size_glyph(jp_font, eng_font):
-    """規定の幅からはみ出したグリフサイズを調整"""
+    """規定の幅からはみ出したグリフサイズを縮小する"""
     for glyph in eng_font.glyphs():
         if (
             glyph.width > 0
