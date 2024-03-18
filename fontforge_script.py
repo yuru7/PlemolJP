@@ -889,9 +889,7 @@ def down_scale_redundant_size_glyph(eng_font):
             )  # SHADE グリフ 0x2591 - 0x2593 は無視
         ):
             before_width = glyph.width
-            x_scale = (
-                math.floor((1 + (glyph.boundingBox()[0] * 2) / glyph.width) * 100) / 100
-            )
+            x_scale = 1 + (glyph.boundingBox()[0] * 2) / glyph.width
             glyph.transform(psMat.scale(x_scale, 1))
             glyph.transform(psMat.translate((before_width - glyph.width) / 2, 0))
             glyph.width = before_width
