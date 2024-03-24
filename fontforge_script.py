@@ -427,11 +427,13 @@ def adjust_some_glyph(jp_font, eng_font, style="Regular"):
         ("unicode", "ranges"), 0x2018, 0x2019
     ).byGlyphs:
         glyph.transform(psMat.scale(1.25, 1.25))
+        glyph.transform(psMat.translate(0, -150))
         glyph.width = full_width
     for glyph in jp_font.selection.select(
         ("unicode", "ranges"), 0x201C, 0x201D
     ).byGlyphs:
         glyph.transform(psMat.scale(1.25, 1.25))
+        glyph.transform(psMat.translate(0, -150))
         glyph.width = full_width
 
     # Cent Sign, Pound Sign, Yen Sign は半角記号に IBM Plex Sans JP を使用
@@ -557,7 +559,8 @@ def delete_not_console_glyphs(eng_font):
 def remove_lookups(font):
     """GSUB, GPOSテーブルを削除する"""
     for lookup in list(font.gsub_lookups) + list(font.gpos_lookups):
-        font.removeLookup(lookup)
+        if "vrt2" not in lookup and "vert" not in lookup:
+            font.removeLookup(lookup)
 
 
 def transform_italic_glyphs(font):
