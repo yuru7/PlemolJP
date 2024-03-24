@@ -238,8 +238,8 @@ def generate_font(jp_style, eng_style, merged_style):
         # 規定の幅からはみ出したグリフサイズを縮小する
         down_scale_redundant_size_glyph(eng_font)
 
-    # GSUBテーブルを削除する (ひらがな等の全角文字が含まれる行でリガチャが解除される対策)
-    remove_lookups(jp_font)
+    # GPOSテーブルを削除する
+    remove_lookups(jp_font, remove_gsub=False, remove_gpos=True)
 
     # 全角スペースを可視化する
     if not options.get("hidden-zenkaku-space"):
@@ -556,10 +556,13 @@ def delete_not_console_glyphs(eng_font):
         glyph.clear()
 
 
-def remove_lookups(font):
+def remove_lookups(font, remove_gsub=True, remove_gpos=True):
     """GSUB, GPOSテーブルを削除する"""
-    for lookup in list(font.gsub_lookups) + list(font.gpos_lookups):
-        if "vrt2" not in lookup and "vert" not in lookup:
+    if remove_gsub:
+        for lookup in font.gsub_lookups:
+            font.removeLookup(lookup)
+    if remove_gpos:
+        for lookup in font.gpos_lookups:
             font.removeLookup(lookup)
 
 
