@@ -4,7 +4,7 @@
 
 IBM Plex Mono と IBM Plex Sans JP を合成した日本語プログラミングフォント PlemolJP (プレモル ジェイピー)
 
-> ダウンロードはこちら ➡ [Releases](https://github.com/yuru7/PlemolJP/releases)
+> ダウンロードはこちら ➡ [Releases](https://github.com/yuru7/PlemolJP/releases/latest)
 
 > 💡 [Homebrew (Mac) でのインストール方法](doc/install_via_homebrew.md)
 
