@@ -231,12 +231,12 @@ def fix_os2_table(xml: ET, style: str, flag_35: bool = False):
             "bSerifStyle": 11,
             "bWeight": bWeight,
             "bProportion": 3,
-            "bContrast": 2,
+            "bContrast": 5,
             "bStrokeVariation": 2,
             "bArmStyle": 3,
-            "bLetterForm": 2,
+            "bLetterForm": 0,
             "bMidline": 2,
-            "bXHeight": 7,
+            "bXHeight": 3,
         }
     else:
         panose = {
@@ -244,12 +244,12 @@ def fix_os2_table(xml: ET, style: str, flag_35: bool = False):
             "bSerifStyle": 11,
             "bWeight": bWeight,
             "bProportion": 9,
-            "bContrast": 2,
+            "bContrast": 5,
             "bStrokeVariation": 2,
             "bArmStyle": 3,
-            "bLetterForm": 2,
+            "bLetterForm": 0,
             "bMidline": 2,
-            "bXHeight": 7,
+            "bXHeight": 3,
         }
 
     for key, value in panose.items():
