@@ -1018,10 +1018,11 @@ def edit_meta_data(font, weight: str, variant: str, cap_height: int, x_height: i
         os2_ascent = OS2_ASCENT
         os2_descent = OS2_DESCENT
 
-    font.os2_typoascent = os2_ascent
-    font.os2_typodescent = -os2_descent
     font.os2_winascent = os2_ascent
     font.os2_windescent = os2_descent
+
+    font.os2_typoascent = os2_ascent
+    font.os2_typodescent = -os2_descent
     font.os2_typolinegap = 0
 
     font.hhea_ascent = os2_ascent
@@ -1030,6 +1031,10 @@ def edit_meta_data(font, weight: str, variant: str, cap_height: int, x_height: i
 
     font.os2_xheight = x_height
     font.os2_capheight = cap_height
+
+    # VSCode のターミナル上のボトム位置の表示で g, j などが見切れる問題への対処
+    # 水平ベーステーブルを削除
+    font.horizontalBaseline = None
 
     if "Regular" == weight or "Italic" == weight:
         font.os2_weight = 400
