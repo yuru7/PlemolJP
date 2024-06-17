@@ -899,13 +899,44 @@ def add_console_glyphs(eng_font):
     eng_font.selection.none()
 
 
+def scale_glyph(glyph, scale_x, scale_y):
+    """グリフのスケールを調整する"""
+    original_width = glyph.width
+    # スケール前の中心位置を求める
+    before_bb = glyph.boundingBox()
+    before_center_x = (before_bb[0] + before_bb[2]) / 2
+    before_center_y = (before_bb[1] + before_bb[3]) / 2
+    # スケール変換
+    glyph.transform(psMat.scale(scale_x, scale_y))
+    # スケール後の中心位置を求める
+    after_bb = glyph.boundingBox()
+    after_center_x = (after_bb[0] + after_bb[2]) / 2
+    after_center_y = (after_bb[1] + after_bb[3]) / 2
+    # 拡大で増えた分を考慮して中心位置を調整
+    glyph.transform(
+        psMat.translate(
+            before_center_x - after_center_x,
+            before_center_y - after_center_y,
+        )
+    )
+    glyph.width = original_width
+
+
 def down_scale_redundant_size_glyph(eng_font):
     """規定の幅からはみ出したグリフサイズを縮小する"""
 
     for glyph in eng_font.glyphs():
+        xmin = glyph.boundingBox()[0]
+        xmax = glyph.boundingBox()[2]
+
         if (
             glyph.width > 0
-            and glyph.boundingBox()[0] < 0
+            and -15
+            < xmin
+            < 0  # 特定幅より左にはみ出している場合、意図的にはみ出しているものと見なして無視
+            and abs(xmin) - 10
+            < xmax - glyph.width
+            < abs(xmin) + 10  # はみ出し幅が左側と右側で極端に異なる場合は無視
             and not (
                 0x0020 <= glyph.unicode <= 0x02AF
             )  # latin 系のグリフ 0x0020 - 0x0192 は無視
@@ -919,11 +950,7 @@ def down_scale_redundant_size_glyph(eng_font):
                 0x2591 <= glyph.unicode <= 0x2593
             )  # SHADE グリフ 0x2591 - 0x2593 は無視
         ):
-            before_width = glyph.width
-            x_scale = 1 + (glyph.boundingBox()[0] * 2) / glyph.width
-            glyph.transform(psMat.scale(x_scale, 1))
-            glyph.transform(psMat.translate((before_width - glyph.width) / 2, 0))
-            glyph.width = before_width
+            scale_glyph(glyph, 1 + (xmin / glyph.width) * 2, 1)
 
 
 def add_nerd_font_glyphs(jp_font, eng_font):
