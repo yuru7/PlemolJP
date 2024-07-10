@@ -611,6 +611,13 @@ def set_width_600_or_1000(jp_font):
             glyph.transform(psMat.translate((600 - glyph.width) / 2, 0))
             glyph.width = 600
 
+        # なぜか標準の幅ではないグリフの個別調整
+        if glyph.unicode == 0x51F0:
+            glyph.transform(psMat.translate((1000 - glyph.width) / 2, 0))
+            glyph.width = 1000
+        if glyph.glyphname == "perthousand.full":
+            glyph.width = 1000
+
 
 def adjust_width_35_eng(eng_font):
     """英語フォントを半角3:全角5幅になるように変換する"""
