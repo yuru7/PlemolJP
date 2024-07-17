@@ -713,16 +713,6 @@ def merge_hack(jp_font, eng_font, style):
             f"{SOURCE_FONTS_DIR}/" + HACK_FONT.replace("{style}", "Regular")
         )
     hack_font.em = EM_ASCENT + EM_DESCENT
-    # 既に日本語フォント側に存在する場合はhackグリフは削除する
-    for glyph in jp_font.glyphs():
-        if glyph.unicode != -1:
-            try:
-                for g in hack_font.selection.select(
-                    ("unicode", None), glyph.unicode
-                ).byGlyphs:
-                    g.clear()
-            except Exception:
-                pass
     # 既に英語フォント側に存在する場合はhackグリフは削除する
     for glyph in eng_font.glyphs():
         if glyph.unicode != -1:
@@ -733,6 +723,28 @@ def merge_hack(jp_font, eng_font, style):
                     g.clear()
             except Exception:
                 pass
+    if options.get("console"):
+        # Console版では、日本語フォントよりhackフォントのグリフを優先する
+        for glyph in hack_font.glyphs():
+            if glyph.unicode != -1:
+                try:
+                    for g in jp_font.selection.select(
+                        ("unicode", None), glyph.unicode
+                    ).byGlyphs:
+                        g.clear()
+                except Exception:
+                    pass
+    else:
+        # 既に日本語フォント側に存在する場合はhackグリフは削除する
+        for glyph in jp_font.glyphs():
+            if glyph.unicode != -1:
+                try:
+                    for g in hack_font.selection.select(
+                        ("unicode", None), glyph.unicode
+                    ).byGlyphs:
+                        g.clear()
+                except Exception:
+                    pass
     # EM 1000 にしたときの幅に合わせて調整
     half_width = int(FULL_WIDTH_35 * 3 / 5)
     for glyph in hack_font.glyphs():
