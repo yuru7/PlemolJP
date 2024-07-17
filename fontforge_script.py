@@ -204,7 +204,7 @@ def generate_font(jp_style, eng_style, merged_style):
     adjust_em(eng_font)
 
     # Hack フォントをマージする
-    merge_hack(eng_font, merged_style)
+    merge_hack(jp_font, eng_font, merged_style)
 
     if options.get("console"):
         # East Asian Ambiguous Width 文字の半角化
@@ -702,7 +702,7 @@ def visualize_zenkaku_space(jp_font):
     jp_font.selection.none()
 
 
-def merge_hack(eng_font, style):
+def merge_hack(jp_font, eng_font, style):
     """Hack フォントをマージする"""
     if "Bold" in style:
         hack_font = fontforge.open(
@@ -713,6 +713,16 @@ def merge_hack(eng_font, style):
             f"{SOURCE_FONTS_DIR}/" + HACK_FONT.replace("{style}", "Regular")
         )
     hack_font.em = EM_ASCENT + EM_DESCENT
+    # 既に日本語フォント側に存在する場合はhackグリフは削除する
+    for glyph in jp_font.glyphs():
+        if glyph.unicode != -1:
+            try:
+                for g in hack_font.selection.select(
+                    ("unicode", None), glyph.unicode
+                ).byGlyphs:
+                    g.clear()
+            except Exception:
+                pass
     # 既に英語フォント側に存在する場合はhackグリフは削除する
     for glyph in eng_font.glyphs():
         if glyph.unicode != -1:
