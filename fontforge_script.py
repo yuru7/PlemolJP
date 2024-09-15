@@ -242,6 +242,10 @@ def generate_font(jp_style, eng_style, merged_style):
     # GPOSテーブルを削除する
     remove_lookups(jp_font, remove_gsub=False, remove_gpos=True)
 
+    # 罫線を全角にする
+    if not options.get("console"):
+        make_box_drawing_full_width(eng_font, jp_font)
+
     # 全角スペースを可視化する
     if not options.get("hidden-zenkaku-space"):
         visualize_zenkaku_space(jp_font)
@@ -583,7 +587,6 @@ def remove_lookups(font, remove_gsub=True, remove_gpos=True):
 
 def transform_italic_glyphs(font):
     """日本語フォントの斜体を生成する"""
-    # TODO 1:2 に縮小したときの傾斜角を確認する
     # 傾きを設定する
     font.italicangle = -ITALIC_ANGLE
     # 全グリフを斜体に変換
@@ -686,6 +689,33 @@ def transform_half_width(jp_font, eng_font):
             # 全角は after_width_eng の倍の幅にする
             glyph.transform(psMat.translate((after_width_eng * 2 - glyph.width) / 2, 0))
             glyph.width = after_width_eng * 2
+
+
+def make_box_drawing_full_width(eng_font, jp_font):
+    """罫線を全角にする"""
+    # 英語フォント側は完全に削除
+    eng_font.selection.select(("unicode", "ranges"), 0x2500, 0x257F)
+    for glyph in eng_font.selection.byGlyphs:
+        glyph.clear()
+    eng_font.selection.none()
+    # 日本語フォント側は削除してから全角用グリフをマージする
+    jp_font.selection.select(("unicode", "ranges"), 0x2500, 0x257F)
+    for glyph in jp_font.selection.byGlyphs:
+        glyph.clear()
+    jp_font.selection.none()
+    jp_font.mergeFonts(fontforge.open(f"{SOURCE_FONTS_DIR}/FullWidthBoxDrawings.sfd"))
+    # 幅設定と位置調整
+    width_to = jp_font[0x3042].width
+    jp_font.selection.select(("unicode", "ranges"), 0x2500, 0x257F)
+    for glyph in jp_font.selection.byGlyphs:
+        # 幅が調整前より広がる場合は拡大する
+        width_from = glyph.width
+        if width_from < width_to:
+            glyph.transform(psMat.scale(width_to / width_from, 1))
+        width_from = glyph.width
+        glyph.transform(psMat.translate((width_to - width_from) / 2, 0))
+        glyph.width = width_to
+    jp_font.selection.none()
 
 
 def visualize_zenkaku_space(jp_font):
