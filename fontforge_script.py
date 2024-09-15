@@ -212,10 +212,11 @@ def generate_font(jp_style, eng_style, merged_style):
         # コンソール用グリフを追加する
         add_console_glyphs(eng_font)
 
+    if not options.get("console"):
+        delete_not_console_glyphs(eng_font)
+
     # 重複するグリフを削除する
-    delete_duplicate_glyphs(
-        jp_font, eng_font, is_console=True if options.get("console") else False
-    )
+    delete_duplicate_glyphs(jp_font, eng_font)
 
     # いくつかのグリフ形状に調整を加える
     adjust_some_glyph(jp_font, eng_font, merged_style)
@@ -480,11 +481,8 @@ def adjust_em(font):
     font.em = EM_ASCENT + EM_DESCENT
 
 
-def delete_duplicate_glyphs(jp_font, eng_font, is_console=False):
+def delete_duplicate_glyphs(jp_font, eng_font):
     """jp_fontとeng_fontのグリフを比較し、重複するグリフを削除する"""
-
-    if not is_console:
-        delete_not_console_glyphs(eng_font)
 
     eng_font.selection.none()
     jp_font.selection.none()
@@ -570,6 +568,8 @@ def delete_not_console_glyphs(eng_font):
     for glyph in eng_font.selection.byGlyphs:
         glyph.clear()
 
+    eng_font.selection.none()
+
 
 def remove_lookups(font, remove_gsub=True, remove_gpos=True):
     """GSUB, GPOSテーブルを削除する"""
@@ -582,6 +582,8 @@ def remove_lookups(font, remove_gsub=True, remove_gpos=True):
 
 
 def transform_italic_glyphs(font):
+    """日本語フォントの斜体を生成する"""
+    # TODO 1:2 に縮小したときの傾斜角を確認する
     # 傾きを設定する
     font.italicangle = -ITALIC_ANGLE
     # 全グリフを斜体に変換
