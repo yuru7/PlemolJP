@@ -76,15 +76,16 @@ def main():
         eng_style="Regular",
         merged_style="Regular",
     )
+
+    # デバッグモードの場合はここで終了
+    if options.get("debug"):
+        return
+
     generate_font(
         jp_style="Bold",
         eng_style="Bold",
         merged_style="Bold",
     )
-
-    # デバッグモードの場合はここで終了
-    if options.get("debug"):
-        return
 
     generate_font(
         jp_style="Thin",
@@ -343,9 +344,13 @@ def altuni_to_entity(jp_font):
                     glyph.altuni = None
                     copy_target_unicode = altuni[0]
                     try:
+                        glyph.glyphname = f"uni{glyph.unicode:04X}"
+                        copied_glyph_name = f"uni{copy_target_unicode:04X}"
+                        if copied_glyph_name == glyph.glyphname:
+                            copied_glyph_name += "copy"
                         copy_target_glyph = jp_font.createChar(
                             copy_target_unicode,
-                            f"uni{hex(copy_target_unicode).replace('0x', '').upper()}copy",
+                            copied_glyph_name,
                         )
                     except Exception:
                         copy_target_glyph = jp_font[copy_target_unicode]

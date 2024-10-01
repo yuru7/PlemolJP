@@ -10,7 +10,8 @@
             "request": "launch",
             "program": "${workspaceFolder}/fontforge_script.py",
             "console": "integratedTerminal",
-            "python": "C:/Program Files (x86)/FontForgeBuilds/bin/ffpython.exe"
+            "python": "C:/Program Files (x86)/FontForgeBuilds/bin/ffpython.exe",
+            "args": ["--debug"]
         },
         {
             "name": "fonttools_script デバッグ",
