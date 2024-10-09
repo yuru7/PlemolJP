@@ -217,7 +217,7 @@ def generate_font(jp_style, eng_style, merged_style):
         delete_not_console_glyphs(eng_font)
 
     # 重複するグリフを削除する
-    delete_duplicate_glyphs(jp_font, eng_font)
+    jp_font = delete_duplicate_glyphs(jp_font, eng_font)
 
     # いくつかのグリフ形状に調整を加える
     adjust_some_glyph(jp_font, eng_font, merged_style)
@@ -309,9 +309,6 @@ def open_fonts(jp_style: str, eng_style: str):
         SOURCE_FONTS_DIR + "/" + ENG_FONT.replace("{style}", eng_style)
     )
 
-    # fonttools merge エラー対処
-    jp_font = altuni_to_entity(jp_font)
-
     # フォント参照を解除する
     for glyph in jp_font.glyphs():
         if glyph.isWorthOutputting():
@@ -325,51 +322,6 @@ def open_fonts(jp_style: str, eng_style: str):
     eng_font.selection.none()
 
     return jp_font, eng_font
-
-
-def altuni_to_entity(jp_font):
-    """Alternate Unicodeで透過的に参照して表示している箇所を実体のあるグリフに変換する"""
-    for glyph in jp_font.glyphs():
-        if glyph.altuni is not None:
-            # 以下形式のタプルで返ってくる
-            # (unicode-value, variation-selector, reserved-field)
-            # 第3フィールドは常に0なので無視
-            altunis = glyph.altuni
-
-            # variation-selectorがなく (-1)、透過的にグリフを参照しているものは実体のグリフに変換する
-            before_altuni = ""
-            for altuni in altunis:
-                # 直前のaltuniと同じ場合はスキップ
-                if altuni[1] == -1 and before_altuni != ",".join(map(str, altuni)):
-                    glyph.altuni = None
-                    copy_target_unicode = altuni[0]
-                    try:
-                        glyph.glyphname = f"uni{glyph.unicode:04X}"
-                        copied_glyph_name = f"uni{copy_target_unicode:04X}"
-                        if copied_glyph_name == glyph.glyphname:
-                            copied_glyph_name += "copy"
-                        copy_target_glyph = jp_font.createChar(
-                            copy_target_unicode,
-                            copied_glyph_name,
-                        )
-                    except Exception:
-                        copy_target_glyph = jp_font[copy_target_unicode]
-                    copy_target_glyph.clear()
-                    copy_target_glyph.width = glyph.width
-                    # copy_target_glyph.addReference(glyph.glyphname)
-                    jp_font.selection.select(glyph.glyphname)
-                    jp_font.copy()
-                    jp_font.selection.select(copy_target_glyph.glyphname)
-                    jp_font.paste()
-                before_altuni = ",".join(map(str, altuni))
-    # エンコーディングの整理のため、開き直す
-    font_path = f"{BUILD_FONTS_DIR}/{jp_font.fullname}_{uuid.uuid4()}.ttf"
-    jp_font.generate(font_path)
-    jp_font.close()
-    reopen_jp_font = fontforge.open(font_path)
-    # 一時ファイルを削除
-    os.remove(font_path)
-    return reopen_jp_font
 
 
 def adjust_some_glyph(jp_font, eng_font, style="Regular"):
@@ -519,14 +471,88 @@ def delete_duplicate_glyphs(jp_font, eng_font):
         except ValueError:
             # Encoding is out of range のときは継続する
             continue
+
+    # 削除箇所に altuni が設定されている場合は削除する前にコピーする
     for glyph in eng_font.selection.byGlyphs:
-        # if glyph.isWorthOutputting():
+        jp_font.selection.select(("more", "unicode"), glyph.unicode)
+    altuni_glyph_list = []
+    for glyph in jp_font.selection.byGlyphs:
+        if glyph.altuni:
+            altuni_glyph_list.append(glyph.unicode)
+            for u in glyph.altuni:
+                print(f"U+{glyph.unicode:04X} -> U+{u[0]:04X}")
+    jp_font = materialize_altuni_glyphs(jp_font, altuni_glyph_list)
+    jp_font.selection.none()
+
+    # 重複するグリフを削除
+    for glyph in eng_font.selection.byGlyphs:
         jp_font.selection.select(("more", "unicode"), glyph.unicode)
     for glyph in jp_font.selection.byGlyphs:
         glyph.clear()
 
     jp_font.selection.none()
     eng_font.selection.none()
+
+    return jp_font
+
+
+def materialize_altuni_glyphs(font, entity_glyph_unicode_list):
+    """altuni を指定している参照元のコードポイントにグリフをコピーし、
+    参照先 (実体) の altuni を削除する。異体字セレクタ分は考慮しない。
+    """
+
+    for unicode in entity_glyph_unicode_list:
+        entity_glyph = font[unicode]
+        if not entity_glyph.altuni:
+            continue
+
+        # 以下形式のタプルで返ってくる
+        # (unicode-value, variation-selector, reserved-field)
+        # 第3フィールドは常に0なので無視
+        altunis = entity_glyph.altuni
+
+        # 参照先の altuni を削除
+        # これをやらないと、グリフのコピー時に altuni が参照されてしまい、
+        # 同じコードポイントに貼り付いてしまって意味がない
+        entity_glyph.altuni = None
+
+        processed = []
+        for altuni in altunis:
+            if altuni[0] in processed:
+                continue
+            if altuni[1] != -1:
+                # variation-selector が -1 以外の場合は異体字セレクタなのでスキップ
+                continue
+            processed.append(altuni[0])
+            # altuni 参照元に空グリフを作成
+            copy_target_unicode = altuni[0]
+            try:
+                entity_glyph.glyphname = f"uni{entity_glyph.unicode:04X}"
+                copied_glyph_name = f"uni{copy_target_unicode:04X}"
+                if copied_glyph_name == entity_glyph.glyphname:
+                    copied_glyph_name += "copy"
+                copy_target_glyph = font.createChar(
+                    copy_target_unicode,
+                    copied_glyph_name,
+                )
+            except Exception:
+                copy_target_glyph = font[copy_target_unicode]
+            copy_target_glyph.width = entity_glyph.width
+            # altuni 参照元へグリフをコピー
+            font.selection.select(entity_glyph.glyphname)
+            font.copy()
+            font.selection.select(copy_target_glyph.glyphname)
+            font.paste()
+
+    # alt_uni 処理後、エンコーディングがずれるためか一部のグリフの select() がうまくいかなくなるので開き直す
+    font_path = f"{BUILD_FONTS_DIR}/{font.fullname}_{uuid.uuid4()}.ttf"
+    font.generate(font_path)
+    font.close()
+    font = fontforge.open(font_path)
+    # 一時ファイルを削除
+    os.remove(font_path)
+
+    return font
 
 
 def delete_not_console_glyphs(eng_font):
