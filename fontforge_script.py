@@ -498,7 +498,7 @@ def delete_duplicate_glyphs(jp_font, eng_font):
 
 def materialize_altuni_glyphs(font, entity_glyph_unicode_list):
     """altuni を指定している参照元のコードポイントにグリフをコピーし、
-    参照先 (実体) の altuni を削除する。異体字セレクタ分は考慮しない。
+    参照先 (実体) の altuni を削除する。異体字セレクタ分はスキップする。
     """
 
     for unicode in entity_glyph_unicode_list:
@@ -563,12 +563,6 @@ def delete_not_console_glyphs(eng_font):
     eng_font.selection.select(("more", "unicode", "ranges"), 0x00A7, 0x00B8)
     eng_font.selection.select(("more", "unicode"), 0x00D7)
     eng_font.selection.select(("more", "unicode"), 0x00F7)
-    eng_font.selection.select(("more", "unicode", "ranges"), 0x02BB, 0x02BC)
-    eng_font.selection.select(("more", "unicode"), 0x02C6)
-    eng_font.selection.select(("more", "unicode", "ranges"), 0x02DA, 0x02DC)
-    eng_font.selection.select(("more", "unicode", "ranges"), 0x0300, 0x0308)
-    eng_font.selection.select(("more", "unicode", "ranges"), 0x0310, 0x030C)
-    eng_font.selection.select(("more", "unicode", "ranges"), 0x0327, 0x0328)
     eng_font.selection.select(("more", "unicode"), 0x0401)
     eng_font.selection.select(("more", "unicode", "ranges"), 0x0410, 0x044F)
     eng_font.selection.select(("more", "unicode"), 0x0451)
@@ -578,8 +572,14 @@ def delete_not_console_glyphs(eng_font):
     eng_font.selection.select(("more", "unicode"), 0x2202)
     eng_font.selection.select(("more", "unicode", "ranges"), 0x2211, 0x222B)
     # 矢印
-    eng_font.selection.select(("more", "unicode", "ranges"), 0x2190, 0x2193)
+    eng_font.selection.select(("more", "unicode", "ranges"), 0x2190, 0x2199)
+    eng_font.selection.select(("more", "unicode", "ranges"), 0x21A9, 0x21AA)
+    eng_font.selection.select(("more", "unicode", "ranges"), 0x21B0, 0x21B3)
+    eng_font.selection.select(("more", "unicode", "ranges"), 0x21B6, 0x21B7)
+    eng_font.selection.select(("more", "unicode", "ranges"), 0x21BA, 0x21BB)
     eng_font.selection.select(("more", "unicode", "ranges"), 0x21C4, 0x21C6)
+    eng_font.selection.select(("more", "unicode", "ranges"), 0x2B0E, 0x2B0F)
+    eng_font.selection.select(("more", "unicode", "ranges"), 0x2B10, 0x2B11)
     # 数学記号
     eng_font.selection.select(("more", "unicode"), 0x2260)
     # 一部 IBMPlexMono ベースにする
@@ -590,8 +590,6 @@ def delete_not_console_glyphs(eng_font):
     eng_font.selection.select(("less", "unicode"), 0x2219)
     eng_font.selection.select(("less", "unicode"), 0x25D8)
     eng_font.selection.select(("less", "unicode"), 0x25E6)
-    # 結合文音記号は IBM Plex Mono を適用
-    eng_font.selection.select(("less", "unicode", "ranges"), 0x0300, 0x0328)
     # IBM Plex Sans JP 等幅化対策 (IBM Plex Mono を適用して半角化)
     eng_font.selection.select(("less", "unicode"), 0xAB)
     eng_font.selection.select(("less", "unicode"), 0xBB)
