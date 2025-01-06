@@ -389,13 +389,13 @@ def adjust_some_glyph(jp_font, eng_font, style="Regular"):
         ("unicode", "ranges"), 0x2018, 0x2019
     ).byGlyphs:
         glyph.transform(psMat.scale(1.25, 1.25))
-        glyph.transform(psMat.translate(0, -150))
+        glyph.transform(psMat.translate((full_width - glyph.width) / 2, -150))
         glyph.width = full_width
     for glyph in jp_font.selection.select(
         ("unicode", "ranges"), 0x201C, 0x201D
     ).byGlyphs:
         glyph.transform(psMat.scale(1.25, 1.25))
-        glyph.transform(psMat.translate(0, -150))
+        glyph.transform(psMat.translate((full_width - glyph.width) / 2, -150))
         glyph.width = full_width
 
     # Cent Sign, Pound Sign, Yen Sign は半角記号に IBM Plex Sans JP を使用
@@ -560,28 +560,44 @@ def delete_not_console_glyphs(eng_font):
 
     # 記号
     eng_font.selection.select(("more", "unicode", "ranges"), 0x00A1, 0x00A5)
-    eng_font.selection.select(("more", "unicode", "ranges"), 0x00A7, 0x00B8)
+    eng_font.selection.select(("more", "unicode", "ranges"), 0x00A7, 0x00AA)
+    eng_font.selection.select(("more", "unicode", "ranges"), 0x00AC, 0x00B8)
     eng_font.selection.select(("more", "unicode"), 0x00D7)
     eng_font.selection.select(("more", "unicode"), 0x00F7)
     eng_font.selection.select(("more", "unicode"), 0x0401)
     eng_font.selection.select(("more", "unicode", "ranges"), 0x0410, 0x044F)
     eng_font.selection.select(("more", "unicode"), 0x0451)
     eng_font.selection.select(("more", "unicode", "ranges"), 0x2010, 0x2026)
-    eng_font.selection.select(("more", "unicode", "ranges"), 0x2030, 0x2044)
+    eng_font.selection.select(("more", "unicode"), 0x2030)
+    eng_font.selection.select(("more", "unicode", "ranges"), 0x2032, 0x2033)
+    eng_font.selection.select(("more", "unicode"), 0x203B)
+    eng_font.selection.select(("more", "unicode"), 0x203E)
     eng_font.selection.select(("more", "unicode", "ranges"), 0x2113, 0x2122)
-    eng_font.selection.select(("more", "unicode"), 0x2202)
-    eng_font.selection.select(("more", "unicode", "ranges"), 0x2211, 0x222B)
     # 矢印
-    eng_font.selection.select(("more", "unicode", "ranges"), 0x2190, 0x2199)
-    eng_font.selection.select(("more", "unicode", "ranges"), 0x21A9, 0x21AA)
-    eng_font.selection.select(("more", "unicode", "ranges"), 0x21B0, 0x21B3)
-    eng_font.selection.select(("more", "unicode", "ranges"), 0x21B6, 0x21B7)
-    eng_font.selection.select(("more", "unicode", "ranges"), 0x21BA, 0x21BB)
+    # TODO: IBM Plex Sans JP v1.002 へバージョンアップすると矢印が拡張される見込みだが、当該バージョンには一部グリフ欠けがあるためさらに上のバージョンが出てきた際に取り込む
+    eng_font.selection.select(("more", "unicode", "ranges"), 0x2190, 0x2193)
     eng_font.selection.select(("more", "unicode", "ranges"), 0x21C4, 0x21C6)
-    eng_font.selection.select(("more", "unicode", "ranges"), 0x2B0E, 0x2B0F)
-    eng_font.selection.select(("more", "unicode", "ranges"), 0x2B10, 0x2B11)
+    eng_font.selection.select(("more", "unicode"), 0x21D2)
+    eng_font.selection.select(("more", "unicode"), 0x21D4)
+    eng_font.selection.select(("more", "unicode", "ranges"), 0x21E6, 0x21E9)
+    eng_font.selection.select(("more", "unicode"), 0x21F5)
+
     # 数学記号
-    eng_font.selection.select(("more", "unicode"), 0x2260)
+    eng_font.selection.select(("more", "unicode"), 0x2200)
+    eng_font.selection.select(("more", "unicode"), 0x2202)
+    eng_font.selection.select(("more", "unicode"), 0x2211)
+    eng_font.selection.select(("more", "unicode"), 0x2219)
+    eng_font.selection.select(("more", "unicode"), 0x221A)
+    eng_font.selection.select(("more", "unicode", "ranges"), 0x221D, 0x2220)
+    eng_font.selection.select(("more", "unicode", "ranges"), 0x2227, 0x222E)
+    eng_font.selection.select(("more", "unicode", "ranges"), 0x2234, 0x2235)
+    eng_font.selection.select(("more", "unicode"), 0x2252)
+    eng_font.selection.select(("more", "unicode", "ranges"), 0x2260, 0x2261)
+    eng_font.selection.select(("more", "unicode", "ranges"), 0x2266, 0x2267)
+    eng_font.selection.select(("more", "unicode", "ranges"), 0x226A, 0x226B)
+    eng_font.selection.select(("more", "unicode", "ranges"), 0x2282, 0x2283)
+    eng_font.selection.select(("more", "unicode", "ranges"), 0x2286, 0x2287)
+
     # 一部 IBMPlexMono ベースにする
     # 各エディタの可視化文字対策
     eng_font.selection.select(("less", "unicode"), 0x2022)
@@ -590,13 +606,6 @@ def delete_not_console_glyphs(eng_font):
     eng_font.selection.select(("less", "unicode"), 0x2219)
     eng_font.selection.select(("less", "unicode"), 0x25D8)
     eng_font.selection.select(("less", "unicode"), 0x25E6)
-    # IBM Plex Sans JP 等幅化対策 (IBM Plex Mono を適用して半角化)
-    eng_font.selection.select(("less", "unicode"), 0xAB)
-    eng_font.selection.select(("less", "unicode"), 0xBB)
-    # flaction slash
-    eng_font.selection.select(("less", "unicode"), 0x2044)
-    # broken bar
-    eng_font.selection.select(("less", "unicode"), 0x00A6)
 
     for glyph in eng_font.selection.byGlyphs:
         glyph.clear()
