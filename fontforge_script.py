@@ -480,7 +480,7 @@ def delete_duplicate_glyphs(jp_font, eng_font):
         if glyph.altuni:
             altuni_glyph_list.append(glyph.unicode)
             for u in glyph.altuni:
-                print(f"U+{glyph.unicode:04X} -> U+{u[0]:04X}")
+                print(f"Copying glyph U+{glyph.unicode:04X} to U+{u[0]:04X}")
     jp_font = materialize_altuni_glyphs(jp_font, altuni_glyph_list)
     jp_font.selection.none()
 
