@@ -378,11 +378,9 @@ def adjust_some_glyph(jp_font, eng_font, style="Regular"):
     # 全角ピリオド、カンマを拡大する
     for glyph in jp_font.selection.select(("unicode", None), 0xFF0E).byGlyphs:
         glyph.transform(psMat.scale(1.45, 1.45))
-        glyph.transform(psMat.translate((full_width - glyph.width) / 2, 0))
         glyph.width = full_width
     for glyph in jp_font.selection.select(("unicode", None), 0xFF0C).byGlyphs:
         glyph.transform(psMat.scale(1.40, 1.40))
-        glyph.transform(psMat.translate((full_width - glyph.width) / 2, 0))
         glyph.width = full_width
     # LEFT SINGLE QUOTATION MARK (U+2018) ～ DOUBLE LOW-9 QUOTATION MARK (U+201E) の幅を全角幅にする
     for glyph in jp_font.selection.select(
@@ -422,15 +420,15 @@ def adjust_some_glyph(jp_font, eng_font, style="Regular"):
     for uni in [*range(0x21CD, 0x21CF + 1), 0x21D0, 0x21D2, 0x21D4, 0x21DA, 0x21DB]:
         eng_font.selection.select(("unicode", None), uni)
         for glyph in eng_font.selection.byGlyphs:
-            scale_glyph(glyph, 1, 1.3)
+            scale_glyph_from_center(glyph, 1, 1.3)
     for uni in [0x21D1, 0x21D3]:
         eng_font.selection.select(("unicode", None), uni)
         for glyph in eng_font.selection.byGlyphs:
-            scale_glyph(glyph, 1.3, 1)
+            scale_glyph_from_center(glyph, 1.3, 1)
     for uni in range(0x21D6, 0x21D9 + 1):
         eng_font.selection.select(("unicode", None), uni)
         for glyph in eng_font.selection.byGlyphs:
-            scale_glyph(glyph, 1.3, 1.3)
+            scale_glyph_from_center(glyph, 1.3, 1.3)
 
     # 選択解除
     jp_font.selection.none()
@@ -887,8 +885,8 @@ def add_console_glyphs(eng_font):
     eng_font.selection.none()
 
 
-def scale_glyph(glyph, scale_x, scale_y):
-    """グリフのスケールを調整する"""
+def scale_glyph_from_center(glyph, scale_x, scale_y):
+    """グリフの中心位置を基点としたスケール調整"""
     original_width = glyph.width
     # スケール前の中心位置を求める
     before_bb = glyph.boundingBox()
@@ -938,7 +936,7 @@ def down_scale_redundant_size_glyph(eng_font):
                 0x2591 <= glyph.unicode <= 0x2593
             )  # SHADE グリフ 0x2591 - 0x2593 は無視
         ):
-            scale_glyph(glyph, 1 + (xmin / glyph.width) * 2, 1)
+            scale_glyph_from_center(glyph, 1 + (xmin / glyph.width) * 2, 1)
 
 
 def add_nerd_font_glyphs(jp_font, eng_font):
