@@ -462,13 +462,24 @@ def delete_duplicate_glyphs(jp_font, eng_font):
         elif 0x00F8 <= glyph.unicode <= 0x0259:
             glyph.clear()
 
+    # 重複グリフを選択する
     for glyph in jp_font.glyphs("encoding"):
-        try:
-            if glyph.isWorthOutputting() and glyph.unicode > 0:
+        if glyph.isWorthOutputting() and glyph.unicode > 0:
+            try:
                 eng_font.selection.select(("more", "unicode"), glyph.unicode)
-        except ValueError:
-            # Encoding is out of range のときは継続する
-            continue
+            except ValueError:
+                # Encoding is out of range のときは継続する
+                continue
+        # altuni が設定されている場合は altuni にも選択を拡張する
+        if glyph.altuni:
+            for u in glyph.altuni:
+                try:
+                    eng_font.selection.select(("more", "unicode"), u[0])
+                except ValueError:
+                    # Encoding is out of range のときは継続する
+                    continue
+
+    eng_font.selection.select(("more", "unicode"), 0x0301)
 
     # 削除箇所に altuni が設定されている場合は削除する前にコピーする
     for glyph in eng_font.selection.byGlyphs:
@@ -481,6 +492,16 @@ def delete_duplicate_glyphs(jp_font, eng_font):
                 print(f"Copying glyph U+{glyph.unicode:04X} to U+{u[0]:04X}")
     jp_font = materialize_altuni_glyphs(jp_font, altuni_glyph_list)
     jp_font.selection.none()
+
+    # altuni の整理で各グリフの状態が変わった可能性があるので重複グリフを再選択する
+    eng_font.selection.none()
+    for glyph in jp_font.glyphs("encoding"):
+        try:
+            if glyph.isWorthOutputting() and glyph.unicode > 0:
+                eng_font.selection.select(("more", "unicode"), glyph.unicode)
+        except ValueError:
+            # Encoding is out of range のときは継続する
+            continue
 
     # 重複するグリフを削除
     for glyph in eng_font.selection.byGlyphs:
