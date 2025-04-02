@@ -1107,7 +1107,7 @@ at: http://scripts.sil.org/OFL""",
         if variant != "":
             font_family += f" {variant}".replace(" 35", "35")
         font_weight = weight
-        if "Italic" in weight:
+        if weight == "BoldItalic":
             font_weight = font_weight.replace("Italic", " Italic")
         font.familyname = font_family
         # フォントサブファミリー名
