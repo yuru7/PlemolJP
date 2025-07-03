@@ -190,6 +190,8 @@ def get_options():
             options["console"] = True
         elif arg == "--nerd-font":
             options["nerd-font"] = True
+        elif arg == "--boxhf":
+            options["boxhf"] = True
         else:
             options["unknown-option"] = True
             return
@@ -244,8 +246,9 @@ def generate_font(jp_style, eng_style, merged_style):
     remove_lookups(jp_font, remove_gsub=False, remove_gpos=True)
 
     # 罫線を全角にする
-    if not options.get("console"):
-        make_box_drawing_full_width(eng_font, jp_font)
+    if not options.get("boxhf"):
+        if not options.get("console"):
+            make_box_drawing_full_width(eng_font, jp_font)
 
     # 全角スペースを可視化する
     if not options.get("hidden-zenkaku-space"):
