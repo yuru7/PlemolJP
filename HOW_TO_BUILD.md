@@ -24,6 +24,12 @@ docker run --rm -v "$(pwd):/work" ghcr.io/yuru7/composite-font-builder
 
 他の合成フォントリポジトリでも、同じイメージを使い、そのリポジトリのルートで同様に `docker run` すればビルドできます（そのリポジトリに実行可能な `make.sh` がある前提です）。
 
+デバッグ用に素早く確認するため1ファイルだけ生成するコマンドは以下です。
+
+```bash
+docker run --rm -e DEBUG=1 -v "$(pwd):/work" ghcr.io/yuru7/composite-font-builder
+```
+
 ### 出力について
 
 `make.sh` は最大 4 並列で、通常版・35 幅版・Console・HS・Nerd Fonts など各バリアントをビルドします。

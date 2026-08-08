@@ -2,6 +2,12 @@
 set -euo pipefail
 
 MAX_PARALLEL=4
+DEBUG_OPTS=""
+
+if [ "${DEBUG:-0}" = "1" ]; then
+    echo "### Debug Mode ###"
+    DEBUG_OPTS="--debug"
+fi
 
 mkdir -p build
 find build -mindepth 1 -delete
@@ -16,6 +22,7 @@ build_font() {
     fontforge -lang=py -script \
         fontforge_script.py \
         --do-not-delete-build-dir \
+        ${DEBUG_OPTS} \
         ${options}
 
     echo "FontTools: ${variant}"
@@ -23,18 +30,25 @@ build_font() {
 }
 
 # 重い Nerd Fonts を先に回して、4並列の待ち時間を抑える
-variants=(
-    "--console --nerd-font|ConsoleNF-"
-    "--console --35 --nerd-font|35ConsoleNF-"
-    "|-"
-    "--35|35-"
-    "--console|Console-"
-    "--console --35|35Console-"
-    "--hidden-zenkaku-space|HS-"
-    "--hidden-zenkaku-space --35|35HS-"
-    "--hidden-zenkaku-space --console|ConsoleHS-"
-    "--hidden-zenkaku-space --console --35|35ConsoleHS-"
-)
+# DEBUG=1 のときは通常版のみ（Regular ウェイトのみ生成）
+if [ "${DEBUG:-0}" = "1" ]; then
+    variants=(
+        "|-"
+    )
+else
+    variants=(
+        "--console --nerd-font|ConsoleNF-"
+        "--console --35 --nerd-font|35ConsoleNF-"
+        "|-"
+        "--35|35-"
+        "--console|Console-"
+        "--console --35|35Console-"
+        "--hidden-zenkaku-space|HS-"
+        "--hidden-zenkaku-space --35|35HS-"
+        "--hidden-zenkaku-space --console|ConsoleHS-"
+        "--hidden-zenkaku-space --console --35|35ConsoleHS-"
+    )
+fi
 
 fail=0
 
