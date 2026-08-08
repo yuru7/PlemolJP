@@ -37,3 +37,7 @@ PlemolJP では合成元の [IBM Plex Mono](https://github.com/IBM/plex) シリ�
 |Text|Medium|SemiBold|Bold|
 |:---:|:---:|:---:|:---:|
 |![Text](https://user-images.githubusercontent.com/13458509/133928757-af5b6b82-5e1f-41bb-a925-f03769bdad00.png)|![Medium](https://user-images.githubusercontent.com/13458509/133928766-a4b22651-cc1c-48d7-b729-15a6a4070f44.png)|![SemiBold](https://user-images.githubusercontent.com/13458509/133928774-d8467d02-c301-4bef-84e5-1702f9f9645d.png)|![Bold](https://user-images.githubusercontent.com/13458509/133928784-7cc5f571-1161-41de-81b8-b97573e3f524.png)|
+
+## ビルド
+
+[HOW_TO_BUILD.md](./HOW_TO_BUILD.md) 参考
