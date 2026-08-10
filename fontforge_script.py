@@ -396,7 +396,7 @@ def adjust_some_glyph(jp_font, eng_font, style="Regular"):
         glyph.transform(psMat.translate((full_width - glyph.width) / 2, -150))
         glyph.width = full_width
 
-    # Cent Sign, Pound Sign, Yen Sign は半角記号に IBM Plex Sans JP を使用
+    # Cent Sign, Pound Sign, Yen Sign は半角記号に IBM Plex Sans JP を使用するため半角にする
     jp_font.selection.select(("unicode", None), 0x00A2)
     jp_font.selection.select(("unicode", "more"), 0x00A3)
     jp_font.selection.select(("unicode", "more"), 0x00A5)
@@ -407,6 +407,25 @@ def adjust_some_glyph(jp_font, eng_font, style="Regular"):
         # 後から英語フォントと同じ幅にするために一旦500幅として扱う
         glyph.transform(psMat.translate((500 - glyph.width) / 2, 0))
         glyph.width = 500
+
+    # 空白記号 (U+2423) は、プログラムなどの空白を文書上で表すため半角にする
+    jp_font.selection.select(("unicode", None), 0x2423)
+    for glyph in jp_font.selection.byGlyphs:
+        x_scale = half_width / glyph.width
+        if x_scale < 1:
+            glyph.transform(psMat.scale(x_scale, 1))
+        # 後から英語フォントと同じ幅にするために一旦500幅として扱う
+        glyph.transform(psMat.translate((500 - glyph.width) / 2, 0))
+        glyph.width = 500
+
+        # 特定の点だけ +75 上に移動
+        layer = glyph.foreground
+        move_indices = {2, 3, 6, 7}
+        for contour in layer:
+            for i, point in enumerate(contour):
+                if i in move_indices:
+                    point.y += 100
+        glyph.foreground = layer  # 書き戻し必須
 
     # r グリフの調整
     if "Italic" not in style:
